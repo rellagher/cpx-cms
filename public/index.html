@@ -202,6 +202,13 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
         <div class="progress-bar-track"><div class="progress-bar-fill" id="globalProgressFill" style="width:0%"></div></div>
         <div class="progress-pct" id="globalProgressPct">0%</div>
       </div>
+      <div id="deeplUsageWrap" style="display:flex;align-items:center;gap:6px;padding:4px 10px;background:var(--bg-3);border:1px solid var(--border);border-radius:20px;font-size:11px;font-weight:700;cursor:pointer;" onclick="refreshDeeplUsage()" title="Click to refresh">
+        <span style="color:var(--text-dim);">DeepL</span>
+        <div style="width:60px;height:4px;background:var(--bg-4);border-radius:2px;overflow:hidden;">
+          <div id="deeplUsageFill" style="height:100%;width:0%;border-radius:2px;background:var(--green);transition:width 0.4s;"></div>
+        </div>
+        <span id="deeplUsageText" style="color:var(--text-muted);">…</span>
+      </div>
       <button class="export-btn" style="background:var(--amber);" onclick="openDuplicatesPanel()">⧉ Duplicates</button>
       <button class="export-btn" style="background:var(--blue,#2563eb);" onclick="saveAllFields()" id="btnSave">↑ Save</button>
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="confirmRevert()" id="btnRevert">↺ Revert</button>
@@ -288,6 +295,10 @@ const state = {
   sidebar: [],
   locale: 'de',
   currentPageId: null,
+  translationsSha: null,
+  sessionSnapshot: null,
+  deeplRemaining: null,
+  dup_map: {},
 };
 
 // ============================================================
@@ -326,15 +337,29 @@ async function boot() {
 }
 
 async function loadSavedTranslations() {
-  // Load any previously saved translations
-  for (const [pageId, page] of Object.entries(state.pages)) {
-    for (let i = 0; i < page.fields.length; i++) {
-      const key = `cpx:${pageId}:${i}:${state.lang}`;
-      try {
-        const saved = await window.storage?.get(key);
-        if (saved?.value) page.fields[i].translated = saved.value;
-      } catch(e) {}
+  try {
+    const resp = await fetch('/.netlify/functions/translations', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'get' }),
+    });
+    if (!resp.ok) throw new Error('Load failed');
+    const data = await resp.json();
+
+    // Store SHA for subsequent saves (required by GitHub API)
+    state.translationsSha = data.sha || null;
+
+    // Merge saved translations into pages for current lang
+    const saved = data.translations[state.lang] || {};
+    for (const [pageId, page] of Object.entries(state.pages)) {
+      for (let i = 0; i < page.fields.length; i++) {
+        const key = `${pageId}:${i}`;
+        if (saved[key] !== undefined) page.fields[i].translated = saved[key];
+      }
     }
+  } catch(e) {
+    console.error('Failed to load translations:', e);
+    showToast('⚠️ Could not load saved translations');
   }
   // Capture snapshot of state at session start for Revert
   captureSessionSnapshot();
@@ -389,6 +414,7 @@ function doLogin() {
 
   buildSidebar();
   updateGlobalProgress();
+  fetchDeeplUsage();
 }
 
 function logout() {
@@ -611,12 +637,16 @@ async function runDeeplTranslation(pageId, mode) {
   const page = state.pages[pageId];
   if (!page) return;
 
-  const btn = document.getElementById('btnTranslateAll');
-  if (btn) { btn.textContent = '⟳ Translating…'; btn.disabled = true; }
-
   const toTranslate = page.fields
     .map((f, i) => ({field: f, idx: i}))
     .filter(({field}) => mode === 'all' ? true : !field.translated);
+
+  // Quota check — estimate chars
+  const estChars = toTranslate.reduce((sum, {field}) => sum + (field.default?.length || 0), 0);
+  if (!checkDeeplQuota(estChars)) return;
+
+  const btn = document.getElementById('btnTranslateAll');
+  if (btn) { btn.textContent = '⟳ Translating…'; btn.disabled = true; }
 
   if (!toTranslate.length) {
     showToast('No fields to translate');
@@ -658,6 +688,7 @@ async function runDeeplTranslation(pageId, mode) {
   } finally {
     if (btn) { btn.textContent = '✦ Translate all with DeepL'; btn.disabled = false; }
     loadPageView(pageId);
+    fetchDeeplUsage(); // refresh after translation
   }
 }
 
@@ -693,12 +724,8 @@ function updateField(pageId, idx, value) {
 }
 
 async function saveField(pageId, idx, value) {
-  if (!window.storage) return;
-  const key = `cpx:${pageId}:${idx}:${state.lang}`;
-  try {
-    if (value) await window.storage.set(key, value);
-    else await window.storage.delete(key);
-  } catch(e) {}
+  // saveField is now a no-op — all saving done via saveAllFields (Save button)
+  // This keeps GitHub API calls minimal
 }
 
 function updateGlobalProgress() {
@@ -1071,20 +1098,50 @@ async function saveAllFields() {
   const btn = document.getElementById('btnSave');
   if (btn) { btn.textContent = '⟳ Saving…'; btn.disabled = true; }
 
-  let count = 0;
-  for (const [pageId, page] of Object.entries(state.pages)) {
-    for (let i = 0; i < page.fields.length; i++) {
-      const val = page.fields[i].translated || '';
-      await saveField(pageId, i, val);
-      count++;
-    }
-  }
+  try {
+    // First get current file state from GitHub to get latest SHA
+    const getResp = await fetch('/.netlify/functions/translations', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'get' }),
+    });
+    const current = await getResp.json();
+    const allTranslations = current.translations || {};
+    const sha = current.sha || state.translationsSha || null;
 
-  // Update snapshot after save
-  captureSessionSnapshot();
-  markSaved();
-  if (btn) { btn.disabled = false; }
-  showToast(`✓ Saved ${count} fields`);
+    // Build translations object for current lang
+    const langData = {};
+    for (const [pageId, page] of Object.entries(state.pages)) {
+      for (let i = 0; i < page.fields.length; i++) {
+        const val = page.fields[i].translated || '';
+        if (val) langData[`${pageId}:${i}`] = val;
+      }
+    }
+
+    // Merge into full translations file
+    allTranslations[state.lang] = langData;
+
+    // Save to GitHub
+    const saveResp = await fetch('/.netlify/functions/translations', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'save', translations: allTranslations, sha }),
+    });
+
+    if (!saveResp.ok) throw new Error('Save failed');
+    const saved = await saveResp.json();
+    state.translationsSha = saved.sha;
+
+    const count = Object.keys(langData).length;
+    captureSessionSnapshot();
+    markSaved();
+    showToast(`✓ Saved ${count} fields to GitHub`);
+
+  } catch(e) {
+    showToast('⚠️ Save failed: ' + e.message);
+  } finally {
+    if (btn) { btn.disabled = false; }
+  }
 }
 
 function confirmRevert() {
@@ -1122,6 +1179,62 @@ async function revertToSnapshot() {
   updateGlobalProgress();
   if (state.currentPageId) loadPageView(state.currentPageId);
   showToast('↺ Reverted to session start');
+}
+
+
+// ============================================================
+// DEEPL USAGE
+// ============================================================
+async function fetchDeeplUsage() {
+  try {
+    const resp = await fetch('/.netlify/functions/deepl', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'usage' }),
+    });
+    if (!resp.ok) return;
+    const data = await resp.json();
+    const used = data.character_count || 0;
+    const limit = data.character_limit || 500000;
+    const remaining = limit - used;
+    const pct = Math.min(100, Math.round(used / limit * 100));
+
+    const fill = document.getElementById('deeplUsageFill');
+    const text = document.getElementById('deeplUsageText');
+    if (fill) {
+      fill.style.width = pct + '%';
+      fill.style.background = pct > 80 ? 'var(--red)' : pct > 60 ? 'var(--amber)' : 'var(--green)';
+    }
+    if (text) {
+      const remainingK = Math.round(remaining / 1000);
+      text.textContent = remainingK + 'k left';
+      text.style.color = pct > 80 ? 'var(--red)' : pct > 60 ? 'var(--amber)' : 'var(--text-muted)';
+    }
+    // Store for warning logic
+    state.deeplRemaining = remaining;
+  } catch(e) {
+    const text = document.getElementById('deeplUsageText');
+    if (text) text.textContent = 'n/a';
+  }
+}
+
+function refreshDeeplUsage() {
+  const text = document.getElementById('deeplUsageText');
+  if (text) text.textContent = '…';
+  fetchDeeplUsage();
+}
+
+// Warn before translating if low on characters
+function checkDeeplQuota(estimatedChars) {
+  const remaining = state.deeplRemaining;
+  if (!remaining) return true; // unknown, allow
+  if (remaining < estimatedChars) {
+    return confirm(`Only ${Math.round(remaining/1000)}k characters remaining on DeepL. This translation may use ~${Math.round(estimatedChars/1000)}k. Continue?`);
+  }
+  if (remaining < 20000) {
+    showToast(`⚠️ Only ${Math.round(remaining/1000)}k DeepL characters remaining`);
+  }
+  return true;
 }
 
 
