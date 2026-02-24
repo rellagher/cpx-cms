@@ -16,7 +16,20 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: 'Invalid JSON' };
   }
 
-  const { texts, target_lang, source_lang = 'EN', tag_handling } = body;
+  const { texts, target_lang, source_lang = 'EN', tag_handling, action } = body;
+
+  // Usage endpoint
+  if (action === 'usage') {
+    const resp = await fetch('https://api-free.deepl.com/v2/usage', {
+      headers: { 'Authorization': `DeepL-Auth-Key ${DEEPL_API_KEY}` },
+    });
+    const data = await resp.json();
+    return {
+      statusCode: 200,
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data),
+    };
+  }
 
   if (!texts || !texts.length || !target_lang) {
     return { statusCode: 400, body: 'Missing texts or target_lang' };
@@ -25,7 +38,7 @@ exports.handler = async (event) => {
   try {
     const params = new URLSearchParams();
     for (const t of texts) params.append('text', t);
-    params.append('target_lang', target_lang.toUpperCase());
+    params.append('target_lang', target_lang); // keep as-is, e.g. PT-PT not PT
     params.append('source_lang', source_lang.toUpperCase());
     if (tag_handling) params.append('tag_handling', tag_handling);
     params.append('formality', 'prefer_more'); // formal tone for brand content

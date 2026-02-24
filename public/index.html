@@ -542,7 +542,7 @@ function loadPageView(pageId) {
 // DEEPL
 // ============================================================
 async function callDeepL(texts, isHtml) {
-  const langMap = {de:'DE',pl:'PL',fr:'FR',es:'ES',it:'IT',nl:'NL'};
+  const langMap = {de:'DE','pt-PT':'PT-PT',pl:'PL',fr:'FR',es:'ES',it:'IT',nl:'NL'};
   const target = langMap[state.lang] || state.lang.toUpperCase();
 
   const resp = await fetch('/.netlify/functions/deepl', {
