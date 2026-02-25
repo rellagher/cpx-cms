@@ -456,6 +456,7 @@ async function loadSavedTranslations() {
 function captureSessionSnapshot() {
   state.sessionSnapshot = {};
   for (const [pageId, page] of Object.entries(state.pages)) {
+    // Store as index array for revert comparison (internal use only)
     state.sessionSnapshot[pageId] = page.fields.map(f => f.translated || '');
   }
 }
@@ -1323,8 +1324,7 @@ async function saveAllFields() {
       const snapPage = snapshot[pageId] || [];
       for (let i = 0; i < page.fields.length; i++) {
         const val = page.fields[i].translated || '';
-        if (val) langData[`${pageId}:${i}`] = val;
-        // Track which pages changed since session start
+        if (val) langData[`${pageId}:${getStableKey(page.fields[i])}`] = val;
         if (val !== (snapPage[i] || '')) changedPages.add(pageId);
       }
     }
@@ -1938,6 +1938,13 @@ function formatTimeAgo(date) {
   if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
   if (diff < 604800) return Math.floor(diff/86400) + 'd ago';
   return date.toLocaleDateString();
+}
+
+
+function getStableKey(field) {
+  const fieldStr = field.field || '';
+  if (fieldStr.includes(':')) return fieldStr.split(':').pop();
+  return `${field.shopify_id}_${fieldStr}`;
 }
 
 
