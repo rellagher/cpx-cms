@@ -181,7 +181,7 @@
     "homepage:hpaqhzphsyoc": "Veja o interior do actyva",
     "homepage:25rdsukwmnz9h": "<p>Oito emissores biofotónicos de precisão rodeiam o SHOT, libertando frequências de luz durante os 90 segundos de ativação. Esta energia fotónica otimiza a fórmula líquida a nível molecular, preparando-a para a máxima biodisponibilidade e reconhecimento celular.</p>",
     "homepage:2pdvubq7hq5z6": "<p>ACTYVA<strong> </strong>é o dispositivo. SHOTS<strong> </strong>são as fórmulas. Juntos, eles criam um novo padrão - suplementos que o seu corpo simplesmente reconhece.</p>",
-    "homepage:1s34z90a3ekrp": "Protocolo de Ritmo",
+    "homepage:1s34z90a3ekrp": "RHYTHM PROTOCOL",
     "homepage:ls79m6iuzr6x": "DOMINE O SEU RITMO CIRCADIANO",
     "homepage:10szcdbk8gx0g": "<p>RHYTHM SHOTS combina fórmulas nutricionais precisas com a tecnologia de ativação ACTYVA, projetada para apoiar o ritmo biológico natural do seu corpo ao longo do dia, auxiliando a manter a energia equilibrada, o humor e o sono reparador dentro de um sistema sincronizado de 24 horas.</p>",
     "homepage:1f31o0022rlq0": "RESTART",
@@ -194,7 +194,7 @@
     "homepage:2g2sj8u6lme23": "<ul><li>Apoiar o relaxamento</li><li>Contribuir para a qualidade do sono</li><li>Ajudar a regular o ritmo circadiano</li><li>Apoia a recuperação durante a noite</li></ul>",
     "homepage:1huzs6cr04obk": "Saiba mais",
     "homepage:2zqol2v6smsi9": "<hr style=\"border: 0; border-top: 1px solid #c1c1c1;\">",
-    "homepage:1zp8v48j1xt3e": "RESHAPE PROTOCOLO",
+    "homepage:1zp8v48j1xt3e": "RESHAPE PROTOCOL",
     "homepage:3ol15wexvic4m": "REMODELAÇÃO CORPORAL INTELIGENTE",
     "homepage:u0uanp28il9r": "<p>A verdadeira transformação corporal não envolve restrições, mas sim trabalhar com a sua biologia, e não contra ela. O Protocolo RESHAPE combina três fórmulas específicas que abordam o quadro completo: ativação metabólica, padrões emocionais e regulação do apetite. Quando os três atuam em conjunto, a mudança sustentável torna-se natural.</p>",
     "homepage:1d1pp9ocvs0qn": "RESHAPE IMAGENS",
@@ -1160,6 +1160,14 @@
         "navigation"
       ],
       "ts": "2026-02-25T16:15:44.313Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-02-25T18:33:05.280Z"
     }
   ],
   "__pending": {},
