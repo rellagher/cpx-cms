@@ -620,13 +620,19 @@ function loadPageView(pageId) {
 // ============================================================
 function applyProtectedTermsHtml(text) {
   // For HTML fields: use translate="no" span — works with tag_handling=html
-  let result = text;
-  const terms = (state.protectedTerms || []).slice().sort((a,b) => b.length - a.length);
-  for (const term of terms) {
-    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp('(?<![a-zA-Z>])' + escaped + '(?![a-zA-Z<])', 'g');
-    result = result.replace(regex, `<span translate="no">${term}</span>`);
-  }
+  // Split on HTML tags to only replace in text nodes, not inside tag attributes
+  let result = text.replace(/(<[^>]*>)|([^<]+)/g, (match, tag, textNode) => {
+    if (tag) return tag; // leave HTML tags untouched
+    // Replace protected terms in text nodes only
+    let t = textNode;
+    const terms = (state.protectedTerms || []).slice().sort((a,b) => b.length - a.length);
+    for (const term of terms) {
+      const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      const regex = new RegExp('(?<![a-zA-Z])' + escaped + '(?![a-zA-Z])', 'g');
+      t = t.replace(regex, `<span translate="no">${term}</span>`);
+    }
+    return t;
+  });
   return result;
 }
 
