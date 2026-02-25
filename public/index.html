@@ -619,21 +619,50 @@ function loadPageView(pageId) {
 // DEEPL
 // ============================================================
 function applyProtectedTermsHtml(text) {
-  // For HTML fields: use translate="no" span — works with tag_handling=html
-  // Split on HTML tags to only replace in text nodes, not inside tag attributes
-  let result = text.replace(/(<[^>]*>)|([^<]+)/g, (match, tag, textNode) => {
-    if (tag) return tag; // leave HTML tags untouched
-    // Replace protected terms in text nodes only
-    let t = textNode;
-    const terms = (state.protectedTerms || []).slice().sort((a,b) => b.length - a.length);
-    for (const term of terms) {
-      const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-      const regex = new RegExp('(?<![a-zA-Z])' + escaped + '(?![a-zA-Z])', 'g');
-      t = t.replace(regex, `<span translate="no">${term}</span>`);
+  // For HTML: don't inject any tags — translate cleanly, fix terms afterwards
+  return text;
+}
+
+function fixProtectedTermsInResult(translated, original) {
+  // After translation, restore any protected terms that got translated
+  // by finding what each term looks like in the translation and replacing back
+  const terms = (state.protectedTerms || []).slice().sort((a,b) => b.length - a.length);
+  let result = translated;
+  for (const term of terms) {
+    // Check if term exists in original (case-sensitive)
+    const escapedOrig = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const origRegex = new RegExp('(?<![a-zA-Z])' + escapedOrig + '(?![a-zA-Z])');
+    if (!origRegex.test(original)) continue; // term not in this field, skip
+
+    // Check if term is missing or changed in translation
+    if (!origRegex.test(result)) {
+      // Term was translated — we need to find common translations and fix them
+      // Simple approach: if term is ALL CAPS or CamelCase, DeepL often keeps it
+      // For known translations in each language, restore them
+      const knownTranslations = buildTermTranslationMap(term);
+      for (const wrongForm of knownTranslations) {
+        const escapedWrong = wrongForm.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const wrongRegex = new RegExp('(?<![a-zA-Z])' + escapedWrong + '(?![a-zA-Z])', 'gi');
+        result = result.replace(wrongRegex, term);
+      }
     }
-    return t;
-  });
+  }
   return result;
+}
+
+function buildTermTranslationMap(term) {
+  // Known wrong translations per term for common languages
+  const map = {
+    'RESTART':   ['REINICIAR','REINICIALIZAR','NEU STARTEN','REDÉMARRER','REINICIAR','RIAVVIA'],
+    'RECHARGE':  ['RECARREGAR','AUFLADEN','RECHARGER','RICARICARE','RECARGAR'],
+    'RESET':     ['REINICIALIZAR','ZURÜCKSETZEN','RÉINITIALISER','RIPRISTINA','RESTABLECER'],
+    'RESHAPE':   ['REMODELAR','UMFORMEN','REFORMER','RIMODELLA','REMODELAR'],
+    'REFOCUS':   ['REFOCAR','FOKUSSIEREN','REFOCALISER','RIFOCALIZZA','REENFOCARSE'],
+    'REMETHYL':  ['REMETILIZAR'],
+    'SHOT':      ['foto','tiro','disparo','Schuss','coup'],
+    'SHOTS':     ['fotos','tiros','disparos','Schüsse','coups'],
+  };
+  return map[term] || [];
 }
 
 function applyProtectedTermsXml(text) {
@@ -691,9 +720,13 @@ async function callDeepL(texts, isHtml) {
   const data = await resp.json();
   if (data.error) throw new Error(data.error);
 
-  return data.translations.map(t => {
+  return data.translations.map((t, i) => {
     const text = t.text;
-    return isHtml ? removeTranslateNoSpans(text) : removeKeepTags(text);
+    if (isHtml) {
+      // Fix any protected terms that got translated
+      return fixProtectedTermsInResult(removeTranslateNoSpans(text), protectedTexts[i]);
+    }
+    return removeKeepTags(text);
   });
 }
 
