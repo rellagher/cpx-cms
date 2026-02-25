@@ -296,7 +296,7 @@
     "actyva:3rn0tbiy35p4x": "Compatibilidade",
     "actyva:149ztk956qyci": "<p>Todos os CellPowerX SHOTS</p>",
     "actyva:3qdhwmdxz33s9": "Você também pode gostar",
-    "actyva:2f9v98tvzubw3": "ISENÇÃO DE RESPONSABILIDADE",
+    "actyva:2f9v98tvzubw3": "DISCLAIMER",
     "actyva:5a2wsj9ahm4w": "<p>O ACTYVA não é um dispositivo médico. O dispositivo ACTYVA e os seus princípios subjacentes não se destinam a diagnosticar, tratar, curar ou prevenir qualquer doença. As informações fornecidas têm fins exclusivamente educativos e informativos e não constituem aconselhamento médico. Os resultados individuais podem variar. As referências a potenciais efeitos fisiológicos ou energéticos baseiam-se em teorias científicas emergentes e princípios tradicionais, e não devem ser interpretadas como alegações médicas. Consulte um profissional de saúde qualificado antes de utilizar este produto se estiver grávida, amamentando, tiver alguma condição médica ou estiver a tomar qualquer medicamento. Utilize apenas conforme as instruções. Mantenha fora do alcance das crianças.</p>",
     "bundle-reshape-actyva:36rzvjnff5og1": "<h2>Bundle <strong>RESHAPE</strong> + ACTYVA</h2>",
     "bundle-reshape-actyva:1y9gdxiszfixa": "Também disponível como bundle sem ACTYVA:",
@@ -1125,6 +1125,14 @@
         "for-business"
       ],
       "ts": "2026-02-25T15:29:33.971Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "actyva"
+      ],
+      "ts": "2026-02-25T15:29:56.350Z"
     }
   ],
   "__pending": {},
