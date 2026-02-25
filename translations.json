@@ -202,7 +202,7 @@
     "page-699013988738:699013988738_title": "Questionário",
     "page-699013988738:699013988738_handle": "questionário",
     "theme-cart_free_shipping_threshold:182378103170_general.cart_free_shipping_threshold": "500",
-    "homepage:1ihtkvzoqbpyz": "Como funciona 3",
+    "homepage:1ihtkvzoqbpyz": "Começa uma nova era da suplementação.",
     "homepage:1yk957l3dpvrt": "Sem esforço. Intuitivo. Transformativo.",
     "homepage:2v2y0y0bzuehd": "<p>Integre o futuro do bem-estar à sua rotina diária em segundos. O ACTYVA foi concebido para proporcionar uma experiência elegante e perfeita.</p>",
     "homepage:z3fp2npl7mm4": "1) SELECIONE o seu SHOT.",
@@ -1362,6 +1362,14 @@
         "homepage"
       ],
       "ts": "2026-02-25T12:11:18.315Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-02-25T12:12:04.878Z"
     }
   ],
   "__pending": {
