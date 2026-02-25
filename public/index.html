@@ -197,12 +197,12 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
         <div class="progress-bar-track"><div class="progress-bar-fill" id="globalProgressFill" style="width:0%"></div></div>
         <div class="progress-pct" id="globalProgressPct">0%</div>
       </div>
-      <div id="deeplUsageWrap" style="display:flex;align-items:center;gap:6px;padding:4px 10px;background:var(--bg-3);border:1px solid var(--border);border-radius:20px;font-size:11px;font-weight:700;cursor:pointer;" onclick="refreshDeeplUsage()" title="Click to refresh">
+      <div id="deeplUsageWrap" style="display:flex;align-items:center;gap:6px;padding:4px 12px;background:var(--bg-3);border:1px solid var(--border);border-radius:20px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;" onclick="refreshDeeplUsage()" title="Click to refresh">
         <span style="color:var(--text-dim);">DeepL</span>
-        <div style="width:60px;height:4px;background:var(--bg-4);border-radius:2px;overflow:hidden;">
+        <div style="width:60px;height:4px;background:var(--bg-4);border-radius:2px;overflow:hidden;flex-shrink:0;">
           <div id="deeplUsageFill" style="height:100%;width:0%;border-radius:2px;background:var(--green);transition:width 0.4s;"></div>
         </div>
-        <span id="deeplUsageText" style="color:var(--text-muted);">…</span>
+        <span id="deeplUsageText" style="color:var(--text-muted);min-width:48px;">loading…</span>
       </div>
       <button class="export-btn" style="background:var(--amber);" onclick="openDuplicatesPanel()">⧉ Duplicates</button>
       <button class="export-btn" style="background:var(--blue,#2563eb);" onclick="saveAllFields()" id="btnSave">↑ Save</button>
@@ -331,7 +331,7 @@ async function boot() {
 
 async function loadSavedTranslations() {
   try {
-    const resp = await fetch('/.netlify/functions/translations', {
+    const resp = await fetch('https://cpx-api.joao-relego.workers.dev/translations', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ action: 'get' }),
@@ -545,7 +545,7 @@ async function callDeepL(texts, isHtml) {
   const langMap = {de:'DE','pt-PT':'PT-PT',pl:'PL',fr:'FR',es:'ES',it:'IT',nl:'NL'};
   const target = langMap[state.lang] || state.lang.toUpperCase();
 
-  const resp = await fetch('/.netlify/functions/deepl', {
+  const resp = await fetch('https://cpx-api.joao-relego.workers.dev/deepl', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
     body: JSON.stringify({
@@ -1098,7 +1098,7 @@ async function saveAllFields() {
 
   try {
     // First get current file state from GitHub to get latest SHA
-    const getResp = await fetch('/.netlify/functions/translations', {
+    const getResp = await fetch('https://cpx-api.joao-relego.workers.dev/translations', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ action: 'get' }),
@@ -1120,7 +1120,7 @@ async function saveAllFields() {
     allTranslations[state.lang] = langData;
 
     // Save to GitHub
-    const saveResp = await fetch('/.netlify/functions/translations', {
+    const saveResp = await fetch('https://cpx-api.joao-relego.workers.dev/translations', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ action: 'save', translations: allTranslations, sha }),
@@ -1185,7 +1185,7 @@ async function revertToSnapshot() {
 // ============================================================
 async function fetchDeeplUsage() {
   try {
-    const resp = await fetch('/.netlify/functions/deepl', {
+    const resp = await fetch('https://cpx-api.joao-relego.workers.dev/deepl', {
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify({ action: 'usage' }),
