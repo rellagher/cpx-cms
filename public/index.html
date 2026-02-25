@@ -583,7 +583,7 @@ function loadPageView(pageId) {
     const hasVal = !!field.translated;
     const isHtml = field.is_html;
     const originalPlain = htmlToPlain(field.default);
-    const displayOriginal = originalPlain.length > 220 ? originalPlain.substring(0,220)+'…' : originalPlain;
+    const displayOriginal = originalPlain;
 
     let inputEl;
     if (isHtml) {
