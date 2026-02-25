@@ -207,11 +207,11 @@
     "homepage:36eqgs6z2wr88": "<ul><li>Apoie o controlo do apetite e a saciedade</li><li>Contribuir para níveis equilibrados de glicose no sangue</li><li>Ajudar a manter níveis de energia diários estáveis</li><li>Apoia o equilíbrio metabólico ao longo do dia</li></ul>",
     "homepage:3une211edl4gj": "Saiba mais",
     "homepage:ct5eqogekkhz": "SISTEMAS SELECIONADOS. VALOR SUPERIOR.",
-    "homepage:3f6kdwiokrlsb": "NOSSOS PACOTES",
+    "homepage:3f6kdwiokrlsb": "Nossos bundles",
     "homepage:mcrjtanot0si": "<p><br/>Descubra os nossos sistemas selecionados. Cada bundle foi concebido para proporcionar resultados sinérgicos e um valor superior. A forma mais inteligente de criar a sua rotina de bem-estar.</p>",
     "homepage:2q8hspsj3nykp": "Loja",
     "homepage:26yu44vxtgy87": "A CIÊNCIA",
-    "homepage:128lyf7zgtksr": "Apoiado por especialistas",
+    "homepage:128lyf7zgtksr": "Aprovado por especialistas",
     "homepage:hzg50hj6cypu": "<p>Colaboramos com um painel multidisciplinar de especialistas que traduzem pesquisas emergentes em avanços significativos para os produtos.</p>",
     "homepage:2whk28stmt2rt": "Saiba mais",
     "homepage:qpfp28m0wpqu": "Professor Pedro Vaz, PhD FRSC",
@@ -1176,6 +1176,14 @@
         "homepage"
       ],
       "ts": "2026-02-25T18:33:12.970Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-02-25T18:33:49.822Z"
     }
   ],
   "__pending": {},
