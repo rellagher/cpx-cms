@@ -1,0 +1,373 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+  .cpx-slider-section {
+    background: #1D1D1F;
+    padding: 80px 0 60px;
+    position: relative;
+  }
+
+  /* ── Section header ── */
+  .cpx-slider-header {
+    text-align: center;
+    margin-bottom: 48px;
+    padding: 0 24px;
+  }
+  .cpx-slider-header .cpx-label {
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 11px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #FF2D20;
+    margin-bottom: 14px;
+  }
+  .cpx-slider-header h2 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: clamp(26px, 3.5vw, 48px);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  /* ── MOBILE: scroll-snap carousel ── */
+  .cpx-track-outer {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    cursor: grab;
+  }
+  .cpx-track-outer::-webkit-scrollbar { display: none; }
+  .cpx-track-outer:active { cursor: grabbing; }
+
+  .cpx-track {
+    display: flex;
+    gap: 12px;
+    width: max-content;
+    padding: 16px calc((100vw - 82vw) / 2);
+  }
+
+  .cpx-slide {
+    flex: 0 0 82vw;
+    width: 82vw;
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    scroll-snap-align: center;
+    opacity: 0.5;
+    transform: scale(0.93);
+  }
+  .cpx-slide.active { opacity: 1; transform: scale(1); }
+
+  .cpx-slide-inner {
+    position: relative;
+    width: 100%;
+    padding-bottom: 133%;
+    background: #1a1a1a;
+  }
+  .cpx-slide img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.8s ease;
+  }
+  .cpx-slide.active img { transform: scale(1.03); }
+
+  .cpx-slide-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.88) 0%, rgba(0,0,0,0.3) 45%, transparent 70%);
+    z-index: 1;
+  }
+
+  .cpx-slide-text {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    padding: 24px 20px 28px;
+    z-index: 2;
+    text-align: center;
+  }
+  .cpx-word {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  .cpx-slide.active .cpx-word {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .cpx-slide-text h3 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 10px;
+    line-height: 1.3;
+  }
+  .cpx-slide-text p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #cccccc;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  .cpx-slide.active .cpx-slide-text p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .cpx-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    margin-top: 16px;
+    padding: 0 24px;
+  }
+  .cpx-arrow {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: border-color 0.3s, background 0.3s, transform 0.2s;
+    flex-shrink: 0;
+  }
+  .cpx-arrow:hover { border-color: #FF2D20; background: rgba(255,45,32,0.1); transform: scale(1.08); }
+  .cpx-arrow:disabled { opacity: 0.25; cursor: default; transform: none; }
+  .cpx-arrow svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+
+  .cpx-dots { display: flex; gap: 8px; align-items: center; }
+  .cpx-dot {
+    width: 5px; height: 5px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.25);
+    border: none; cursor: pointer; padding: 0;
+    transition: background 0.3s, width 0.3s;
+  }
+  .cpx-dot.active { background: #FF2D20; width: 20px; border-radius: 3px; }
+
+  @media (min-width: 700px) {
+    .cpx-slider-section { padding: 80px 0; }
+    .cpx-track-outer { overflow: visible; cursor: default; }
+    .cpx-track {
+      display: flex;
+      gap: 24px;
+      padding: 20px 60px;
+      justify-content: center;
+      max-width: 1500px;
+      margin: 0 auto;
+      width: auto;
+    }
+    .cpx-slide {
+      flex: 0 0 calc((min(100vw, 1500px) - 168px) / 3);
+      width: calc((min(100vw, 1500px) - 168px) / 3);
+      transform: scale(1) !important;
+      opacity: 1 !important;
+    }
+    .cpx-slide-text {
+      opacity: 1 !important;
+      transform: none !important;
+      padding: 32px 36px 40px;
+    }
+    .cpx-word { opacity: 1 !important; transform: none !important; }
+    .cpx-slide p { opacity: 1 !important; transform: none !important; }
+    .cpx-nav { display: none; }
+  }
+</style>
+
+<section class="cpx-slider-section">
+
+  <div class="cpx-track-outer" id="cpx-track-outer">
+    <div class="cpx-track" id="cpx-track">
+
+      <div class="cpx-slide active" data-index="0">
+        <div class="cpx-slide-inner">
+          <img src="https://cdn.shopify.com/s/files/1/0929/2408/4610/files/Slide1_mobile.webp" alt="Slide 1" loading="eager">
+          <div class="cpx-slide-overlay"></div>
+          <div class="cpx-slide-text">
+            {%- if request.locale.iso_code == 'pt-PT' -%}
+            <h3>Aumenta a interação do corpo com os suplementos.</h3>
+            <p>Quantas vezes tomou suplementos sem resultados reais? ACTYVA ajuda o seu corpo a reconhecer e utilizar os suplementos de forma mais eficaz.</p>
+            {%- elsif request.locale.iso_code == 'de' -%}
+            <h3>Fördert die Interaktion des Körpers mit Nahrungsergänzungsmitteln.</h3>
+            <p>Wie oft haben Sie Nahrungsergänzungsmittel eingenommen, ohne dass sich echte Ergebnisse eingestellt haben? ACTYVA unterstützt Ihren Körper dabei, Nahrungsergänzungsmittel besser zu erkennen und zu verwerten.</p>
+            {%- else -%}
+            <h3>Boosts body interaction with supplements.</h3>
+            <p>How often have you taken supplements without real results? ACTYVA helps your body recognize and use supplements more effectively.</p>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+
+      <div class="cpx-slide" data-index="1">
+        <div class="cpx-slide-inner">
+          <img src="https://cdn.shopify.com/s/files/1/0929/2408/4610/files/SHOTS_SLIDE3_mobile.webp" alt="Slide 2" loading="lazy">
+          <div class="cpx-slide-overlay"></div>
+          <div class="cpx-slide-text">
+            {%- if request.locale.iso_code == 'pt-PT' -%}
+            <h3>Maior potencial de absorção.</h3>
+            <p>As frequências de luz precisamente calibradas emitidas pelo ACTYVA transferem energia fotónica diretamente para a fórmula líquida, com base na ciência estabelecida da fotobiomodulação.</p>
+            {%- elsif request.locale.iso_code == 'de' -%}
+            <h3>Höheres Absorptionspotenzial.</h3>
+            <p>Die präzise kalibrierten Lichtfrequenzen, die von ACTYVA abgegeben werden, übertragen photonische Energie direkt in die flüssige Formel, basierend auf der etablierten Wissenschaft der Photobiomodulation.</p>
+            {%- else -%}
+            <h3>Greater potential for absorption.</h3>
+            <p>The precisely calibrated light frequencies emitted by ACTYVA transfer photonic energy directly into the liquid formula, rooted in the established science of photobiomodulation.</p>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+
+      <div class="cpx-slide" data-index="2">
+        <div class="cpx-slide-inner">
+          <img src="https://cdn.shopify.com/s/files/1/0929/2408/4610/files/CPX_SHOTS_TOPVIEW_mobile2.webp" alt="Slide 3" loading="lazy">
+          <div class="cpx-slide-overlay"></div>
+          <div class="cpx-slide-text">
+            {%- if request.locale.iso_code == 'pt-PT' -%}
+            <h3>Quando o corpo reconhece o que recebe.</h3>
+            <p>O corpo humano é composto principalmente por água, e o ambiente molecular da água responde à energia fotónica direcionada, otimizando o ambiente no qual os ingredientes ativos interagem com a sua biologia.</p>
+            {%- elsif request.locale.iso_code == 'de' -%}
+            <h3>Wenn der Körper wahrnimmt, was er erhält.</h3>
+            <p>Der menschliche Körper besteht zum Großteil aus Wasser, und die molekulare Umgebung des Wassers reagiert auf gezielte photonische Energie, wodurch die Umgebung optimiert wird, in der Wirkstoffe mit Ihrer Biologie interagieren.</p>
+            {%- else -%}
+            <h3>When the body recognizes what it receives.</h3>
+            <p>The human body is largely composed of water, and water's molecular environment responds to targeted photonic energy, optimizing the environment in which active ingredients interact with your biology.</p>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cpx-nav">
+    <button class="cpx-arrow" id="cpx-prev" aria-label="Previous slide">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+    </button>
+    <div class="cpx-dots" id="cpx-dots"></div>
+    <button class="cpx-arrow" id="cpx-next" aria-label="Next slide">
+      <svg viewBox="0 0 24 24"><polyline points="9 6 15 12 9 18"/></svg>
+    </button>
+  </div>
+
+</section>
+
+<script>
+(function() {
+  var outer    = document.getElementById('cpx-track-outer');
+  var track    = document.getElementById('cpx-track');
+  var slides   = Array.from(track.querySelectorAll('.cpx-slide'));
+  var prevBtn  = document.getElementById('cpx-prev');
+  var nextBtn  = document.getElementById('cpx-next');
+  var dotsWrap = document.getElementById('cpx-dots');
+  var total    = slides.length;
+  var current  = 0;
+
+  slides.forEach(function(slide) {
+    var h3 = slide.querySelector('h3');
+    if (!h3) return;
+    var words = h3.textContent.trim().split(/\s+/);
+    h3.innerHTML = words.map(function(w) {
+      return '<span class="cpx-word">' + w + '</span>';
+    }).join(' ');
+  });
+
+  slides.forEach(function(_, i) {
+    var dot = document.createElement('button');
+    dot.className = 'cpx-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Slide ' + (i + 1));
+    dot.addEventListener('click', function() { goTo(i); });
+    dotsWrap.appendChild(dot);
+  });
+  var dots = Array.from(dotsWrap.querySelectorAll('.cpx-dot'));
+
+  function goTo(index) {
+    current = Math.max(0, Math.min(total - 1, index));
+    var slide = slides[current];
+    var outerRect = outer.getBoundingClientRect();
+    var slideRect = slide.getBoundingClientRect();
+    var delta = (slideRect.left + slideRect.width / 2) - (outerRect.left + outerRect.width / 2);
+    outer.scrollBy({ left: delta, behavior: 'smooth' });
+    updateState();
+  }
+
+  function updateState() {
+    slides.forEach(function(s, i) {
+      var isActive = i === current;
+      s.classList.toggle('active', isActive);
+      var words = s.querySelectorAll('.cpx-word');
+      words.forEach(function(w, wi) {
+        w.style.transitionDelay = isActive ? (wi * 0.04) + 's' : '0s';
+      });
+      var p = s.querySelector('p');
+      if (p) p.style.transitionDelay = '0s';
+    });
+    dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+    prevBtn.disabled = current === 0;
+    nextBtn.disabled = current === total - 1;
+  }
+
+  var rafId;
+  outer.addEventListener('scroll', function() {
+    if (rafId) cancelAnimationFrame(rafId);
+    rafId = requestAnimationFrame(function() {
+      var outerRect = outer.getBoundingClientRect();
+      var outerCenter = outerRect.left + outerRect.width / 2;
+      var closest = 0;
+      var minDist = Infinity;
+
+      slides.forEach(function(s, i) {
+        var r = s.getBoundingClientRect();
+        var slideCenter = r.left + r.width / 2;
+        var dist = Math.abs(slideCenter - outerCenter);
+        var progress = Math.max(0, 1 - dist / (r.width * 1.1));
+        s.style.transform = 'scale(' + (0.93 + 0.07 * progress) + ')';
+        s.style.opacity = 0.5 + 0.5 * progress;
+        if (dist < minDist) { minDist = dist; closest = i; }
+      });
+
+      if (closest !== current) {
+        current = closest;
+        updateState();
+      }
+    });
+  }, { passive: true });
+
+  prevBtn.addEventListener('click', function() { goTo(current - 1); });
+  nextBtn.addEventListener('click', function() { goTo(current + 1); });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft')  goTo(current - 1);
+    if (e.key === 'ArrowRight') goTo(current + 1);
+  });
+
+  updateState();
+  slides[0].style.transform = 'scale(1)';
+  slides[0].style.opacity = '1';
+  requestAnimationFrame(function() { goTo(0); });
+
+})();
+</script>

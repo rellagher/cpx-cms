@@ -1,0 +1,264 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+
+  /* ── Transparent header ── */
+  #shopify-section-{{ section.id }} {
+    margin-block-start: calc(-1 * var(--header-height, 0px));
+  }
+
+  /* ── Hero ── */
+  .cpx-hero {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: calc(100svh - var(--announcement-bar-height, 0px));
+    max-height: calc(100svh - var(--announcement-bar-height, 0px));
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .cpx-hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+
+  .cpx-hero-bg video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .cpx-hero-bg .cpx-vid-mobile  { display: block; }
+  .cpx-hero-bg .cpx-vid-desktop { display: none;  }
+
+  @media screen and (min-width: 700px) {
+    .cpx-hero-bg .cpx-vid-mobile  { display: none;  }
+    .cpx-hero-bg .cpx-vid-desktop { display: block; }
+  }
+
+  .cpx-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(
+      to top,
+      rgba(0,0,0,0.92) 0%,
+      rgba(0,0,0,0.55) 40%,
+      rgba(0,0,0,0.15) 70%,
+      transparent 100%
+    );
+  }
+
+  /* ── Content ── */
+  .cpx-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 48px 48px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 16px;
+    animation: cpxFadeUp 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both 0.3s;
+  }
+
+  @keyframes cpxFadeUp {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .cpx-hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    flex: 1;
+    max-width: 860px;
+  }
+
+  .cpx-hero-logo { max-width: 160px; }
+  .cpx-hero-logo img { width: 100%; height: auto; display: block; }
+
+  .cpx-hero-headline {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    font-size: clamp(24px, 3.2vw, 46px);
+    line-height: 1.10;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0;
+  }
+
+  .cpx-hero-body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: clamp(13px, 1.3vw, 16px);
+    line-height: 1.4;
+    color: rgba(255,255,255,0.72);
+    margin: 0;
+    max-width: 750px;
+  }
+
+  .cpx-hero-right {
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .cpx-hero-cta {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .cpx-btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 0.04em;
+    padding: 12px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  }
+  .cpx-btn:hover { transform: scale(1.03); }
+
+  .cpx-btn-primary {
+    background: #FF2D20;
+    color: #fff;
+    border: 2px solid #FF2D20;
+    box-shadow: 0 4px 20px rgba(255,45,32,0.35);
+  }
+  .cpx-btn-primary:hover {
+    background: #e02518;
+    box-shadow: 0 8px 28px rgba(255,45,32,0.5);
+  }
+
+  .cpx-btn-secondary {
+    background: transparent;
+    color: #FF2D20;
+    border: 2px solid #FF2D20;
+  }
+  .cpx-btn-secondary:hover { background: rgba(255,45,32,0.08); }
+
+  .cpx-btn-arrow { display: inline-flex; align-items: center; flex-shrink: 0; }
+  .cpx-arrow-down { display: inline-block; transition: transform 0.3s ease; }
+  .cpx-btn-primary:hover .cpx-arrow-down { transform: translateY(3px); }
+
+  /* ── Responsive ── */
+  @media (max-width: 900px) {
+    .cpx-hero-content { padding: 0 28px 36px; gap: 12px; }
+    .cpx-hero-left { max-width: 50%; }
+  }
+
+  @media (max-width: 600px) {
+    .cpx-hero-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px 40px;
+      gap: 20px;
+    }
+    .cpx-hero-left { max-width: 100%; align-items: center; }
+    .cpx-hero-logo { max-width: 110px; }
+    .cpx-hero-right { width: 100%; justify-content: center; }
+    .cpx-btn { font-size: 11px; padding: 10px 14px; gap: 6px; }
+  }
+
+</style>
+
+{% assign locale = request.locale.iso_code %}
+
+{% if locale == 'pt-PT' %}
+  {% assign hero_headline = 'Uma nova era na suplementação.' %}
+  {% assign hero_body = 'Mesmo os ingredientes mais avançados dependem da forma como o corpo os recebe. ACTYVA é um dispositivo biofotónico inovador que ativa os nossos suplementos a nível molecular, concebido para proporcionar resultados que pode realmente sentir.' %}
+  {% assign btn_works = 'Como funciona' %}
+  {% assign btn_shop = 'Shop ACTYVA' %}
+{% elsif locale == 'de' %}
+  {% assign hero_headline = 'Eine neue Ära der Nahrungsergänzung beginnt.' %}
+  {% assign hero_body = 'Selbst die fortschrittlichsten Inhaltsstoffe sind davon abhängig, wie der Körper sie aufnimmt. ACTYVA ist ein bahnbrechendes biophotonisches Gerät, das unsere Nahrungsergänzungsmittel auf molekularer Ebene aktiviert und so entwickelt wurde, dass Sie die Ergebnisse wirklich spüren können.' %}
+  {% assign btn_works = 'So funktioniert es' %}
+  {% assign btn_shop = 'ACTYVA kaufen' %}
+{% else %}
+  {% assign hero_headline = 'A new era of supplementation begins.' %}
+  {% assign hero_body = 'Even the most advanced ingredients depend on how the body receives them. ACTYVA is a breakthrough biophotonic device that activates our supplements at a molecular level, designed to deliver results you can truly feel.' %}
+  {% assign btn_works = 'How It Works' %}
+  {% assign btn_shop = 'Shop ACTYVA' %}
+{% endif %}
+
+<section class="cpx-hero" allow-transparent-header>
+
+  <div class="cpx-hero-bg">
+    <video class="cpx-vid-mobile" autoplay muted loop playsinline preload="auto">
+      <source src="https://cdn.shopify.com/videos/c/o/v/2255884e4a2042cdb9a7207c0f4099ec.mp4" type="video/mp4">
+    </video>
+    <video class="cpx-vid-desktop" autoplay muted loop playsinline preload="auto">
+      <source src="https://cdn.shopify.com/videos/c/o/v/d6c6ba0714de4670934c1a22b4ff043f.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <div class="cpx-hero-overlay"></div>
+
+  <div class="cpx-hero-content">
+
+    <div class="cpx-hero-left">
+      <div class="cpx-hero-logo">
+        <img src="https://cdn.shopify.com/s/files/1/0929/2408/4610/files/ACTYVA_White-logo.svg?v=1771795585" alt="ACTYVA Logo">
+      </div>
+      <h1 class="cpx-hero-headline">{{ hero_headline }}</h1>
+      <p class="cpx-hero-body">{{ hero_body }}</p>
+    </div>
+
+    <div class="cpx-hero-right">
+      <div class="cpx-hero-cta">
+        <a href="#how-it-works" class="cpx-btn cpx-btn-primary" id="cpx-scroll-btn">
+          {{ btn_works }}
+          <span class="cpx-btn-arrow cpx-arrow-down">↓</span>
+        </a>
+        <a href="/collections/bundles" class="cpx-btn cpx-btn-secondary">
+          {{ btn_shop }}
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<script>
+(function() {
+  var scrollBtn = document.getElementById('cpx-scroll-btn');
+  if (!scrollBtn) return;
+  scrollBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    var current = this.closest('.shopify-section');
+    if (current && current.nextElementSibling) {
+      current.nextElementSibling.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+      window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
+    }
+  });
+})();
+</script>
