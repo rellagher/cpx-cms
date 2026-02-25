@@ -193,16 +193,16 @@
     "actyva:5a2wsj9ahm4w": "<p>O ACTYVA não é um dispositivo médico. O dispositivo ACTYVA e os seus princípios subjacentes não se destinam a diagnosticar, tratar, curar ou prevenir qualquer doença. As informações fornecidas têm fins exclusivamente educativos e informativos e não constituem aconselhamento médico. Os resultados individuais podem variar. As referências a potenciais efeitos fisiológicos ou energéticos baseiam-se em teorias científicas emergentes e princípios tradicionais, e não devem ser interpretadas como alegações médicas. Consulte um profissional de saúde qualificado antes de utilizar este produto se estiver grávida, amamentando, tiver alguma condição médica ou estiver a tomar qualquer medicamento. Utilize apenas conforme as instruções. Mantenha fora do alcance das crianças.</p>",
     "bundle-reshape-actyva:36rzvjnff5og1": "<h2>Bundle <strong>RESHAPE</strong> + ACTYVA</h2>",
     "bundle-reshape-actyva:1y9gdxiszfixa": "Também disponível como bundle sem ACTYVA:",
-    "bundle-reshape-actyva:1f3rg30hfnug2": "REMODELAR PROTOCOLO",
+    "bundle-reshape-actyva:1f3rg30hfnug2": "RESHAPE PROTOCOL",
     "bundle-reshape-actyva:1uyj6pa37z7gu": "REMODELAÇÃO CORPORAL INTELIGENTE",
     "bundle-reshape-actyva:14rr0z2qgefyf": "<p>O Protocolo RESHAPE combina suporte metabólico de precisão aprimorado pela tecnologia ACTYVA com equilíbrio nutricional diário direcionado. Ao integrar o RESHAPE SHOT com duas gomas especializadas, ele cria um sistema sincronizado projetado para apoiar o progresso consistente e sustentável em direção aos seus objetivos corporais.</p>",
-    "bundle-reshape-actyva:3j5k4152p2ogw": "REMODELAR IMAGENS",
+    "bundle-reshape-actyva:3j5k4152p2ogw": "RESHAPE SHOTS",
     "bundle-reshape-actyva:38dwx3m9wpm1": "<ul><li>Ative a eficiência metabólica</li><li>Apoie os processos naturais de queima de gordura</li><li>Promova a utilização diária de energia</li><li>Apoiar os objetivos de composição corporal</li></ul>",
     "bundle-reshape-actyva:gven30vwbgrm": "Saiba mais",
-    "bundle-reshape-actyva:1l2iuj6tpwav9": "REMODELAR O EQUILÍBRIO",
+    "bundle-reshape-actyva:1l2iuj6tpwav9": "RESHAPE BALANCE",
     "bundle-reshape-actyva:1r0j4y30uhhzg": "<ul><li>Ajudar a reduzir os desejos relacionados com o stress ou emocionais</li><li>Apoie o equilíbrio emocional e a estabilidade do humor</li><li>Promova a motivação e a consistência comportamental</li><li>Apoie hábitos alimentares conscientes</li></ul>",
     "bundle-reshape-actyva:2htfewdpt0eo7": "Saiba mais",
-    "bundle-reshape-actyva:2p4dc68at1xtp": "REMODELAR O CONTROLO",
+    "bundle-reshape-actyva:2p4dc68at1xtp": "RESHAPE CONTROL",
     "bundle-reshape-actyva:2kbnetsngwugk": "<ul><li>Apoie o controlo do apetite e a saciedade</li><li>Contribuir para níveis equilibrados de glicose no sangue</li><li>Ajudar a manter níveis de energia diários estáveis</li><li>Apoia o equilíbrio metabólico ao longo do dia</li></ul>",
     "bundle-reshape-actyva:1h76zfxxwks5b": "Saiba mais",
     "bundle-reshape-actyva:jzacx55f4ag2": "Uma nova era de suplementos",
@@ -978,6 +978,14 @@
         "rhythm-bundle-with-actyva"
       ],
       "ts": "2026-02-25T15:24:12.596Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "bundle-reshape-actyva"
+      ],
+      "ts": "2026-02-25T15:26:07.371Z"
     }
   ],
   "__pending": {},
