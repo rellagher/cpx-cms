@@ -26,8 +26,8 @@
     "navigation:756447871362_title": "As suas opções de privacidade",
     "navigation:756474577282_title": "Actyva",
     "navigation:756474610050_title": "Bundles",
-    "navigation:756474642818_title": "Tiros",
-    "navigation:756474708354_title": "Gomas",
+    "navigation:756474642818_title": "Shots",
+    "navigation:756474708354_title": "Gummies",
     "navigation:756475920770_title": "Todos os produtos",
     "navigation:762850509186_title": "Programa de parceria",
     "navigation:769250591106_title": "Perfil",
@@ -1152,6 +1152,14 @@
         "product-reshape-shot"
       ],
       "ts": "2026-02-25T15:55:08.202Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "navigation"
+      ],
+      "ts": "2026-02-25T16:15:44.313Z"
     }
   ],
   "__pending": {},
