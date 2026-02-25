@@ -441,8 +441,9 @@ async function loadSavedTranslations() {
     const saved = data.translations[state.lang] || {};
     for (const [pageId, page] of Object.entries(state.pages)) {
       for (let i = 0; i < page.fields.length; i++) {
-        const key = `${pageId}:${i}`;
-        if (saved[key] !== undefined) page.fields[i].translated = saved[key];
+        const stableKey = getStableKey(page.fields[i]);
+        const val = saved[`${pageId}:${stableKey}`] ?? saved[`${pageId}:${i}`];
+        if (val !== undefined) page.fields[i].translated = val;
       }
     }
   } catch(e) {
