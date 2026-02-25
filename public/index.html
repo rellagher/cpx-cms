@@ -936,8 +936,13 @@ function updateField(pageId, idx, value) {
   if (navEl) {
     const prog = navEl.querySelector('.nav-progress');
     if (prog) {
-      prog.textContent = pct === 100 ? '✓' : done + '/' + total;
-      prog.className = 'nav-progress ' + (pct===100?'done':done>0?'partial':'');
+      if (pct === 100) {
+        prog.textContent = '✓';
+        prog.className = 'nav-progress done';
+        prog.style.display = '';
+      } else {
+        prog.style.display = 'none';
+      }
     }
   }
 
