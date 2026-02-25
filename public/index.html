@@ -554,7 +554,7 @@ function buildSidebar() {
         <span style="font-size:13px;">${page.label.split(' ').slice(0,1).join('')}</span>
         <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${page.label.replace(/^[^\s]+ /,'')}</span>
         ${hasPending ? '<span style="font-weight:900;color:var(--amber);font-size:13px;margin-right:2px;" title="Changed by translator">!</span>' : ''}
-        <span class="nav-progress ${progClass}">${pct===100?'✓':done+'/'+total}</span>
+        ${pct===100 ? '<span class="nav-progress done">✓</span>' : ''}
       </div>`;
     }
   }
@@ -633,7 +633,7 @@ function loadPageView(pageId) {
           <div style="flex:1;">
             <div class="page-title">${escHtml(page.label)}</div>
             <div class="page-meta">
-              <span id="pageProgressText">${done}/${total} fields translated</span>
+              <span id="pageProgressText">${done === total ? '✓ Complete' : done + ' of ' + total + ' translated'}</span>
               <span>·</span>
               <a href="${escAttr(page.url)}" target="_blank" class="page-link">View live page ↗</a>
             </div>
