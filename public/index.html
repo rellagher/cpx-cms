@@ -205,6 +205,8 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
         <span id="deeplUsageText" style="color:var(--text-muted);min-width:48px;">loading…</span>
       </div>
       <button class="export-btn" style="background:var(--amber);" onclick="openDuplicatesPanel()">⧉ Duplicates</button>
+      <button class="export-btn" style="background:#0891b2;" onclick="openSyncModal()" id="btnSync">⟳ Sync Shopify</button>
+      <button class="export-btn" style="background:#6d28d9;" onclick="openTranslateAllPagesModal()" id="btnTranslateAllPages">✦ Translate All Pages</button>
       <button class="export-btn" style="background:var(--blue,#2563eb);" onclick="saveAllFields()" id="btnSave">↑ Save</button>
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="confirmRevert()" id="btnRevert">↺ Revert</button>
       <button class="export-btn" onclick="exportCsv()">↓ Export CSV</button>
@@ -254,6 +256,57 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
   </div>
 </div>
 
+
+<!-- SYNC SHOPIFY MODAL -->
+<div class="modal-overlay" id="syncModal">
+  <div class="modal-box" style="width:560px;max-height:80vh;display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+      <div class="modal-title" style="margin-bottom:0;flex:1;">⟳ Sync with Shopify</div>
+      <button onclick="closeSyncModal()" id="syncCloseBtn" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--text-muted);">✕</button>
+    </div>
+    <div class="modal-desc" id="syncModalDesc">Fetching latest content from Shopify…</div>
+    <div id="syncModalList" style="overflow-y:auto;flex:1;"></div>
+    <div style="display:flex;gap:8px;margin-top:16px;padding-top:16px;border-top:1px solid var(--border);" id="syncModalFooter">
+      <button class="modal-btn secondary" onclick="closeSyncModal()">Close</button>
+      <button class="modal-btn primary" id="syncAcceptBtn" onclick="acceptSyncChanges()" style="display:none;">Accept changes</button>
+    </div>
+  </div>
+</div>
+
+<!-- TRANSLATE ALL PAGES MODAL -->
+<div class="modal-overlay" id="translateAllPagesModal">
+  <div class="modal-box" style="width:480px;">
+    <div class="modal-title">✦ Translate All Pages</div>
+    <div class="modal-desc">Translate all <strong id="tapTotalFields">0</strong> untranslated fields across all pages using DeepL.</div>
+    <div style="padding:12px;background:var(--bg-3);border-radius:8px;margin-bottom:16px;font-size:12px;color:var(--text-muted);">
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+        <span>Estimated characters:</span>
+        <strong id="tapEstChars">—</strong>
+      </div>
+      <div style="display:flex;justify-content:space-between;margin-bottom:6px;">
+        <span>DeepL remaining:</span>
+        <strong id="tapDeeplRemaining">—</strong>
+      </div>
+      <div style="display:flex;justify-content:space-between;">
+        <span>Pages to translate:</span>
+        <strong id="tapPages">—</strong>
+      </div>
+    </div>
+    <div id="tapProgress" style="display:none;margin-bottom:16px;">
+      <div style="display:flex;justify-content:space-between;font-size:12px;color:var(--text-muted);margin-bottom:6px;">
+        <span id="tapProgressLabel">Translating…</span>
+        <span id="tapProgressPct">0%</span>
+      </div>
+      <div style="height:6px;background:var(--bg-4);border-radius:3px;overflow:hidden;">
+        <div id="tapProgressFill" style="height:100%;width:0%;background:var(--green);border-radius:3px;transition:width 0.3s;"></div>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;">
+      <button class="modal-btn secondary" id="tapCancelBtn" onclick="closeTranslateAllPagesModal()">Cancel</button>
+      <button class="modal-btn primary" id="tapConfirmBtn" onclick="runTranslateAllPages()">✦ Start Translation</button>
+    </div>
+  </div>
+</div>
 
 <!-- DUPLICATES PANEL -->
 <div class="modal-overlay" id="dupModal">
@@ -1233,6 +1286,298 @@ function checkDeeplQuota(estimatedChars) {
     showToast(`⚠️ Only ${Math.round(remaining/1000)}k DeepL characters remaining`);
   }
   return true;
+}
+
+
+// ============================================================
+// TRANSLATE ALL PAGES
+// ============================================================
+let _tapRunning = false;
+
+function openTranslateAllPagesModal() {
+  // Count untranslated fields and estimate chars
+  let totalUntranslated = 0;
+  let estChars = 0;
+  let pagesWithUntranslated = 0;
+
+  for (const page of Object.values(state.pages)) {
+    const untranslated = page.fields.filter(f => !f.translated);
+    if (untranslated.length > 0) {
+      pagesWithUntranslated++;
+      totalUntranslated += untranslated.length;
+      estChars += untranslated.reduce((s, f) => s + (f.default?.length || 0), 0);
+    }
+  }
+
+  document.getElementById('tapTotalFields').textContent = totalUntranslated;
+  document.getElementById('tapEstChars').textContent = Math.round(estChars / 1000) + 'k chars';
+  document.getElementById('tapDeeplRemaining').textContent = state.deeplRemaining
+    ? Math.round(state.deeplRemaining / 1000) + 'k chars'
+    : 'Unknown';
+  document.getElementById('tapPages').textContent = pagesWithUntranslated + ' pages';
+  document.getElementById('tapProgress').style.display = 'none';
+  document.getElementById('tapConfirmBtn').style.display = '';
+  document.getElementById('tapCancelBtn').textContent = 'Cancel';
+
+  if (totalUntranslated === 0) {
+    showToast('All fields already translated');
+    return;
+  }
+
+  document.getElementById('translateAllPagesModal').classList.add('show');
+}
+
+function closeTranslateAllPagesModal() {
+  if (_tapRunning) return; // don't close while running
+  document.getElementById('translateAllPagesModal').classList.remove('show');
+}
+
+async function runTranslateAllPages() {
+  if (_tapRunning) return;
+  _tapRunning = true;
+
+  const confirmBtn = document.getElementById('tapConfirmBtn');
+  const cancelBtn = document.getElementById('tapCancelBtn');
+  const progress = document.getElementById('tapProgress');
+  const progressLabel = document.getElementById('tapProgressLabel');
+  const progressPct = document.getElementById('tapProgressPct');
+  const progressFill = document.getElementById('tapProgressFill');
+
+  confirmBtn.style.display = 'none';
+  cancelBtn.textContent = 'Running…';
+  progress.style.display = 'block';
+
+  // Get all pages with untranslated fields
+  const pageIds = Object.keys(state.pages).filter(pid =>
+    state.pages[pid].fields.some(f => !f.translated)
+  );
+
+  let totalDone = 0;
+  const totalPages = pageIds.length;
+
+  for (let pi = 0; pi < pageIds.length; pi++) {
+    const pageId = pageIds[pi];
+    const page = state.pages[pageId];
+
+    progressLabel.textContent = `Translating: ${page.label} (${pi + 1}/${totalPages})`;
+    const pct = Math.round(pi / totalPages * 100);
+    progressPct.textContent = pct + '%';
+    progressFill.style.width = pct + '%';
+
+    // Run translation for this page (fill empty only)
+    try {
+      await runDeeplTranslation(pageId, 'empty');
+      totalDone++;
+    } catch(e) {
+      console.error('Error translating page', pageId, e);
+    }
+
+    // Small delay to avoid rate limiting
+    await new Promise(r => setTimeout(r, 300));
+  }
+
+  // Final save
+  progressLabel.textContent = 'Saving all translations…';
+  progressFill.style.width = '95%';
+  await saveAllFields();
+
+  progressFill.style.width = '100%';
+  progressPct.textContent = '100%';
+  progressLabel.textContent = `✓ Done — ${totalDone} pages translated`;
+  cancelBtn.textContent = 'Close';
+  _tapRunning = false;
+
+  fetchDeeplUsage();
+  buildSidebar();
+  updateGlobalProgress();
+}
+
+
+// ============================================================
+// SHOPIFY SYNC
+// ============================================================
+let _syncChanges = []; // [{pageId, idx, oldDefault, newDefault, field}]
+
+async function openSyncModal() {
+  _syncChanges = [];
+  document.getElementById('syncModalDesc').textContent = 'Fetching latest content from Shopify…';
+  document.getElementById('syncModalList').innerHTML = '<div style="padding:20px;text-align:center;color:var(--text-muted);">⟳ Loading…</div>';
+  document.getElementById('syncAcceptBtn').style.display = 'none';
+  document.getElementById('syncCloseBtn').style.pointerEvents = 'none';
+  document.getElementById('syncModal').classList.add('show');
+
+  try {
+    const changes = await fetchSyncChanges();
+    _syncChanges = changes;
+    renderSyncResults(changes);
+  } catch(e) {
+    document.getElementById('syncModalDesc').textContent = 'Error: ' + e.message;
+    document.getElementById('syncModalList').innerHTML = '';
+  }
+  document.getElementById('syncCloseBtn').style.pointerEvents = '';
+}
+
+function closeSyncModal() {
+  document.getElementById('syncModal').classList.remove('show');
+}
+
+async function fetchSyncChanges() {
+  const changes = [];
+
+  // Fetch products
+  const productIds = [...new Set(
+    Object.values(state.pages)
+      .flatMap(p => p.fields.filter(f => f.type === 'PRODUCT').map(f => f.shopify_id))
+  )];
+
+  if (productIds.length) {
+    const query = `{
+      nodes(ids: [${productIds.map(id => `"gid://shopify/Product/${id}"`).join(',')}]) {
+        ... on Product {
+          id
+          title
+          descriptionHtml
+          productType
+        }
+      }
+    }`;
+
+    const resp = await fetch('https://cpx-api.joao-relego.workers.dev/shopify', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ type: 'graphql', query }),
+    });
+    const data = await resp.json();
+
+    if (data.data?.nodes) {
+      for (const node of data.data.nodes) {
+        if (!node) continue;
+        const numId = node.id.replace('gid://shopify/Product/', '');
+
+        const fieldMap = {
+          title: 'title',
+          descriptionHtml: 'body_html',
+          productType: 'product_type',
+        };
+
+        for (const [apiKey, csvField] of Object.entries(fieldMap)) {
+          const newVal = node[apiKey]?.trim();
+          if (!newVal) continue;
+
+          // Find matching field in state
+          for (const [pageId, page] of Object.entries(state.pages)) {
+            for (let i = 0; i < page.fields.length; i++) {
+              const f = page.fields[i];
+              if (f.type === 'PRODUCT' && f.shopify_id === numId && f.field === csvField) {
+                if (f.default.trim() !== newVal) {
+                  changes.push({
+                    pageId, idx: i,
+                    oldDefault: f.default,
+                    newDefault: newVal,
+                    field: f.field,
+                    pageLabel: page.label,
+                    fieldLabel: f.label,
+                  });
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Fetch pages
+  const pageIds = [...new Set(
+    Object.values(state.pages)
+      .flatMap(p => p.fields.filter(f => f.type === 'PAGE').map(f => f.shopify_id))
+  )];
+
+  if (pageIds.length) {
+    const query = `{
+      nodes(ids: [${pageIds.map(id => `"gid://shopify/OnlinePage/${id}"`).join(',')}]) {
+        ... on OnlinePage {
+          id
+          title
+          body
+        }
+      }
+    }`;
+
+    const resp = await fetch('https://cpx-api.joao-relego.workers.dev/shopify', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ type: 'graphql', query }),
+    });
+    const data = await resp.json();
+
+    if (data.data?.nodes) {
+      for (const node of data.data.nodes) {
+        if (!node) continue;
+        const numId = node.id.replace('gid://shopify/OnlinePage/', '');
+        const fieldMap = { title: 'title', body: 'body_html' };
+
+        for (const [apiKey, csvField] of Object.entries(fieldMap)) {
+          const newVal = node[apiKey]?.trim();
+          if (!newVal) continue;
+
+          for (const [pageId, page] of Object.entries(state.pages)) {
+            for (let i = 0; i < page.fields.length; i++) {
+              const f = page.fields[i];
+              if (f.type === 'PAGE' && f.shopify_id === numId && f.field === csvField) {
+                if (f.default.trim() !== newVal) {
+                  changes.push({ pageId, idx: i, oldDefault: f.default, newDefault: newVal, field: f.field, pageLabel: page.label, fieldLabel: f.label });
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  return changes;
+}
+
+function renderSyncResults(changes) {
+  const desc = document.getElementById('syncModalDesc');
+  const list = document.getElementById('syncModalList');
+  const acceptBtn = document.getElementById('syncAcceptBtn');
+
+  if (!changes.length) {
+    desc.textContent = '✓ Everything is up to date — no changes detected in Shopify.';
+    list.innerHTML = '';
+    return;
+  }
+
+  desc.innerHTML = `Found <strong>${changes.length} field${changes.length>1?'s':''}</strong> with updated content in Shopify:`;
+  acceptBtn.style.display = '';
+
+  list.innerHTML = changes.map((c, i) => `
+    <div style="padding:12px;border:1px solid var(--amber);border-radius:8px;margin-bottom:8px;">
+      <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
+        <span style="font-size:11px;font-weight:700;padding:2px 8px;background:rgba(245,158,11,0.15);color:var(--amber);border-radius:4px;">CHANGED</span>
+        <span style="font-size:12px;font-weight:700;">${c.pageLabel.replace(/^[^\s]+ /,'')} › ${c.fieldLabel}</span>
+      </div>
+      <div style="font-size:11px;color:var(--text-muted);margin-bottom:4px;text-decoration:line-through;">${c.oldDefault.replace(/<[^>]+>/g,' ').substring(0,100).trim()}${c.oldDefault.length>100?'…':''}</div>
+      <div style="font-size:11px;color:var(--green);font-weight:600;">→ ${c.newDefault.replace(/<[^>]+>/g,' ').substring(0,100).trim()}${c.newDefault.length>100?'…':''}</div>
+    </div>`).join('');
+}
+
+async function acceptSyncChanges() {
+  for (const c of _syncChanges) {
+    const field = state.pages[c.pageId]?.fields[c.idx];
+    if (!field) continue;
+    field.default = c.newDefault;
+    field.translated = ''; // clear translation — needs retranslating
+    markUnsaved();
+  }
+
+  closeSyncModal();
+  buildSidebar();
+  updateGlobalProgress();
+  if (state.currentPageId) loadPageView(state.currentPageId);
+  showToast(`✓ ${_syncChanges.length} fields updated — translations cleared for review`);
 }
 
 
