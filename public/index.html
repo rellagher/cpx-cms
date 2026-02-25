@@ -188,6 +188,7 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
     </div>
     <div class="top-right">
       <div class="mode-badge" id="modeBadge"><span class="mode-dot"></span><span id="modeBadgeText">Admin</span></div>
+      <button id="btnProtectedTerms" onclick="openProtectedTermsModal()" style="background:none;border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:700;cursor:pointer;color:var(--text-muted);" title="Protected terms — words that won't be translated">🔒 Terms</button>
       <div style="position:relative;" id="langSelectorWrap">
         <div class="lang-badge" id="langBadge" onclick="toggleLangSelector()" style="cursor:pointer;user-select:none;">🇩🇪 DE ▾</div>
         <div id="langDropdown" style="display:none;position:absolute;top:calc(100% + 6px);right:0;background:var(--bg-2);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow-lg);min-width:180px;z-index:200;overflow:hidden;padding:4px;">
@@ -256,6 +257,23 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
   </div>
 </div>
 
+
+<!-- PROTECTED TERMS MODAL -->
+<div class="modal-overlay" id="protectedTermsModal">
+  <div class="modal-box" style="width:460px;">
+    <div class="modal-title">🔒 Protected Terms</div>
+    <div class="modal-desc">These words will never be translated by DeepL — brand names, product names, technical terms.</div>
+    <div id="protectedTermsList" style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;min-height:40px;padding:10px;background:var(--bg-3);border-radius:8px;border:1px solid var(--border);"></div>
+    <div style="display:flex;gap:8px;margin-bottom:16px;">
+      <input id="newTermInput" type="text" placeholder="Add term…" style="flex:1;padding:8px 12px;border:1px solid var(--border);border-radius:8px;background:var(--bg-3);color:var(--text);font-size:13px;" onkeydown="if(event.key==='Enter')addProtectedTerm()">
+      <button class="modal-btn primary" style="padding:8px 16px;" onclick="addProtectedTerm()">Add</button>
+    </div>
+    <div style="display:flex;gap:8px;">
+      <button class="modal-btn secondary" onclick="document.getElementById('protectedTermsModal').classList.remove('show')">Close</button>
+      <button class="modal-btn primary" onclick="saveProtectedTerms()">Save</button>
+    </div>
+  </div>
+</div>
 
 <!-- SYNC SHOPIFY MODAL -->
 <div class="modal-overlay" id="syncModal">
@@ -342,6 +360,7 @@ const state = {
   pages: {},
   sidebar: [],
   locale: 'de',
+  protectedTerms: ['SHOT', 'SHOTS', 'CellPowerX', 'ACTYVA', 'RHYTHM', 'RESHAPE', 'RESTART', 'RECHARGE', 'RESET', 'REFOCUS', 'REMETHYL', 'HydroIRX', 'NEXAI', 'Nuno Nina', 'biophotonic', 'biofrequency', 'cGMP', 'NOX'],
   currentPageId: null,
   translationsSha: null,
   sessionSnapshot: null,
@@ -394,6 +413,11 @@ async function loadSavedTranslations() {
 
     // Store SHA for subsequent saves (required by GitHub API)
     state.translationsSha = data.sha || null;
+
+    // Load protected terms if saved
+    if (data.translations.__protected_terms) {
+      state.protectedTerms = data.translations.__protected_terms;
+    }
 
     // Merge saved translations into pages for current lang
     const saved = data.translations[state.lang] || {};
@@ -594,25 +618,48 @@ function loadPageView(pageId) {
 // ============================================================
 // DEEPL
 // ============================================================
+function applyProtectedTerms(text) {
+  // Wrap protected terms in <keep> tags so DeepL doesn't translate them
+  let result = text;
+  const terms = (state.protectedTerms || []).slice().sort((a,b) => b.length - a.length);
+  for (const term of terms) {
+    // Case-sensitive, whole word match
+    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp('(?<![a-zA-Z])' + escaped + '(?![a-zA-Z])', 'g');
+    result = result.replace(regex, `<keep>${term}</keep>`);
+  }
+  return result;
+}
+
+function removeKeepTags(text) {
+  return text.replace(/<keep>(.*?)<\/keep>/g, '$1');
+}
+
 async function callDeepL(texts, isHtml) {
   const langMap = {de:'DE','pt-PT':'PT-PT',pl:'PL',fr:'FR',es:'ES',it:'IT',nl:'NL'};
   const target = langMap[state.lang] || state.lang.toUpperCase();
+
+  // Wrap protected terms — always use xml tag_handling to support <keep> tags
+  const protectedTexts = texts.map(t => applyProtectedTerms(t));
+  const hasProtected = protectedTexts.some(t => t.includes('<keep>'));
 
   const resp = await fetch('https://cpx-api.joao-relego.workers.dev/deepl', {
     method: 'POST',
     headers: {'Content-Type':'application/json'},
     body: JSON.stringify({
-      texts,
+      texts: protectedTexts,
       target_lang: target,
       source_lang: 'EN',
-      tag_handling: isHtml ? 'html' : undefined,
+      tag_handling: (isHtml || hasProtected) ? 'xml' : undefined,
+      ignore_tags: hasProtected ? 'keep' : undefined,
     }),
   });
 
   if (!resp.ok) throw new Error('DeepL API error: ' + resp.status);
   const data = await resp.json();
   if (data.error) throw new Error(data.error);
-  return data.translations.map(t => t.text);
+  // Remove keep tags from result
+  return data.translations.map(t => removeKeepTags(t.text));
 }
 
 async function translateField(pageId, idx) {
@@ -1578,6 +1625,71 @@ async function acceptSyncChanges() {
   updateGlobalProgress();
   if (state.currentPageId) loadPageView(state.currentPageId);
   showToast(`✓ ${_syncChanges.length} fields updated — translations cleared for review`);
+}
+
+
+// ============================================================
+// PROTECTED TERMS
+// ============================================================
+function openProtectedTermsModal() {
+  renderProtectedTerms();
+  document.getElementById('protectedTermsModal').classList.add('show');
+}
+
+function renderProtectedTerms() {
+  const list = document.getElementById('protectedTermsList');
+  const terms = state.protectedTerms || [];
+  list.innerHTML = terms.map((t, i) => `
+    <span style="display:inline-flex;align-items:center;gap:4px;padding:3px 10px;background:var(--bg-4);border:1px solid var(--border);border-radius:20px;font-size:12px;font-weight:700;">
+      ${escHtml(t)}
+      <span onclick="removeProtectedTerm(${i})" style="cursor:pointer;color:var(--text-muted);font-size:14px;line-height:1;margin-left:2px;">×</span>
+    </span>`).join('');
+}
+
+function addProtectedTerm() {
+  const input = document.getElementById('newTermInput');
+  const term = input.value.trim();
+  if (!term) return;
+  if (!state.protectedTerms.includes(term)) {
+    state.protectedTerms.push(term);
+    renderProtectedTerms();
+  }
+  input.value = '';
+}
+
+function removeProtectedTerm(idx) {
+  state.protectedTerms.splice(idx, 1);
+  renderProtectedTerms();
+}
+
+async function saveProtectedTerms() {
+  // Save to GitHub translations file alongside translations
+  try {
+    const getResp = await fetch('https://cpx-api.joao-relego.workers.dev/translations', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'get' }),
+    });
+    const current = await getResp.json();
+    const allData = current.translations || {};
+    const sha = current.sha || state.translationsSha || null;
+
+    allData.__protected_terms = state.protectedTerms;
+
+    const saveResp = await fetch('https://cpx-api.joao-relego.workers.dev/translations', {
+      method: 'POST',
+      headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'save', translations: allData, sha }),
+    });
+    if (!saveResp.ok) throw new Error('Save failed');
+    const saved = await saveResp.json();
+    state.translationsSha = saved.sha;
+
+    document.getElementById('protectedTermsModal').classList.remove('show');
+    showToast('✓ Protected terms saved');
+  } catch(e) {
+    showToast('Error saving: ' + e.message);
+  }
 }
 
 
