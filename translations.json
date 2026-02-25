@@ -215,14 +215,14 @@
     "homepage:3v7o0r3jabn0u": "Como funciona",
     "homepage:267h0y7fcs3he": "Sem esforço. Intuitivo. Transformador.",
     "homepage:2p6inavvwhyi3": "<p>Integre o futuro do bem-estar à sua rotina diária em segundos. O ACTYVA foi concebido para proporcionar uma experiência elegante e perfeita.</p>",
-    "homepage:2q1nrwx8k4eg6": "1) SELECIONE a sua SHOT.",
+    "homepage:2q1nrwx8k4eg6": "1) SELECIONE o seu SHOT.",
     "homepage:3aant35xqfn8v": "<p>• <strong>RESTART</strong> | Energia e concentração<br/>• <strong>RECHARGE </strong>| Humor positivo<br/>• <strong>RESTART</strong> | Descanso e recuperação<br/>• <strong>RESHAPE</strong> | Gestão de peso</p>",
     "homepage:83rhc54ak74d": "2) ATIVE com um simples clique.",
     "homepage:3sk5uz6l98guc": "<p>Durante a ativação de 90 segundos, o ACTYVA emite frequências de luz que transferem energia fotónica para o SHOT, à medida que o campo bioeletromagnético único do seu corpo interage com o processo de ativação.</p>",
     "homepage:3tcvi2gi5ug0a": "3) EXPERIMENTE a fórmula otimizada.",
     "homepage:16q5bddmxavk3": "<p>Consuma a fórmula ativada, agora no seu estado mais eficiente, para uma experiência otimizada e resultados que poderá sentir.</p>",
     "homepage:ve98te4y6mol": "PERSONALIZAÇÃO INTELIGENTE",
-    "homepage:3ylaswdj80p": "O ingrediente final é o senhor.",
+    "homepage:3ylaswdj80p": "O ingrediente final.",
     "homepage:3bte67loxyv80": "<p>Cada corpo humano emite um campo bioeletromagnético único - um facto científico mensurável. Quando segura o ACTYVA durante a ativação, o seu campo torna-se parte do processo. Uma interação personalizada entre tecnologia e biologia que torna cada ativação exclusivamente sua.<br/><strong><br/>O ACTYVA organiza.<br/>O seu corpo personaliza.</strong></p>",
     "homepage:xahwdby83o9s": "ENGENHARIA BIOFOTÓNICA",
     "homepage:hpaqhzphsyoc": "Dê uma olhada no interior do actyva",
@@ -1388,12 +1388,22 @@
         "homepage"
       ],
       "ts": "2026-02-25T12:12:52.264Z"
+    },
+    {
+      "name": "Joao",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-02-25T12:13:55.626Z"
     }
   ],
   "__pending": {
     "pt-PT": {
       "homepage": [
-        "1ihtkvzoqbpyz"
+        "1ihtkvzoqbpyz",
+        "2q1nrwx8k4eg6",
+        "3ylaswdj80p"
       ]
     }
   }
