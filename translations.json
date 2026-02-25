@@ -526,16 +526,16 @@
     "rhythm-bundle-with-actyva:3t8d6ochpfp48": "Oferta de bundle",
     "rhythm-bundle-with-actyva:1ahgoli6gnk0x": "<p>Inclui 1 ACTYVA e 3 caixas de SHOTS, com 1 caixa efetivamente gratuita por meio de um desconto de bundle.</p>",
     "rhythm-bundle-with-actyva:a96qhswu6myt": "Também disponível como bundle sem ACTYVA.",
-    "rhythm-bundle-with-actyva:1mbvc4my16zcj": "Protocolo de Ritmo",
+    "rhythm-bundle-with-actyva:1mbvc4my16zcj": "RHYTHM PROTOCOL",
     "rhythm-bundle-with-actyva:2immsy7rcrjz": "DOMINE O SEU RITMO CIRCADIANO",
     "rhythm-bundle-with-actyva:26o8ythzugsae": "<p>RHYTHM SHOTS combina fórmulas nutricionais precisas com a tecnologia de ativação ACTYVA, projetada para apoiar o ritmo biológico natural do seu corpo ao longo do dia, auxiliando a manter a energia equilibrada, o humor e o sono reparador dentro de um sistema sincronizado de 24 horas.</p>",
-    "rhythm-bundle-with-actyva:1kpmerty21yeh": "REINICIAR",
+    "rhythm-bundle-with-actyva:1kpmerty21yeh": "RESTART",
     "rhythm-bundle-with-actyva:2l7glbi2rqmg0": "<ul><li>Apoia o metabolismo energético.</li><li>Ajudar a reduzir a fadiga.</li><li>Promover a clareza mental.</li><li>Melhorar a concentração.</li></ul>",
     "rhythm-bundle-with-actyva:ybx6ulupzt63": "Saiba mais",
-    "rhythm-bundle-with-actyva:2m9x48d5kxrm": "RECARREGAR",
+    "rhythm-bundle-with-actyva:2m9x48d5kxrm": "RECHARGE",
     "rhythm-bundle-with-actyva:1cua5t4zlsrwb": "<ul><li>Promova o equilíbrio emocional</li><li>Apoiar a resiliência ao stress</li><li>Manter o humor e o foco estáveis</li><li>Proporciona energia calma e constante</li></ul>",
     "rhythm-bundle-with-actyva:1z321rq0rma40": "Saiba mais",
-    "rhythm-bundle-with-actyva:3f1qivtpg7ekc": "REINICIAR",
+    "rhythm-bundle-with-actyva:3f1qivtpg7ekc": "RESET",
     "rhythm-bundle-with-actyva:getk8wjmprxx": "<ul><li>Apoiar o relaxamento</li><li>Contribuir para a qualidade do sono</li><li>Ajudar a regular o ritmo circadiano</li><li>Apoia a recuperação durante a noite</li></ul>",
     "rhythm-bundle-with-actyva:21ikgsqhje08u": "Saiba mais",
     "rhythm-bundle-with-actyva:3q74k00ruhd1c": "Uma nova era de suplementos",
@@ -970,6 +970,14 @@
         "product-bundle-reshape"
       ],
       "ts": "2026-02-25T14:05:42.752Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "rhythm-bundle-with-actyva"
+      ],
+      "ts": "2026-02-25T15:24:12.596Z"
     }
   ],
   "__pending": {},
