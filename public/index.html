@@ -206,14 +206,14 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
         </div>
         <span id="deeplUsageText" style="color:var(--text-muted);min-width:48px;">loading…</span>
       </div>
-      <button class="export-btn" style="background:var(--amber);" onclick="openDuplicatesPanel()">⧉ Duplicates</button>
+      <button class="export-btn" style="background:var(--amber);" onclick="openDuplicatesPanel()" data-admin-only="true">⧉ Duplicates</button>
       <button class="export-btn" style="background:#0891b2;" onclick="openSyncModal()" id="btnSync" data-admin-only="true">⟳ Sync Shopify</button>
       <button class="export-btn" style="background:#059669;" onclick="openActivityLog()" id="btnActivityLog" data-admin-only="true">📋 Activity</button>
       <button class="export-btn" style="background:#6d28d9;" onclick="openTranslateAllPagesModal()" id="btnTranslateAllPages" data-admin-only="true">✦ Translate All Pages</button>
       <button class="export-btn" style="background:var(--blue,#2563eb);" onclick="saveAllFields()" id="btnSave">↑ Save</button>
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="undoLastAction()" id="btnUndo" title="Undo last translation" disabled>↩ Undo</button>
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="confirmRevert()" id="btnRevert">↺ Revert</button>
-      <button class="export-btn" onclick="exportCsv()">↓ Export CSV</button>
+      <button class="export-btn" onclick="exportCsv()" data-admin-only="true">↓ Export CSV</button>
       <button class="logout-btn" onclick="logout()">Sign out</button>
     </div>
   </div>
@@ -381,6 +381,7 @@ const state = {
   currentPageId: null,
   translationsSha: null,
   translatorName: '',
+  pendingChanges: {},
   sessionSnapshot: null,
   deeplRemaining: null,
   dup_map: {},
@@ -436,6 +437,8 @@ async function loadSavedTranslations() {
     if (data.translations.__protected_terms) {
       state.protectedTerms = data.translations.__protected_terms;
     }
+    // Load pending changes indicator
+    state.pendingChanges = (data.translations.__pending || {})[state.lang] || {};
 
     // Merge saved translations into pages for current lang
     const saved = data.translations[state.lang] || {};
@@ -544,9 +547,11 @@ function buildSidebar() {
       const done = page.fields.filter(f => f.translated).length;
       const pct = total ? Math.round(done/total*100) : 0;
       const progClass = pct === 100 ? 'done' : pct > 0 ? 'partial' : '';
+      const hasPending = state.mode === 'admin' && state.pendingChanges[pid]?.length > 0;
       html += `<div class="nav-item" id="nav-${pid}" onclick="loadPageView('${pid}')">
         <span style="font-size:13px;">${page.label.split(' ').slice(0,1).join('')}</span>
         <span style="flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${page.label.replace(/^[^\s]+ /,'')}</span>
+        ${hasPending ? '<span style="font-weight:900;color:var(--amber);font-size:13px;margin-right:2px;" title="Changed by translator">!</span>' : ''}
         <span class="nav-progress ${progClass}">${pct===100?'✓':done+'/'+total}</span>
       </div>`;
     }
@@ -605,7 +610,8 @@ function loadPageView(pageId) {
         placeholder="Enter ${state.lang} translation…">`;
     }
 
-    return `<div class="field-card ${hasVal?'translated':''}" id="fc-${i}">
+    const isPending = state.mode === 'admin' && (state.pendingChanges[pageId] || []).includes(getStableKey(field));
+    return `<div class="field-card ${hasVal?'translated':''}" id="fc-${i}" style="${isPending ? 'border-color:var(--amber);' : ''}">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
         <div class="field-label" style="margin-bottom:0;flex:1;">${escHtml(field.label)}</div>
         ${state.mode==='admin'?`<button onclick="translateField('${pageId}',${i})" id="btn-${i}"
@@ -943,6 +949,29 @@ function updateGlobalProgress() {
 // EXPORT CSV
 // ============================================================
 function exportCsv() {
+  // Clear pending changes for this lang on export (admin approval)
+  if (state.mode === 'admin') {
+    fetch('https://cpx-api.joao-relego.workers.dev/translations', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'get' }),
+    }).then(r => r.json()).then(current => {
+      const allData = current.translations || {};
+      const sha = current.sha || state.translationsSha;
+      if (allData.__pending?.[state.lang]) {
+        delete allData.__pending[state.lang];
+        fetch('https://cpx-api.joao-relego.workers.dev/translations', {
+          method: 'POST', headers: {'Content-Type':'application/json'},
+          body: JSON.stringify({ action: 'save', translations: allData, sha }),
+        }).then(r => r.json()).then(saved => {
+          state.translationsSha = saved.sha;
+          state.pendingChanges = {};
+          buildSidebar();
+          if (state.currentPageId) loadPageView(state.currentPageId);
+        });
+      }
+    }).catch(e => console.error('Could not clear pending:', e));
+  }
+
   // Rebuild all original rows with translations merged in
   // We need the full original structure — reconstruct from page fields
   const rows = [];
@@ -1300,6 +1329,8 @@ function markSaved() {
     btn.style.background = 'var(--blue,#2563eb)';
     btn.textContent = '↑ Save';
   }
+  // Update revert snapshot to last save point
+  captureSessionSnapshot();
 }
 
 async function saveAllFields() {
@@ -1333,6 +1364,30 @@ async function saveAllFields() {
     // Merge into full translations file
     allTranslations[state.lang] = langData;
 
+    // Track pending changes per field (for ! indicator)
+    if (state.mode === 'translator' && changedPages.size > 0) {
+      if (!allTranslations.__pending) allTranslations.__pending = {};
+      if (!allTranslations.__pending[state.lang]) allTranslations.__pending[state.lang] = {};
+      for (const [pageId, page] of Object.entries(state.pages)) {
+        if (!changedPages.has(pageId)) continue;
+        const snapshot = state.sessionSnapshot[pageId] || [];
+        const changed = [];
+        for (let i = 0; i < page.fields.length; i++) {
+          const cur = page.fields[i].translated || '';
+          if (cur !== (snapshot[i] || '')) {
+            changed.push(getStableKey(page.fields[i]));
+          }
+        }
+        if (changed.length) {
+          if (!allTranslations.__pending[state.lang][pageId]) allTranslations.__pending[state.lang][pageId] = [];
+          // Merge new changed keys
+          const existing = new Set(allTranslations.__pending[state.lang][pageId]);
+          changed.forEach(k => existing.add(k));
+          allTranslations.__pending[state.lang][pageId] = [...existing];
+        }
+      }
+    }
+
     // Append activity log entry
     if (!allTranslations.__activity_log) allTranslations.__activity_log = [];
     if (changedPages.size > 0) {
@@ -1342,7 +1397,6 @@ async function saveAllFields() {
         pages: [...changedPages],
         ts: new Date().toISOString(),
       });
-      // Keep last 200 entries
       if (allTranslations.__activity_log.length > 200) {
         allTranslations.__activity_log = allTranslations.__activity_log.slice(-200);
       }
