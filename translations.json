@@ -1297,10 +1297,10 @@
     "product-reshape-shot:15106135261570_title": "REMODELAR IMAGENS",
     "product-reshape-shot:15106135261570_body_html": "<h4 data-start=\"199\" data-end=\"278\">Ative o seu metabolismo.</h4>\n<p data-start=\"353\" data-end=\"900\">O RESHAPE SHOT é o motor do seu protocolo de transformação. <meta charset=\"utf-8\">Esta fórmula precisa foi concebida para despertar a atividade metabólica e melhorar a eficiência natural do corpo na utilização de energia e no equilíbrio da composição corporal.<br><br><meta charset=\"utf-8\"><strong>Concebida para ser ativada pelo ACTYVA™</strong>, <meta charset=\"utf-8\">ajuda a otimizar as vias metabólicas e apoia o metabolismo das gorduras como parte de um estilo de vida ativo e focado na saúde.</p>",
     "product-reshape-shot:15106135261570_handle": "remodelação de imagens",
-    "product-recharge-shot:15106135294338_title": "RECARREGAR TIROS",
+    "product-recharge-shot:15106135294338_title": "RECHARGE SHOTS",
     "product-recharge-shot:15106135294338_body_html": "<h4 data-start=\"177\" data-end=\"249\">\n<meta charset=\"utf-8\">Ative o seu humor e a sua mente.</h4>\n<p data-start=\"2764\" data-end=\"2962\">RECHARGE é a sua base diária para um bem-estar sustentável. Esta fórmula abrangente atua no apoio ao equilíbrio sistémico e no aumento da resiliência celular, <meta charset=\"utf-8\">ajudando o seu corpo e mente a manter o máximo desempenho ao longo do dia.</p>\n<p data-end=\"742\" data-start=\"570\"><meta charset=\"utf-8\"><strong>Concebido para ser ativado pelo ACTYVA™</strong>, <meta charset=\"utf-8\">combina adaptógenos, nootrópicos e cofatores metabólicos essenciais que auxiliam o corpo a recuperar-se do stress diário e da fadiga cognitiva — promovendo relaxamento, equilíbrio emocional e renovação celular.</p>",
-    "product-recharge-shot:15106135294338_handle": "recarga de disparos",
-    "product-restart-shot:15106135425410_title": "REINICIAR TIROS",
+    "product-recharge-shot:15106135294338_handle": "shots-recharge",
+    "product-restart-shot:15106135425410_title": "RESTART SHOTS",
     "product-restart-shot:15106135425410_body_html": "<h4 data-start=\"182\" data-end=\"247\">\n<meta charset=\"utf-8\"> <meta charset=\"utf-8\">Ative o seu sistema matinal.</h4>\n<p data-start=\"182\" data-end=\"247\">RESTART é o seu protocolo de ignição diário. Este SHOT de engenharia de precisão atua a nível celular para <meta charset=\"utf-8\">apoiar o metabolismo energético natural, a concentração e a vitalidade celular — ajudando-o a começar o dia sentindo-se centrado, alerta e pronto para o desempenho.</p>\n<p><meta charset=\"utf-8\"><strong>Concebido para ser ativado pelo ACTYVA™. </strong>Esta fórmula líquida combina aminoácidos, adaptogénicos e nutrientes essenciais que atuam em sinergia para promover a resiliência física e mental, apoiar o metabolismo energético do corpo e ajudar a reduzir o cansaço e a fadiga.</p>",
     "product-restart-shot:15106135425410_handle": "tiros-reinício",
     "product-reset-shot:15106135589250_title": "REINICIAR TIROS",
@@ -1478,6 +1478,15 @@
         "homepage"
       ],
       "ts": "2026-02-25T13:56:08.895Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "product-recharge-shot",
+        "product-restart-shot"
+      ],
+      "ts": "2026-02-25T13:57:41.564Z"
     }
   ],
   "__pending": {},
