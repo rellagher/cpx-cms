@@ -618,12 +618,23 @@ function loadPageView(pageId) {
 // ============================================================
 // DEEPL
 // ============================================================
-function applyProtectedTerms(text) {
-  // Wrap protected terms in <keep> tags so DeepL doesn't translate them
+function applyProtectedTermsHtml(text) {
+  // For HTML fields: use translate="no" span — works with tag_handling=html
   let result = text;
   const terms = (state.protectedTerms || []).slice().sort((a,b) => b.length - a.length);
   for (const term of terms) {
-    // Case-sensitive, whole word match
+    const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp('(?<![a-zA-Z>])' + escaped + '(?![a-zA-Z<])', 'g');
+    result = result.replace(regex, `<span translate="no">${term}</span>`);
+  }
+  return result;
+}
+
+function applyProtectedTermsXml(text) {
+  // For plain text fields: use <keep> tags — works with tag_handling=xml
+  let result = text;
+  const terms = (state.protectedTerms || []).slice().sort((a,b) => b.length - a.length);
+  for (const term of terms) {
     const escaped = term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const regex = new RegExp('(?<![a-zA-Z])' + escaped + '(?![a-zA-Z])', 'g');
     result = result.replace(regex, `<keep>${term}</keep>`);
@@ -635,13 +646,28 @@ function removeKeepTags(text) {
   return text.replace(/<keep>(.*?)<\/keep>/g, '$1');
 }
 
+function removeTranslateNoSpans(text) {
+  return text.replace(/<span translate="no">(.*?)<\/span>/g, '$1');
+}
+
 async function callDeepL(texts, isHtml) {
   const langMap = {de:'DE','pt-PT':'PT-PT',pl:'PL',fr:'FR',es:'ES',it:'IT',nl:'NL'};
   const target = langMap[state.lang] || state.lang.toUpperCase();
 
-  // Wrap protected terms — always use xml tag_handling to support <keep> tags
-  const protectedTexts = texts.map(t => applyProtectedTerms(t));
-  const hasProtected = protectedTexts.some(t => t.includes('<keep>'));
+  let protectedTexts, tagHandling, ignoreTags;
+
+  if (isHtml) {
+    // HTML fields: preserve structure with html mode, protect terms with translate="no"
+    protectedTexts = texts.map(t => applyProtectedTermsHtml(t));
+    tagHandling = 'html';
+    ignoreTags = undefined;
+  } else {
+    // Plain text: use xml mode with <keep> tags
+    protectedTexts = texts.map(t => applyProtectedTermsXml(t));
+    const hasProtected = protectedTexts.some(t => t.includes('<keep>'));
+    tagHandling = hasProtected ? 'xml' : undefined;
+    ignoreTags = hasProtected ? 'keep' : undefined;
+  }
 
   const resp = await fetch('https://cpx-api.joao-relego.workers.dev/deepl', {
     method: 'POST',
@@ -650,16 +676,19 @@ async function callDeepL(texts, isHtml) {
       texts: protectedTexts,
       target_lang: target,
       source_lang: 'EN',
-      tag_handling: (isHtml || hasProtected) ? 'xml' : undefined,
-      ignore_tags: hasProtected ? 'keep' : undefined,
+      tag_handling: tagHandling,
+      ignore_tags: ignoreTags,
     }),
   });
 
   if (!resp.ok) throw new Error('DeepL API error: ' + resp.status);
   const data = await resp.json();
   if (data.error) throw new Error(data.error);
-  // Remove keep tags from result
-  return data.translations.map(t => removeKeepTags(t.text));
+
+  return data.translations.map(t => {
+    const text = t.text;
+    return isHtml ? removeTranslateNoSpans(text) : removeKeepTags(text);
+  });
 }
 
 async function translateField(pageId, idx) {
