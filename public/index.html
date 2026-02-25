@@ -542,6 +542,8 @@ function buildSidebar() {
 
     html += `<div class="sidebar-group">${group.group}</div>`;
     for (const pid of validPages) {
+      // Hide metafields and system pages from translators
+      if (state.mode !== 'admin' && ['metafields','shop-settings','other','product-options','cookie-banner','password-page'].includes(pid)) continue;
       const page = state.pages[pid];
       const total = page.fields.length;
       const done = page.fields.filter(f => f.translated).length;
