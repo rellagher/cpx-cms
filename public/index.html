@@ -188,7 +188,7 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
     </div>
     <div class="top-right">
       <div class="mode-badge" id="modeBadge"><span class="mode-dot"></span><span id="modeBadgeText">Admin</span></div>
-      <button id="btnProtectedTerms" onclick="openProtectedTermsModal()" style="background:none;border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:700;cursor:pointer;color:var(--text-muted);" title="Protected terms — words that won't be translated">🔒 Terms</button>
+      <button id="btnProtectedTerms" data-admin-only="true" onclick="openProtectedTermsModal()" style="background:none;border:1px solid var(--border);border-radius:6px;padding:4px 10px;font-size:11px;font-weight:700;cursor:pointer;color:var(--text-muted);" title="Protected terms — words that won't be translated">🔒 Terms</button>
       <div style="position:relative;" id="langSelectorWrap">
         <div class="lang-badge" id="langBadge" onclick="toggleLangSelector()" style="cursor:pointer;user-select:none;">🇩🇪 DE ▾</div>
         <div id="langDropdown" style="display:none;position:absolute;top:calc(100% + 6px);right:0;background:var(--bg-2);border:1px solid var(--border);border-radius:10px;box-shadow:var(--shadow-lg);min-width:180px;z-index:200;overflow:hidden;padding:4px;">
@@ -198,7 +198,7 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
         <div class="progress-bar-track"><div class="progress-bar-fill" id="globalProgressFill" style="width:0%"></div></div>
         <div class="progress-pct" id="globalProgressPct">0%</div>
       </div>
-      <div id="deeplUsageWrap" style="display:flex;align-items:center;gap:6px;padding:4px 12px;background:var(--bg-3);border:1px solid var(--border);border-radius:20px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;" onclick="refreshDeeplUsage()" title="Click to refresh">
+      <div id="deeplUsageWrap" data-admin-only="true" style="display:flex;align-items:center;gap:6px;padding:4px 12px;background:var(--bg-3);border:1px solid var(--border);border-radius:20px;font-size:11px;font-weight:700;cursor:pointer;white-space:nowrap;" onclick="refreshDeeplUsage()" title="Click to refresh">
         <span style="color:var(--text-dim);">DeepL</span>
         <div style="width:60px;height:4px;background:var(--bg-4);border-radius:2px;overflow:hidden;flex-shrink:0;">
           <div id="deeplUsageFill" style="height:100%;width:0%;border-radius:2px;background:var(--green);transition:width 0.4s;"></div>
@@ -206,8 +206,8 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
         <span id="deeplUsageText" style="color:var(--text-muted);min-width:48px;">loading…</span>
       </div>
       <button class="export-btn" style="background:var(--amber);" onclick="openDuplicatesPanel()">⧉ Duplicates</button>
-      <button class="export-btn" style="background:#0891b2;" onclick="openSyncModal()" id="btnSync">⟳ Sync Shopify</button>
-      <button class="export-btn" style="background:#6d28d9;" onclick="openTranslateAllPagesModal()" id="btnTranslateAllPages">✦ Translate All Pages</button>
+      <button class="export-btn" style="background:#0891b2;" onclick="openSyncModal()" id="btnSync" data-admin-only="true">⟳ Sync Shopify</button>
+      <button class="export-btn" style="background:#6d28d9;" onclick="openTranslateAllPagesModal()" id="btnTranslateAllPages" data-admin-only="true">✦ Translate All Pages</button>
       <button class="export-btn" style="background:var(--blue,#2563eb);" onclick="saveAllFields()" id="btnSave">↑ Save</button>
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="undoLastAction()" id="btnUndo" title="Undo last translation" disabled>↩ Undo</button>
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="confirmRevert()" id="btnRevert">↺ Revert</button>
@@ -483,6 +483,11 @@ function doLogin() {
   // Init lang selector
   initLangSelector();
 
+  // Show/hide admin-only elements
+  document.querySelectorAll('[data-admin-only]').forEach(el => {
+    el.style.display = state.mode === 'admin' ? '' : 'none';
+  });
+
   // Load translations first, then build UI
   loadSavedTranslations().then(() => {
     buildSidebar();
@@ -581,10 +586,10 @@ function loadPageView(pageId) {
     return `<div class="field-card ${hasVal?'translated':''}" id="fc-${i}">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
         <div class="field-label" style="margin-bottom:0;flex:1;">${escHtml(field.label)}</div>
-        <button onclick="translateField('${pageId}',${i})" id="btn-${i}"
+        ${state.mode==='admin'?`<button onclick="translateField('${pageId}',${i})" id="btn-${i}"
           style="padding:3px 10px;background:var(--bg-3);border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.5px;cursor:pointer;color:var(--text-muted);white-space:nowrap;">
           ✦ DeepL
-        </button>
+        </button>`:''}
       </div>
       <div class="field-original">${escHtml(displayOriginal)}</div>
       ${inputEl}
@@ -603,10 +608,10 @@ function loadPageView(pageId) {
               <a href="${escAttr(page.url)}" target="_blank" class="page-link">View live page ↗</a>
             </div>
           </div>
-          <button onclick="translateAllFields('${pageId}')" id="btnTranslateAll"
+          ${state.mode==='admin'?`<button onclick="translateAllFields('${pageId}')" id="btnTranslateAll"
             style="padding:8px 16px;background:#0F2B46;color:white;border:none;border-radius:8px;font-family:'Mulish',sans-serif;font-weight:700;font-size:11px;letter-spacing:1px;cursor:pointer;white-space:nowrap;flex-shrink:0;">
             ✦ Translate all with DeepL
-          </button>
+          </button>`:''}
         </div>
       </div>
       <div style="height:6px;background:var(--bg-4);border-radius:3px;overflow:hidden;margin:16px 0 20px;">
