@@ -202,7 +202,7 @@
     "page-699013988738:699013988738_title": "Questionário",
     "page-699013988738:699013988738_handle": "questionário",
     "theme-cart_free_shipping_threshold:182378103170_general.cart_free_shipping_threshold": "500",
-    "homepage:1ihtkvzoqbpyz": "Inicia-se uma nova era na suplementação.",
+    "homepage:1ihtkvzoqbpyz": "Uma nova era na suplementação.",
     "homepage:1yk957l3dpvrt": "<p>Mesmo os ingredientes mais avançados dependem da forma como o corpo os recebe. ACTYVA é um dispositivo biofotónico inovador que ativa os nossos suplementos a nível molecular, concebido para proporcionar resultados que pode realmente sentir.</p>",
     "homepage:2v2y0y0bzuehd": "Como funciona",
     "homepage:z3fp2npl7mm4": "Loja ACTYVA",
@@ -1462,6 +1462,14 @@
         "product-options"
       ],
       "ts": "2026-02-25T12:37:04.028Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-02-25T12:38:30.369Z"
     }
   ],
   "__pending": {
