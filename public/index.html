@@ -1024,6 +1024,8 @@ function exportCsv() {
 
   const lines = [headers.map(esc).join(',')];
   for (const r of rows) {
+    // Skip rows with no translation — Shopify keeps its automatic translations for those
+    if (!r.translated || !r.translated.trim()) continue;
     lines.push([r.type,r.id,r.field,r.locale,r.market,r.status,r.default,r.translated].map(esc).join(','));
   }
 
