@@ -428,16 +428,16 @@
     "gummies-reshape-control:k03so7h3tncz": "Você também pode gostar",
     "bundle-reshape:1fzjhrkim7giw": "<h2>Bundle <strong>RESHAPE</strong></h2>",
     "bundle-reshape:14jw03tmafepq": "Também disponível como bundle com ACTYVA",
-    "bundle-reshape:2eq0yb7k39naf": "REMODELAR PROTOCOLO",
+    "bundle-reshape:2eq0yb7k39naf": "RESHAPE PROTOCOL",
     "bundle-reshape:32usa09ifwwtn": "REMODELAÇÃO CORPORAL INTELIGENTE",
     "bundle-reshape:1gcwfxoftpwbm": "<p>O Protocolo RESHAPE combina suporte metabólico de precisão aprimorado pela tecnologia ACTYVA com equilíbrio nutricional diário direcionado. Ao integrar o RESHAPE SHOT com duas gomas especializadas, ele cria um sistema sincronizado projetado para apoiar o progresso consistente e sustentável em direção aos seus objetivos corporais.</p>",
-    "bundle-reshape:39xnungzgtogs": "REMODELAR IMAGENS",
+    "bundle-reshape:39xnungzgtogs": "RESHAPE SHOTS",
     "bundle-reshape:1i5joqhdtt5g5": "<ul><li>Ative a eficiência metabólica</li><li>Apoie os processos naturais de queima de gordura</li><li>Promova a utilização diária de energia</li><li>Apoiar os objetivos de composição corporal</li></ul>",
     "bundle-reshape:333nyvrpdnzq6": "Saiba mais",
-    "bundle-reshape:1jj7innbzl74h": "REMODELAR O EQUILÍBRIO",
+    "bundle-reshape:1jj7innbzl74h": "RESHAPE BALANCE",
     "bundle-reshape:1zjgw3hr4a5qw": "<ul><li>Ajudar a reduzir os desejos relacionados com o stress ou emocionais</li><li>Apoie o equilíbrio emocional e a estabilidade do humor</li><li>Promova a motivação e a consistência comportamental</li><li>Apoie hábitos alimentares conscientes</li></ul>",
     "bundle-reshape:3gpitj306tvgz": "Saiba mais",
-    "bundle-reshape:31v3s7m9bm0mm": "REMODELAR O CONTROLO",
+    "bundle-reshape:31v3s7m9bm0mm": "RESHAPE CONTROL",
     "bundle-reshape:2m825w95o79pj": "<ul><li>Apoie o controlo do apetite e a saciedade</li><li>Contribuir para níveis equilibrados de glicose no sangue</li><li>Ajudar a manter níveis de energia diários estáveis</li><li>Apoia o equilíbrio metabólico ao longo do dia</li></ul>",
     "bundle-reshape:kddk2a56nq7g": "Saiba mais",
     "bundle-reshape:3q9vhrtwb2lix": "Uma nova era de suplementos",
@@ -986,6 +986,14 @@
         "bundle-reshape-actyva"
       ],
       "ts": "2026-02-25T15:26:07.371Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "bundle-reshape"
+      ],
+      "ts": "2026-02-25T15:26:49.589Z"
     }
   ],
   "__pending": {},
