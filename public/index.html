@@ -779,6 +779,16 @@ async function translateField(pageId, idx) {
   try {
     // Push current value to undo stack before translating
     pushUndo(pageId, idx, field.translated || '', `${field.label} (${page.label.replace(/^[^\s]+ /,'')})`);
+    // Skip DeepL if the entire field is a protected term
+    if (isFullyProtected(field.default)) {
+      const input = document.getElementById('fi-' + idx);
+      if (input) { input.value = field.default; input.classList.add('has-value'); }
+      updateField(pageId, idx, field.default);
+      await saveField(pageId, idx, field.default);
+      if (btn) btn.textContent = '✓';
+      setTimeout(() => { if (btn) { btn.textContent = '✦ DeepL'; btn.disabled = false; } }, 1500);
+      return;
+    }
     const [translated] = await callDeepL([field.default], field.is_html);
     if (field.is_html) {
       setRteContent(idx, translated);
@@ -873,7 +883,8 @@ async function runDeeplTranslation(pageId, mode) {
 
       for (let j = 0; j < batch.length; j++) {
         const {idx, field} = batch[j];
-        const val = translations[j];
+        // Use original text if fully protected
+        const val = isFullyProtected(field.default) ? field.default : translations[j];
         // Push to undo before applying
         pushUndo(pageId, idx, field.translated || '', `${field.label} (batch)`);
         if (field.is_html) {
@@ -2002,6 +2013,15 @@ function getStableKey(field) {
   const fieldStr = field.field || '';
   if (fieldStr.includes(':')) return fieldStr.split(':').pop();
   return `${field.shopify_id}_${fieldStr}`;
+}
+
+
+function isFullyProtected(text) {
+  // Returns true if the entire text (trimmed) is a protected term
+  const trimmed = text.trim();
+  return (state.protectedTerms || []).some(term =>
+    trimmed.toLowerCase() === term.toLowerCase()
+  );
 }
 
 
