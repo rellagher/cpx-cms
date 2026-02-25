@@ -209,6 +209,7 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
       <button class="export-btn" style="background:#0891b2;" onclick="openSyncModal()" id="btnSync">⟳ Sync Shopify</button>
       <button class="export-btn" style="background:#6d28d9;" onclick="openTranslateAllPagesModal()" id="btnTranslateAllPages">✦ Translate All Pages</button>
       <button class="export-btn" style="background:var(--blue,#2563eb);" onclick="saveAllFields()" id="btnSave">↑ Save</button>
+      <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="undoLastAction()" id="btnUndo" title="Undo last translation" disabled>↩ Undo</button>
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="confirmRevert()" id="btnRevert">↺ Revert</button>
       <button class="export-btn" onclick="exportCsv()">↓ Export CSV</button>
       <button class="logout-btn" onclick="logout()">Sign out</button>
@@ -739,6 +740,8 @@ async function translateField(pageId, idx) {
   if (btn) { btn.textContent = '…'; btn.disabled = true; }
 
   try {
+    // Push current value to undo stack before translating
+    pushUndo(pageId, idx, field.translated || '', `${field.label} (${page.label.replace(/^[^\s]+ /,'')})`);
     const [translated] = await callDeepL([field.default], field.is_html);
     if (field.is_html) {
       setRteContent(idx, translated);
@@ -832,9 +835,11 @@ async function runDeeplTranslation(pageId, mode) {
       const translations = await callDeepL(texts, hasHtml);
 
       for (let j = 0; j < batch.length; j++) {
-        const {idx} = batch[j];
+        const {idx, field} = batch[j];
         const val = translations[j];
-        if (batch[j].field.is_html) {
+        // Push to undo before applying
+        pushUndo(pageId, idx, field.translated || '', `${field.label} (batch)`);
+        if (field.is_html) {
           setRteContent(idx, val);
         } else {
           const input = document.getElementById('fi-' + idx);
@@ -1250,6 +1255,14 @@ function markUnsaved() {
     }
   }
 }
+
+window.addEventListener('beforeunload', (e) => {
+  if (_unsavedChanges) {
+    e.preventDefault();
+    e.returnValue = 'You have unsaved translations. Save before leaving?';
+    return e.returnValue;
+  }
+});
 
 function markSaved() {
   _unsavedChanges = false;
@@ -1758,6 +1771,67 @@ async function saveProtectedTerms() {
   } catch(e) {
     showToast('Error saving: ' + e.message);
   }
+}
+
+
+// ============================================================
+// UNDO STACK
+// ============================================================
+const _undoStack = []; // [{pageId, idx, previousValue, label}]
+const MAX_UNDO = 50;
+
+function pushUndo(pageId, idx, previousValue, label) {
+  _undoStack.push({ pageId, idx, previousValue, label });
+  if (_undoStack.length > MAX_UNDO) _undoStack.shift();
+  updateUndoBtn();
+}
+
+function updateUndoBtn() {
+  const btn = document.getElementById('btnUndo');
+  if (!btn) return;
+  if (_undoStack.length) {
+    btn.disabled = false;
+    btn.style.opacity = '1';
+    const last = _undoStack[_undoStack.length - 1];
+    btn.title = `Undo: ${last.label}`;
+  } else {
+    btn.disabled = true;
+    btn.style.opacity = '0.4';
+    btn.title = 'Nothing to undo';
+  }
+}
+
+function undoLastAction() {
+  if (!_undoStack.length) return;
+  const { pageId, idx, previousValue, label } = _undoStack.pop();
+  
+  const page = state.pages[pageId];
+  const field = page?.fields[idx];
+  if (!field) { updateUndoBtn(); return; }
+
+  field.translated = previousValue;
+  markUnsaved();
+  updateUndoBtn();
+
+  // Update UI if this page is open
+  if (state.currentPageId === pageId) {
+    const input = document.getElementById('fi-' + idx);
+    if (input) {
+      if (field.is_html) {
+        setRteContent(idx, previousValue);
+      } else {
+        input.value = previousValue;
+        input.classList.toggle('has-value', !!previousValue);
+      }
+      updateField(pageId, idx, previousValue);
+    }
+  } else {
+    updateField(pageId, idx, previousValue);
+  }
+
+  buildSidebar();
+  updateGlobalProgress();
+  showToast(`↩ Undone: ${label}`);
 }
 
 
