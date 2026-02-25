@@ -898,7 +898,7 @@
     "product-refocus:15106127856002_body_html": "<h4 data-end=\"305\" data-start=\"208\">\nAprimore a sua capacidade cognitiva.<strong data-end=\"303\" data-start=\"208\"></strong>\n</h4>\n<p data-end=\"305\" data-start=\"208\"><meta charset=\"utf-8\">REFOCUS é uma fórmula <meta charset=\"utf-8\">fórmula orientada para o desempenho, criada para melhorar a concentração, a clareza mental e a energia sustentada, ajudando-o a manter-se atento, centrado e a ter o melhor desempenho possível.<meta charset=\"utf-8\"></p>\n<p data-end=\"604\" data-start=\"385\"><meta charset=\"utf-8\">Ao combinar nootrópicos direcionados, <meta charset=\"utf-8\">adaptógenos e nutrientes bioativos, promove um estado de alerta calmo e concentração sustentada, apoiando o desempenho cognitivo, a resiliência mental e a energia constante ao longo do dia.<meta charset=\"utf-8\"></p>",
     "product-remethyl:15106128806274_title": "REMETHYL",
     "product-remethyl:15106128806274_body_html": "<h4>Descubra a ciência do equilíbrio interior.</h4>\n<p>REMETHYL é uma fórmula de última geração que apoia o sistema de renovação natural do seu corpo - a metilação - o processo que mantém as suas células, energia e mente em sincronia.</p>\n<p>Esta mistura inteligente de nutrientes bioativos ajuda a manter os níveis de homocisteína equilibrados, promovendo a vitalidade celular, energia sustentada e foco mental claro todos os dias.<br></p>",
-    "product-reshape-shot:15106135261570_title": "REMODELAR IMAGENS",
+    "product-reshape-shot:15106135261570_title": "RESHAPE SHOTS",
     "product-reshape-shot:15106135261570_body_html": "<h4 data-start=\"199\" data-end=\"278\">Ative o seu metabolismo.</h4>\n<p data-start=\"353\" data-end=\"900\">O RESHAPE SHOT é o motor do seu protocolo de transformação. <meta charset=\"utf-8\">Esta fórmula precisa foi concebida para despertar a atividade metabólica e melhorar a eficiência natural do corpo na utilização de energia e no equilíbrio da composição corporal.<br><br><meta charset=\"utf-8\"><strong>Concebida para ser ativada pelo ACTYVA™</strong>, <meta charset=\"utf-8\">ajuda a otimizar as vias metabólicas e apoia o metabolismo das gorduras como parte de um estilo de vida ativo e focado na saúde.</p>",
     "product-recharge-shot:15106135294338_title": "RECHARGE SHOTS",
     "product-recharge-shot:15106135294338_body_html": "<h4 data-start=\"177\" data-end=\"249\">\n<meta charset=\"utf-8\">Ative o seu humor e a sua mente.</h4>\n<p data-start=\"2764\" data-end=\"2962\">RECHARGE é a sua base diária para um bem-estar sustentável. Esta fórmula abrangente atua no apoio ao equilíbrio sistémico e no aumento da resiliência celular, <meta charset=\"utf-8\">ajudando o seu corpo e mente a manter o máximo desempenho ao longo do dia.</p>\n<p data-end=\"742\" data-start=\"570\"><meta charset=\"utf-8\"><strong>Concebido para ser ativado pelo ACTYVA™</strong>, <meta charset=\"utf-8\">combina adaptógenos, nootrópicos e cofatores metabólicos essenciais que auxiliam o corpo a recuperar-se do stress diário e da fadiga cognitiva — promovendo relaxamento, equilíbrio emocional e renovação celular.</p>",
@@ -1144,6 +1144,14 @@
         "product-remethyl"
       ],
       "ts": "2026-02-25T15:30:32.298Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "product-reshape-shot"
+      ],
+      "ts": "2026-02-25T15:55:08.202Z"
     }
   ],
   "__pending": {},
