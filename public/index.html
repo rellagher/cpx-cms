@@ -958,8 +958,10 @@ function updateGlobalProgress() {
     done += page.fields.filter(f => f.translated).length;
   }
   const pct = total ? Math.round(done/total*100) : 0;
-  document.getElementById('globalProgressFill').style.width = pct + '%';
-  document.getElementById('globalProgressPct').textContent = pct + '%';
+  const fill = document.getElementById('globalProgressFill');
+  const pct_el = document.getElementById('globalProgressPct');
+  if (fill) fill.style.width = pct + '%';
+  if (pct_el) pct_el.textContent = pct + '%';
 }
 
 // ============================================================
