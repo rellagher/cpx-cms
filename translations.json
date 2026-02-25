@@ -140,6 +140,21 @@
     "about:10w1ar9ojosba": "<p>Utilize este texto para partilhar informações sobre a sua marca com os seus clientes. Descreva um produto, partilhe anúncios ou dê as boas-vindas aos clientes à sua loja.</p>",
     "for-business:693650129282_title": "Para empresas",
     "for-business:693650129282_body_html": "<p>Os nossos produtos B2B</p>",
+    "for-business:3eqwop9vo60y2": "Promova o bem-estar como uma vantagem corporativa.",
+    "for-business:168e6k54kqvme": "Soluções B2B",
+    "for-business:1twuqxc5x7zay": "Seja pioneiro no futuro do bem-estar",
+    "for-business:1o3ete4rzc4ko": "Soluções personalizadas para organizações ambiciosas.",
+    "for-business:db90gtci2t52": "<p>Entre em contacto com a nossa equipa dedicada a parcerias. Estamos prontos para criar uma proposta personalizada, adaptada às necessidades da sua organização, explorando como a integração das nossas tecnologias avançadas e comprovadas cientificamente pode se tornar uma vantagem estratégica para o seu negócio.</p><p>Vamos discutir oportunidades de preços por atacado e programas de parceria personalizados, projetados para organizações comprometidas com a excelência. Ao estabelecer uma parceria com a CellPowerX, poderá oferecer aos seus clientes resultados incomparáveis, diferenciando significativamente a sua clínica como líder no setor.</p>",
+    "for-business:flwvxnbdgt6n": "Entre em contacto",
+    "for-business:1knqehm2xl86l": "RESHAPE PROTOCOL",
+    "for-business:1027sh5b3yo2s": "<h6>Ofereça o futuro da remodelação corporal inteligente.</h6><p>Vá além dos tratamentos convencionais e ofereça aos seus clientes um protocolo verdadeiramente integrado e baseado na ciência para a transformação corporal. O Protocolo RESHAPE da CellPowerX é uma solução abrangente e pronta a usar que combina tecnologia externa não invasiva com ciência nutricional interna bioativada, criando resultados sinérgicos sem paralelo.</p>",
+    "for-business:tc78vtkq8b73": "Entre em contacto conosco",
+    "for-business:1hd0kjcfw2l33": "CELLPOWER SLM WAVE",
+    "for-business:2gqx7i8strfue": "<p>Ofereça aos seus clientes uma experiência inovadora e não invasiva com o SLM WAVE™. Este dispositivo utiliza frequências específicas de luz de 532 nm para proporcionar estimulação energética, apoiando a harmonização natural do corpo e melhorando a aparência estética da silhueta. É uma adição premium e indolor a qualquer menu de serviços de bem-estar ou estética de alta qualidade.</p>",
+    "for-business:2bbttzimjtrr1": "Entre em contacto conosco",
+    "for-business:1m4vd8ik4lkn0": "CELLPOWER AIR",
+    "for-business:2tu49vcpl7m5x": "<p>Apresente a inalação de hidrogénio molecular com referência científica com o CellPower AIR™. Este ventilador avançado proporciona uma experiência de bem-estar poderosa, aproveitando as propriedades antioxidantes seletivas do hidrogénio para apoiar a saúde metabólica e a vitalidade celular de dentro para fora.<br/><br/>Produzido em lotes limitados e exclusivos para garantir a mais alta qualidade, o CellPower AIR™ está disponível apenas periodicamente.</p><p>Inscreva-se na lista de espera abaixo para ser notificado quando o próximo lançamento estiver disponível.</p>",
+    "for-business:15rlpq0ronh1a": "Entre em contacto conosco",
     "homepage:1ihtkvzoqbpyz": "Uma nova era na suplementação.",
     "homepage:1yk957l3dpvrt": "<p>Mesmo os ingredientes mais avançados dependem da forma como o corpo os recebe. ACTYVA é um dispositivo biofotónico inovador que ativa os nossos suplementos a nível molecular, concebido para proporcionar resultados que pode realmente sentir.</p>",
     "homepage:2v2y0y0bzuehd": "Como funciona",
@@ -1102,6 +1117,14 @@
         "our-science"
       ],
       "ts": "2026-02-25T15:28:55.400Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "for-business"
+      ],
+      "ts": "2026-02-25T15:29:33.971Z"
     }
   ],
   "__pending": {},
