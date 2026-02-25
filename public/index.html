@@ -437,6 +437,11 @@ async function loadSavedTranslations() {
     // Load pending changes indicator
     state.pendingChanges = (data.translations.__pending || {})[state.lang] || {};
 
+    // Clear all translations first, then apply for current lang
+    for (const page of Object.values(state.pages)) {
+      for (const field of page.fields) field.translated = '';
+    }
+
     // Merge saved translations into pages for current lang
     const saved = data.translations[state.lang] || {};
     for (const [pageId, page] of Object.entries(state.pages)) {
