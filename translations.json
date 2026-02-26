@@ -1218,12 +1218,23 @@
         "for-business"
       ],
       "ts": "2026-02-26T11:52:36.441Z"
+    },
+    {
+      "name": "jo",
+      "lang": "de",
+      "pages": [
+        "header"
+      ],
+      "ts": "2026-02-26T17:07:21.157Z"
     }
   ],
   "__pending": {
     "de": {
       "homepage": [
         "1ihtkvzoqbpyz"
+      ],
+      "header": [
+        "6o4qs55m2bp6"
       ]
     }
   },
@@ -2103,7 +2114,7 @@
     "footer:3gq07l0r5w68h": "Entdecken",
     "footer:3hca0r9ywms7n": "Support und Kontakte",
     "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Rückerstattungsrichtlinie</a></p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Beschwerdebuch</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Kontakt</a></p>",
-    "header:6o4qs55m2bp6": "Kostenloser Versand bei Bestellungen über 500€",
+    "header:6o4qs55m2bp6": "Kostenloser Versand bei Bestellungen über 500",
     "popups:2d8bsokshoeu1": "Bitte melden Sie sich für unseren Newsletter an.",
     "popups:331955xorr1pp": "Abonnieren",
     "popups:11svs1tdhiukg": "Bitte beschreiben Sie, was Ihre Kunden erhalten, wenn sie Ihren Newsletter abonnieren.",
