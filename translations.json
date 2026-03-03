@@ -1346,6 +1346,14 @@
         "homepage"
       ],
       "ts": "2026-03-03T13:31:46.012Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-03T13:34:48.963Z"
     }
   ],
   "__pending": {
@@ -1378,7 +1386,10 @@
         "ft09zpfc9dh2",
         "37rt5o8vdpiry",
         "36eqgs6z2wr88",
-        "ct5eqogekkhz"
+        "ct5eqogekkhz",
+        "mcrjtanot0si",
+        "2q8hspsj3nykp",
+        "hzg50hj6cypu"
       ],
       "header": [
         "6o4qs55m2bp6"
@@ -1586,11 +1597,11 @@
     "homepage:3une211edl4gj": "Weitere Informationen",
     "homepage:ct5eqogekkhz": "AUSGEWÄHLTE SYSTEME. HÖHERER MEHRWERT.",
     "homepage:3f6kdwiokrlsb": "UNSERE PAKETE",
-    "homepage:mcrjtanot0si": "<p><br/>Entdecken Sie unsere sorgfältig zusammengestellten Systeme. Jedes bundle ist auf synergistische Ergebnisse und einen hohen Mehrwert ausgelegt. Der intelligenteste Weg, Ihre Wellness-Routine aufzubauen.</p>",
-    "homepage:2q8hspsj3nykp": "Geschäft",
+    "homepage:mcrjtanot0si": "<p><br/>Entdecken Sie unsere sorgfältig zusammengestellten Systeme. Jedes Paket ist auf synergistische Ergebnisse und einen höheren Mehrwert ausgelegt. Der intelligenteste Weg um Ihre eigene Wellness-Routine aufzubauen.</p>",
+    "homepage:2q8hspsj3nykp": "Shop",
     "homepage:26yu44vxtgy87": "DIE WISSENSCHAFT",
     "homepage:128lyf7zgtksr": "Unterstützt von Experten",
-    "homepage:hzg50hj6cypu": "<p>Wir arbeiten mit einem multidisziplinären Expertengremium zusammen, das neue Forschungsergebnisse in sinnvolle Produktverbesserungen umsetzt.</p>",
+    "homepage:hzg50hj6cypu": "<p>Wir arbeiten mit einem multidisziplinären Expertenteam zusammen, das neue Forschungsergebnisse in sinnvolle Produktverbesserungen umsetzt.</p>",
     "homepage:2whk28stmt2rt": "Weitere Informationen erhalten",
     "homepage:qpfp28m0wpqu": "Herr Professor Pedro Vaz, PhD, FRSC",
     "homepage:20g4x9v6wrbxb": "<p>Leitender Forscher, Champalimaud-Stiftung (Abteilung für Lungenkrebs)</p>",
