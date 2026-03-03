@@ -183,7 +183,7 @@
     "homepage:2pdvubq7hq5z6": "<p>ACTYVA<strong> </strong>é o dispositivo. SHOTS<strong> </strong>são as fórmulas. Juntos, eles criam um novo padrão - suplementos que o seu corpo simplesmente reconhece.</p>",
     "homepage:1s34z90a3ekrp": "RHYTHM PROTOCOL",
     "homepage:ls79m6iuzr6x": "DOMINE O SEU RITMO CIRCADIANO",
-    "homepage:10szcdbk8gx0g": "<p>RHYTHM SHOTS combina fórmulas nutricionais precisas com a tecnologia de ativação ACTYVA, projetada para apoiar o ritmo biológico natural do seu corpo ao longo do dia, auxiliando a manter a energia equilibrada, o humor e o sono reparador dentro de um sistema sincronizado de 24 horas.</p>",
+    "homepage:10szcdbk8gx0g": "<p>O RHYTHM Bundle combina fórmulas nutricionais precisas com a tecnologia de ativação ACTYVA, projetada para apoiar o ritmo biológico natural do seu corpo ao longo do dia, auxiliando a manter a energia equilibrada, o humor e o sono reparador dentro de um sistema sincronizado de 24 horas.</p>",
     "homepage:1f31o0022rlq0": "RESTART",
     "homepage:3nv3jt868m8z5": "<ul><li>Apoia o metabolismo energético.</li><li>Ajudar a reduzir a fadiga.</li><li>Promover a clareza mental.</li><li>Melhorar a concentração.</li></ul>",
     "homepage:2efns2swrgbui": "Saiba mais",
@@ -1442,6 +1442,14 @@
         "homepage"
       ],
       "ts": "2026-03-03T15:00:52.436Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-03T15:01:21.359Z"
     }
   ],
   "__pending": {},
