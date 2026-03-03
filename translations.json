@@ -1394,6 +1394,14 @@
         "homepage"
       ],
       "ts": "2026-03-03T13:54:39.371Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-03T13:57:54.129Z"
     }
   ],
   "__pending": {
@@ -1439,7 +1447,8 @@
         "1ymzi2k76t4t3",
         "1yk957l3dpvrt",
         "2v2y0y0bzuehd",
-        "3jlnuoeuhv4jh"
+        "3jlnuoeuhv4jh",
+        "3cjyx06a103lq"
       ],
       "header": [
         "6o4qs55m2bp6"
@@ -1637,17 +1646,17 @@
     "homepage:3ol15wexvic4m": "INTELLIGENTE KÖRPERFORMUNG",
     "homepage:u0uanp28il9r": "<p>Bei einer echten Körpertransformation geht es nicht um Einschränkungen, sondern darum, mit Ihrem Körper zu arbeiten und nicht gegen ihn. Das RESHAPE-Programm kombiniert drei gezielte Formeln, die das Gesamtbild berücksichtigen: Aktivierung des Stoffwechsels, emotionale Muster und Appetitregulierung. Wenn alle drei Bereiche zusammenwirken, wird eine nachhaltige Veränderung des Körpers auf natürliche Weise erreicht.</p>",
     "homepage:1d1pp9ocvs0qn": "RESHAPE SHOTS",
-    "homepage:ft09zpfc9dh2": "<ul><li>Steigert die Stoffwechselaktivität.</li><li>Unterstützt die natürlichen Fettverbrennungsprozesse.</li><li>Fördert die tägliche Energienutzung.</li><li>Unterstützt die Ziele hinsichtlich der Körperzusammensetzung</li></ul>",
+    "homepage:ft09zpfc9dh2": "<ul><li>Steigert die Stoffwechselaktivität.</li><li>Unterstützt die natürlichen Fettverbrennungsprozesse.</li><li>Fördert die tägliche Energienutzung.</li><li>Unterstützt die Ziele hinsichtlich der Körperzusammensetzung.</li></ul>",
     "homepage:36am7wm9koif1": "Weitere Informationen",
     "homepage:2lsopktd3ykuf": "RESHAPE BALANCE",
     "homepage:37rt5o8vdpiry": "<ul><li>Unterstützt die Reduzierung von stressbedingtem oder emotionalem Verlangen.</li><li>Unterstützt das emotionale Gleichgewicht und die emotionale Stabilität.</li><li>Fördert die eigene Motivation und ein konsistentes Verhalten.</li><li>Unterstützt gesunde Ernährungsgewohnheiten.</li></ul>",
     "homepage:29k56e34qmjet": "Weitere Informationen",
     "homepage:2ebxa7h1umoi9": "RESHAPE CONTROL",
-    "homepage:36eqgs6z2wr88": "<ul><li>Unterstützt die Appetitkontrolle und das Sättigungsgefühl.</li><li>Trägt zu einem ausgeglichenen Blutzuckerspiegel bei.</li><li>Unterstützt ein tägliches stabiles und konstantes Energieniveau.</li><li>Unterstützt den Stoffwechselausgleich über den Tag.&nbsp;</li></ul>",
+    "homepage:36eqgs6z2wr88": "<ul><li>Unterstützt die Appetitkontrolle und das Sättigungsgefühl.</li><li>Trägt zu einem ausgeglichenen Blutzuckerspiegel bei.</li><li>Unterstützt ein tägliches stabiles und konstantes Energieniveau.</li><li>Unterstützt den Stoffwechselausgleich über den ganzen Tag.&nbsp;</li></ul>",
     "homepage:3une211edl4gj": "Weitere Informationen",
     "homepage:ct5eqogekkhz": "AUSGEWÄHLTE SYSTEME. HÖHERER MEHRWERT.",
     "homepage:3f6kdwiokrlsb": "UNSERE PAKETE",
-    "homepage:mcrjtanot0si": "<p><br/>Entdecken Sie unsere sorgfältig zusammengestellten Systeme. Jedes Paket ist auf synergistische Ergebnisse und einen höheren Mehrwert ausgelegt. Der intelligenteste Weg um Ihre eigene Wellness-Routine aufzubauen.</p>",
+    "homepage:mcrjtanot0si": "<p><br/>Entdecken Sie unsere sorgfältig zusammengestellten Systeme. Jedes Paket ist auf synergistische Ergebnisse und einen höheren Mehrwert ausgelegt. Der intelligenteste Weg um Ihre ganz eigene Wellness-Routine aufzubauen.</p>",
     "homepage:2q8hspsj3nykp": "Shop",
     "homepage:26yu44vxtgy87": "DIE WISSENSCHAFT",
     "homepage:128lyf7zgtksr": "Unterstützt von Experten",
@@ -1662,7 +1671,7 @@
     "homepage:11v3k9agzb07q": "ACTYVA entstand aus einer lang gehegten Überzeugung heraus, nämlich der Gewissheit, dass das Leben nicht nur durch Chemie, sondern auch durch die unsichtbare Energie, die durch alle Dinge fließt, aufrechterhalten wird. Jahrelang habe ich mich mit der Elektrizität, den Magnetfeldern und den Bioinformationen des Körpers befasst. Dabei habe ich erkannt, dass hinter jedem physiologischen Prozess ein stiller Tanz aus Ladungen, Frequenzen und unsichtbaren Strukturen stattfindet. ACTYVA ist die Materialisierung dieser Suche.",
     "homepage:ggut6wil4d2e": "Noch nicht sicher, welches Produkt Sie wählen sollen?",
     "homepage:1c73ozbxo85hm": "Finden Sie heraus, welche unserer Produkte Ihren Anforderungen am besten entsprechen.",
-    "homepage:3cjyx06a103lq": "Erhalten Sie Ihre Empfehlung",
+    "homepage:3cjyx06a103lq": "Hier können Sie eine persönliche Empfehlung erhalten",
     "actyva:248wu691vn7ku": "Sparen Sie bis zu 90 € mit unseren Paketen.",
     "actyva:1m8l315tp351x": "Entdecken Sie die ACTYVA-Pakete – mehr Wert für Ihr Geld.",
     "actyva:nb5lslz5zxi9": "Der Vorteil",
