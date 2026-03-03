@@ -169,7 +169,7 @@
     "homepage:267h0y7fcs3he": "Sem esforço. Intuitivo. Transformador.",
     "homepage:2p6inavvwhyi3": "<p>Integre o futuro do bem-estar à sua rotina diária em segundos. O ACTYVA foi concebido para proporcionar uma experiência elegante e perfeita.</p>",
     "homepage:2q1nrwx8k4eg6": "1) SELECIONE o seu SHOT.",
-    "homepage:3aant35xqfn8v": "<p>• <strong>RESTART</strong> | Energia e concentração<br/>• <strong>RECHARGE </strong>| Humor positivo<br/>• <strong>RESTART</strong> | Descanso e recuperação<br/>• <strong>RESHAPE</strong> | Gestão de peso</p>",
+    "homepage:3aant35xqfn8v": "<p>• <strong>RESTART</strong> | Energia e concentração<br/>• <strong>RECHARGE </strong>| Bem estar emocional<br/>• <strong>RESTART</strong> | Descanso e recuperação<br/>• <strong>RESHAPE</strong> | Gestão de peso</p>",
     "homepage:83rhc54ak74d": "2) ATIVE com um simples clique.",
     "homepage:3sk5uz6l98guc": "<p>Durante a ativação de 90 segundos, o ACTYVA emite frequências de luz que transferem energia fotónica para o SHOT, à medida que o campo bioeletromagnético único do seu corpo interage com o processo de ativação.</p>",
     "homepage:3tcvi2gi5ug0a": "3) EXPERIMENTE a fórmula otimizada.",
@@ -1434,6 +1434,14 @@
         "homepage"
       ],
       "ts": "2026-03-03T14:28:54.280Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-03T15:00:52.436Z"
     }
   ],
   "__pending": {},
