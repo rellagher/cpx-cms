@@ -1250,6 +1250,14 @@
         "homepage"
       ],
       "ts": "2026-03-03T11:17:26.294Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-03T11:22:09.346Z"
     }
   ],
   "__pending": {
@@ -1259,7 +1267,8 @@
         "z3fp2npl7mm4",
         "2i5fr2qehxx9n",
         "3v7o0r3jabn0u",
-        "2p6inavvwhyi3"
+        "2p6inavvwhyi3",
+        "3aant35xqfn8v"
       ],
       "header": [
         "6o4qs55m2bp6"
@@ -1426,9 +1435,9 @@
     "homepage:2i5fr2qehxx9n": "<p>Der menschliche Körper besteht zum Großteil aus Wasser. Die molekulare Umgebung des Wassers reagiert auf gezielte photonische Energie und optimiert die Umgebung, in der Wirkstoffe mit Ihrem Körper interagieren.</p>",
     "homepage:3v7o0r3jabn0u": "Funktionsweise",
     "homepage:267h0y7fcs3he": "Mühelos. Intuitiv. Transformativ.",
-    "homepage:2p6inavvwhyi3": "<p>Integrieren Sie die Zukunft des Wohlbefindens in Sekundenschnelle in Ihren Alltag. ACTYVA wurde für ein nahtloses und wohlfühlendes Erlebnis entwickelt.</p>",
+    "homepage:2p6inavvwhyi3": "<p>Integrieren Sie die Zukunft des Wohlbefindens in Sekundenschnelle in Ihren Alltag. ACTYVA wurde für ein nahtloses und wohltuendes Erlebnis entwickelt.</p>",
     "homepage:2q1nrwx8k4eg6": "1) Wählen Sie Ihren SHOT aus.",
-    "homepage:3aant35xqfn8v": "<p>• <strong>NEUSTART</strong> | Energie und Konzentration<br/>• <strong>RECHARGE </strong>| Positive Stimmung<br/>• <strong>RESET</strong> | Ruhe und Erholung<br/>• <strong>NEUFORMEN</strong> | Gewichtsmanagement</p>",
+    "homepage:3aant35xqfn8v": "<p>• <strong>RESTART</strong> | Energie und Konzentration<br/>• <strong>RECHARGE </strong>| Positive Stimmung<br/>• <strong>RESET</strong> | Ruhe und Erholung<br/>• <strong>RESHAPE</strong> | Gewichtsmanagement</p>",
     "homepage:83rhc54ak74d": "2) Mit einem einfachen Klick aktivieren.",
     "homepage:3sk5uz6l98guc": "<p>Während der 90-sekündigen Aktivierung sendet ACTYVA Lichtfrequenzen aus, die Photonenenergie in den SHOT übertragen, während das einzigartige bioelektromagnetische Feld Ihres Körpers mit dem Aktivierungsprozess interagiert.</p>",
     "homepage:3tcvi2gi5ug0a": "3) ERLEBEN SIE die optimierte Formel.",
