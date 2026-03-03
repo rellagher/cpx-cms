@@ -1354,6 +1354,14 @@
         "homepage"
       ],
       "ts": "2026-03-03T13:34:48.963Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-03T13:42:10.214Z"
     }
   ],
   "__pending": {
@@ -1389,7 +1397,13 @@
         "ct5eqogekkhz",
         "mcrjtanot0si",
         "2q8hspsj3nykp",
-        "hzg50hj6cypu"
+        "hzg50hj6cypu",
+        "2whk28stmt2rt",
+        "qpfp28m0wpqu",
+        "3fadru3y0rowu",
+        "32ex1bq2r25ia",
+        "ggut6wil4d2e",
+        "1c73ozbxo85hm"
       ],
       "header": [
         "6o4qs55m2bp6"
@@ -1602,16 +1616,16 @@
     "homepage:26yu44vxtgy87": "DIE WISSENSCHAFT",
     "homepage:128lyf7zgtksr": "Unterstützt von Experten",
     "homepage:hzg50hj6cypu": "<p>Wir arbeiten mit einem multidisziplinären Expertenteam zusammen, das neue Forschungsergebnisse in sinnvolle Produktverbesserungen umsetzt.</p>",
-    "homepage:2whk28stmt2rt": "Weitere Informationen erhalten",
-    "homepage:qpfp28m0wpqu": "Herr Professor Pedro Vaz, PhD, FRSC",
+    "homepage:2whk28stmt2rt": "Weitere Informationen",
+    "homepage:qpfp28m0wpqu": "Professor Pedro Vaz, PhD, FRSC",
     "homepage:20g4x9v6wrbxb": "<p>Leitender Forscher, Champalimaud-Stiftung (Abteilung für Lungenkrebs)</p>",
     "homepage:1ymzi2k76t4t3": "Frau Graça Pereira, PhD",
-    "homepage:3fadru3y0rowu": "<p>Professor, Universität Minho (Klinische und Gesundheitspsychologie)</p>",
-    "homepage:32ex1bq2r25ia": "Herr Dr. med. João Paulo de Almeida",
+    "homepage:3fadru3y0rowu": "<p>Professorin, Universität Minho (Klinische und Gesundheitspsychologie)</p>",
+    "homepage:32ex1bq2r25ia": "Dr. med. João Paulo de Almeida",
     "homepage:3oyeyq76f97zf": "<p>Facharzt für klinische Pathologie und Sportmedizin.</p>",
     "homepage:11v3k9agzb07q": "ACTYVA entstand aus einer lang gehegten Überzeugung heraus, nämlich der Gewissheit, dass das Leben nicht nur durch Chemie, sondern auch durch die unsichtbare Energie, die durch alle Dinge fließt, aufrechterhalten wird. Jahrelang habe ich mich mit der Elektrizität, den Magnetfeldern und den Bioinformationen des Körpers befasst. Dabei habe ich erkannt, dass hinter jedem physiologischen Prozess ein stiller Tanz aus Ladungen, Frequenzen und unsichtbaren Strukturen stattfindet. ACTYVA ist die Materialisierung dieser Suche.",
-    "homepage:ggut6wil4d2e": "Sie sind sich noch nicht sicher, was Sie wählen sollen?",
-    "homepage:1c73ozbxo85hm": "Bitte informieren Sie sich, welche unserer Produkte Ihren Anforderungen am besten entsprechen.",
+    "homepage:ggut6wil4d2e": "Noch nicht sicher, welches Produkt Sie wählen sollen?",
+    "homepage:1c73ozbxo85hm": "Finden Sie heraus, welche unserer Produkte Ihren Anforderungen am besten entsprechen.",
     "homepage:3cjyx06a103lq": "Erhalten Sie Ihre Empfehlung",
     "actyva:248wu691vn7ku": "Sparen Sie bis zu 90 € mit unseren Paketen.",
     "actyva:1m8l315tp351x": "Entdecken Sie die ACTYVA-Pakete – mehr Wert für Ihr Geld.",
