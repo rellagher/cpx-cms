@@ -1362,6 +1362,14 @@
         "homepage"
       ],
       "ts": "2026-03-03T13:42:10.214Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-03T13:44:26.805Z"
     }
   ],
   "__pending": {
@@ -1403,7 +1411,8 @@
         "3fadru3y0rowu",
         "32ex1bq2r25ia",
         "ggut6wil4d2e",
-        "1c73ozbxo85hm"
+        "1c73ozbxo85hm",
+        "1ymzi2k76t4t3"
       ],
       "header": [
         "6o4qs55m2bp6"
@@ -1619,7 +1628,7 @@
     "homepage:2whk28stmt2rt": "Weitere Informationen",
     "homepage:qpfp28m0wpqu": "Professor Pedro Vaz, PhD, FRSC",
     "homepage:20g4x9v6wrbxb": "<p>Leitender Forscher, Champalimaud-Stiftung (Abteilung für Lungenkrebs)</p>",
-    "homepage:1ymzi2k76t4t3": "Frau Graça Pereira, PhD",
+    "homepage:1ymzi2k76t4t3": "Maria Graça Pereira, PhD",
     "homepage:3fadru3y0rowu": "<p>Professorin, Universität Minho (Klinische und Gesundheitspsychologie)</p>",
     "homepage:32ex1bq2r25ia": "Dr. med. João Paulo de Almeida",
     "homepage:3oyeyq76f97zf": "<p>Facharzt für klinische Pathologie und Sportmedizin.</p>",
