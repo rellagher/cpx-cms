@@ -356,6 +356,17 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
   </div>
 </div>
 
+<div class="modal-overlay" id="signOutModal">
+  <div class="modal-box" style="width:380px;">
+    <div class="modal-title" style="margin-bottom:6px;">Sign out</div>
+    <div class="modal-desc">You have unsaved changes. What would you like to do?</div>
+    <div style="display:flex;gap:8px;margin-top:20px;">
+      <button class="modal-btn secondary" onclick="signOutWithoutSaving()" style="flex:1;">Exit without saving</button>
+      <button class="modal-btn primary" onclick="signOutAndSave()" id="signOutSaveBtn" style="flex:1;">↑ Save &amp; sign out</button>
+    </div>
+  </div>
+</div>
+
 <script>
 
 // ============================================================
@@ -526,9 +537,37 @@ function doLogin() {
 }
 
 function logout() {
+  if (_unsavedChanges) {
+    document.getElementById('signOutModal').classList.add('show');
+  } else {
+    doSignOut();
+    showToast('✓ Signed out — all changes were saved');
+  }
+}
+
+function doSignOut() {
+  document.getElementById('signOutModal').classList.remove('show');
   document.getElementById('loginScreen').style.display = 'flex';
   document.getElementById('appScreen').style.display = 'none';
   state.currentPageId = null;
+}
+
+function signOutWithoutSaving() {
+  doSignOut();
+  showToast('⚠️ Signed out without saving');
+}
+
+async function signOutAndSave() {
+  const btn = document.getElementById('signOutSaveBtn');
+  if (btn) { btn.disabled = true; btn.textContent = '⟳ Saving…'; }
+  try {
+    await saveAllFields();
+    doSignOut();
+    showToast('✓ Changes saved. Signed out.');
+  } catch(e) {
+    if (btn) { btn.disabled = false; btn.textContent = '↑ Save & sign out'; }
+    showToast('⚠️ Save failed — check connection and try again');
+  }
 }
 
 // ============================================================
@@ -1006,7 +1045,7 @@ function exportCsv() {
         type: field.type || '',
         id: field.shopify_id || '',
         field: field.field || '',
-        locale: state.lang, 
+        locale: state.lang,
         market: field.market || '',
         status: field.status || '',
         default: field.default || '',
@@ -2049,4 +2088,3 @@ boot();
 </script>
 </body>
 </html>
-
