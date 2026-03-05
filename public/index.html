@@ -1006,7 +1006,7 @@ function exportCsv() {
         type: field.type || '',
         id: field.shopify_id || '',
         field: field.field || '',
-        locale: field.locale || state.lang,
+        locale: state.lang, 
         market: field.market || '',
         status: field.status || '',
         default: field.default || '',
@@ -1024,8 +1024,6 @@ function exportCsv() {
 
   const lines = [headers.map(esc).join(',')];
   for (const r of rows) {
-    // Skip rows with no translation — Shopify keeps its automatic translations for those
-    if (!r.translated || !r.translated.trim()) continue;
     lines.push([r.type,r.id,r.field,r.locale,r.market,r.status,r.default,r.translated].map(esc).join(','));
   }
 
@@ -2051,3 +2049,4 @@ boot();
 </script>
 </body>
 </html>
+
