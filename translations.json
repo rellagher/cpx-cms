@@ -1450,39 +1450,64 @@
         "homepage"
       ],
       "ts": "2026-03-03T15:01:21.359Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "navigation"
+      ],
+      "ts": "2026-03-05T10:17:02.508Z"
     }
   ],
-  "__pending": {},
+  "__pending": {
+    "de": {
+      "navigation": [
+        "743659405698_title",
+        "743673823618_title",
+        "743673921922_title",
+        "754732794242_title",
+        "754732827010_title",
+        "754732859778_title",
+        "754732892546_title",
+        "756474708354_title",
+        "773292949890_title",
+        "299033297282_title",
+        "303595815298_title",
+        "304299377026_title"
+      ]
+    }
+  },
   "de": {
     "navigation:743518732674_title": "Für Unternehmen",
     "navigation:743659340162_title": "Startseite",
-    "navigation:743659405698_title": "Über",
+    "navigation:743659405698_title": "Über uns",
     "navigation:743659504002_title": "Bestellungen",
-    "navigation:743673823618_title": "Geschäft",
+    "navigation:743673823618_title": "Shop",
     "navigation:743673856386_title": "Für Unternehmen",
     "navigation:743673889154_title": "Unsere Wissenschaft",
-    "navigation:743673921922_title": "Über",
+    "navigation:743673921922_title": "Über uns",
     "navigation:747894440322_title": "Unsere Wissenschaft",
     "navigation:754732728706_title": "Alle Artikel ansehen",
     "navigation:754732761474_title": "ACTYVA",
-    "navigation:754732794242_title": "RHYTHM Bundle + ACTYVA",
-    "navigation:754732827010_title": "RHYTHM Bundle",
-    "navigation:754732859778_title": "RESHAPE Bundle + ACTYVA",
-    "navigation:754732892546_title": "RESHAPE Bundle",
+    "navigation:754732794242_title": "Paket RHYTHM + ACTYVA",
+    "navigation:754732827010_title": "Paket RHYTHM ",
+    "navigation:754732859778_title": "Paket RESHAPE + ACTYVA",
+    "navigation:754732892546_title": "Paket RESHAPE",
     "navigation:756447871362_title": "Ihre Datenschutzoptionen",
     "navigation:756474577282_title": "Actyva",
     "navigation:756474610050_title": "Pakete",
     "navigation:756474642818_title": "Shots",
-    "navigation:756474708354_title": "Gummibärchen",
+    "navigation:756474708354_title": "Fruchtgummi",
     "navigation:756475920770_title": "Alle Produkte",
     "navigation:762850509186_title": "Partnerprogramm",
     "navigation:769250591106_title": "Profil",
-    "navigation:773292949890_title": "Entdecken Sie Ihr Protokoll",
+    "navigation:773292949890_title": "Entdecken Sie Ihr Programm",
     "navigation:299033264514_title": "Hauptmenü",
-    "navigation:299033297282_title": "Fußzeilenmenü",
+    "navigation:299033297282_title": "Fußzeile/Footer",
     "navigation:299033330050_title": "Hauptmenü des Kundenkontos",
-    "navigation:303595815298_title": "Geschäft",
-    "navigation:304299377026_title": "Geschäft",
+    "navigation:303595815298_title": "Shop",
+    "navigation:304299377026_title": "Shop",
     "our-science:693650063746_title": "Unsere Wissenschaft",
     "our-science:693650063746_body_html": "<p>Unsere Wissenschaft</p>",
     "our-science:2o1eooz5xxpfz": "VIDEO",
