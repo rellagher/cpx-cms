@@ -1474,6 +1474,14 @@
         "header"
       ],
       "ts": "2026-03-05T15:29:01.679Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "fr",
+      "pages": [
+        "header"
+      ],
+      "ts": "2026-03-05T15:29:27.620Z"
     }
   ],
   "__pending": {
@@ -2419,7 +2427,5 @@
     "RHYTHM PROTOCOL",
     "RESHAPE PROTOCOL"
   ],
-  "fr": {
-    "header:6o4qs55m2bp6": "a"
-  }
+  "fr": {}
 }
