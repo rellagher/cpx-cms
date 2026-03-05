@@ -408,6 +408,8 @@ const state = {
   currentPageId: null,
   translationsSha: null,
   translatorName: '',
+  hiddenFields: new Set(),
+  fieldEdits: {},
   pendingChanges: {},
   sessionSnapshot: null,
   deeplRemaining: null,
@@ -464,6 +466,10 @@ async function loadSavedTranslations() {
     if (data.translations.__protected_terms) {
       state.protectedTerms = data.translations.__protected_terms;
     }
+    // Load hidden fields
+    state.hiddenFields = new Set(data.translations.__hidden || []);
+    // Load field edit history
+    state.fieldEdits = data.translations.__field_edits || {};
     // Load pending changes indicator
     state.pendingChanges = (data.translations.__pending || {})[state.lang] || {};
 
@@ -638,6 +644,13 @@ function loadPageView(pageId) {
   const pct = Math.round(done/total*100);
 
   let fieldsHtml = page.fields.map((field, i) => {
+    const stableKey = getStableKey(field);
+    const fieldKey = pageId + ':' + stableKey;
+    const isHidden = state.hiddenFields?.has(fieldKey);
+
+    // Translator: skip hidden fields entirely
+    if (state.mode !== 'admin' && isHidden) return '';
+
     const hasVal = !!field.translated;
     const isHtml = field.is_html;
     const originalPlain = htmlToPlain(field.default);
@@ -672,13 +685,24 @@ function loadPageView(pageId) {
     }
 
     const isPending = state.mode === 'admin' && (state.pendingChanges[pageId] || []).includes(getStableKey(field));
-    return `<div class="field-card ${hasVal?'translated':''}" id="fc-${i}" style="${isPending ? 'border-color:var(--amber);' : ''}">
+    const editInfo = state.fieldEdits?.[fieldKey];
+    const editLabel = editInfo ? editInfo.name + ' · ' + new Date(editInfo.ts).toLocaleDateString('en-GB', {day:'numeric',month:'short'}) : '';
+    const hiddenStyle = isHidden ? 'opacity:0.45;' : '';
+    return `<div class="field-card ${hasVal?'translated':''}" id="fc-${i}" style="${isPending ? 'border-color:var(--amber);' : ''}${hiddenStyle}">
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px;">
-        <div class="field-label" style="margin-bottom:0;flex:1;">${escHtml(field.label)}</div>
-        ${state.mode==='admin'?`<button onclick="translateField('${pageId}',${i})" id="btn-${i}"
-          style="padding:3px 10px;background:var(--bg-3);border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.5px;cursor:pointer;color:var(--text-muted);white-space:nowrap;">
-          ✦ DeepL
-        </button>`:''}
+        <div style="flex:1;">
+          <div class="field-label" style="margin-bottom:0;">${escHtml(field.label)}</div>
+          ${editLabel ? `<div style="font-size:10px;color:var(--text-muted);margin-top:2px;">✎ ${escHtml(editLabel)}</div>` : ''}
+        </div>
+        ${state.mode==='admin'?`
+          <button onclick="toggleHideField('${pageId}','${stableKey}')" title="${isHidden?'Show to translators':'Hide from translators'}"
+            style="padding:3px 8px;background:${isHidden?'var(--amber)':'var(--bg-3)'};border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;cursor:pointer;color:${isHidden?'white':'var(--text-muted)'};white-space:nowrap;">
+            ${isHidden?'👁 Hidden':'👁 Hide'}
+          </button>
+          <button onclick="translateField('${pageId}',${i})" id="btn-${i}"
+            style="padding:3px 10px;background:var(--bg-3);border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.5px;cursor:pointer;color:var(--text-muted);white-space:nowrap;">
+            ✦ DeepL
+          </button>`:''}
       </div>
       <div class="field-original">${escHtml(displayOriginal)}</div>
       ${inputEl}
@@ -1469,6 +1493,12 @@ async function saveAllFields() {
       }
     }
 
+    // Save hidden fields
+    allTranslations.__hidden = [...state.hiddenFields];
+    // Save field edits
+    if (!allTranslations.__field_edits) allTranslations.__field_edits = {};
+    allTranslations.__field_edits = state.fieldEdits;
+
     // Append activity log entry
     if (!allTranslations.__activity_log) allTranslations.__activity_log = [];
     if (changedPages.size > 0) {
@@ -2104,6 +2134,20 @@ function showToast(msg) {
 // INIT
 // ============================================================
 boot();
+function toggleHideField(pageId, stableKey) {
+  if (!state.hiddenFields) state.hiddenFields = new Set();
+  const fieldKey = pageId + ':' + stableKey;
+  if (state.hiddenFields.has(fieldKey)) {
+    state.hiddenFields.delete(fieldKey);
+    showToast('✓ Field visible to translators');
+  } else {
+    state.hiddenFields.add(fieldKey);
+    showToast('Field hidden from translators');
+  }
+  markUnsaved();
+  loadPageView(pageId);
+}
+
 function printPage() {
   if (!state.currentPageId) { showToast('Select a page first'); return; }
   const page = state.pages[state.currentPageId];
