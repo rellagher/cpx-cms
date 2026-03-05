@@ -142,11 +142,15 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
 @media print {
   body * { visibility: hidden !important; }
   #printArea, #printArea * { visibility: visible !important; }
-  #printArea { position: fixed; inset: 0; background: white; padding: 32px; z-index: 99999; }
+  #printArea { position: absolute; top: 0; left: 0; width: 100%; background: white; padding: 24px 32px; z-index: 99999; }
+  .print-table tr { page-break-inside: avoid; break-inside: avoid; }
+  .print-table thead { display: table-header-group; }
+  .print-header { page-break-after: avoid; break-after: avoid; }
+  @page { margin: 1.5cm; size: A4 landscape; }
 }
-.print-table { width: 100%; border-collapse: collapse; font-family: Georgia, serif; font-size: 13px; }
+.print-table { width: 100%; border-collapse: collapse; font-family: Georgia, serif; font-size: 12px; }
 .print-table th { background: #f3f4f6; padding: 8px 12px; text-align: left; font-weight: 700; border: 1px solid #e5e7eb; font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; color: #6b7280; }
-.print-table td { padding: 10px 12px; border: 1px solid #e5e7eb; vertical-align: top; line-height: 1.5; width: 50%; }
+.print-table td { padding: 10px 12px; border: 1px solid #e5e7eb; vertical-align: top; line-height: 1.5; width: 50%; word-break: break-word; }
 .print-table tr:nth-child(even) td { background: #f9fafb; }
 .print-field-label { font-size: 9px; color: #9ca3af; font-family: monospace; margin-bottom: 3px; text-transform: uppercase; }
 .print-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; border-bottom: 2px solid #111; padding-bottom: 12px; }
