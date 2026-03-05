@@ -410,6 +410,8 @@ const state = {
   translatorName: '',
   hiddenFields: new Set(),
   fieldEdits: {},
+  sources: {},
+  links: {},
   pendingChanges: {},
   sessionSnapshot: null,
   deeplRemaining: null,
@@ -470,6 +472,9 @@ async function loadSavedTranslations() {
     state.hiddenFields = new Set(data.translations.__hidden || []);
     // Load field edit history
     state.fieldEdits = data.translations.__field_edits || {};
+    // Load source/link mappings
+    state.sources = data.translations.__sources || {};
+    state.links = data.translations.__links || {};
     // Load pending changes indicator
     state.pendingChanges = (data.translations.__pending || {})[state.lang] || {};
 
@@ -630,8 +635,32 @@ function buildSidebar() {
 // ============================================================
 // PAGE VIEW
 // ============================================================
+function getSourceTranslation(sourceKey) {
+  // Find the translated value of a source field
+  const [srcPageId, ...rest] = sourceKey.split(':');
+  const srcStableKey = rest.join(':');
+  const srcPage = state.pages[srcPageId];
+  if (!srcPage) return '';
+  const srcField = srcPage.fields.find(f => getStableKey(f) === srcStableKey);
+  return srcField?.translated || '';
+}
+
+function applyLinkedTranslations() {
+  // Sync all linked fields from their sources
+  for (const [linkedKey, sourceKey] of Object.entries(state.links || {})) {
+    const [linkedPageId, ...rest] = linkedKey.split(':');
+    const linkedStableKey = rest.join(':');
+    const linkedPage = state.pages[linkedPageId];
+    if (!linkedPage) continue;
+    const linkedField = linkedPage.fields.find(f => getStableKey(f) === linkedStableKey);
+    if (!linkedField) continue;
+    linkedField.translated = getSourceTranslation(sourceKey);
+  }
+}
+
 function loadPageView(pageId) {
   state.currentPageId = pageId;
+  applyLinkedTranslations();
 
   document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
   document.getElementById('nav-' + pageId)?.classList.add('active');
@@ -647,9 +676,12 @@ function loadPageView(pageId) {
     const stableKey = getStableKey(field);
     const fieldKey = pageId + ':' + stableKey;
     const isHidden = state.hiddenFields?.has(fieldKey);
+    const isSource = !!(state.sources?.[fieldKey]);
+    const linkedToKey = state.links?.[fieldKey] || null;
+    const isLinked = !!linkedToKey;
 
-    // Translator: skip hidden fields entirely
-    if (state.mode !== 'admin' && isHidden) return '';
+    // Translator: skip hidden and linked fields
+    if (state.mode !== 'admin' && (isHidden || isLinked)) return '';
 
     const hasVal = !!field.translated;
     const isHtml = field.is_html;
@@ -695,17 +727,30 @@ function loadPageView(pageId) {
           ${editLabel ? `<div style="font-size:10px;color:var(--text-muted);margin-top:2px;">✎ ${escHtml(editLabel)}</div>` : ''}
         </div>
         ${state.mode==='admin'?`
+          ${isSource ? '<span style="padding:3px 8px;background:#0891b2;color:white;border-radius:5px;font-family:Mulish,sans-serif;font-size:10px;font-weight:700;">◈ Source</span>' : ''}
+          ${isLinked ? '<span style="padding:3px 8px;background:#6d28d9;color:white;border-radius:5px;font-family:Mulish,sans-serif;font-size:10px;font-weight:700;">⟵ Linked</span>' : ''}
+          <button onclick="toggleSourceField('${pageId}','${stableKey}')" title="${isSource?'Remove as source':'Set as source'}"
+            style="padding:3px 8px;background:${isSource?'#0891b2':'var(--bg-3)'};border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;cursor:pointer;color:${isSource?'white':'var(--text-muted)'};white-space:nowrap;">
+            ${isSource?'◈ Source':'◈ Set source'}
+          </button>
+          ${!isSource?`<button onclick="openLinkModal('${pageId}','${stableKey}')" title="${isLinked?'Change link':'Link to source'}"
+            style="padding:3px 8px;background:${isLinked?'#6d28d9':'var(--bg-3)'};border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;cursor:pointer;color:${isLinked?'white':'var(--text-muted)'};white-space:nowrap;">
+            ${isLinked?'⟵ Linked':'⟵ Link'}
+          </button>`:''}
           <button onclick="toggleHideField('${pageId}','${stableKey}')" title="${isHidden?'Show to translators':'Hide from translators'}"
             style="padding:3px 8px;background:${isHidden?'var(--amber)':'var(--bg-3)'};border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;cursor:pointer;color:${isHidden?'white':'var(--text-muted)'};white-space:nowrap;">
             ${isHidden?'👁 Hidden':'👁 Hide'}
           </button>
-          <button onclick="translateField('${pageId}',${i})" id="btn-${i}"
+          ${!isLinked?`<button onclick="translateField('${pageId}',${i})" id="btn-${i}"
             style="padding:3px 10px;background:var(--bg-3);border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.5px;cursor:pointer;color:var(--text-muted);white-space:nowrap;">
             ✦ DeepL
           </button>`:''}
+        `:''}
       </div>
       <div class="field-original">${escHtml(displayOriginal)}</div>
-      ${inputEl}
+      ${isLinked
+        ? `<div style="padding:10px 12px;background:var(--bg-3);border:1px solid var(--border);border-radius:8px;color:var(--text-muted);font-size:13px;font-style:italic;">${escHtml(field.translated) || '<span style="opacity:0.5;">Waiting for source translation…</span>'}</div>`
+        : inputEl}
     </div>`;
   }).join('');
 
@@ -1498,6 +1543,9 @@ async function saveAllFields() {
     // Save field edits
     if (!allTranslations.__field_edits) allTranslations.__field_edits = {};
     allTranslations.__field_edits = state.fieldEdits;
+    // Save source/link mappings
+    allTranslations.__sources = state.sources;
+    allTranslations.__links = state.links;
 
     // Append activity log entry
     if (!allTranslations.__activity_log) allTranslations.__activity_log = [];
@@ -2184,8 +2232,101 @@ function printPage() {
   printArea.style.display = 'none';
 }
 
+let _linkModalTarget = null;
+
+function toggleSourceField(pageId, stableKey) {
+  const fieldKey = pageId + ':' + stableKey;
+  if (!state.sources) state.sources = {};
+  if (state.sources[fieldKey]) {
+    // Remove as source — also remove any links pointing to this source
+    delete state.sources[fieldKey];
+    for (const [lk, sk] of Object.entries(state.links || {})) {
+      if (sk === fieldKey) delete state.links[lk];
+    }
+    showToast('Source removed');
+  } else {
+    state.sources[fieldKey] = true;
+    showToast('◈ Set as source');
+  }
+  markUnsaved();
+  loadPageView(pageId);
+}
+
+function openLinkModal(pageId, stableKey) {
+  _linkModalTarget = { pageId, stableKey };
+  const list = document.getElementById('linkModalList');
+  const sources = Object.keys(state.sources || {});
+
+  if (!sources.length) {
+    list.innerHTML = '<div style="padding:20px;text-align:center;color:var(--text-muted);">No sources defined yet.<br>Mark a field as source first.</div>';
+  } else {
+    list.innerHTML = sources.map(srcKey => {
+      const [srcPageId, ...rest] = srcKey.split(':');
+      const srcStableKey = rest.join(':');
+      const srcPage = state.pages[srcPageId];
+      const srcField = srcPage?.fields.find(f => getStableKey(f) === srcStableKey);
+      const isSelected = state.links?.[pageId + ':' + stableKey] === srcKey;
+      const original = srcField ? htmlToPlain(srcField.default || '').slice(0, 120) : '';
+      const pageLabel = srcPage?.label || srcPageId;
+      return `<div onclick="selectLinkSource('${srcKey}')"
+        style="padding:12px;border-radius:8px;border:1px solid ${isSelected?'#6d28d9':'var(--border)'};background:${isSelected?'rgba(109,40,217,0.08)':'var(--bg-3)'};cursor:pointer;margin-bottom:6px;">
+        <div style="font-size:11px;font-weight:700;color:var(--text-muted);margin-bottom:4px;">${escHtml(pageLabel)} · ${escHtml(srcField?.label||srcStableKey)}</div>
+        <div style="font-size:13px;color:var(--text);">${escHtml(original)}${original.length>=120?'…':''}</div>
+      </div>`;
+    }).join('');
+  }
+  document.getElementById('linkModal').classList.add('show');
+}
+
+function selectLinkSource(sourceKey) {
+  if (!_linkModalTarget) return;
+  const { pageId, stableKey } = _linkModalTarget;
+  const fieldKey = pageId + ':' + stableKey;
+  if (!state.links) state.links = {};
+  state.links[fieldKey] = sourceKey;
+  // Apply immediately
+  const page = state.pages[pageId];
+  const field = page?.fields.find(f => getStableKey(f) === stableKey);
+  if (field) field.translated = getSourceTranslation(sourceKey);
+  closeLinkModal();
+  markUnsaved();
+  loadPageView(pageId);
+  showToast('⟵ Field linked to source');
+}
+
+function removeLinkField() {
+  if (!_linkModalTarget) return;
+  const { pageId, stableKey } = _linkModalTarget;
+  const fieldKey = pageId + ':' + stableKey;
+  delete state.links[fieldKey];
+  closeLinkModal();
+  markUnsaved();
+  loadPageView(pageId);
+  showToast('Link removed');
+}
+
+function closeLinkModal() {
+  document.getElementById('linkModal').classList.remove('show');
+  _linkModalTarget = null;
+}
+
 </script>
 
 <div id="printArea" style="display:none;"></div>
+<div class="modal-overlay" id="linkModal">
+  <div class="modal-box" style="width:480px;max-height:80vh;display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+      <div class="modal-title" style="margin-bottom:0;flex:1;">⟵ Link to source</div>
+      <button onclick="closeLinkModal()" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--text-muted);">✕</button>
+    </div>
+    <div class="modal-desc">Select a source field to link to. The translation will always mirror the source.</div>
+    <div id="linkModalList" style="overflow-y:auto;flex:1;margin-top:12px;"></div>
+    <div style="display:flex;gap:8px;margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
+      <button class="modal-btn secondary" onclick="closeLinkModal()">Cancel</button>
+      ${Object.keys(state?.links||{}).length ? '<button class="modal-btn secondary" onclick="removeLinkField()" style="color:var(--red);border-color:var(--red);">Remove link</button>' : ''}
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
