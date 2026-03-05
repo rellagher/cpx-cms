@@ -2114,8 +2114,9 @@ function printPage() {
 
   let rows = '';
   for (const field of page.fields) {
-    const original = (field.default || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-    const translated = (field.translated || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const stripHtml = s => { const d = document.createElement('div'); d.innerHTML = s || ''; return d.textContent || d.innerText || ''; };
+    const original = stripHtml(field.default || '');
+    const translated = stripHtml(field.translated || '');
     const label = (field.field || '').replace(/</g, '&lt;');
     rows += '<tr>' +
       '<td><div class="print-field-label">' + label + '</div>' + (original || '<span style="color:#d1d5db;">—</span>') + '</td>' +
