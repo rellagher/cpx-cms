@@ -233,7 +233,7 @@
     "actyva:1yjkpmselloia": "Conteúdo da embalagem",
     "actyva:k3zjqam9u2aj": "<p>1 dispositivo ACTYVA</p><p>1x Cabo de carregamento USB-C*</p><p>1x Guia rápido</p><p>*Carregador de parede não incluído (utilize qualquer adaptador USB-C)</p>",
     "actyva:1ycgwcsv07q5k": "ENGENHARIA BIOFOTÓNICA",
-    "actyva:s8gnyizb1kw4": "Dê uma olhada no interior do actyva",
+    "actyva:s8gnyizb1kw4": "Veja o interior do actyva",
     "actyva:1j7slmvykv5jh": "<p>Oito emissores biofotónicos de precisão rodeiam o SHOT, libertando frequências de luz durante os 90 segundos de ativação. Esta energia fotónica otimiza a fórmula líquida a nível molecular, preparando-a para a máxima biodisponibilidade e reconhecimento celular.</p>",
     "actyva:ag3e9xds5ivl": "90 segundos de ativação",
     "actyva:22ax2uqsx5xmt": "Compatível com as injeções Cellpowerx",
@@ -1482,6 +1482,14 @@
         "header"
       ],
       "ts": "2026-03-05T15:29:27.620Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "pt-PT",
+      "pages": [
+        "actyva"
+      ],
+      "ts": "2026-03-05T17:05:56.285Z"
     }
   ],
   "__pending": {
@@ -2433,5 +2441,15 @@
     "about:xwr31mmtmv8r",
     "about:1wdtxtnugqzxe"
   ],
-  "__field_edits": {}
+  "__field_edits": {},
+  "__sources": {
+    "homepage:xahwdby83o9s": true,
+    "homepage:hpaqhzphsyoc": true,
+    "homepage:25rdsukwmnz9h": true
+  },
+  "__links": {
+    "actyva:1ycgwcsv07q5k": "homepage:xahwdby83o9s",
+    "actyva:s8gnyizb1kw4": "homepage:hpaqhzphsyoc",
+    "actyva:1j7slmvykv5jh": "homepage:25rdsukwmnz9h"
+  }
 }
