@@ -221,7 +221,6 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
         </div>
         <span id="deeplUsageText" style="color:var(--text-muted);min-width:48px;">loading…</span>
       </div>
-      <button class="export-btn" style="background:var(--amber);" onclick="openDuplicatesPanel()" data-admin-only="true">⧉ Duplicates</button>
       <button class="export-btn" style="background:#0891b2;" onclick="openSyncModal()" id="btnSync" data-admin-only="true">⟳ Sync Shopify</button>
       <button class="export-btn" style="background:#059669;" onclick="openActivityLog()" id="btnActivityLog" data-admin-only="true">📋 Activity</button>
       <button class="export-btn" style="background:#6d28d9;" onclick="openTranslateAllPagesModal()" id="btnTranslateAllPages" data-admin-only="true">✦ Translate All Pages</button>
@@ -749,7 +748,7 @@ function loadPageView(pageId) {
       </div>
       <div class="field-original">${escHtml(displayOriginal)}</div>
       ${isLinked
-        ? `<div style="padding:10px 12px;background:var(--bg-3);border:1px solid var(--border);border-radius:8px;color:var(--text-muted);font-size:13px;font-style:italic;">${escHtml(field.translated) || '<span style="opacity:0.5;">Waiting for source translation…</span>'}</div>`
+        ? `<div style="padding:10px 12px;background:var(--bg-3);border:1px solid var(--border);border-radius:8px;color:var(--text-muted);font-size:13px;font-style:italic;">${htmlToPlain(field.translated) || '<span style="opacity:0.5;">Waiting for source translation…</span>'}</div>`
         : inputEl}
     </div>`;
   }).join('');
