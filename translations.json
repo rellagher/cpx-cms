@@ -1458,6 +1458,14 @@
         "navigation"
       ],
       "ts": "2026-03-05T10:17:02.508Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "footer"
+      ],
+      "ts": "2026-03-05T10:17:58.317Z"
     }
   ],
   "__pending": {
@@ -1475,6 +1483,9 @@
         "299033297282_title",
         "303595815298_title",
         "304299377026_title"
+      ],
+      "footer": [
+        "3mqyzudq5jy56"
       ]
     }
   },
@@ -2353,7 +2364,7 @@
     "shots-restart:1ewmvx5kec5co": "Das könnte Ihnen auch gefallen",
     "footer:3gq07l0r5w68h": "Entdecken",
     "footer:3hca0r9ywms7n": "Support und Kontakte",
-    "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Rückerstattungsrichtlinie</a></p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Beschwerdebuch</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Kontakt</a></p>",
+    "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Rückerstattungsrichtlinie</a></p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Beschwerdebuch</a>/Reklamationen</p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Kontakt</a></p>",
     "header:6o4qs55m2bp6": "Kostenloser Versand bei Bestellungen über 500€",
     "popups:2d8bsokshoeu1": "Bitte melden Sie sich für unseren Newsletter an.",
     "popups:331955xorr1pp": "Abonnieren",
