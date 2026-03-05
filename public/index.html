@@ -138,6 +138,20 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
 
 /* EMPTY STATE */
 .empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:12px;color:var(--text-dim);text-align:center;}
+
+@media print {
+  body * { visibility: hidden !important; }
+  #printArea, #printArea * { visibility: visible !important; }
+  #printArea { position: fixed; inset: 0; background: white; padding: 32px; z-index: 99999; }
+}
+.print-table { width: 100%; border-collapse: collapse; font-family: Georgia, serif; font-size: 13px; }
+.print-table th { background: #f3f4f6; padding: 8px 12px; text-align: left; font-weight: 700; border: 1px solid #e5e7eb; font-size: 10px; text-transform: uppercase; letter-spacing: 0.8px; color: #6b7280; }
+.print-table td { padding: 10px 12px; border: 1px solid #e5e7eb; vertical-align: top; line-height: 1.5; width: 50%; }
+.print-table tr:nth-child(even) td { background: #f9fafb; }
+.print-field-label { font-size: 9px; color: #9ca3af; font-family: monospace; margin-bottom: 3px; text-transform: uppercase; }
+.print-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 20px; border-bottom: 2px solid #111; padding-bottom: 12px; }
+.print-header h1 { font-family: Georgia, serif; font-size: 18px; font-weight: 700; margin: 0; }
+.print-header span { font-size: 11px; color: #6b7280; }
 </style>
 </head>
 <body>
@@ -211,6 +225,7 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="undoLastAction()" id="btnUndo" title="Undo last translation" disabled>↩ Undo</button>
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="confirmRevert()" id="btnRevert">↺ Revert</button>
       <button class="export-btn" onclick="exportCsv()" data-admin-only="true">↓ Export CSV</button>
+      <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="printPage()">🖨 Print</button>
       <button class="logout-btn" onclick="logout()">Sign out</button>
     </div>
   </div>
@@ -2085,6 +2100,43 @@ function showToast(msg) {
 // INIT
 // ============================================================
 boot();
+function printPage() {
+  if (!state.currentPageId) { showToast('Select a page first'); return; }
+  const page = state.pages[state.currentPageId];
+  if (!page) return;
+
+  const langLabel = document.querySelector('.lang-badge')?.textContent?.trim() || state.lang;
+  const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
+
+  let rows = '';
+  for (const field of page.fields) {
+    const original = (field.default || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const translated = (field.translated || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const label = (field.field || '').replace(/</g, '&lt;');
+    rows += '<tr>' +
+      '<td><div class="print-field-label">' + label + '</div>' + (original || '<span style="color:#d1d5db;">—</span>') + '</td>' +
+      '<td style="' + (!translated ? 'background:#fef9c3;' : '') + '"><div class="print-field-label">' + langLabel + '</div>' + (translated || '<span style="color:#d1d5db;">Not translated</span>') + '</td>' +
+      '</tr>';
+  }
+
+  const html = '<div class="print-header">' +
+    '<h1>' + (page.title || state.currentPageId) + '</h1>' +
+    '<span>' + langLabel + ' &nbsp;·&nbsp; ' + date + '</span>' +
+    '</div>' +
+    '<table class="print-table">' +
+    '<thead><tr><th>Original</th><th>Translation (' + langLabel + ')</th></tr></thead>' +
+    '<tbody>' + rows + '</tbody>' +
+    '</table>';
+
+  const printArea = document.getElementById('printArea');
+  printArea.innerHTML = html;
+  printArea.style.display = 'block';
+  window.print();
+  printArea.style.display = 'none';
+}
+
 </script>
+
+<div id="printArea" style="display:none;"></div>
 </body>
 </html>
