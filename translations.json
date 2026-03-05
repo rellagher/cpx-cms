@@ -1468,27 +1468,7 @@
       "ts": "2026-03-05T10:17:58.317Z"
     }
   ],
-  "__pending": {
-    "de": {
-      "navigation": [
-        "743659405698_title",
-        "743673823618_title",
-        "743673921922_title",
-        "754732794242_title",
-        "754732827010_title",
-        "754732859778_title",
-        "754732892546_title",
-        "756474708354_title",
-        "773292949890_title",
-        "299033297282_title",
-        "303595815298_title",
-        "304299377026_title"
-      ],
-      "footer": [
-        "3mqyzudq5jy56"
-      ]
-    }
-  },
+  "__pending": {},
   "de": {
     "navigation:743518732674_title": "Für Unternehmen",
     "navigation:743659340162_title": "Startseite",
