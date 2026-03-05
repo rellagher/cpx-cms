@@ -1466,9 +1466,23 @@
         "footer"
       ],
       "ts": "2026-03-05T10:17:58.317Z"
+    },
+    {
+      "name": "f",
+      "lang": "fr",
+      "pages": [
+        "header"
+      ],
+      "ts": "2026-03-05T15:29:01.679Z"
     }
   ],
-  "__pending": {},
+  "__pending": {
+    "fr": {
+      "header": [
+        "6o4qs55m2bp6"
+      ]
+    }
+  },
   "de": {
     "navigation:743518732674_title": "Für Unternehmen",
     "navigation:743659340162_title": "Startseite",
@@ -2404,5 +2418,8 @@
     "bundle",
     "RHYTHM PROTOCOL",
     "RESHAPE PROTOCOL"
-  ]
+  ],
+  "fr": {
+    "header:6o4qs55m2bp6": "a"
+  }
 }
