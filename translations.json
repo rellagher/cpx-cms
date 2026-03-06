@@ -1490,12 +1490,30 @@
         "actyva"
       ],
       "ts": "2026-03-05T17:05:56.285Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "homepage",
+        "actyva"
+      ],
+      "ts": "2026-03-06T12:24:58.707Z"
     }
   ],
   "__pending": {
     "fr": {
       "header": [
         "6o4qs55m2bp6"
+      ]
+    },
+    "de": {
+      "homepage": [
+        "3cjyx06a103lq"
+      ],
+      "actyva": [
+        "s8gnyizb1kw4",
+        "1j7slmvykv5jh"
       ]
     }
   },
@@ -1715,7 +1733,7 @@
     "homepage:11v3k9agzb07q": "ACTYVA entstand aus einer lang gehegten Überzeugung heraus, nämlich der Gewissheit, dass das Leben nicht nur durch Chemie, sondern auch durch die unsichtbare Energie, die durch alle Dinge fließt, aufrechterhalten wird. Jahrelang habe ich mich mit der Elektrizität, den Magnetfeldern und den Bioinformationen des Körpers befasst. Dabei habe ich erkannt, dass hinter jedem physiologischen Prozess ein stiller Tanz aus Ladungen, Frequenzen und unsichtbaren Strukturen stattfindet. ACTYVA ist die Materialisierung dieser Suche.",
     "homepage:ggut6wil4d2e": "Noch nicht sicher, welches Produkt Sie wählen sollen?",
     "homepage:1c73ozbxo85hm": "Finden Sie heraus, welche unserer Produkte Ihren Anforderungen am besten entsprechen.",
-    "homepage:3cjyx06a103lq": "Hier können Sie eine auf sie abgestimmte Empfehlung erhalten",
+    "homepage:3cjyx06a103lq": "Hier können Sie eine auf Sie abgestimmte Empfehlung erhalten",
     "actyva:248wu691vn7ku": "Sparen Sie bis zu 90 € mit unseren Paketen.",
     "actyva:1m8l315tp351x": "Entdecken Sie die ACTYVA-Pakete – mehr Wert für Ihr Geld.",
     "actyva:nb5lslz5zxi9": "Der Vorteil",
@@ -1725,8 +1743,8 @@
     "actyva:1yjkpmselloia": "Was ist im Lieferumfang enthalten?",
     "actyva:k3zjqam9u2aj": "<p>1x ACTYVA-Gerät</p><p>1x USB-C-Ladekabel</p><p>1x Kurzanleitung</p><p>*Wandladegerät nicht im Lieferumfang enthalten (bitte einen beliebigen USB-C-Adapter verwenden)</p>",
     "actyva:1ycgwcsv07q5k": "BIOPHOTONISCHE TECHNIK",
-    "actyva:s8gnyizb1kw4": "Werfen Sie einen Blick in actyva",
-    "actyva:1j7slmvykv5jh": "<p>Acht präzise biophotonische Emitter umgeben das SHOT-Gerät und geben während der 90-sekündigen Aktivierung Lichtfrequenzen ab. Diese photonische Energie optimiert die flüssige Formel auf molekularer Ebene und bereitet sie auf maximale Bioverfügbarkeit und Zellerkennung vor.</p>",
+    "actyva:s8gnyizb1kw4": "Nehmen Sie ACTYVA einmal genauer unter die Lupe",
+    "actyva:1j7slmvykv5jh": "<p>Acht präzise biophotonische Emitter umgeben das Glasfläschchen im Gerät und geben während der 90-sekündigen Aktivierung Lichtfrequenzen ab. Diese photonische Energie optimiert das darin enthaltene flüssige Nahrungsergänzungsmittel auf molekularer Ebene und bereitet es auf maximale Bioverfügbarkeit und Zellerkennung vor.</p>",
     "actyva:ag3e9xds5ivl": "90 Sekunden Aktivierungszeit",
     "actyva:22ax2uqsx5xmt": "Kompatibel mit CellpowerX-Shots",
     "actyva:mi6300s4q5mq": "Ihr einzigartiges Biofeld",
