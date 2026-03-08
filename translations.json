@@ -1622,6 +1622,16 @@
         "product-actyva"
       ],
       "ts": "2026-03-08T21:25:42.680Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "product-reshape-shot",
+        "product-recharge-shot",
+        "product-reset-shot"
+      ],
+      "ts": "2026-03-08T21:36:52.149Z"
     }
   ],
   "__pending": {
@@ -1686,6 +1696,14 @@
         "756474708354_title",
         "773292949890_title",
         "299033297282_title"
+      ],
+      "product-reshape-shot": [
+        "15106135261570_title",
+        "15106135261570_body_html"
+      ],
+      "product-reset-shot": [
+        "15106135589250_title",
+        "15106135589250_body_html"
       ]
     }
   },
@@ -2580,14 +2598,14 @@
     "product-refocus:15106127856002_body_html": "<h4 data-end=\"305\" data-start=\"208\">\nVerbessern Sie Ihre kognitiven Fähigkeiten.<strong data-end=\"303\" data-start=\"208\"></strong>\n</h4>\n<p data-end=\"305\" data-start=\"208\"><meta charset=\"utf-8\">REFOCUS ist eine <meta charset=\"utf-8\">leistungsorientierte Formel, die entwickelt wurde, um die Konzentration, geistige Klarheit und anhaltende Energie zu verbessern – damit Sie aufmerksam und fokussiert bleiben und Ihre beste Leistung erbringen können.<meta charset=\"utf-8\"></p>\n<p data-end=\"604\" data-start=\"385\"><meta charset=\"utf-8\">Durch die Kombination von gezielten Nootropika, <meta charset=\"utf-8\">Adaptogene und bioaktive Nährstoffe fördert es eine ruhige Wachsamkeit und anhaltende Konzentration und unterstützt die kognitive Leistungsfähigkeit, mentale Belastbarkeit und gleichmäßige Energieversorgung über den Tag hinweg.<meta charset=\"utf-8\"></p>",
     "product-remethyl:15106128806274_title": "REMETHYL",
     "product-remethyl:15106128806274_body_html": "<h4>Entdecken Sie die Wissenschaft des inneren Gleichgewichts.</h4>\n<p>REMETHYL ist eine Formel der nächsten Generation, die das natürliche Erneuerungssystem Ihres Körpers unterstützt – die Methylierung –, den Prozess, der Ihre Zellen, Ihre Energie und Ihren Geist im Gleichgewicht hält.</p>\n<p>Diese intelligente Mischung aus bioaktiven Nährstoffen trägt dazu bei, einen ausgeglichenen Homocysteinspiegel aufrechtzuerhalten, die Zellvitalität zu fördern, nachhaltige Energie zu liefern und jeden Tag für klare geistige Konzentration zu sorgen.<br></p>",
-    "product-reshape-shot:15106135261570_title": "NEUFORMUNG VON AUFNAHMEN",
-    "product-reshape-shot:15106135261570_body_html": "<h4 data-start=\"199\" data-end=\"278\">Aktivieren Sie Ihren Stoffwechsel.</h4>\n<p data-start=\"353\" data-end=\"900\">Der RESHAPE SHOT ist der Motor Ihres Transformationsprogramms. <meta charset=\"utf-8\">Diese Präzisionsformel wurde entwickelt, um die Stoffwechselaktivität anzuregen und die natürliche Effizienz des Körpers bei der Energienutzung und der Zusammensetzung des Körpergewichts zu verbessern.<br><br><meta charset=\"utf-8\"><strong>Er wurde entwickelt</strong>, <strong>um durch ACTYVA™ aktiviert zu werden</strong>, <meta charset=\"utf-8\">und trägt zur Optimierung der Stoffwechselwege und zur Unterstützung des Fettstoffwechsels im Rahmen eines aktiven, gesundheitsorientierten Lebensstils bei.</p>",
+    "product-reshape-shot:15106135261570_title": "RESHAPE SHOTS",
+    "product-reshape-shot:15106135261570_body_html": "<h4 data-start=\"199\" data-end=\"278\">Aktiviert Ihren Stoffwechsel.</h4>\n<p data-start=\"353\" data-end=\"900\">Der RESHAPE SHOT ist der Motor Ihres Transformationsprogramms. <meta charset=\"utf-8\">Diese Präzisionsformel wurde entwickelt, um die Stoffwechselaktivität anzuregen und die natürliche Effizienz des Körpers bei der Energienutzung und der Zusammensetzung des Körpergewichts zu verbessern.<br/><br/><meta charset=\"utf-8\"><strong>Er wurde entwickelt</strong>, <strong>um durch ACTYVA™ aktiviert zu werden</strong>,&nbsp;<meta charset=\"utf-8\">und trägt zur Optimierung der Stoffwechselwege und zur Unterstützung des Fettstoffwechsels im Rahmen eines aktiven, gesundheitsorientierten Lebensstils bei.</p>",
     "product-recharge-shot:15106135294338_title": "RECHARGE SHOTS",
-    "product-recharge-shot:15106135294338_body_html": "<h4 data-start=\"177\" data-end=\"249\">\n<meta charset=\"utf-8\">Aktivieren Sie Ihre Stimmung und Ihren Geist.</h4>\n<p data-start=\"2764\" data-end=\"2962\">RECHARGE ist Ihre tägliche Grundlage für anhaltendes Wohlbefinden. Diese umfassende Nährstoffformel unterstützt das systemische Gleichgewicht und verbessert die Widerstandsfähigkeit der Zellen. Außerdem unterstützt sie&nbsp;Körper und Geist den ganzen Tag über Höchstleistungen zu erbringen.</p><p data-end=\"742\" data-start=\"570\"><meta charset=\"utf-8\"><strong>Entwickelt</strong>, <strong>um durch ACTYVA™ aktiviert zu werden.&nbsp;</strong>Diese Nährstoffformel kombiniert Adaptogene, Nootropika und wichtige metabolische Cofaktoren, die dem Körper helfen, sich von täglichem Stress und kognitiver Ermüdung zu erholen – und fördern so Entspannung, emotionales Gleichgewicht und die Zellerneuerung.</p>",
+    "product-recharge-shot:15106135294338_body_html": "<h4 data-start=\"177\" data-end=\"249\">\n<meta charset=\"utf-8\">Aktiviert Ihre Stimmung und Ihren Geist.</h4>\n<p data-start=\"2764\" data-end=\"2962\">RECHARGE ist Ihre tägliche Grundlage für anhaltendes Wohlbefinden. Diese umfassende Nährstoffformel unterstützt das systemische Gleichgewicht und verbessert die Widerstandsfähigkeit der Zellen. Außerdem unterstützt sie&nbsp;Körper und Geist dabei den ganzen Tag über Höchstleistungen zu erbringen.</p><p data-end=\"742\" data-start=\"570\"><meta charset=\"utf-8\"><strong>Entwickelt</strong>, <strong>um durch ACTYVA™ aktiviert zu werden.&nbsp;</strong>Diese Nährstoffformel kombiniert Adaptogene, Nootropika und wichtige metabolische Cofaktoren, die dem Körper helfen, sich von täglichem Stress und kognitiver Ermüdung zu erholen und fördern so Entspannung, emotionales Gleichgewicht und die Zellerneuerung.</p>",
     "product-restart-shot:15106135425410_title": "RESTART SHOTS",
     "product-restart-shot:15106135425410_body_html": "<h4 data-start=\"182\" data-end=\"247\">\n<meta charset=\"utf-8\"> <meta charset=\"utf-8\">Aktivieren Ihr Morgensystem.</h4>\n<p data-start=\"182\" data-end=\"247\">RESTART ist Ihr tägliches Startprogramm. Dieser präzise entwickelte SHOT wirkt auf zellulärer Ebene und unterstützt dadurch den&nbsp;natürlichen Energiestoffwechsel, die geistige Konzentration und die Zellvitalität – So starten Sie ausgeglichen, konzentriert und leistungsfähiger in den Tag.&nbsp;</p>\n<p><meta charset=\"utf-8\"><strong>Entwickelt, um durch ACTYVA™ aktiviert zu werden. </strong>Diese flüssige Nährstoffformel kombiniert Aminosäuren, Adaptogene und essentielle Nährstoffe, die synergistisch wirken, um die körperliche und geistige Belastbarkeit zu erhöhen, den Energieumsatz/Energiehaushalt des Körpers zu unterstützen und Müdigkeit sowie Erschöpfung zu reduzieren.</p>",
-    "product-reset-shot:15106135589250_title": "RESET-AUFNAHMEN",
-    "product-reset-shot:15106135589250_body_html": "<h4 data-end=\"209\" data-start=\"130\">Aktivieren Sie Night Repair.</h4>\n<p data-end=\"2632\" data-start=\"2434\">Bereiten Sie Ihren Geist und Körper mit RESET auf eine tiefe, erholsame Nachtruhe vor. Diese <meta charset=\"utf-8\">präzise entwickelte Formel unterstützt <meta charset=\"utf-8\">unterstützt die natürlichen nächtlichen Regenerationsprozesse des Körpers und trägt dazu bei, dass Sie erfrischt, klar und ausgeglichen aufwachen.<meta charset=\"utf-8\"></p>\n<p data-start=\"578\" data-end=\"794\"><meta charset=\"utf-8\">Dieser fortschrittliche Nacht-Shot <strong>wurde für die Aktivierung durch ACTYVA™ entwickelt und</strong> kombiniert Aminosäuren, Pflanzenextrakte und essentielle Nährstoffe, die zur Beruhigung des Geistes, zur Förderung der Entspannung und zur Unterstützung des natürlichen Übergangs des Körpers in den Schlaf beitragen.</p>",
+    "product-reset-shot:15106135589250_title": "RESET SHOTS",
+    "product-reset-shot:15106135589250_body_html": "<h4 data-end=\"209\" data-start=\"130\">Aktiviert Ihren nächtlichen Regenerationsprozess.</h4>\n<p data-end=\"2632\" data-start=\"2434\">Mit Reset bereiten Sie Geist und Körper auf eine tiefe und erholsame Nachtruhe vor. Diese <meta charset=\"utf-8\">präzise entwickelte Nährstoffformel unterstützt die natürlichen nächtlichen Regenerationsprozesse des Körpers und trägt dazu bei, dass Sie frisch, klar und ausgeglichen aufwachen.<meta charset=\"utf-8\"></p>\n<p data-start=\"578\" data-end=\"794\"><meta charset=\"utf-8\"><strong>Entwickelt, um durch ACTYVA™ aktiviert zu werden. </strong>Dieser fortschrittliche Shot für die Nacht&nbsp;kombiniert Aminosäuren, Pflanzenextrakte und essentielle Nährstoffe, die zur Beruhigung des Geistes, zur Förderung der Entspannung und zur Unterstützung des natürlichen Übergangs des Körpers in den Schlaf beitragen.</p>",
     "product-actyva:15106135753090_title": "ACTYVA",
     "product-actyva:15106135753090_body_html": "<h4 data-start=\"246\" data-end=\"320\">Setzt die Kraft Ihrer CellPowerX SHOTS frei.</h4>\n<p data-start=\"322\" data-end=\"473\">ACTYVA ist der Schlüssel zur vollständigen Entfaltung des Potenzials der CellPowerX SHOTS. ACTYVA sendet präzise biophotonische Frequenzen aus, reorganisiert die Matrix jedes SHOTS, verbessert dessen bioinformatives Potenzial und bringt es in Einklang mit dem Körper. Das ultimative Werkzeug für überlegene und greifbare Ergebnisse.</p>",
     "product-rhythm-actyva:15194840170882_title": "RHYTHM-Bundle + ACTYVA",
