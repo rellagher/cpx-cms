@@ -1588,6 +1588,14 @@
         "popups"
       ],
       "ts": "2026-03-08T21:18:39.452Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "navigation"
+      ],
+      "ts": "2026-03-08T21:21:32.267Z"
     }
   ],
   "__pending": {
@@ -1641,6 +1649,16 @@
       "popups": [
         "331955xorr1pp",
         "3pce1walt8bgn"
+      ],
+      "navigation": [
+        "754732794242_title",
+        "754732827010_title",
+        "754732859778_title",
+        "754732892546_title",
+        "756474610050_title",
+        "756474708354_title",
+        "773292949890_title",
+        "299033297282_title"
       ]
     }
   },
@@ -1656,21 +1674,21 @@
     "navigation:747894440322_title": "Unsere Wissenschaft",
     "navigation:754732728706_title": "Alle Artikel ansehen",
     "navigation:754732761474_title": "ACTYVA",
-    "navigation:754732794242_title": "Paket RHYTHM + ACTYVA",
-    "navigation:754732827010_title": "Paket RHYTHM ",
-    "navigation:754732859778_title": "Paket RESHAPE + ACTYVA",
-    "navigation:754732892546_title": "Paket RESHAPE",
+    "navigation:754732794242_title": "Das Set RHYTHM + ACTYVA",
+    "navigation:754732827010_title": "Das Set RHYTHM ",
+    "navigation:754732859778_title": "Das Set RESHAPE + ACTYVA",
+    "navigation:754732892546_title": "Das Set RESHAPE",
     "navigation:756447871362_title": "Ihre Datenschutzoptionen",
     "navigation:756474577282_title": "Actyva",
-    "navigation:756474610050_title": "Pakete",
+    "navigation:756474610050_title": "Sets",
     "navigation:756474642818_title": "Shots",
-    "navigation:756474708354_title": "Fruchtgummi",
+    "navigation:756474708354_title": "Fruchtgummis",
     "navigation:756475920770_title": "Alle Produkte",
     "navigation:762850509186_title": "Partnerprogramm",
     "navigation:769250591106_title": "Profil",
-    "navigation:773292949890_title": "Entdecken Sie Ihr Programm",
+    "navigation:773292949890_title": "Entdecken Sie Ihr persönliches Programm",
     "navigation:299033264514_title": "Hauptmenü",
-    "navigation:299033297282_title": "Fußzeile/Footer",
+    "navigation:299033297282_title": "Fußzeile",
     "navigation:299033330050_title": "Hauptmenü des Kundenkontos",
     "navigation:303595815298_title": "Shop",
     "navigation:304299377026_title": "Shop",
