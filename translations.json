@@ -1508,6 +1508,14 @@
         "product-actyva"
       ],
       "ts": "2026-03-08T13:12:10.494Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "product-restart-shot"
+      ],
+      "ts": "2026-03-08T13:12:34.779Z"
     }
   ],
   "__pending": {
@@ -1529,6 +1537,9 @@
       ],
       "product-actyva": [
         "15106135753090_body_html"
+      ],
+      "product-restart-shot": [
+        "15106135425410_title"
       ]
     }
   },
@@ -2427,7 +2438,7 @@
     "product-reshape-shot:15106135261570_body_html": "<h4 data-start=\"199\" data-end=\"278\">Aktivieren Sie Ihren Stoffwechsel.</h4>\n<p data-start=\"353\" data-end=\"900\">Der RESHAPE SHOT ist der Motor Ihres Transformationsprogramms. <meta charset=\"utf-8\">Diese Präzisionsformel wurde entwickelt, um die Stoffwechselaktivität anzuregen und die natürliche Effizienz des Körpers bei der Energienutzung und der Zusammensetzung des Körpergewichts zu verbessern.<br><br><meta charset=\"utf-8\"><strong>Er wurde entwickelt</strong>, <strong>um durch ACTYVA™ aktiviert zu werden</strong>, <meta charset=\"utf-8\">und trägt zur Optimierung der Stoffwechselwege und zur Unterstützung des Fettstoffwechsels im Rahmen eines aktiven, gesundheitsorientierten Lebensstils bei.</p>",
     "product-recharge-shot:15106135294338_title": "AUFLADUNGSSCHÜSSE",
     "product-recharge-shot:15106135294338_body_html": "<h4 data-start=\"177\" data-end=\"249\">\n<meta charset=\"utf-8\">Aktivieren Sie Ihre Stimmung und Ihren Geist.</h4>\n<p data-start=\"2764\" data-end=\"2962\">RECHARGE ist Ihre tägliche Grundlage für anhaltendes Wohlbefinden. Diese umfassende Formel unterstützt das systemische Gleichgewicht und verbessert die Widerstandsfähigkeit der Zellen, <meta charset=\"utf-8\">und hilft Ihrem Körper und Geist, den ganzen Tag über Höchstleistungen zu erbringen.</p>\n<p data-end=\"742\" data-start=\"570\"><meta charset=\"utf-8\"><strong>Es wurde entwickelt</strong>, <strong>um durch ACTYVA™ aktiviert zu werden</strong>, <meta charset=\"utf-8\">und kombiniert Adaptogene, Nootropika und wichtige metabolische Cofaktoren, die dem Körper helfen, sich von täglichem Stress und kognitiver Ermüdung zu erholen – und so Entspannung, emotionales Gleichgewicht und Zellerneuerung fördern.</p>",
-    "product-restart-shot:15106135425410_title": "NEUSTART-AUFNAHMEN",
+    "product-restart-shot:15106135425410_title": "RESTART SHOTS",
     "product-restart-shot:15106135425410_body_html": "<h4 data-start=\"182\" data-end=\"247\">\n<meta charset=\"utf-8\"> <meta charset=\"utf-8\">Aktivieren Sie Ihr Morgensystem.</h4>\n<p data-start=\"182\" data-end=\"247\">RESTART ist Ihr tägliches Startprotokoll. Dieser präzise entwickelte SHOT wirkt auf zellulärer Ebene und <meta charset=\"utf-8\">den natürlichen Energiestoffwechsel, die Konzentration und die Zellvitalität zu unterstützen – damit Sie ausgeglichen, aufmerksam und leistungsfähig in den Tag starten können.</p>\n<p><meta charset=\"utf-8\"><strong>Entwickelt, um mit ACTYVA™ aktiviert zu werden. </strong>Diese flüssige Formel kombiniert Aminosäuren, Adaptogene und essentielle Nährstoffe, die synergistisch wirken, um die körperliche und geistige Belastbarkeit zu fördern, den Energieumsatz des Körpers zu unterstützen und Müdigkeit und Erschöpfung zu reduzieren.</p>",
     "product-reset-shot:15106135589250_title": "RESET-AUFNAHMEN",
     "product-reset-shot:15106135589250_body_html": "<h4 data-end=\"209\" data-start=\"130\">Aktivieren Sie Night Repair.</h4>\n<p data-end=\"2632\" data-start=\"2434\">Bereiten Sie Ihren Geist und Körper mit RESET auf eine tiefe, erholsame Nachtruhe vor. Diese <meta charset=\"utf-8\">präzise entwickelte Formel unterstützt <meta charset=\"utf-8\">unterstützt die natürlichen nächtlichen Regenerationsprozesse des Körpers und trägt dazu bei, dass Sie erfrischt, klar und ausgeglichen aufwachen.<meta charset=\"utf-8\"></p>\n<p data-start=\"578\" data-end=\"794\"><meta charset=\"utf-8\">Dieser fortschrittliche Nacht-Shot <strong>wurde für die Aktivierung durch ACTYVA™ entwickelt und</strong> kombiniert Aminosäuren, Pflanzenextrakte und essentielle Nährstoffe, die zur Beruhigung des Geistes, zur Förderung der Entspannung und zur Unterstützung des natürlichen Übergangs des Körpers in den Schlaf beitragen.</p>",
