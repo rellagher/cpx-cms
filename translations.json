@@ -1580,6 +1580,14 @@
         "footer"
       ],
       "ts": "2026-03-08T21:18:15.319Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "popups"
+      ],
+      "ts": "2026-03-08T21:18:39.452Z"
     }
   ],
   "__pending": {
@@ -1629,6 +1637,10 @@
       "product-recharge-shot": [
         "15106135294338_title",
         "15106135294338_body_html"
+      ],
+      "popups": [
+        "331955xorr1pp",
+        "3pce1walt8bgn"
       ]
     }
   },
@@ -2510,9 +2522,9 @@
     "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Rückerstattungsrichtlinie</a>n</p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Reklamationen</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Kontakt</a></p>",
     "header:6o4qs55m2bp6": "Kostenloser Versand bei Bestellungen über 500€",
     "popups:2d8bsokshoeu1": "Bitte melden Sie sich für unseren Newsletter an.",
-    "popups:331955xorr1pp": "Abonnieren",
+    "popups:331955xorr1pp": "Anmelden",
     "popups:11svs1tdhiukg": "Bitte beschreiben Sie, was Ihre Kunden erhalten, wenn sie Ihren Newsletter abonnieren.",
-    "popups:3pce1walt8bgn": "Cookie-Richtlinie",
+    "popups:3pce1walt8bgn": "Cookie-Richtlinien",
     "popups:gpdzu8mts1n2": "<p>Wir verwenden Cookies und ähnliche Technologien, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer Datenschutzerklärung.</p>",
     "popups:wrp588gnma1g": "Trends in diesem Monat",
     "product-reshape-balance:15106108162434_title": "RESHAPE BALANCE",
