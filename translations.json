@@ -1641,6 +1641,15 @@
         "product-reshape-shot"
       ],
       "ts": "2026-03-08T21:47:03.140Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "product-reshape-balance",
+        "product-remethyl"
+      ],
+      "ts": "2026-03-08T21:53:50.571Z"
     }
   ],
   "__pending": {
@@ -1716,6 +1725,12 @@
       ],
       "product-refocus": [
         "15106127856002_body_html"
+      ],
+      "product-reshape-balance": [
+        "15106108162434_body_html"
+      ],
+      "product-remethyl": [
+        "15106128806274_body_html"
       ]
     }
   },
@@ -2603,13 +2618,13 @@
     "popups:gpdzu8mts1n2": "<p>Wir verwenden Cookies und ähnliche Technologien, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer Datenschutzerklärung.</p>",
     "popups:wrp588gnma1g": "Trends in diesem Monat",
     "product-reshape-balance:15106108162434_title": "RESHAPE BALANCE",
-    "product-reshape-balance:15106108162434_body_html": "<h4 data-end=\"162\" data-start=\"107\">\n<meta charset=\"utf-8\">Finden Sie Ihr Gleichgewicht, definieren Sie Ihre Form neu.</h4>\n<p data-end=\"510\" data-start=\"326\">RESHAPE Balance ist eine intelligente, stimmungsstabilisierende Formel, die entwickelt wurde, um das emotionale Wohlbefinden zu unterstützen, stressbedingte Heißhungerattacken zu reduzieren und Ihnen dabei zu helfen, Ihre Wellness-Ziele im Blick zu behalten.<br><br><meta charset=\"utf-8\">Diese fortschrittliche Mischung aus Aminosäuren, Pflanzenextrakten und essenziellen Nährstoffen wirkt harmonisch zusammen, um ruhige Energie und emotionale Klarheit zu fördern – wichtige Faktoren für eine gesunde Beziehung zu Lebensmitteln und eine nachhaltige Gewichtsregulierung.</p>",
+    "product-reshape-balance:15106108162434_body_html": "<h4 data-end=\"162\" data-start=\"107\">\n<meta charset=\"utf-8\">Finden Sie Ihr Gleichgewicht. Definieren Sie Ihre Körperform neu.</h4>\n<p data-end=\"510\" data-start=\"326\">RESHAPE Balance ist eine intelligente und stimmungsstabilisierende Formel, die das emotionale Wohlbefinden unterstützt, stressbedingte Heißhungerattacken reduziertund Ihnen dabei hilft Ihre Wellness-Ziele im Blick zu behalten.&nbsp;Diese fortschrittliche Mischung aus Aminosäuren, Pflanzenextrakten und essenziellen Nährstoffen wirkt harmonisch zusammen, um ruhige Energie und emotionale Klarheit zu fördern – wichtige Faktoren für eine gesunde Beziehung zu Lebensmitteln und eine nachhaltige Gewichtsregulierung.</p>",
     "product-reshape-control:15106126152066_title": "RESHAPE CONTROL",
     "product-reshape-control:15106126152066_body_html": "<h4 data-start=\"188\" data-end=\"247\">\n<meta charset=\"utf-8\">Übernehmen Sie die Kontrolle, fühlen Sie sich in der Lage, alles im Griff zu haben.</h4>\n<p data-start=\"394\" data-end=\"618\">RESHAPE Control ist eine wissenschaftlich fundierte Formel, die die Appetitregulierung, den Stoffwechselausgleich und einen gesunden Blutzuckerspiegel unterstützt und Ihnen dabei hilft, zufrieden und konzentriert zu bleiben und den natürlichen Rhythmus Ihres Körpers zu kontrollieren.</p>\n<p data-start=\"2231\" data-end=\"2466\"><meta charset=\"utf-8\">Diese synergistische Mischung kombiniert lösliche Ballaststoffe, Pflanzenextrakte und Stoffwechselaktivatoren, die zusammenwirken, um das Sättigungsgefühl zu fördern, den Energiestoffwechsel zu optimieren und eine ausgeglichene Glukosereaktion über den Tag hinweg zu unterstützen.</p>",
     "product-refocus:15106127856002_title": "REFOCUS",
     "product-refocus:15106127856002_body_html": "<h4 data-end=\"305\" data-start=\"208\">\nVerbessert Ihre kognitiven Fähigkeiten.<strong data-end=\"303\" data-start=\"208\"></strong>\n</h4>\n<p data-end=\"305\" data-start=\"208\"><meta charset=\"utf-8\">REFOCUS ist eine <meta charset=\"utf-8\">leistungsorientierte Formel, die entwickelt wurde, um die Konzentration, mentale Klarheit und anhaltende Energie zu verbessern. Es hilft Ihnen dabei aufmerksam und fokussiert zu bleiben und Ihre Bestleistung zu erzielen.<meta charset=\"utf-8\"></p>\n<p data-end=\"604\" data-start=\"385\"><meta charset=\"utf-8\">Durch die Kombination von gezielten Nootropika, <meta charset=\"utf-8\">Adaptogenen und bioaktiven Nährstoffen fördert es eine ruhige Wachsamkeit und anhaltende Konzentration, unterstützt die kognitive Leistungsfähigkeit und mentale Belastbarkeit und sorgt zudem für eine gleichmäßige Energieversorgung über den Tag.<meta charset=\"utf-8\"></p>",
     "product-remethyl:15106128806274_title": "REMETHYL",
-    "product-remethyl:15106128806274_body_html": "<h4>Entdecken Sie die Wissenschaft des inneren Gleichgewichts.</h4>\n<p>REMETHYL ist eine Formel der nächsten Generation, die das natürliche Erneuerungssystem Ihres Körpers unterstützt – die Methylierung –, den Prozess, der Ihre Zellen, Ihre Energie und Ihren Geist im Gleichgewicht hält.</p>\n<p>Diese intelligente Mischung aus bioaktiven Nährstoffen trägt dazu bei, einen ausgeglichenen Homocysteinspiegel aufrechtzuerhalten, die Zellvitalität zu fördern, nachhaltige Energie zu liefern und jeden Tag für klare geistige Konzentration zu sorgen.<br></p>",
+    "product-remethyl:15106128806274_body_html": "<h4>Entdecken Sie die Wissenschaft des inneren Gleichgewichts.</h4>\n<p>REMETHYL ist eine Formel der nächsten Generation, die das natürliche Erneuerungssystem Ihres Körpers unterstützt – die Methylierung – der Prozess, der Ihre Zellen, Ihre Energie und Ihren Geist im Gleichgewicht hält.</p>\n<p>Diese intelligente Mischung aus bioaktiven Nährstoffen trägt zu einem ausgeglichenen Homocysteinspiegel bei, fördert die Zellvitalität, liefert nachhaltige Energie und sorgt täglich für klare geistige Konzentration.</p>",
     "product-reshape-shot:15106135261570_title": "RESHAPE SHOTS",
     "product-reshape-shot:15106135261570_body_html": "<h4 data-start=\"199\" data-end=\"278\">Aktiviert Ihren Stoffwechsel.</h4>\n<p data-start=\"353\" data-end=\"900\">Der RESHAPE SHOT ist der Motor Ihres Transformationsprogramms. <meta charset=\"utf-8\">Diese Präzisionsformel wurde entwickelt, um die Stoffwechselaktivität anzuregen und die natürliche Effizienz des Körpers bei der Energienutzung und der Zusammensetzung des Körpergewichts zu verbessern.<br/><strong>Entwickelt, um durch ACTYVA™ aktiviert zu werden.&nbsp;</strong>Diese Nährstoffformel trägt zur Optimierung der Stoffwechselwege und zur Unterstützung des Fettstoffwechsels im Rahmen eines aktiven und gesundheitsorientierten Lebensstils bei.</p>",
     "product-recharge-shot:15106135294338_title": "RECHARGE SHOTS",
