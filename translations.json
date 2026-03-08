@@ -1572,6 +1572,14 @@
         "homepage"
       ],
       "ts": "2026-03-08T21:17:26.014Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "footer"
+      ],
+      "ts": "2026-03-08T21:18:15.319Z"
     }
   ],
   "__pending": {
@@ -1607,7 +1615,9 @@
         "1j7slmvykv5jh"
       ],
       "footer": [
-        "3mqyzudq5jy56"
+        "3mqyzudq5jy56",
+        "3gq07l0r5w68h",
+        "3hca0r9ywms7n"
       ],
       "product-actyva": [
         "15106135753090_body_html"
@@ -2495,9 +2505,9 @@
     "shots-restart:16vvebfd4gjcg": "Wie sollte RESTART gelagert werden?",
     "shots-restart:wa0cf35chjy1": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. Außerhalb der Reichweite von Kindern aufbewahren und nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
     "shots-restart:1ewmvx5kec5co": "Das könnte Ihnen auch gefallen",
-    "footer:3gq07l0r5w68h": "Entdecken",
-    "footer:3hca0r9ywms7n": "Support und Kontakte",
-    "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Rückerstattungsrichtlinie</a></p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Reklamationen</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Kontakt</a></p>",
+    "footer:3gq07l0r5w68h": "Erfahren Sie mehr über ACTYVA",
+    "footer:3hca0r9ywms7n": "Hilfe und Kontakt",
+    "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Rückerstattungsrichtlinie</a>n</p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Reklamationen</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Kontakt</a></p>",
     "header:6o4qs55m2bp6": "Kostenloser Versand bei Bestellungen über 500€",
     "popups:2d8bsokshoeu1": "Bitte melden Sie sich für unseren Newsletter an.",
     "popups:331955xorr1pp": "Abonnieren",
