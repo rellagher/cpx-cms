@@ -1596,6 +1596,14 @@
         "navigation"
       ],
       "ts": "2026-03-08T21:21:32.267Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "popups"
+      ],
+      "ts": "2026-03-08T21:22:20.732Z"
     }
   ],
   "__pending": {
@@ -1648,7 +1656,8 @@
       ],
       "popups": [
         "331955xorr1pp",
-        "3pce1walt8bgn"
+        "3pce1walt8bgn",
+        "11svs1tdhiukg"
       ],
       "navigation": [
         "754732794242_title",
@@ -2541,7 +2550,7 @@
     "header:6o4qs55m2bp6": "Kostenloser Versand bei Bestellungen über 500€",
     "popups:2d8bsokshoeu1": "Bitte melden Sie sich für unseren Newsletter an.",
     "popups:331955xorr1pp": "Anmelden",
-    "popups:11svs1tdhiukg": "Bitte beschreiben Sie, was Ihre Kunden erhalten, wenn sie Ihren Newsletter abonnieren.",
+    "popups:11svs1tdhiukg": "Bitte beschreiben Sie, was Ihre Kunden erhalten, wenn sie sich für Ihren Newsletter anmelden.",
     "popups:3pce1walt8bgn": "Cookie-Richtlinien",
     "popups:gpdzu8mts1n2": "<p>Wir verwenden Cookies und ähnliche Technologien, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer Datenschutzerklärung.</p>",
     "popups:wrp588gnma1g": "Trends in diesem Monat",
