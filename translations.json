@@ -1499,6 +1499,15 @@
         "actyva"
       ],
       "ts": "2026-03-06T12:24:58.707Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "footer",
+        "product-actyva"
+      ],
+      "ts": "2026-03-08T13:12:10.494Z"
     }
   ],
   "__pending": {
@@ -1514,6 +1523,12 @@
       "actyva": [
         "s8gnyizb1kw4",
         "1j7slmvykv5jh"
+      ],
+      "footer": [
+        "3mqyzudq5jy56"
+      ],
+      "product-actyva": [
+        "15106135753090_body_html"
       ]
     }
   },
@@ -2392,7 +2407,7 @@
     "shots-restart:1ewmvx5kec5co": "Das könnte Ihnen auch gefallen",
     "footer:3gq07l0r5w68h": "Entdecken",
     "footer:3hca0r9ywms7n": "Support und Kontakte",
-    "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Rückerstattungsrichtlinie</a></p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Beschwerdebuch</a>/Reklamationen</p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Kontakt</a></p>",
+    "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Rückerstattungsrichtlinie</a></p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Reklamationen</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Kontakt</a></p>",
     "header:6o4qs55m2bp6": "Kostenloser Versand bei Bestellungen über 500€",
     "popups:2d8bsokshoeu1": "Bitte melden Sie sich für unseren Newsletter an.",
     "popups:331955xorr1pp": "Abonnieren",
@@ -2417,7 +2432,7 @@
     "product-reset-shot:15106135589250_title": "RESET-AUFNAHMEN",
     "product-reset-shot:15106135589250_body_html": "<h4 data-end=\"209\" data-start=\"130\">Aktivieren Sie Night Repair.</h4>\n<p data-end=\"2632\" data-start=\"2434\">Bereiten Sie Ihren Geist und Körper mit RESET auf eine tiefe, erholsame Nachtruhe vor. Diese <meta charset=\"utf-8\">präzise entwickelte Formel unterstützt <meta charset=\"utf-8\">unterstützt die natürlichen nächtlichen Regenerationsprozesse des Körpers und trägt dazu bei, dass Sie erfrischt, klar und ausgeglichen aufwachen.<meta charset=\"utf-8\"></p>\n<p data-start=\"578\" data-end=\"794\"><meta charset=\"utf-8\">Dieser fortschrittliche Nacht-Shot <strong>wurde für die Aktivierung durch ACTYVA™ entwickelt und</strong> kombiniert Aminosäuren, Pflanzenextrakte und essentielle Nährstoffe, die zur Beruhigung des Geistes, zur Förderung der Entspannung und zur Unterstützung des natürlichen Übergangs des Körpers in den Schlaf beitragen.</p>",
     "product-actyva:15106135753090_title": "ACTYVA",
-    "product-actyva:15106135753090_body_html": "<h4 data-start=\"246\" data-end=\"320\">Entfesseln Sie die Kraft Ihrer CellPowerX SHOTS.</h4>\n<p data-start=\"322\" data-end=\"473\">ACTYVA ist der Schlüssel zur vollständigen Entfaltung des Potenzials der CellPowerX SHOTS. ACTYVA sendet präzise biophotonische Frequenzen aus, reorganisiert die Matrix jedes SHOTS, verbessert dessen bioinformatives Potenzial und harmonisiert es mit dem Körper. Das ultimative Werkzeug für überlegene, greifbare Ergebnisse.</p>",
+    "product-actyva:15106135753090_body_html": "<h4 data-start=\"246\" data-end=\"320\">Setzen Sie die Kraft Ihrer CellPowerX SHOTS frei.</h4>\n<p data-start=\"322\" data-end=\"473\">ACTYVA ist der Schlüssel zur vollständigen Entfaltung des Potenzials der CellPowerX SHOTS. ACTYVA sendet präzise biophotonische Frequenzen aus, reorganisiert die Matrix jedes SHOTS, verbessert dessen bioinformatives Potenzial und bringt es in Harmonie mit dem Körper. Das ultimative Werkzeug für überlegene, greifbare Ergebnisse.</p>",
     "product-rhythm-actyva:15194840170882_title": "RHYTHM-Bundle + ACTYVA",
     "product-rhythm-actyva:15194840170882_body_html": "<h4>Beherrschen Sie Ihren Tagesrhythmus</h4>\n<p>Bundle mit ACTYVA + RESTART + RECHARGE + RESET</p>\n<p>Das RHYTHM-Bundle ist das ultimative CellPowerX-System, um den Tageszyklus Ihres Körpers zu optimieren. Es kombiniert unser innovatives ACTYVA-Gerät mit drei gezielten SHOTS: RESTART zur Aktivierung Ihres Morgens, RECHARGE zur Unterstützung Ihres Tages und RESET zur Wiederherstellung Ihrer Nacht. Bringen Sie Ihr Wohlbefinden in Einklang mit Ihrem natürlichen Rhythmus, um eine unvergleichliche 24-Stunden-Leistung zu erzielen.<br></p>",
     "product-rhythm:15195409252738_title": "RHYTHM-Bundle",
