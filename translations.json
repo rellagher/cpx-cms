@@ -1658,6 +1658,16 @@
         "product-reshape-control"
       ],
       "ts": "2026-03-08T21:55:37.226Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "product-rhythm-actyva",
+        "product-rhythm",
+        "product-bundle-reshape-actyva"
+      ],
+      "ts": "2026-03-08T22:01:51.994Z"
     }
   ],
   "__pending": {
@@ -1742,6 +1752,18 @@
       ],
       "product-reshape-control": [
         "15106126152066_body_html"
+      ],
+      "product-rhythm-actyva": [
+        "15194840170882_title",
+        "15194840170882_body_html"
+      ],
+      "product-rhythm": [
+        "15195409252738_title",
+        "15195409252738_body_html"
+      ],
+      "product-bundle-reshape-actyva": [
+        "15195420459394_title",
+        "15195420459394_body_html"
       ]
     }
   },
@@ -2646,12 +2668,12 @@
     "product-reset-shot:15106135589250_body_html": "<h4 data-end=\"209\" data-start=\"130\">Aktiviert Ihren nächtlichen Regenerationsprozess.</h4>\n<p data-end=\"2632\" data-start=\"2434\">Mit Reset bereiten Sie Geist und Körper auf eine tiefe und erholsame Nachtruhe vor. Diese <meta charset=\"utf-8\">präzise entwickelte Nährstoffformel unterstützt die natürlichen nächtlichen Regenerationsprozesse des Körpers und trägt dazu bei, dass Sie frisch, klar und ausgeglichen aufwachen.<meta charset=\"utf-8\"></p>\n<p data-start=\"578\" data-end=\"794\"><meta charset=\"utf-8\"><strong>Entwickelt, um durch ACTYVA™ aktiviert zu werden. </strong>Dieser fortschrittliche Shot für die Nacht&nbsp;kombiniert Aminosäuren, Pflanzenextrakte und essentielle Nährstoffe, die zur Beruhigung des Geistes, zur Förderung der Entspannung und zur Unterstützung des natürlichen Übergangs des Körpers in den Schlaf beitragen.</p>",
     "product-actyva:15106135753090_title": "ACTYVA",
     "product-actyva:15106135753090_body_html": "<h4 data-start=\"246\" data-end=\"320\">Setzt die Kraft Ihrer CellPowerX SHOTS frei.</h4>\n<p data-start=\"322\" data-end=\"473\">ACTYVA ist der Schlüssel zur vollständigen Entfaltung des Potenzials der CellPowerX SHOTS. ACTYVA sendet präzise biophotonische Frequenzen aus, reorganisiert die Matrix jedes SHOTS, verbessert dessen bioinformatives Potenzial und bringt es in Einklang mit dem Körper. Das ultimative Werkzeug für überlegene und greifbare Ergebnisse.</p>",
-    "product-rhythm-actyva:15194840170882_title": "RHYTHM-Bundle + ACTYVA",
-    "product-rhythm-actyva:15194840170882_body_html": "<h4>Beherrschen Sie Ihren Tagesrhythmus</h4>\n<p>Bundle mit ACTYVA + RESTART + RECHARGE + RESET</p>\n<p>Das RHYTHM-Bundle ist das ultimative CellPowerX-System, um den Tageszyklus Ihres Körpers zu optimieren. Es kombiniert unser innovatives ACTYVA-Gerät mit drei gezielten SHOTS: RESTART zur Aktivierung Ihres Morgens, RECHARGE zur Unterstützung Ihres Tages und RESET zur Wiederherstellung Ihrer Nacht. Bringen Sie Ihr Wohlbefinden in Einklang mit Ihrem natürlichen Rhythmus, um eine unvergleichliche 24-Stunden-Leistung zu erzielen.<br></p>",
-    "product-rhythm:15195409252738_title": "RHYTHM-Bundle",
-    "product-rhythm:15195409252738_body_html": "<h4>Beherrschen Sie Ihren Tagesrhythmus</h4>\n<p><span>Kombinieren Sie RESTART + RECHARGE + RESET</span></p>\n<p><span>Das RHYTHM-Bundle ist das ultimative CellPowerX-System, um den Tageszyklus Ihres Körpers zu optimieren. Es kombiniert unser innovatives ACTYVA-Gerät mit drei gezielten SHOTS: RESTART zur Aktivierung Ihres Morgens, RECHARGE zur Unterstützung Ihres Tages und RESET zur Wiederherstellung Ihrer Nacht. Bringen Sie Ihr Wohlbefinden mit Ihrem natürlichen Rhythmus in Einklang, um eine unvergleichliche 24-Stunden-Leistung zu erzielen.</span></p>",
-    "product-bundle-reshape-actyva:15195420459394_title": "RESHAPE-Bundle + ACTYVA",
-    "product-bundle-reshape-actyva:15195420459394_body_html": "<h4>RESHAPE-Transformationsprotokoll</h4>\n<p>Bundle mit ACTYVA + RESHAPE SHOTS + RESHAPE CONTROL + RESHAPE BALANCE</p>\n<p>Das RESHAPE-Bundle vereint unsere drei leistungsstärksten Produkte zur Körperumwandlung in einem umfassenden Protokoll. Nutzen Sie die RESHAPE SHOTS, um Ihren Stoffwechsel anzuregen, während die REHAPE CONTROL- und RESHAPE BALANCE-Gummibärchen den ganzen Tag über gezielt die Appetitregulierung und den Stoffwechsel unterstützen. Es ist unser umfassendstes System, um Ihre Ziele zu erreichen.</p>",
+    "product-rhythm-actyva:15194840170882_title": "Das Set RHYTHM + ACTYVA",
+    "product-rhythm-actyva:15194840170882_body_html": "<h4>Beherrschen Sie Ihren Tagesrhythmus</h4>\n<p>Das Set mit ACTYVA + RESTART + RECHARGE + RESET</p>\n<p>Das Set RHYTHM ist das ultimative CellPowerX-System, um den Tageszyklus Ihres Körpers zu optimieren. Es kombiniert unser innovatives ACTYVA-Gerät mit drei gezielten SHOTS: RESTART zur Aktivierung Ihres Morgens, RECHARGE zur Unterstützung Ihres Tages und RESET zur Wiederherstellung Ihrer Nacht. Bringen Sie Ihr Wohlbefinden in Einklang mit Ihrem natürlichen Rhythmus, um eine unvergleichliche 24-Stunden-Leistung zu erzielen.<br/></p>",
+    "product-rhythm:15195409252738_title": "Das Set RHYTHM",
+    "product-rhythm:15195409252738_body_html": "<h4>Beherrschen Sie Ihren Tagesrhythmus</h4>\n<p><span>Das Set RESTART + RECHARGE + RESET</span></p>\n<p><span>Das Set RHYTHM ist das ultimative CellPowerX-System, um den Tageszyklus Ihres Körpers zu optimieren. Es kombiniert unser innovatives ACTYVA-Gerät mit drei gezielten SHOTS: RESTART zur Aktivierung Ihres Morgens, RECHARGE zur Unterstützung Ihres Tages und RESET zur Wiederherstellung Ihrer Nacht. Bringen Sie Ihr Wohlbefinden mit Ihrem natürlichen Rhythmus in Einklang, um eine unvergleichliche 24-Stunden-Leistung zu erzielen.</span></p>",
+    "product-bundle-reshape-actyva:15195420459394_title": "Das Set RESHAPE + ACTYVA",
+    "product-bundle-reshape-actyva:15195420459394_body_html": "<h4>RESHAPE-Transformationsprogramm</h4>\n<p>Das Set mit ACTYVA + RESHAPE SHOTS + RESHAPE CONTROL + RESHAPE BALANCE</p>\n<p>Das RESHAPE-Bundle vereint unsere drei leistungsstärksten Produkte zur Körperumwandlung in einem umfassenden Programm. Nutzen Sie die RESHAPE SHOTS, um Ihren Stoffwechsel anzuregen, während die REHAPE CONTROL- und RESHAPE BALANCE-Fruchtgummis den ganzen Tag über gezielt die Appetitregulierung und den Stoffwechsel unterstützen. Es ist unser umfassendstes System, um Ihre Ziele zu erreichen.</p>",
     "product-bundle-reshape:15195466727810_title": "RESHAPE-Bundle",
     "product-bundle-reshape:15195466727810_body_html": "<h4>RESHAPE-Transformationsprotokoll</h4>\n<p>Bundle mit RESHAPE SHOTS + RESHAPE CONTROL + RESHAPE BALANCE</p>\n<p>Das RESHAPE-Bundle vereint unsere drei leistungsstärksten Produkte zur Körperumwandlung in einem umfassenden Protokoll. Nutzen Sie die RESHAPE SHOTS, um Ihren Stoffwechsel anzuregen, während die REHAPE CONTROL- und RESHAPE BALANCE-Gummibärchen den ganzen Tag über gezielt die Appetitregulierung und den Stoffwechsel unterstützen. Es ist unser umfassendstes System, um Ihre Ziele zu erreichen.</p>"
   },
