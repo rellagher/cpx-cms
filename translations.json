@@ -1752,6 +1752,14 @@
         "bundle-reshape-actyva"
       ],
       "ts": "2026-03-09T12:15:08.835Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "de",
+      "pages": [
+        "bundle-reshape"
+      ],
+      "ts": "2026-03-09T12:16:18.254Z"
     }
   ],
   "__pending": {
@@ -2388,17 +2396,17 @@
     "gummies-reshape-control:k03so7h3tncz": "Das könnte Ihnen auch gefallen",
     "bundle-reshape:1fzjhrkim7giw": "<h2><strong>RESHAPE</strong>-Bundle</h2>",
     "bundle-reshape:14jw03tmafepq": "Auch als Bundle mit ACTYVA erhältlich.",
-    "bundle-reshape:2eq0yb7k39naf": "NEUGESTALTUNG DES PROTOKOLLS",
+    "bundle-reshape:2eq0yb7k39naf": "DAS PROGRAMM RESHAPE",
     "bundle-reshape:32usa09ifwwtn": "INTELLIGENTE KÖRPERFORMUNG",
-    "bundle-reshape:1gcwfxoftpwbm": "<p>Das RESHAPE-Protokoll kombiniert präzise Stoffwechselunterstützung, die durch die ACTYVA-Technologie verbessert wird, mit einer gezielten täglichen ausgewogenen Ernährung. Durch die Integration des RESHAPE SHOT mit zwei speziellen Gummibärchen entsteht ein synchronisiertes System, das darauf ausgelegt ist, einen konsistenten und nachhaltigen Fortschritt bei der Erreichung Ihrer Körperziele zu unterstützen.</p>",
-    "bundle-reshape:39xnungzgtogs": "NEUFORMUNG VON AUFNAHMEN",
-    "bundle-reshape:1i5joqhdtt5g5": "<ul><li>Stoffwechselaktivität steigern</li><li>Unterstützung der natürlichen Fettverbrennungsprozesse</li><li>Fördern Sie die tägliche Energienutzung</li><li>Unterstützung der Ziele hinsichtlich der Körperzusammensetzung</li></ul>",
+    "bundle-reshape:1gcwfxoftpwbm": "<p>Bei einer echten Körpertransformation geht es nicht um Einschränkungen, sondern darum, mit Ihrem Körper zu arbeiten und nicht gegen ihn. Das Programm RESHAPE kombiniert drei gezielte Formeln, die das Gesamtbild berücksichtigen: Aktivierung des Stoffwechsels, Einstellung emotionaler Muster und Appetitregulierung. Wenn alle drei Bereiche zusammenwirken, wird eine nachhaltige Veränderung des Körpers auf natürliche Weise erreicht.</p>",
+    "bundle-reshape:39xnungzgtogs": "RESHAPE SHOTS",
+    "bundle-reshape:1i5joqhdtt5g5": "<ul><li>Steigert die Stoffwechselaktivität.</li><li>Unterstützt die natürlichen Fettverbrennungsprozesse.</li><li>Fördert die tägliche Energienutzung.</li><li>Unterstützt die Ziele Ihrer eigenen Körperzusammensetzung.</li></ul>",
     "bundle-reshape:333nyvrpdnzq6": "Weitere Informationen",
     "bundle-reshape:1jj7innbzl74h": "RESHAPE BALANCE",
-    "bundle-reshape:1zjgw3hr4a5qw": "<ul><li>Unterstützt die Reduzierung von stressbedingtem oder emotionalem Verlangen</li><li>Unterstützen Sie das emotionale Gleichgewicht und die Stimmungsstabilität</li><li>Fördern Sie Motivation und konsistentes Verhalten</li><li>Unterstützt achtsame Ernährungsgewohnheiten</li></ul>",
+    "bundle-reshape:1zjgw3hr4a5qw": "<ul><li>Unterstützt die Reduzierung stressbedingten oder emotionalen Verlangens.</li><li>Unterstützt das emotionale Gleichgewicht und die emotionale Stabilität.</li><li>Fördert den eigenen Antrieb und ein konsistentes Verhalten.</li><li>Unterstützt gesunde Ernährungsgewohnheiten.</li></ul>",
     "bundle-reshape:3gpitj306tvgz": "Weitere Informationen",
     "bundle-reshape:31v3s7m9bm0mm": "RESHAPE CONTROL",
-    "bundle-reshape:2m825w95o79pj": "<ul><li>Unterstützt die Appetitkontrolle und das Sättigungsgefühl</li><li>Trägt zu einem ausgeglichenen Blutzuckerspiegel bei</li><li>Unterstützt die Aufrechterhaltung eines konstanten täglichen Energieniveaus</li><li>Unterstützt den Stoffwechselausgleich über den Tag hinweg</li></ul>",
+    "bundle-reshape:2m825w95o79pj": "<ul><li>Unterstützt die Appetitkontrolle und das Sättigungsgefühl.</li><li>Trägt zu einem ausgeglichenen Blutzuckerspiegel bei.</li><li>Unterstützt ein tägliches stabiles und konstantes Energieniveau.</li><li>Unterstützt den Stoffwechselausgleich über den ganzen Tag.&nbsp;</li></ul>",
     "bundle-reshape:kddk2a56nq7g": "Weitere Informationen",
     "bundle-reshape:3q9vhrtwb2lix": "Eine neue Ära der Nahrungsergänzungsmittel",
     "bundle-reshape:32zmm6djy14lu": "<p>NEXAI™ ist ein proprietäres Intelligenzsystem, das künstliche Intelligenz mit den klinischen Daten aus zwei Jahrzehnten von Nuno Nina kombiniert. Es analysiert anonymisierte Datenmuster aus über 70.000 Kundenprofilen, um die effektivsten Synergien zwischen bioaktiven Verbindungen zu identifizieren.</p>",
@@ -2903,7 +2911,23 @@
     "bundle-reshape-actyva:jzacx55f4ag2",
     "bundle-reshape-actyva:33d8hjbzqtwua",
     "bundle-reshape-actyva:7tzlf1k8ll7e",
-    "bundle-reshape-actyva:unt62ov5c8sn"
+    "bundle-reshape-actyva:unt62ov5c8sn",
+    "bundle-reshape:2eq0yb7k39naf",
+    "bundle-reshape:32usa09ifwwtn",
+    "bundle-reshape:1gcwfxoftpwbm",
+    "bundle-reshape:39xnungzgtogs",
+    "bundle-reshape:1i5joqhdtt5g5",
+    "bundle-reshape:333nyvrpdnzq6",
+    "bundle-reshape:1jj7innbzl74h",
+    "bundle-reshape:1zjgw3hr4a5qw",
+    "bundle-reshape:3gpitj306tvgz",
+    "bundle-reshape:31v3s7m9bm0mm",
+    "bundle-reshape:2m825w95o79pj",
+    "bundle-reshape:kddk2a56nq7g",
+    "bundle-reshape:3q9vhrtwb2lix",
+    "bundle-reshape:32zmm6djy14lu",
+    "bundle-reshape:x8c0mcup2wis",
+    "bundle-reshape:fekieukwvrwx"
   ],
   "__field_edits": {},
   "__sources": {
@@ -3047,6 +3071,22 @@
     "bundle-reshape-actyva:jzacx55f4ag2": "shots-restart:1s101t2m2ujss",
     "bundle-reshape-actyva:33d8hjbzqtwua": "shots-restart:7bfi9tr78rky",
     "bundle-reshape-actyva:7tzlf1k8ll7e": "shots-restart:3e5wt2b7743pj",
-    "bundle-reshape-actyva:unt62ov5c8sn": "shots-restart:3a3kxpx2qw4h5"
+    "bundle-reshape-actyva:unt62ov5c8sn": "shots-restart:3a3kxpx2qw4h5",
+    "bundle-reshape:2eq0yb7k39naf": "homepage:1zp8v48j1xt3e",
+    "bundle-reshape:32usa09ifwwtn": "homepage:3ol15wexvic4m",
+    "bundle-reshape:1gcwfxoftpwbm": "homepage:u0uanp28il9r",
+    "bundle-reshape:39xnungzgtogs": "homepage:1d1pp9ocvs0qn",
+    "bundle-reshape:1i5joqhdtt5g5": "homepage:ft09zpfc9dh2",
+    "bundle-reshape:333nyvrpdnzq6": "homepage:36am7wm9koif1",
+    "bundle-reshape:1jj7innbzl74h": "homepage:2lsopktd3ykuf",
+    "bundle-reshape:1zjgw3hr4a5qw": "homepage:37rt5o8vdpiry",
+    "bundle-reshape:3gpitj306tvgz": "homepage:29k56e34qmjet",
+    "bundle-reshape:31v3s7m9bm0mm": "homepage:2ebxa7h1umoi9",
+    "bundle-reshape:2m825w95o79pj": "homepage:36eqgs6z2wr88",
+    "bundle-reshape:kddk2a56nq7g": "homepage:3une211edl4gj",
+    "bundle-reshape:3q9vhrtwb2lix": "shots-restart:1s101t2m2ujss",
+    "bundle-reshape:32zmm6djy14lu": "shots-restart:7bfi9tr78rky",
+    "bundle-reshape:x8c0mcup2wis": "shots-restart:3e5wt2b7743pj",
+    "bundle-reshape:fekieukwvrwx": "shots-restart:3a3kxpx2qw4h5"
   }
 }
