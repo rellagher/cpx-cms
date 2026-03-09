@@ -1728,6 +1728,14 @@
         "homepage"
       ],
       "ts": "2026-03-09T10:35:26.575Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "de",
+      "pages": [
+        "rhythm-bundle-with-actyva"
+      ],
+      "ts": "2026-03-09T12:00:11.621Z"
     }
   ],
   "__pending": {
@@ -2463,16 +2471,16 @@
     "rhythm-bundle-with-actyva:1ahgoli6gnk0x": "<p>Enthält 1x ACTYVA und 3x Packungen SHOTS, wobei 1 Packung durch einen Paketrabatt effektiv kostenlos ist.</p>",
     "rhythm-bundle-with-actyva:a96qhswu6myt": "Auch als bundle ohne ACTYVA erhältlich.",
     "rhythm-bundle-with-actyva:1mbvc4my16zcj": "RHYTHMUS-PROTOKOLL",
-    "rhythm-bundle-with-actyva:2immsy7rcrjz": "Beherrschen Sie Ihren Tagesrhythmus",
-    "rhythm-bundle-with-actyva:26o8ythzugsae": "<p>RHYTHM SHOTS kombinieren präzise Nährstoffformeln mit der ACTYVA-Aktivierungstechnologie, die entwickelt wurde, um den natürlichen biologischen Rhythmus Ihres Körpers den ganzen Tag über zu unterstützen und dabei zu helfen, Energie, Stimmung und erholsamen Schlaf in einem synchronisierten 24-Stunden-System im Gleichgewicht zu halten.</p>",
+    "rhythm-bundle-with-actyva:2immsy7rcrjz": "Kontrollieren Sie Ihren Biorhythmus.",
+    "rhythm-bundle-with-actyva:26o8ythzugsae": "<p>Das Set RHYTHM kombiniert präzise Nährstoffformeln mit der ACTYVA-Aktivierungstechnologie, die entwickelt wurde, um den natürlichen Biorhythmus Ihres Körpers den ganzen Tag über zu unterstützen und dabei zu helfen Energie, emotionales Gleichgewicht und erholsamen Schlaf in einem synchronisierten 24-Stunden-System im Gleichgewicht zu halten.</p>",
     "rhythm-bundle-with-actyva:1kpmerty21yeh": "RESTART",
-    "rhythm-bundle-with-actyva:2l7glbi2rqmg0": "<ul><li>Unterstützt den Energiestoffwechsel.</li><li>Trägt zur Verringerung von Müdigkeit bei.</li><li>Fördert die geistige Klarheit.</li><li>Verbessert die Konzentration.</li></ul>",
+    "rhythm-bundle-with-actyva:2l7glbi2rqmg0": "<ul><li>Unterstützt den Energiestoffwechsel.</li><li>Trägt zur Verringerung von Müdigkeit bei.</li><li>Fördert die geistige Leistungsfähigkeit.</li><li>Verbessert die Konzentration.</li></ul>",
     "rhythm-bundle-with-actyva:ybx6ulupzt63": "Weitere Informationen",
     "rhythm-bundle-with-actyva:2m9x48d5kxrm": "RECHARGE",
-    "rhythm-bundle-with-actyva:1cua5t4zlsrwb": "<ul><li>Förderung des emotionalen Gleichgewichts</li><li>Unterstützung der Stressresilienz</li><li>Sorgen Sie für eine stabile Stimmung und Konzentration</li><li>Sorgt für ruhige, beständige Energie</li></ul>",
+    "rhythm-bundle-with-actyva:1cua5t4zlsrwb": "<ul><li>Fördert das emotionale Gleichgewicht.</li><li>Unterstützt die Stressbewältigungung.</li><li>Trägt zur emotionalen Stabilität und Konzentration bei.</li><li>Sorgt für ruhige und beständige Energie.</li></ul>",
     "rhythm-bundle-with-actyva:1z321rq0rma40": "Weitere Informationen",
     "rhythm-bundle-with-actyva:3f1qivtpg7ekc": "RESET",
-    "rhythm-bundle-with-actyva:getk8wjmprxx": "<ul><li>Unterstützt die Entspannung</li><li>Förderung der Schlafqualität</li><li>Unterstützt die Regulierung des Tagesrhythmus</li><li>Unterstützt die Erholung während der Nacht</li></ul>",
+    "rhythm-bundle-with-actyva:getk8wjmprxx": "<ul><li>Unterstützt die Entspannung.</li><li>Verbessert die Schlafqualität.</li><li>Unterstützt die Regulierung des Biorhythmus.</li><li>Unterstützt die nächtliche Erholung.</li></ul>",
     "rhythm-bundle-with-actyva:21ikgsqhje08u": "Weitere Informationen",
     "rhythm-bundle-with-actyva:3q74k00ruhd1c": "Eine neue Ära der Nahrungsergänzungsmittel",
     "rhythm-bundle-with-actyva:2qbgetqos9x33": "<p>NEXAI™ ist ein proprietäres Intelligenzsystem, das künstliche Intelligenz mit den klinischen Daten aus zwei Jahrzehnten von Nuno Nina kombiniert. Es analysiert anonymisierte Datenmuster aus über 70.000 Kundenprofilen, um die effektivsten Synergien zwischen bioaktiven Verbindungen zu identifizieren.</p>",
@@ -2833,7 +2841,22 @@
     "gummies-reshape-control:53vs07uoebwp",
     "gummies-reshape-control:2om3ctc5voz5s",
     "gummies-reshape-control:d57epcl33cqh",
-    "gummies-reshape-control:j7cmdqnuikmo"
+    "gummies-reshape-control:j7cmdqnuikmo",
+    "rhythm-bundle-with-actyva:2immsy7rcrjz",
+    "rhythm-bundle-with-actyva:26o8ythzugsae",
+    "rhythm-bundle-with-actyva:1kpmerty21yeh",
+    "rhythm-bundle-with-actyva:2l7glbi2rqmg0",
+    "rhythm-bundle-with-actyva:ybx6ulupzt63",
+    "rhythm-bundle-with-actyva:2m9x48d5kxrm",
+    "rhythm-bundle-with-actyva:1cua5t4zlsrwb",
+    "rhythm-bundle-with-actyva:1z321rq0rma40",
+    "rhythm-bundle-with-actyva:3f1qivtpg7ekc",
+    "rhythm-bundle-with-actyva:getk8wjmprxx",
+    "rhythm-bundle-with-actyva:21ikgsqhje08u",
+    "rhythm-bundle-with-actyva:3q74k00ruhd1c",
+    "rhythm-bundle-with-actyva:2qbgetqos9x33",
+    "rhythm-bundle-with-actyva:2bt4lj0texouw",
+    "rhythm-bundle-with-actyva:15waqaccmwcgj"
   ],
   "__field_edits": {},
   "__sources": {
@@ -2849,7 +2872,18 @@
     "shots-restart:1a7axk1y486in": true,
     "shots-restart:16siowdzxuba": true,
     "shots-restart:1npg4qxthk9kw": true,
-    "shots-restart:3nhkls9i2odvt": true
+    "shots-restart:3nhkls9i2odvt": true,
+    "homepage:ls79m6iuzr6x": true,
+    "homepage:10szcdbk8gx0g": true,
+    "homepage:1f31o0022rlq0": true,
+    "homepage:3nv3jt868m8z5": true,
+    "homepage:2efns2swrgbui": true,
+    "homepage:ekg5xbsw8j8r": true,
+    "homepage:rny99tya7dwi": true,
+    "homepage:3rknr7r4mz0tl": true,
+    "homepage:1nsn9c4af7yhu": true,
+    "homepage:2g2sj8u6lme23": true,
+    "homepage:1huzs6cr04obk": true
   },
   "__links": {
     "actyva:1ycgwcsv07q5k": "homepage:xahwdby83o9s",
@@ -2908,6 +2942,21 @@
     "gummies-reshape-control:53vs07uoebwp": "shots-restart:1a7axk1y486in",
     "gummies-reshape-control:2om3ctc5voz5s": "shots-restart:16siowdzxuba",
     "gummies-reshape-control:d57epcl33cqh": "shots-restart:1npg4qxthk9kw",
-    "gummies-reshape-control:j7cmdqnuikmo": "shots-restart:3nhkls9i2odvt"
+    "gummies-reshape-control:j7cmdqnuikmo": "shots-restart:3nhkls9i2odvt",
+    "rhythm-bundle-with-actyva:2immsy7rcrjz": "homepage:ls79m6iuzr6x",
+    "rhythm-bundle-with-actyva:26o8ythzugsae": "homepage:10szcdbk8gx0g",
+    "rhythm-bundle-with-actyva:1kpmerty21yeh": "homepage:1f31o0022rlq0",
+    "rhythm-bundle-with-actyva:2l7glbi2rqmg0": "homepage:3nv3jt868m8z5",
+    "rhythm-bundle-with-actyva:ybx6ulupzt63": "homepage:2efns2swrgbui",
+    "rhythm-bundle-with-actyva:2m9x48d5kxrm": "homepage:ekg5xbsw8j8r",
+    "rhythm-bundle-with-actyva:1cua5t4zlsrwb": "homepage:rny99tya7dwi",
+    "rhythm-bundle-with-actyva:1z321rq0rma40": "homepage:3rknr7r4mz0tl",
+    "rhythm-bundle-with-actyva:3f1qivtpg7ekc": "homepage:1nsn9c4af7yhu",
+    "rhythm-bundle-with-actyva:getk8wjmprxx": "homepage:2g2sj8u6lme23",
+    "rhythm-bundle-with-actyva:21ikgsqhje08u": "homepage:1huzs6cr04obk",
+    "rhythm-bundle-with-actyva:3q74k00ruhd1c": "shots-restart:1s101t2m2ujss",
+    "rhythm-bundle-with-actyva:2qbgetqos9x33": "shots-restart:7bfi9tr78rky",
+    "rhythm-bundle-with-actyva:2bt4lj0texouw": "shots-restart:3e5wt2b7743pj",
+    "rhythm-bundle-with-actyva:15waqaccmwcgj": "shots-restart:3a3kxpx2qw4h5"
   }
 }
