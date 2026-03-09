@@ -1736,6 +1736,14 @@
         "rhythm-bundle-with-actyva"
       ],
       "ts": "2026-03-09T12:00:11.621Z"
+    },
+    {
+      "name": "Admin",
+      "lang": "de",
+      "pages": [
+        "rhythm-bundle"
+      ],
+      "ts": "2026-03-09T12:05:54.857Z"
     }
   ],
   "__pending": {
@@ -2426,16 +2434,16 @@
     "rhythm-bundle:3kp3jdpvdahr5": "<h2><strong>RHYTHM</strong>-Bundle</h2>",
     "rhythm-bundle:22jhlsrt4grwk": "Auch als Bundle mit ACTYVA erhältlich.",
     "rhythm-bundle:3cg4oj4bkzu6b": "RHYTHMUS-PROTOKOLL",
-    "rhythm-bundle:3oz7obqsczowf": "Beherrschen Sie Ihren Tagesrhythmus",
-    "rhythm-bundle:12jnk9snd8ume": "<p>RHYTHM SHOTS kombinieren präzise Nährstoffformeln mit der ACTYVA-Aktivierungstechnologie, die entwickelt wurde, um den natürlichen biologischen Rhythmus Ihres Körpers den ganzen Tag über zu unterstützen und dabei zu helfen, Energie, Stimmung und erholsamen Schlaf in einem synchronisierten 24-Stunden-System im Gleichgewicht zu halten.</p>",
+    "rhythm-bundle:3oz7obqsczowf": "Kontrollieren Sie Ihren Biorhythmus.",
+    "rhythm-bundle:12jnk9snd8ume": "<p>Das Set RHYTHM kombiniert präzise Nährstoffformeln mit der ACTYVA-Aktivierungstechnologie, die entwickelt wurde, um den natürlichen Biorhythmus Ihres Körpers den ganzen Tag über zu unterstützen und dabei zu helfen Energie, emotionales Gleichgewicht und erholsamen Schlaf in einem synchronisierten 24-Stunden-System im Gleichgewicht zu halten.</p>",
     "rhythm-bundle:153vb7dws18r0": "RESTART",
-    "rhythm-bundle:1mauxo88v7u4l": "<ul><li>Unterstützt den Energiestoffwechsel.</li><li>Trägt zur Verringerung von Müdigkeit bei.</li><li>Fördert die geistige Klarheit.</li><li>Verbessert die Konzentration.</li></ul>",
+    "rhythm-bundle:1mauxo88v7u4l": "<ul><li>Unterstützt den Energiestoffwechsel.</li><li>Trägt zur Verringerung von Müdigkeit bei.</li><li>Fördert die geistige Leistungsfähigkeit.</li><li>Verbessert die Konzentration.</li></ul>",
     "rhythm-bundle:2v2e793rmfim": "Weitere Informationen",
     "rhythm-bundle:1fre895px9eqz": "RECHARGE",
-    "rhythm-bundle:risfnett5ns2": "<ul><li>Förderung des emotionalen Gleichgewichts</li><li>Unterstützung der Stressresilienz</li><li>Sorgen Sie für eine stabile Stimmung und Konzentration</li><li>Sorgt für ruhige, beständige Energie</li></ul>",
+    "rhythm-bundle:risfnett5ns2": "<ul><li>Fördert das emotionale Gleichgewicht.</li><li>Unterstützt die Stressbewältigungung.</li><li>Trägt zur emotionalen Stabilität und Konzentration bei.</li><li>Sorgt für ruhige und beständige Energie.</li></ul>",
     "rhythm-bundle:3bkwp1az2k961": "Weitere Informationen",
     "rhythm-bundle:139warv6yznbo": "RESET",
-    "rhythm-bundle:oq6uo9393pul": "<ul><li>Unterstützt die Entspannung</li><li>Förderung der Schlafqualität</li><li>Unterstützt die Regulierung des Tagesrhythmus</li><li>Unterstützt die Erholung während der Nacht</li></ul>",
+    "rhythm-bundle:oq6uo9393pul": "<ul><li>Unterstützt die Entspannung.</li><li>Verbessert die Schlafqualität.</li><li>Unterstützt die Regulierung des Biorhythmus.</li><li>Unterstützt die nächtliche Erholung.</li></ul>",
     "rhythm-bundle:jiy0gtka2kwm": "Weitere Informationen",
     "rhythm-bundle:n0hbmhoph3l2": "Eine neue Ära der Nahrungsergänzungsmittel",
     "rhythm-bundle:263vr2m49tkyx": "<p>NEXAI™ ist ein proprietäres Intelligenzsystem, das künstliche Intelligenz mit den klinischen Daten aus zwei Jahrzehnten von Nuno Nina kombiniert. Es analysiert anonymisierte Datenmuster aus über 70.000 Kundenprofilen, um die effektivsten Synergien zwischen bioaktiven Verbindungen zu identifizieren.</p>",
@@ -2856,7 +2864,22 @@
     "rhythm-bundle-with-actyva:3q74k00ruhd1c",
     "rhythm-bundle-with-actyva:2qbgetqos9x33",
     "rhythm-bundle-with-actyva:2bt4lj0texouw",
-    "rhythm-bundle-with-actyva:15waqaccmwcgj"
+    "rhythm-bundle-with-actyva:15waqaccmwcgj",
+    "rhythm-bundle:3oz7obqsczowf",
+    "rhythm-bundle:12jnk9snd8ume",
+    "rhythm-bundle:153vb7dws18r0",
+    "rhythm-bundle:1mauxo88v7u4l",
+    "rhythm-bundle:2v2e793rmfim",
+    "rhythm-bundle:1fre895px9eqz",
+    "rhythm-bundle:risfnett5ns2",
+    "rhythm-bundle:3bkwp1az2k961",
+    "rhythm-bundle:139warv6yznbo",
+    "rhythm-bundle:oq6uo9393pul",
+    "rhythm-bundle:jiy0gtka2kwm",
+    "rhythm-bundle:n0hbmhoph3l2",
+    "rhythm-bundle:263vr2m49tkyx",
+    "rhythm-bundle:3thqdvrdrdv36",
+    "rhythm-bundle:244l591ejtd60"
   ],
   "__field_edits": {},
   "__sources": {
@@ -2957,6 +2980,21 @@
     "rhythm-bundle-with-actyva:3q74k00ruhd1c": "shots-restart:1s101t2m2ujss",
     "rhythm-bundle-with-actyva:2qbgetqos9x33": "shots-restart:7bfi9tr78rky",
     "rhythm-bundle-with-actyva:2bt4lj0texouw": "shots-restart:3e5wt2b7743pj",
-    "rhythm-bundle-with-actyva:15waqaccmwcgj": "shots-restart:3a3kxpx2qw4h5"
+    "rhythm-bundle-with-actyva:15waqaccmwcgj": "shots-restart:3a3kxpx2qw4h5",
+    "rhythm-bundle:3oz7obqsczowf": "homepage:ls79m6iuzr6x",
+    "rhythm-bundle:12jnk9snd8ume": "homepage:10szcdbk8gx0g",
+    "rhythm-bundle:153vb7dws18r0": "homepage:1f31o0022rlq0",
+    "rhythm-bundle:1mauxo88v7u4l": "homepage:3nv3jt868m8z5",
+    "rhythm-bundle:2v2e793rmfim": "homepage:2efns2swrgbui",
+    "rhythm-bundle:1fre895px9eqz": "homepage:ekg5xbsw8j8r",
+    "rhythm-bundle:risfnett5ns2": "homepage:rny99tya7dwi",
+    "rhythm-bundle:3bkwp1az2k961": "homepage:3rknr7r4mz0tl",
+    "rhythm-bundle:139warv6yznbo": "homepage:1nsn9c4af7yhu",
+    "rhythm-bundle:oq6uo9393pul": "homepage:2g2sj8u6lme23",
+    "rhythm-bundle:jiy0gtka2kwm": "homepage:1huzs6cr04obk",
+    "rhythm-bundle:n0hbmhoph3l2": "shots-restart:1s101t2m2ujss",
+    "rhythm-bundle:263vr2m49tkyx": "shots-restart:7bfi9tr78rky",
+    "rhythm-bundle:3thqdvrdrdv36": "shots-restart:3e5wt2b7743pj",
+    "rhythm-bundle:244l591ejtd60": "shots-restart:3a3kxpx2qw4h5"
   }
 }
