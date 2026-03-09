@@ -2789,7 +2789,17 @@
     "shots-recharge:2ekk19108o2om",
     "shots-recharge:2n86bxne09k67",
     "shots-recharge:1xdy4g01avnic",
-    "shots-recharge:m874se78rudp"
+    "shots-recharge:m874se78rudp",
+    "shots-reset:1saes1dxsw14j",
+    "shots-reset:b7382ppso45p",
+    "shots-reset:gl8dag5pr1wc",
+    "shots-reset:11jtpdk88dikn",
+    "shots-reset:2ezcsy3mzvj43",
+    "shots-reset:3egaozh3mx2oa",
+    "shots-reset:2rnfmc0sm7fav",
+    "shots-reset:17zw9dhmuuygu",
+    "shots-reset:20zg2ti90lfo7",
+    "shots-reset:fdevdzzivh0e"
   ],
   "__field_edits": {},
   "__sources": {
@@ -2820,6 +2830,16 @@
     "shots-recharge:2ekk19108o2om": "shots-restart:1a7axk1y486in",
     "shots-recharge:2n86bxne09k67": "shots-restart:16siowdzxuba",
     "shots-recharge:1xdy4g01avnic": "shots-restart:1npg4qxthk9kw",
-    "shots-recharge:m874se78rudp": "shots-restart:3nhkls9i2odvt"
+    "shots-recharge:m874se78rudp": "shots-restart:3nhkls9i2odvt",
+    "shots-reset:1saes1dxsw14j": "shots-restart:1s101t2m2ujss",
+    "shots-reset:b7382ppso45p": "shots-restart:7bfi9tr78rky",
+    "shots-reset:gl8dag5pr1wc": "shots-restart:3e5wt2b7743pj",
+    "shots-reset:11jtpdk88dikn": "shots-restart:3a3kxpx2qw4h5",
+    "shots-reset:2ezcsy3mzvj43": "shots-restart:14t6cvwznz2pe",
+    "shots-reset:3egaozh3mx2oa": "shots-restart:f4soi5cgln0b",
+    "shots-reset:2rnfmc0sm7fav": "shots-restart:1a7axk1y486in",
+    "shots-reset:17zw9dhmuuygu": "shots-restart:16siowdzxuba",
+    "shots-reset:20zg2ti90lfo7": "shots-restart:1npg4qxthk9kw",
+    "shots-reset:fdevdzzivh0e": "shots-restart:3nhkls9i2odvt"
   }
 }
