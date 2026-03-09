@@ -216,7 +216,7 @@
     "homepage:2whk28stmt2rt": "Saiba mais",
     "homepage:qpfp28m0wpqu": "Professor Pedro Vaz, PhD FRSC",
     "homepage:20g4x9v6wrbxb": "<p>Investigador Sénior, Fundação Champalimaud (Unidade de Cancro do Pulmão)</p>",
-    "homepage:1ymzi2k76t4t3": "Dra. Graça Pereira",
+    "homepage:1ymzi2k76t4t3": "Prof. Doutora Graça Pereira",
     "homepage:3fadru3y0rowu": "<p>Professor, Universidade do Minho (Psicologia Clínica e da Saúde)</p>",
     "homepage:32ex1bq2r25ia": "Dr. João Paulo de Almeida, Médico",
     "homepage:3oyeyq76f97zf": "<p>Médico especializado em Patologia Clínica e Medicina Desportiva.</p>",
@@ -1720,6 +1720,14 @@
         "homepage"
       ],
       "ts": "2026-03-09T10:34:41.722Z"
+    },
+    {
+      "name": "Rita",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-09T10:35:26.575Z"
     }
   ],
   "__pending": {
@@ -1823,7 +1831,8 @@
     },
     "pt-PT": {
       "homepage": [
-        "11v3k9agzb07q"
+        "11v3k9agzb07q",
+        "1ymzi2k76t4t3"
       ]
     }
   },
