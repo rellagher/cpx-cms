@@ -220,7 +220,7 @@
     "homepage:3fadru3y0rowu": "<p>Professor, Universidade do Minho (Psicologia Clínica e da Saúde)</p>",
     "homepage:32ex1bq2r25ia": "Dr. João Paulo de Almeida, Médico",
     "homepage:3oyeyq76f97zf": "<p>Médico especializado em Patologia Clínica e Medicina Desportiva.</p>",
-    "homepage:11v3k9agzb07q": "O ACTYVA surgiu de uma inquietação de longa data, a certeza de que a vida é sustentada não apenas pela química, mas também pela energia invisível que flui através de todas as coisas. Durante anos, estudei a eletricidade do corpo, os campos magnéticos e a bioinformação. Cheguei à conclusão de que, por trás de cada processo fisiológico, existe uma dança silenciosa de cargas, frequências e estruturas invisíveis. O ACTYVA é a materialização dessa pesquisa.",
+    "homepage:11v3k9agzb07q": "\"O ACTYVA surgiu de uma inquietação de longa data, a certeza de que a vida é sustentada não apenas pela química, mas também pela energia invisível que flui através de todas as coisas. Durante anos, estudei a eletricidade do corpo, os campos magnéticos e a bioinformação. Cheguei à conclusão de que, por trás de cada processo fisiológico, existe uma dança silenciosa de cargas, frequências e estruturas invisíveis. O ACTYVA é a materialização dessa pesquisa.\"",
     "homepage:ggut6wil4d2e": "Ainda não tem certeza do que escolher?",
     "homepage:1c73ozbxo85hm": "Descubra quais dos nossos produtos melhor atendem às suas necessidades.",
     "homepage:3cjyx06a103lq": "Obtenha a sua recomendação",
@@ -1712,6 +1712,14 @@
         "homepage"
       ],
       "ts": "2026-03-09T10:34:33.245Z"
+    },
+    {
+      "name": "Rita",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-09T10:34:41.722Z"
     }
   ],
   "__pending": {
