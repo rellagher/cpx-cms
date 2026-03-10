@@ -1768,6 +1768,15 @@
         "homepage"
       ],
       "ts": "2026-03-09T14:58:57.808Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "navigation",
+        "popups"
+      ],
+      "ts": "2026-03-10T12:25:40.379Z"
     }
   ],
   "__pending": {
@@ -1781,6 +1790,16 @@
         "11v3k9agzb07q",
         "1ymzi2k76t4t3",
         "3fadru3y0rowu"
+      ]
+    },
+    "de": {
+      "navigation": [
+        "756474610050_title",
+        "756474642818_title",
+        "756474708354_title"
+      ],
+      "popups": [
+        "2d8bsokshoeu1"
       ]
     }
   },
@@ -1802,9 +1821,9 @@
     "navigation:754732892546_title": "Das Set RESHAPE",
     "navigation:756447871362_title": "Ihre Datenschutzoptionen",
     "navigation:756474577282_title": "Actyva",
-    "navigation:756474610050_title": "Sets",
-    "navigation:756474642818_title": "Shots",
-    "navigation:756474708354_title": "Fruchtgummis",
+    "navigation:756474610050_title": "Unsere Sets",
+    "navigation:756474642818_title": "Unsere Shots",
+    "navigation:756474708354_title": "Unsere Fruchtgummis",
     "navigation:756475920770_title": "Alle Produkte",
     "navigation:762850509186_title": "Partnerprogramm",
     "navigation:769250591106_title": "Profil",
@@ -2661,7 +2680,7 @@
     "footer:3hca0r9ywms7n": "Hilfe und Kontakt",
     "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Rückerstattungsrichtlinie</a>n</p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Reklamationen</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Kontakt</a></p>",
     "header:6o4qs55m2bp6": "Kostenloser Versand bei Bestellungen über 500€",
-    "popups:2d8bsokshoeu1": "Bitte melden Sie sich für unseren Newsletter an.",
+    "popups:2d8bsokshoeu1": "Zum Newsletter anmelden",
     "popups:331955xorr1pp": "Anmelden",
     "popups:11svs1tdhiukg": "Bitte beschreiben Sie, was Ihre Kunden erhalten, wenn sie sich für Ihren Newsletter anmelden.",
     "popups:3pce1walt8bgn": "Cookie-Richtlinien",
