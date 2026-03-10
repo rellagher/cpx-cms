@@ -893,7 +893,7 @@
     "product-reshape-balance:15106108162434_title": "RESHAPE BALANCE",
     "product-reshape-balance:15106108162434_body_html": "<h4 data-end=\"162\" data-start=\"107\">\n<meta charset=\"utf-8\">Encontre o seu equilíbrio, redefina a sua forma.</h4>\n<p data-end=\"510\" data-start=\"326\">RESHAPE Balance é uma fórmula inteligente e estabilizadora do humor, criada para apoiar o bem-estar emocional, reduzir os desejos relacionados ao stress e ajudá-lo a manter o controlo dos seus objetivos de bem-estar.<br><br><meta charset=\"utf-8\">Esta mistura avançada de aminoácidos, extratos botânicos e nutrientes essenciais atua em harmonia para promover energia calma e clareza emocional — fatores essenciais para manter uma relação saudável com a alimentação e uma gestão de peso sustentável.</p>",
     "product-reshape-control:15106126152066_title": "RESHAPE CONTROL",
-    "product-reshape-control:15106126152066_body_html": "<h4 data-start=\"188\" data-end=\"247\">\n<meta charset=\"utf-8\">Assuma o controlo, sinta-se no controlo.</h4>\n<p data-start=\"394\" data-end=\"618\">RESHAPE Control é uma fórmula científica concebida para apoiar a regulação do apetite, o equilíbrio metabólico e níveis saudáveis de açúcar no sangue, ajudando-o a manter-se satisfeito, concentrado e no controlo do ritmo natural do seu corpo.</p>\n<p data-start=\"2231\" data-end=\"2466\"><meta charset=\"utf-8\">Esta mistura sinérgica combina fibra solúvel, extratos botânicos e ativadores metabólicos que atuam em conjunto para promover a saciedade, otimizar o metabolismo energético e apoiar uma resposta glicémica equilibrada ao longo do dia.</p>",
+    "product-reshape-control:15106126152066_body_html": "<h4 data-start=\"188\" data-end=\"247\">\n<meta charset=\"utf-8\">Assuma o controlo, sinta-se em controlo.</h4>\n<p data-start=\"394\" data-end=\"618\">RESHAPE Control é uma fórmula científica concebida para apoiar a regulação do apetite, o equilíbrio metabólico e níveis saudáveis de açúcar no sangue, ajudando-o a manter-se satisfeito, concentrado e no controlo do ritmo natural do seu corpo.</p>\n<p data-start=\"2231\" data-end=\"2466\"><meta charset=\"utf-8\">Esta mistura sinérgica combina fibra solúvel, extratos botânicos e ativadores metabólicos que atuam em conjunto para promover a saciedade, otimizar o metabolismo energético e apoiar uma resposta glicémica equilibrada ao longo do dia.</p>",
     "product-refocus:15106127856002_title": "REFOCUS",
     "product-refocus:15106127856002_body_html": "<h4 data-end=\"305\" data-start=\"208\">\nAprimore a sua capacidade cognitiva.<strong data-end=\"303\" data-start=\"208\"></strong>\n</h4>\n<p data-end=\"305\" data-start=\"208\"><meta charset=\"utf-8\">REFOCUS é uma fórmula <meta charset=\"utf-8\">fórmula orientada para o desempenho, criada para melhorar a concentração, a clareza mental e a energia sustentada, ajudando-o a manter-se atento, centrado e a ter o melhor desempenho possível.<meta charset=\"utf-8\"></p>\n<p data-end=\"604\" data-start=\"385\"><meta charset=\"utf-8\">Ao combinar nootrópicos direcionados, <meta charset=\"utf-8\">adaptógenos e nutrientes bioativos, promove um estado de alerta calmo e concentração sustentada, apoiando o desempenho cognitivo, a resiliência mental e a energia constante ao longo do dia.<meta charset=\"utf-8\"></p>",
     "product-remethyl:15106128806274_title": "REMETHYL",
@@ -1817,6 +1817,14 @@
         "product-reshape-balance"
       ],
       "ts": "2026-03-10T12:45:26.880Z"
+    },
+    {
+      "name": "j",
+      "lang": "pt-PT",
+      "pages": [
+        "product-reshape-control"
+      ],
+      "ts": "2026-03-10T12:52:57.360Z"
     }
   ],
   "__pending": {
@@ -1830,6 +1838,9 @@
         "11v3k9agzb07q",
         "1ymzi2k76t4t3",
         "3fadru3y0rowu"
+      ],
+      "product-reshape-control": [
+        "15106126152066_body_html"
       ]
     },
     "de": {
