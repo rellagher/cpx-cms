@@ -1809,6 +1809,14 @@
         "product-reshape-shot"
       ],
       "ts": "2026-03-10T12:41:56.803Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "product-reshape-balance"
+      ],
+      "ts": "2026-03-10T12:45:26.880Z"
     }
   ],
   "__pending": {
@@ -1844,6 +1852,9 @@
       ],
       "product-reshape-shot": [
         "15106135261570_body_html"
+      ],
+      "product-reshape-balance": [
+        "15106108162434_body_html"
       ]
     }
   },
@@ -2731,7 +2742,7 @@
     "popups:gpdzu8mts1n2": "<p>Wir verwenden Cookies und ähnliche Technologien, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten. Weitere Informationen finden Sie in unserer Datenschutzerklärung.</p>",
     "popups:wrp588gnma1g": "Trends in diesem Monat",
     "product-reshape-balance:15106108162434_title": "RESHAPE BALANCE",
-    "product-reshape-balance:15106108162434_body_html": "<h4 data-end=\"162\" data-start=\"107\">\n<meta charset=\"utf-8\">Finden Sie Ihr Gleichgewicht. Definieren Sie Ihre Körperform neu.</h4>\n<p data-end=\"510\" data-start=\"326\">RESHAPE Balance ist eine intelligente und stimmungsstabilisierende Formel, die das emotionale Wohlbefinden unterstützt, stressbedingte Heißhungerattacken reduziertund Ihnen dabei hilft Ihre Wellness-Ziele im Blick zu behalten.&nbsp;Diese fortschrittliche Mischung aus Aminosäuren, Pflanzenextrakten und essenziellen Nährstoffen wirkt harmonisch zusammen, um ruhige Energie und emotionale Klarheit zu fördern – wichtige Faktoren für eine gesunde Beziehung zu Lebensmitteln und eine nachhaltige Gewichtsregulierung.</p>",
+    "product-reshape-balance:15106108162434_body_html": "<h4 data-end=\"162\" data-start=\"107\">\n<meta charset=\"utf-8\">Finden Sie Ihr Gleichgewicht. Definieren Sie Ihre Körperform neu.</h4>\n<p data-end=\"510\" data-start=\"326\">RESHAPE Balance ist eine intelligente und stimmungsstabilisierende Formel, die das emotionale Wohlbefinden unterstützt, stressbedingte Heißhungerattacken reduziert und Ihnen dabei hilft Ihre Wellness-Ziele im Blick zu behalten.&nbsp;Diese fortschrittliche Mischung aus Aminosäuren, Pflanzenextrakten und essenziellen Nährstoffen wirkt harmonisch zusammen, um ruhige Energie und emotionale Klarheit zu fördern – wichtige Faktoren für eine gesunde Beziehung zu Lebensmitteln und eine nachhaltige Gewichtsregulierung.</p>",
     "product-reshape-control:15106126152066_title": "RESHAPE CONTROL",
     "product-reshape-control:15106126152066_body_html": "<h4 data-start=\"188\" data-end=\"247\">\n<meta charset=\"utf-8\">Übernehmen Sie die Kontrolle, fühlen Sie sich in der Lage, alles im Griff zu haben.</h4><p data-start=\"394\" data-end=\"618\">RESHAPE Control ist eine wissenschaftlich fundierte Formel, die die Appetitregulierung, den Stoffwechselausgleich und einen gesunden Blutzuckerspiegel unterstützt und Ihnen dabei hilft zufrieden und konzentriert zu bleiben und den natürlichen Rhythmus Ihres Körpers zu kontrollieren.&nbsp;Diese synergistische Kombination beinhaltet lösliche Ballaststoffe, Pflanzenextrakte und Stoffwechselaktivatoren, die zusammenwirken und so das Sättigungsgefühl fördern, den Energiestoffwechsel optimieren und eine ausgeglichene Glukosereaktion über den Tag unterstützen.</p>",
     "product-refocus:15106127856002_title": "REFOCUS",
