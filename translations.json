@@ -1801,6 +1801,14 @@
         "product-reset-shot"
       ],
       "ts": "2026-03-10T12:39:58.607Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "product-reshape-shot"
+      ],
+      "ts": "2026-03-10T12:41:56.803Z"
     }
   ],
   "__pending": {
@@ -1833,6 +1841,9 @@
       ],
       "product-reset-shot": [
         "15106135589250_body_html"
+      ],
+      "product-reshape-shot": [
+        "15106135261570_body_html"
       ]
     }
   },
@@ -2728,7 +2739,7 @@
     "product-remethyl:15106128806274_title": "REMETHYL",
     "product-remethyl:15106128806274_body_html": "<h4>Entdecken Sie die Wissenschaft des inneren Gleichgewichts.</h4>\n<p>REMETHYL ist eine Formel der nächsten Generation, die das natürliche Erneuerungssystem Ihres Körpers unterstützt – die Methylierung – der Prozess, der Ihre Zellen, Ihre Energie und Ihren Geist im Gleichgewicht hält.</p>\n<p>Diese intelligente Mischung aus bioaktiven Nährstoffen trägt zu einem ausgeglichenen Homocysteinspiegel bei, fördert die Zellvitalität, liefert nachhaltige Energie und sorgt täglich für klare geistige Konzentration.</p>",
     "product-reshape-shot:15106135261570_title": "RESHAPE SHOTS",
-    "product-reshape-shot:15106135261570_body_html": "<h4 data-start=\"199\" data-end=\"278\">Aktivieren Sie Ihren Stoffwechsel.</h4>\n<p data-start=\"353\" data-end=\"900\">Der RESHAPE SHOT ist der Motor Ihres Transformationsprogramms. <meta charset=\"utf-8\">Diese Präzisionsformel wurde entwickelt, um die Stoffwechselaktivität anzuregen und die natürliche Effizienz des Körpers bei der Energienutzung und der Zusammensetzung des Körpergewichts zu verbessern.<br/><strong>Entwickelt, um durch ACTYVA™ aktiviert zu werden.&nbsp;</strong>Diese Nährstoffformel trägt zur Optimierung der Stoffwechselwege und zur Unterstützung des Fettstoffwechsels im Rahmen eines aktiven und gesundheitsorientierten Lebensstils bei.</p>",
+    "product-reshape-shot:15106135261570_body_html": "<h4 data-start=\"199\" data-end=\"278\">Aktivieren Sie Ihren Stoffwechsel.</h4>\n<p data-start=\"353\" data-end=\"900\">Der RESHAPE SHOT ist der Motor Ihres Transformationsprogramms. <meta charset=\"utf-8\">Diese präzise Formel wurde entwickelt, um die Stoffwechselaktivität anzuregen und die natürliche Effizienz des Körpers bei der Energienutzung und der Zusammensetzung des Körpergewichts zu verbessern.&nbsp;</p><p data-start=\"353\" data-end=\"900\"><strong>Entwickelt, um durch ACTYVA™ aktiviert zu werden.&nbsp;</strong>Diese Nährstoffformel trägt zur Optimierung der Stoffwechselwege und zur Unterstützung des Fettstoffwechsels im Rahmen eines aktiven und gesundheitsorientierten Lebensstils bei.</p>",
     "product-recharge-shot:15106135294338_title": "RECHARGE SHOTS",
     "product-recharge-shot:15106135294338_body_html": "<h4 data-start=\"177\" data-end=\"249\">\n<meta charset=\"utf-8\">Aktivieren Sie Geist und Seele.</h4><p data-start=\"2764\" data-end=\"2962\">RECHARGE ist Ihre tägliche Grundlage für anhaltendes Wohlbefinden. Diese umfassende Nährstoffformel unterstützt das systemische Gleichgewicht und verbessert die Widerstandsfähigkeit der Zellen. Außerdem unterstützt sie&nbsp;Körper und Geist dabei den ganzen Tag über Höchstleistungen zu erbringen.&nbsp;</p><p data-start=\"2764\" data-end=\"2962\"><strong>Entwickelt</strong>, <strong>um durch ACTYVA™ aktiviert zu werden.&nbsp;</strong>Diese Nährstoffformel kombiniert Adaptogene, Nootropika und wichtige metabolische Cofaktoren, die dem Körper helfen, sich von täglichem Stress und kognitiver Ermüdung zu erholen und fördern so Entspannung, emotionales Gleichgewicht und die Zellerneuerung.</p>",
     "product-restart-shot:15106135425410_title": "RESTART SHOTS",
