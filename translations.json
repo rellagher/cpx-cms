@@ -158,7 +158,7 @@
     "homepage:1ihtkvzoqbpyz": "Uma nova era na suplementação.",
     "homepage:1yk957l3dpvrt": "<p>Mesmo os ingredientes mais avançados dependem da forma como o corpo os recebe. ACTYVA é um dispositivo biofotónico inovador que ativa os nossos suplementos a nível molecular, concebido para proporcionar resultados que pode realmente sentir.</p>",
     "homepage:2v2y0y0bzuehd": "Como funciona",
-    "homepage:z3fp2npl7mm4": "Loja ACTYVA",
+    "homepage:z3fp2npl7mm4": "Shop ACTYVA",
     "homepage:hghlfmxa907q": "Aumenta a interação do corpo com os suplementos.",
     "homepage:c3iiluie7poy": "<p>Quantas vezes tomou suplementos sem resultados reais? ACTYVA ajuda o seu corpo a reconhecer e utilizar os suplementos de forma mais eficaz.</p>",
     "homepage:18qj722v7auoz": "Maior potencial de absorção.",
@@ -1897,6 +1897,14 @@
         "shots-restart"
       ],
       "ts": "2026-03-16T21:17:42.291Z"
+    },
+    {
+      "name": "Rita",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-17T18:26:48.288Z"
     }
   ],
   "__pending": {
@@ -1909,7 +1917,8 @@
       "homepage": [
         "11v3k9agzb07q",
         "1ymzi2k76t4t3",
-        "3fadru3y0rowu"
+        "3fadru3y0rowu",
+        "z3fp2npl7mm4"
       ],
       "product-reshape-control": [
         "15106126152066_body_html"
