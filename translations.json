@@ -2059,6 +2059,14 @@
         "shots-restart"
       ],
       "ts": "2026-03-18T12:15:44.657Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge"
+      ],
+      "ts": "2026-03-18T12:17:04.851Z"
     }
   ],
   "__pending": {
@@ -2149,7 +2157,8 @@
         "ws68e27n3axw",
         "2i7b9my3ukeei",
         "7ue4o15ddmyu",
-        "1pw35dv04ihh7"
+        "1pw35dv04ihh7",
+        "2ekk19108o2om"
       ]
     }
   },
@@ -2841,7 +2850,7 @@
     "shots-recharge:1pw35dv04ihh7": "<p>Entwickelt unter Verwendung hochwertiger Inhaltsstoffe, die auf Grundlage klinischer Erfahrungen, wissenschaftlicher Validierung und funktioneller Relevanz entsprechend ausgewählt wurden. Jede Formel enthält bioverfügbare Nährstoffe, Aminosäuren und Pflanzenextrakte, die durch ihre ausgewogene Synergie bestimmte physiologische Prozesse unterstützen.</p>",
     "shots-recharge:2opgn7h01drhe": "cGMP-Zertifizierung",
     "shots-recharge:1psux825saeuj": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um einheitliche Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
-    "shots-recharge:2ekk19108o2om": "FDA-REGISTRIERT",
+    "shots-recharge:2ekk19108o2om": "Eingetragen bei der US-amerikanischen Bundesbehörde für Lebens- und Arzneimittel (FDA)",
     "shots-recharge:2n86bxne09k67": "<p>Hergestellt in einer bei der US-amerikanischen Food and Drug Administration registrierten Anlage, die alle geltenden Herstellungsanforderungen erfüllt.</p>",
     "shots-recharge:1xdy4g01avnic": "Natürlicher Geschmack",
     "shots-recharge:m874se78rudp": "<p>Mit sorgfältig ausgewählten natürlichen Aromen formuliert, um ein authentisches Geschmackserlebnis zu bieten.</p>",
