@@ -2091,6 +2091,14 @@
         "shots-recharge"
       ],
       "ts": "2026-03-18T12:21:31.425Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge"
+      ],
+      "ts": "2026-03-18T12:24:19.854Z"
     }
   ],
   "__pending": {
@@ -2187,7 +2195,11 @@
         "m874se78rudp",
         "2xg7pe653vy7j",
         "1le8vy7okymh4",
-        "10x9m6ag073p1"
+        "10x9m6ag073p1",
+        "1y1o6abn2wfda",
+        "gsegmwlwlgng",
+        "1rotmp8j0azwl",
+        "2hxihyze670x7"
       ]
     }
   },
@@ -2893,11 +2905,11 @@
     "shots-recharge:39tnxamr12zo6": "Wann werde ich Ergebnisse bemerken?",
     "shots-recharge:21d5qard7c3q7": "<p>Die individuellen Reaktionen variieren. Einige Personen bemerken innerhalb weniger Tage ein größeres Gefühl der Ruhe, Ausgeglichenheit oder geistigen Klarheit, während sich andere Vorteile bei konsequenter täglicher Anwendung allmählich entwickeln können.</p>",
     "shots-recharge:1vvxjytle3vk7": "Enthält RECHARGE Koffein oder Stimulanzien?",
-    "shots-recharge:1y1o6abn2wfda": "<p>RECHARGE enthält kein zugesetztes Koffein. Es wurde entwickelt, um Entspannung, emotionales Gleichgewicht und geistige Klarheit zu fördern, ohne zu überstimulieren.</p>",
-    "shots-recharge:gsegmwlwlgng": "Darf ich RECHARGE zusammen mit anderen Nahrungsergänzungsmitteln einnehmen?",
-    "shots-recharge:1rotmp8j0azwl": "<p>RECHARGE kann im Allgemeinen zusammen mit anderen Nahrungsergänzungsmitteln eingenommen werden. Wenn Sie Medikamente oder mehrere Nahrungsergänzungsmittel einnehmen – insbesondere solche, die die Stimmung oder Neurotransmitter beeinflussen –, ist es ratsam, einen Arzt zu konsultieren.</p>",
+    "shots-recharge:1y1o6abn2wfda": "<p>RECHARGE enthält kein zugesetztes Koffein. Es wurde entwickelt, um Entspannung, emotionales Gleichgewicht und geistige Klarheit zu fördern, ohne Überstimulation.</p>",
+    "shots-recharge:gsegmwlwlgng": "Darf ich RECHARGE parallel mit anderen Nahrungsergänzungsmitteln einnehmen?",
+    "shots-recharge:1rotmp8j0azwl": "<p>RECHARGE kann im Allgemeinen parallel mit anderen Nahrungsergänzungsmitteln eingenommen werden. Wenn Sie Medikamente oder mehrere Nahrungsergänzungsmittel einnehmen – insbesondere solche, die die Stimmung oder Neurotransmitter beeinflussen – ist es ratsam vor der ersten Einnahme einen Arzt aufzusuchen.&nbsp;</p>",
     "shots-recharge:ba1qdcwlwn4y": "Ist RECHARGE für den täglichen Gebrauch geeignet?",
-    "shots-recharge:2hxihyze670x7": "<p>RECHARGE ist für die tägliche Anwendung gemäß den Anweisungen formuliert. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie unter einer Krankheit leiden oder sich hinsichtlich der Eignung unsicher sind, konsultieren Sie bitte vor der Anwendung einen Arzt.</p>",
+    "shots-recharge:2hxihyze670x7": "<p>RECHARGE ist für die tägliche Einnahme den Anweisungen formuliert. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie unter einer Krankheit leiden oder sich hinsichtlich der Eignung unsicher sind, konsultieren Sie bitte vor der Anwendung einen Arzt.</p>",
     "shots-recharge:2sp3mmgnc6oh1": "Dürfen schwangere oder stillende Frauen RECHARGE einnehmen?",
     "shots-recharge:1q816ynnc2xpo": "<p>RECHARGE wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine Empfehlung durch eine qualifizierte medizinische Fachkraft vor.</p>",
     "shots-recharge:3ap8na1p9sit2": "Was unterscheidet RECHARGE von anderen Produkten für die Stimmung oder das Wohlbefinden?",
