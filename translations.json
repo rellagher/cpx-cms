@@ -2115,6 +2115,14 @@
         "shots-recharge"
       ],
       "ts": "2026-03-18T12:30:24.727Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge"
+      ],
+      "ts": "2026-03-18T12:31:19.707Z"
     }
   ],
   "__pending": {
@@ -2219,7 +2227,8 @@
         "1q816ynnc2xpo",
         "3ap8na1p9sit2",
         "5iujmftq0gkj",
-        "3kvmn029th12i"
+        "3kvmn029th12i",
+        "z67bnjmi5ryu"
       ]
     }
   },
@@ -2939,7 +2948,7 @@
     "shots-recharge:mir6paepoa7q": "Gibt es wichtige Sicherheitshinweise für RECHARGE SHOTS?",
     "shots-recharge:3vakhi7mbhnun": "<p>RECHARGE SHOTS enthalten Phenylalanin.<br/>Wenn Sie Medikamente einnehmen, konsultieren Sie bitte Ihren Arzt, bevor Sie dieses Produkt verwenden.<br/>Der Extrakt aus Hypericum perforatum kann den Stoffwechsel dieser Medikamente beeinträchtigen und sogar deren Wirksamkeit hemmen. Außerhalb der Reichweite<br/>von Kindern aufbewahren.<br/>Nach dem Öffnen bitte umgehend verbrauchen.<br/>Nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
     "shots-recharge:2kfow4u45509r": "Wie sollte RECHARGE gelagert werden?",
-    "shots-recharge:z67bnjmi5ryu": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. Außerhalb der Reichweite von Kindern aufbewahren und nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
+    "shots-recharge:z67bnjmi5ryu": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. Außerhalb der Reichweite von Kindern aufbewahren. Nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
     "shots-recharge:169mh02xuscoy": "Das könnte Ihnen auch gefallen",
     "shots-reset:1k8jz2xoxd1k0": "Kombinieren Sie RESET mit dem RHYTHM-Bundle für eine umfassende Unterstützung des Tagesrhythmus:",
     "shots-reset:hipf6rs6yiyl": "Vorteile",
