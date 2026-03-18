@@ -2099,6 +2099,14 @@
         "shots-recharge"
       ],
       "ts": "2026-03-18T12:24:19.854Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge"
+      ],
+      "ts": "2026-03-18T12:27:53.560Z"
     }
   ],
   "__pending": {
@@ -2199,7 +2207,9 @@
         "1y1o6abn2wfda",
         "gsegmwlwlgng",
         "1rotmp8j0azwl",
-        "2hxihyze670x7"
+        "2hxihyze670x7",
+        "1q816ynnc2xpo",
+        "3ap8na1p9sit2"
       ]
     }
   },
@@ -2909,10 +2919,10 @@
     "shots-recharge:gsegmwlwlgng": "Darf ich RECHARGE parallel mit anderen Nahrungsergänzungsmitteln einnehmen?",
     "shots-recharge:1rotmp8j0azwl": "<p>RECHARGE kann im Allgemeinen parallel mit anderen Nahrungsergänzungsmitteln eingenommen werden. Wenn Sie Medikamente oder mehrere Nahrungsergänzungsmittel einnehmen – insbesondere solche, die die Stimmung oder Neurotransmitter beeinflussen – ist es ratsam vor der ersten Einnahme einen Arzt aufzusuchen.&nbsp;</p>",
     "shots-recharge:ba1qdcwlwn4y": "Ist RECHARGE für den täglichen Gebrauch geeignet?",
-    "shots-recharge:2hxihyze670x7": "<p>RECHARGE ist für die tägliche Einnahme den Anweisungen formuliert. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie unter einer Krankheit leiden oder sich hinsichtlich der Eignung unsicher sind, konsultieren Sie bitte vor der Anwendung einen Arzt.</p>",
+    "shots-recharge:2hxihyze670x7": "<p>RECHARGE wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme entwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie bekannte Vorerkrankungen haben oder sich hinsichtlich der Eignung unsicher sind, suchen Sie bitte vor der ersten Einnahme einen Arzt auf.</p>",
     "shots-recharge:2sp3mmgnc6oh1": "Dürfen schwangere oder stillende Frauen RECHARGE einnehmen?",
-    "shots-recharge:1q816ynnc2xpo": "<p>RECHARGE wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine Empfehlung durch eine qualifizierte medizinische Fachkraft vor.</p>",
-    "shots-recharge:3ap8na1p9sit2": "Was unterscheidet RECHARGE von anderen Produkten für die Stimmung oder das Wohlbefinden?",
+    "shots-recharge:1q816ynnc2xpo": "<p>RECHARGE wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine ärtzliche Empfehlung vor.</p>",
+    "shots-recharge:3ap8na1p9sit2": "Was unterscheidet RECHARGE von anderen Stimmungs- oder Wellnessprodukten?",
     "shots-recharge:1bh9jeqlc8q67": "<p>RECHARGE konzentriert sich auf das systemische Gleichgewicht und die Zellresilienz und kombiniert Vitamine, Mineralien, Aminosäuren, Adaptogene und metabolische Cofaktoren, um das emotionale Wohlbefinden und die geistige Leistungsfähigkeit zu unterstützen, ohne auf Stimulanzien zurückzugreifen.</p>",
     "shots-recharge:5iujmftq0gkj": "Warum variieren Farbe oder Konsistenz zwischen den einzelnen Aufnahmen?",
     "shots-recharge:3kvmn029th12i": "<p>RECHARGE enthält natürliche Inhaltsstoffe. Abweichungen in Farbe oder Konsistenz zwischen den Chargen sind normal und haben keinen Einfluss auf die Qualität oder Zusammensetzung der Formel.</p>",
