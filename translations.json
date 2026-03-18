@@ -2025,6 +2025,15 @@
         "shots-recharge"
       ],
       "ts": "2026-03-18T12:05:02.811Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge",
+        "shots-restart"
+      ],
+      "ts": "2026-03-18T12:06:16.389Z"
     }
   ],
   "__pending": {
@@ -2109,7 +2118,9 @@
         "320i1yt744yuy",
         "d3gch39n8edd",
         "2tm3e965pmkjv",
-        "2789zhkm2d136"
+        "2789zhkm2d136",
+        "3vzokocveoaye",
+        "ws68e27n3axw"
       ]
     }
   },
@@ -2789,8 +2800,8 @@
     "shots-recharge:2tm3e965pmkjv": "Inhaltsstoffe",
     "shots-recharge:2789zhkm2d136": "<p>HydroIRX (Reinstwasser, Phosphatidylcholin (Lipid, pharmazeutische Qualität)), Eisenpyrophosphat/Eisenglycinat, Hyaluronsäure, Kaliumcitrat, Kaliumchlorid, Natriumhydrogencarbonat, kolloidales Siliciumdioxid (hydrophiler Typ), mittelkettige Triglyceride (C8/C10, pharmazeutische Qualität), Magnesiumbisglycinat, Hypericum perforatum-Extrakt (0,3 % Hypericin, Stängel, Blätter und Blüten), Lavandula stoechas-Extrakt (5:1, Blüten und Blätter), Rhodiola rosea-Extrakt (5:1, Wurzeln und Rhizome), Acetyl-L-Carnitin, NAD+ (Nicotinamidadenindinukleotid), SAMe (S-Adenosylmethionin), Hericium erinaceus-Extrakt (Fruchtkörper), Mucuna pruriens-Extrakt (Samen, &gt;0,3 % L-Dopa), Theobroma cacao-Extrakt (Samen, &gt;0,3 % Phenylethylamin), Griffonia simplicifolia-Extrakt (Samen), L-Phenylalanin, Rosa canina-Extrakt (Fruchtschale und Fruchtfleisch), natürliches Aroma aus roten Früchten, Crocus sativus-Extrakt (Narbe), L-Ergothionein, Zinkpicolinat, Verdickungsmittel: Xanthan, Konservierungsstoffe: Kaliumsorbat und Natriumbenzoat, Pyridoxal-5'-phosphat (Vitamin B6), Süßungsmittel: Steviolglykoside, Heidelbeersaft.</p>",
     "shots-recharge:36sw916sx6ebr": "<p style=\"text-align: center\"></p>",
-    "shots-recharge:3vzokocveoaye": "Wichtige Inhaltsstoffe",
-    "shots-recharge:ws68e27n3axw": "<p>Die Formel wird durch HydroIRX™ aktiviert, unsere firmeneigene flüssige Matrix, die für die Interaktion mit ACTYVA-Lichtfrequenzen entwickelt wurde, um die Funktionalität und Wirkstoffabgabe der Inhaltsstoffe zu optimieren. Sie kombiniert die folgenden wichtigen Stoffwechselwirkstoffe:</p><p></p><ul><li>Safran + Johanniskraut – unterstützen das emotionale Gleichgewicht und eine positive Stimmung</li><li>Mucuna (L-Dopa-Quelle) – unterstützt die motivierenden Neurotransmitterbahnen</li><li>Löwenmähne – unterstützt die kognitive Klarheit und geistige Leistungsfähigkeit</li><li>Rhodiola + Ashwagandha – unterstützen die Stressresistenz und geistige Ausdauer</li><li>SAMe + NAD+ – unterstützen die Zellvitalität und den Neurotransmitter-Stoffwechsel</li></ul>",
+    "shots-recharge:3vzokocveoaye": "Wesentliche Inhaltsstoffe",
+    "shots-recharge:ws68e27n3axw": "<p>Die Formel wird durch HydroIRX™ aktiviert, unsere einzigartige flüssige Matrix, die für die Interaktion mit ACTYVA-Lichtfrequenzen entwickelt wurde, um die Funktionalität und Wirkstoffabgabe der Inhaltsstoffe zu optimieren. Sie kombiniert die folgenden wichtigen Stoffwechselwirkstoffe:</p><p></p><ul><li>Safran + Johanniskraut – unterstützen das emotionale Gleichgewicht und eine positive Stimmung</li><li>Mucuna (L-Dopa-Quelle) – unterstützt die motivierenden Neurotransmitterbahnen</li><li>Löwenmähne – unterstützt die kognitive Klarheit und geistige Leistungsfähigkeit</li><li>Rhodiola + Ashwagandha – unterstützen die Stressresistenz und geistige Ausdauer</li><li>SAMe + NAD+ – unterstützen die Zellvitalität und den Neurotransmitter-Stoffwechsel</li></ul>",
     "shots-recharge:tr5dw2slk5x4": "Lavendel",
     "shots-recharge:4eonzofw29rk": "Johanniskraut",
     "shots-recharge:1uqllsioa4ss0": "Heidelbeergeschmack",
@@ -2943,7 +2954,7 @@
     "shots-restart:2ujozilsjyx2u": "<p>HydroIRX (Reinstwasser, Phosphatidylcholin (Lipid, pharmazeutische Qualität)), Eisenpyrophosphat/Eisenglycinat, Hyaluronsäure, Kaliumcitrat, Kaliumchlorid, Natriumhydrogencarbonat, kolloidales Siliciumdioxid (hydrophiler Typ), mittelkettige Triglyceride (C8/C10, pharmazeutische Qualität), Kreatinmonohydrat, Erythrit, Orangensaft, Citrullinmalat (2:1), L-Tyrosin, Ashwagandha-Extrakt (Withania somnifera, Wurzel), Guarana-Extrakt (Paullinia cupana, Samen/Frucht) (mit 22 % Koffein), Magnesiumglycinat, L-Theanin, Kaliumcitrat, Coenzym Q10, Rebaudiosid A (Steviolglykosid – Stevia rebaudiana, Blätter), Zinkpicolinat, Pyridoxal-5'-phosphat (Vitamin B6), Astaxanthin, Methylcobalamin (Vitamin B12).</p>",
     "shots-restart:3es4nrqtx9cm9": "<p style=\"text-align: center\"></p>",
     "shots-restart:imi5syn4wiqw": "Wesentliche Inhaltsstoffe",
-    "shots-restart:1n0kdbgewlqu6": "<p>Die Formel wird durch HydroIRX™ aktiviert: unsere einziartige Flüssigkeitsmatrix, die für die Interaktion mit ACTYVA-Lichtfrequenzen entwickelt wurde, um die Funktionalität und Wirkstoffabgabe der Inhaltsstoffe zu optimieren. Sie kombiniert die folgenden wesentlichen Stoffwechselwirkstoffe:</p><p></p><ul><li>Guarana (natürliches Koffein) – unterstützt die Wachsamkeit und die morgendliche Aktivierung</li><li>L-Tyrosin – unterstützt die Produktion von Neurotransmittern, die der Körper für die Konzentration und geistige Leistungsfähigkeit braucht</li><li>Das Coenzym Q10 – unterstützt die Energieproduktion in den Zellen und Mitochondrien</li><li>Astaxanthin + Ashwagandha – unterstützen den Zellschutz und die Stressresistenz</li></ul>",
+    "shots-restart:1n0kdbgewlqu6": "<p>Die Formel wird durch HydroIRX™ aktiviert: unsere einziartige flüssige Matrix, die für die Interaktion mit ACTYVA-Lichtfrequenzen entwickelt wurde, um die Funktionalität und Wirkstoffabgabe der Inhaltsstoffe zu optimieren. Sie kombiniert die folgenden wesentlichen Stoffwechselwirkstoffe:</p><p></p><ul><li>Guarana (natürliches Koffein) – unterstützt die Wachsamkeit und die morgendliche Aktivierung</li><li>L-Tyrosin – unterstützt die Produktion von Neurotransmittern, die der Körper für die Konzentration und geistige Leistungsfähigkeit braucht</li><li>Das Coenzym Q10 – unterstützt die Energieproduktion in den Zellen und Mitochondrien</li><li>Astaxanthin + Ashwagandha – unterstützen den Zellschutz und die Stressresistenz</li></ul>",
     "shots-restart:32abk72ufa9gg": "Astaxanthin",
     "shots-restart:3l6zk5gd8ghak": "Ashwagandha",
     "shots-restart:upt6jky1xvoq": "Orangengeschmack",
