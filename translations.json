@@ -2042,6 +2042,14 @@
         "shots-recharge"
       ],
       "ts": "2026-03-18T12:06:45.375Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge"
+      ],
+      "ts": "2026-03-18T12:14:47.181Z"
     }
   ],
   "__pending": {
@@ -2128,7 +2136,9 @@
         "2tm3e965pmkjv",
         "2789zhkm2d136",
         "3vzokocveoaye",
-        "ws68e27n3axw"
+        "ws68e27n3axw",
+        "2i7b9my3ukeei",
+        "7ue4o15ddmyu"
       ]
     }
   },
@@ -2815,8 +2825,8 @@
     "shots-recharge:1uqllsioa4ss0": "Heidelbeergeschmack",
     "shots-recharge:312kshv58kda3": "Löwenmähne",
     "shots-recharge:16yc3gbf5sm9c": "Eine neue Ära der Nahrungsergänzungsmittel",
-    "shots-recharge:2i7b9my3ukeei": "<p>NEXAI™ ist ein proprietäres Intelligenzsystem, das künstliche Intelligenz mit den klinischen Daten aus zwei Jahrzehnten von Nuno Nina kombiniert. Es analysiert anonymisierte Datenmuster aus über 70.000 Kundenprofilen, um die effektivsten Synergien zwischen bioaktiven Verbindungen zu identifizieren.</p>",
-    "shots-recharge:7ue4o15ddmyu": "<p>Das Herzstück der CellPowerX SHOTS-Formeln ist HydroIRX, unsere firmeneigene flüssige Matrix, die sich in einzigartiger Weise strukturieren lässt. ACTYVA sendet präzise kalibrierte Lichtfrequenzen aus, die direkt mit dieser Matrix interagieren und ihre physikalisch-chemische Struktur neu organisieren.</p>",
+    "shots-recharge:2i7b9my3ukeei": "<p>NEXAI™ ist ein einzigartiges Intelligenzsystem, das künstliche Intelligenz mit Nuno Ninas erhobenen klinischen Daten aus zwei Jahrzehnten kombiniert. Es analysiert anonymisierte Datenmuster aus über 70.000 Kundenprofilen, um die effektivsten Synergien zwischen bioaktiven Verbindungen zu identifizieren.</p>",
+    "shots-recharge:7ue4o15ddmyu": "<p>Das Herzstück der CellPowerX SHOTS-Formeln ist HydroIRX, unsere einzigartige flüssige Matrix, die sich auf eine nie da gewesene Weise strukturieren lässt. ACTYVA sendet präzise kalibrierte Lichtfrequenzen aus, die direkt mit dieser Matrix interagieren und ihre physikalisch-chemische Struktur neu organisieren.</p>",
     "shots-recharge:1pw35dv04ihh7": "<p>Entwickelt unter Verwendung hochwertiger Inhaltsstoffe, die aufgrund klinischer Erfahrungen, wissenschaftlicher Validierung und funktioneller Relevanz ausgewählt wurden. Jede Formel enthält bioverfügbare Nährstoffe, Aminosäuren und Pflanzenextrakte, die durch ihre ausgewogene Synergie bestimmte physiologische Prozesse unterstützen.</p>",
     "shots-recharge:2opgn7h01drhe": "cGMP-Zertifizierung",
     "shots-recharge:1psux825saeuj": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um einheitliche Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
