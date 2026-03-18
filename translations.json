@@ -2083,6 +2083,14 @@
         "shots-recharge"
       ],
       "ts": "2026-03-18T12:19:55.281Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge"
+      ],
+      "ts": "2026-03-18T12:21:31.425Z"
     }
   ],
   "__pending": {
@@ -2177,7 +2185,9 @@
         "2ekk19108o2om",
         "2n86bxne09k67",
         "m874se78rudp",
-        "2xg7pe653vy7j"
+        "2xg7pe653vy7j",
+        "1le8vy7okymh4",
+        "10x9m6ag073p1"
       ]
     }
   },
@@ -2877,9 +2887,9 @@
     "shots-recharge:yprxnsjz5rqe": "Was ist RECHARGE?",
     "shots-recharge:2xg7pe653vy7j": "<p>RECHARGE ist ein flüssiges Nahrungsergänzungsmittel für den täglichen Gebrauch zur Unterstützung des emotionalen Gleichgewichts, der geistigen Klarheit und des allgemeinen Wohlbefindens. Es dient als grundlegende Nährstoffformel, um Körper und Geist dabei zu helfen, sich von täglichem Stress und kognitiver Ermüdung zu erholen.</p>",
     "shots-recharge:27z0qghotl6o1": "Für wen ist RECHARGE geeignet?",
-    "shots-recharge:1le8vy7okymh4": "<p>RECHARGE ist für Erwachsene gedacht, die ihre Stimmung, geistige Leistungsfähigkeit und Stressresistenz den ganzen Tag über unterstützen möchten, insbesondere bei geistig oder emotional anspruchsvollen Tätigkeiten.</p>",
+    "shots-recharge:1le8vy7okymh4": "<p>RECHARGE ist für Erwachsene geeignet, die ihre Stimmung, geistige Leistungsfähigkeit und Stressresistenz den ganzen Tag über unterstützen möchten, insbesondere bei geistig oder emotional anspruchsvollen Tätigkeiten.</p>",
     "shots-recharge:auea4grmzy2k": "Wie nehme ich RECHARGE ein?",
-    "shots-recharge:10x9m6ag073p1": "<p>Nehmen Sie täglich eine Dosis ein, idealerweise nach dem Mittagessen oder gegen 15 Uhr. Schütteln Sie das Produkt vor Gebrauch gut und aktivieren Sie die Ampulle mit dem ACTYVA™-Gerät, um eine optimale Wirkung zu erzielen.</p>",
+    "shots-recharge:10x9m6ag073p1": "<p>Nehmen Sie täglich einen Shot ein, vorzugsweise nach dem Mittagessen oder gegen 15 Uhr. Schütteln Sie das Produkt vor Gebrauch gut und aktivieren Sie den Inhalt des Glasfläschchens mit dem ACTYVA™-Gerät, um eine optimale Wirkung zu erzielen.</p>",
     "shots-recharge:39tnxamr12zo6": "Wann werde ich Ergebnisse bemerken?",
     "shots-recharge:21d5qard7c3q7": "<p>Die individuellen Reaktionen variieren. Einige Personen bemerken innerhalb weniger Tage ein größeres Gefühl der Ruhe, Ausgeglichenheit oder geistigen Klarheit, während sich andere Vorteile bei konsequenter täglicher Anwendung allmählich entwickeln können.</p>",
     "shots-recharge:1vvxjytle3vk7": "Enthält RECHARGE Koffein oder Stimulanzien?",
