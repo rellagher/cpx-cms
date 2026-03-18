@@ -2067,6 +2067,14 @@
         "shots-recharge"
       ],
       "ts": "2026-03-18T12:17:04.851Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge"
+      ],
+      "ts": "2026-03-18T12:17:34.480Z"
     }
   ],
   "__pending": {
@@ -2158,7 +2166,8 @@
         "2i7b9my3ukeei",
         "7ue4o15ddmyu",
         "1pw35dv04ihh7",
-        "2ekk19108o2om"
+        "2ekk19108o2om",
+        "2n86bxne09k67"
       ]
     }
   },
@@ -2851,7 +2860,7 @@
     "shots-recharge:2opgn7h01drhe": "cGMP-Zertifizierung",
     "shots-recharge:1psux825saeuj": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um einheitliche Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
     "shots-recharge:2ekk19108o2om": "Eingetragen bei der US-amerikanischen Bundesbehörde für Lebens- und Arzneimittel (FDA)",
-    "shots-recharge:2n86bxne09k67": "<p>Hergestellt in einer bei der US-amerikanischen Food and Drug Administration registrierten Anlage, die alle geltenden Herstellungsanforderungen erfüllt.</p>",
+    "shots-recharge:2n86bxne09k67": "<p>Hergestellt in einer bei der US-amerikanischen&nbsp;Bundesbehörde für Lebens-\n und Arzneimittel (FDA) eingetragenen Anlage, die alle vorgeschriebenen \nHerstellungsanforderungen erfüllt.</p>",
     "shots-recharge:1xdy4g01avnic": "Natürlicher Geschmack",
     "shots-recharge:m874se78rudp": "<p>Mit sorgfältig ausgewählten natürlichen Aromen formuliert, um ein authentisches Geschmackserlebnis zu bieten.</p>",
     "shots-recharge:26lvexbjwixj2": "Häufig gestellte Fragen",
