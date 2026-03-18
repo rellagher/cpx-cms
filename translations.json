@@ -2050,6 +2050,15 @@
         "shots-recharge"
       ],
       "ts": "2026-03-18T12:14:47.181Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge",
+        "shots-restart"
+      ],
+      "ts": "2026-03-18T12:15:44.657Z"
     }
   ],
   "__pending": {
@@ -2125,7 +2134,8 @@
         "38w5fj3ytcxoh",
         "wa0cf35chjy1",
         "3e5wt2b7743pj",
-        "3g4xqtxgpmlen"
+        "3g4xqtxgpmlen",
+        "3a3kxpx2qw4h5"
       ],
       "shots-recharge": [
         "w8i5vpeab20a",
@@ -2138,7 +2148,8 @@
         "3vzokocveoaye",
         "ws68e27n3axw",
         "2i7b9my3ukeei",
-        "7ue4o15ddmyu"
+        "7ue4o15ddmyu",
+        "1pw35dv04ihh7"
       ]
     }
   },
@@ -2827,7 +2838,7 @@
     "shots-recharge:16yc3gbf5sm9c": "Eine neue Ära der Nahrungsergänzungsmittel",
     "shots-recharge:2i7b9my3ukeei": "<p>NEXAI™ ist ein einzigartiges Intelligenzsystem, das künstliche Intelligenz mit Nuno Ninas erhobenen klinischen Daten aus zwei Jahrzehnten kombiniert. Es analysiert anonymisierte Datenmuster aus über 70.000 Kundenprofilen, um die effektivsten Synergien zwischen bioaktiven Verbindungen zu identifizieren.</p>",
     "shots-recharge:7ue4o15ddmyu": "<p>Das Herzstück der CellPowerX SHOTS-Formeln ist HydroIRX, unsere einzigartige flüssige Matrix, die sich auf eine nie da gewesene Weise strukturieren lässt. ACTYVA sendet präzise kalibrierte Lichtfrequenzen aus, die direkt mit dieser Matrix interagieren und ihre physikalisch-chemische Struktur neu organisieren.</p>",
-    "shots-recharge:1pw35dv04ihh7": "<p>Entwickelt unter Verwendung hochwertiger Inhaltsstoffe, die aufgrund klinischer Erfahrungen, wissenschaftlicher Validierung und funktioneller Relevanz ausgewählt wurden. Jede Formel enthält bioverfügbare Nährstoffe, Aminosäuren und Pflanzenextrakte, die durch ihre ausgewogene Synergie bestimmte physiologische Prozesse unterstützen.</p>",
+    "shots-recharge:1pw35dv04ihh7": "<p>Entwickelt unter Verwendung hochwertiger Inhaltsstoffe, die auf Grundlage klinischer Erfahrungen, wissenschaftlicher Validierung und funktioneller Relevanz entsprechend ausgewählt wurden. Jede Formel enthält bioverfügbare Nährstoffe, Aminosäuren und Pflanzenextrakte, die durch ihre ausgewogene Synergie bestimmte physiologische Prozesse unterstützen.</p>",
     "shots-recharge:2opgn7h01drhe": "cGMP-Zertifizierung",
     "shots-recharge:1psux825saeuj": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um einheitliche Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
     "shots-recharge:2ekk19108o2om": "FDA-REGISTRIERT",
@@ -2980,7 +2991,7 @@
     "shots-restart:1s101t2m2ujss": "Eine neue Ära der Nahrungsergänzungsmittel",
     "shots-restart:7bfi9tr78rky": "<p>NEXAI™ ist ein einziartiges Intelligenzsystem, das künstliche Intelligenz mit Nuno Ninas erhobenen klinischen Daten aus zwei Jahrzehnten kombiniert. Es analysiert anonymisierte Datenmuster aus über 70.000 Kundenprofilen, um die effektivsten Synergien zwischen bioaktiven Verbindungen zu identifizieren.</p>",
     "shots-restart:3e5wt2b7743pj": "<p>Das Herzstück der CellPowerX SHOTS-Formeln ist HydroIRX, unsere einzigartige flüssige Matrix, die sich auf eine nie da gewesene Weise strukturieren lässt. ACTYVA sendet präzise kalibrierte Lichtfrequenzen aus, die direkt mit dieser Matrix interagieren und ihre physikalisch-chemische Struktur neu organisieren.</p>",
-    "shots-restart:3a3kxpx2qw4h5": "<p>Entwickelt unter Verwendung hochwertiger Inhaltsstoffe, die aufgrund klinischer Erfahrungen, wissenschaftlicher Validierung und funktioneller Relevanz ausgewählt wurden. Jede Formel enthält bioverfügbare Nährstoffe, Aminosäuren und Pflanzenextrakte, die durch ihre ausgewogene Synergie bestimmte physiologische Prozesse unterstützen.</p>",
+    "shots-restart:3a3kxpx2qw4h5": "<p>Entwickelt unter Verwendung hochwertiger Inhaltsstoffe, die auf \nGrundlage klinischer Erfahrungen, wissenschaftlicher Validierung und \nfunktioneller Relevanz entsprechend ausgewählt wurden.&nbsp;Jede Formel enthält bioverfügbare Nährstoffe, Aminosäuren und Pflanzenextrakte, die durch ihre ausgewogene Synergie bestimmte physiologische Prozesse unterstützen.</p>",
     "shots-restart:14t6cvwznz2pe": "cGMP-Zertifizierung",
     "shots-restart:f4soi5cgln0b": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um einheitliche Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
     "shots-restart:1a7axk1y486in": "Eingetragen bei der US-amerikanischen Bundesbehörde für Lebens- und Arzneimittel (FDA)",
