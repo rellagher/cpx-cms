@@ -2107,6 +2107,14 @@
         "shots-recharge"
       ],
       "ts": "2026-03-18T12:27:53.560Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge"
+      ],
+      "ts": "2026-03-18T12:30:24.727Z"
     }
   ],
   "__pending": {
@@ -2209,7 +2217,9 @@
         "1rotmp8j0azwl",
         "2hxihyze670x7",
         "1q816ynnc2xpo",
-        "3ap8na1p9sit2"
+        "3ap8na1p9sit2",
+        "5iujmftq0gkj",
+        "3kvmn029th12i"
       ]
     }
   },
@@ -2924,8 +2934,8 @@
     "shots-recharge:1q816ynnc2xpo": "<p>RECHARGE wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine ärtzliche Empfehlung vor.</p>",
     "shots-recharge:3ap8na1p9sit2": "Was unterscheidet RECHARGE von anderen Stimmungs- oder Wellnessprodukten?",
     "shots-recharge:1bh9jeqlc8q67": "<p>RECHARGE konzentriert sich auf das systemische Gleichgewicht und die Zellresilienz und kombiniert Vitamine, Mineralien, Aminosäuren, Adaptogene und metabolische Cofaktoren, um das emotionale Wohlbefinden und die geistige Leistungsfähigkeit zu unterstützen, ohne auf Stimulanzien zurückzugreifen.</p>",
-    "shots-recharge:5iujmftq0gkj": "Warum variieren Farbe oder Konsistenz zwischen den einzelnen Aufnahmen?",
-    "shots-recharge:3kvmn029th12i": "<p>RECHARGE enthält natürliche Inhaltsstoffe. Abweichungen in Farbe oder Konsistenz zwischen den Chargen sind normal und haben keinen Einfluss auf die Qualität oder Zusammensetzung der Formel.</p>",
+    "shots-recharge:5iujmftq0gkj": "Warum können Farbe oder Konsistenz je nach Shot unterschiedliche ausfallen?",
+    "shots-recharge:3kvmn029th12i": "<p>RECHARGE enthält natürliche Inhaltsstoffe. Farbe oder Aussehen können je nach Charge Abweichungen aufweisen. Diese \nsind normal und haben keinen Einfluss auf die Qualität oder \nZusammensetzung der Nährstoffformel.</p>",
     "shots-recharge:mir6paepoa7q": "Gibt es wichtige Sicherheitshinweise für RECHARGE SHOTS?",
     "shots-recharge:3vakhi7mbhnun": "<p>RECHARGE SHOTS enthalten Phenylalanin.<br/>Wenn Sie Medikamente einnehmen, konsultieren Sie bitte Ihren Arzt, bevor Sie dieses Produkt verwenden.<br/>Der Extrakt aus Hypericum perforatum kann den Stoffwechsel dieser Medikamente beeinträchtigen und sogar deren Wirksamkeit hemmen. Außerhalb der Reichweite<br/>von Kindern aufbewahren.<br/>Nach dem Öffnen bitte umgehend verbrauchen.<br/>Nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
     "shots-recharge:2kfow4u45509r": "Wie sollte RECHARGE gelagert werden?",
