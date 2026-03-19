@@ -2253,6 +2253,14 @@
         "shots-reset"
       ],
       "ts": "2026-03-19T10:03:30.500Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-reset"
+      ],
+      "ts": "2026-03-19T10:14:27.069Z"
     }
   ],
   "__pending": {
@@ -2381,7 +2389,14 @@
         "17zw9dhmuuygu",
         "fdevdzzivh0e",
         "3gv2rdtdwytst",
-        "5benauwb4g8s"
+        "5benauwb4g8s",
+        "10iwiabp9v4qt",
+        "7qc6krdufqj6",
+        "ar51qpbphmmz",
+        "1wwsfn3fiwgwb",
+        "1rso76dqfmy82",
+        "2qjlet7edscz8",
+        "2s7kxi3n4ltkt"
       ]
     }
   },
@@ -3134,17 +3149,17 @@
     "shots-reset:2m7kf2hlsicmt": "Für wen ist RESET geeignet?",
     "shots-reset:5benauwb4g8s": "<p>RESET ist für Erwachsene geeignet, die ihre Schlafqualität, Entspannung und nächtliche Erholung verbessern möchten – insbesondere in Stressphasen, bei unregelmäßigen Tagesabläufen oder wenn Schwierigkeiten bestehen abends zur Ruhe zu kommen.</p>",
     "shots-reset:2basfi1fyoiks": "Wie nehme ich RESET ein?",
-    "shots-reset:10iwiabp9v4qt": "<p>Nehmen Sie täglich 1 Dosis 30 bis 60 Minuten vor dem Schlafengehen ein. Schütteln Sie das Produkt vor Gebrauch gründlich und aktivieren Sie die Ampulle mit dem ACTYVA™-Gerät, um eine optimale Wirkung zu erzielen.</p>",
+    "shots-reset:10iwiabp9v4qt": "<p>Nehmen Sie täglich 1 Shot etwa 30 bis 60 Minuten vor dem Schlafengehen ein. Schütteln Sie das Produkt vor Gebrauch gut und aktivieren Sie den Inhalt des Glasfläschchens mit dem ACTYVA™-Gerät, um eine optimale Wirkung zu erzielen.</p>",
     "shots-reset:25132318i8mka": "Wie schnell wirkt RESET?",
     "shots-reset:24agro5kdqagj": "<p>Die individuellen Reaktionen variieren. Einige Personen verspüren bereits kurz nach der Einnahme von RESET eine Entspannung, während sich bei täglicher Einnahme Verbesserungen des Schlafverhaltens einstellen können.</p>",
     "shots-reset:2twy3potv550j": "Enthält RESET Melatonin?",
     "shots-reset:3j8e24i46bpt6": "<p>Ja. RESET enthält Melatonin (mit verzögerter Freisetzung), das die Einschlafzeit verkürzt und die Regulierung des Schlaf-Wach-Rhythmus unterstützt.</p>",
-    "shots-reset:7qc6krdufqj6": "Werde ich mich am nächsten Morgen nach der Einnahme von RESET benommen fühlen?",
-    "shots-reset:ar51qpbphmmz": "<p>RESET wurde entwickelt, um natürliche Schlafprozesse und Entspannung zu unterstützen. Bei bestimmungsgemäßer Einnahme soll es Ihnen helfen, erfrischt statt benommen aufzuwachen.</p>",
-    "shots-reset:1wwsfn3fiwgwb": "Darf ich RESET zusammen mit anderen Nahrungsergänzungsmitteln einnehmen?",
-    "shots-reset:1rso76dqfmy82": "<p>RESET kann in der Regel zusammen mit anderen Nahrungsergänzungsmitteln eingenommen werden. Wenn Sie Medikamente oder Nahrungsergänzungsmittel einnehmen, die den Schlaf, die Stimmung oder das Nervensystem beeinflussen, konsultieren Sie bitte vor der Anwendung einen Arzt.</p>",
-    "shots-reset:2qjlet7edscz8": "Ist RESET für den täglichen Gebrauch sicher?",
-    "shots-reset:2s7kxi3n4ltkt": "<p>RESET ist für die tägliche Anwendung gemäß den Anweisungen formuliert. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie unter einer Erkrankung leiden oder Bedenken hinsichtlich Schlafmitteln haben, konsultieren Sie bitte einen Arzt.</p>",
+    "shots-reset:7qc6krdufqj6": "Werde ich mich am nächsten Morgen nach der Einnahme von RESET schläfrig fühlen?",
+    "shots-reset:ar51qpbphmmz": "<p>RESET wurde entwickelt, um natürliche Schlafprozesse und Entspannung zu unterstützen. Bei anweisungsgemäßer Einnahme wird Ihnen diese Nährstoffformel helfen, erfrischt statt schläfrig aufzuwachen.</p>",
+    "shots-reset:1wwsfn3fiwgwb": "Darf ich RESET parallel mit anderen Nahrungsergänzungsmitteln einnehmen?",
+    "shots-reset:1rso76dqfmy82": "<p>RESET kann in der Regel zusammen mit anderen Nahrungsergänzungsmitteln eingenommen werden. Wenn Sie Medikamente oder Nahrungsergänzungsmittel einnehmen, die den Schlaf, die Stimmung oder das Nervensystem beeinflussen, suchen Sie bitte vor der ersten Einnahme einen Arzt auf.</p>",
+    "shots-reset:2qjlet7edscz8": "Ist RESET für den täglichen Gebrauch geeignet?",
+    "shots-reset:2s7kxi3n4ltkt": "<p>RESET wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme entwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie bekannte Vorerkrankungen haben oder Bedenken im Hinblick auf Schlafmittel haben, suchen Sie bitte vor der ersten Einnahme einen Arzt auf.</p>",
     "shots-reset:1o6xqzw9hcdwl": "Gibt es wichtige Sicherheitshinweise für RESET SHOTS?",
     "shots-reset:2rxyhm05as65o": "<p>RESET SHOTS sollten nicht von Personen eingenommen werden, die sich in einer Antidepressiva-Therapie befinden oder an Niereninsuffizienz leiden. Außerhalb der Reichweite<br/>von Kindern aufbewahren.<br/>Nach dem Öffnen bitte umgehend verbrauchen.<br/>Nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
     "shots-reset:2nleggoo5g6ll": "Wie sollte RESET gelagert werden?",
