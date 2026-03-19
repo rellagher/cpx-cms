@@ -2400,6 +2400,14 @@
         "shots-reshape"
       ],
       "ts": "2026-03-19T11:05:00.687Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-reshape"
+      ],
+      "ts": "2026-03-19T11:05:29.426Z"
     }
   ],
   "__pending": {
@@ -2563,7 +2571,8 @@
         "3jq34h3genxd0",
         "2lz00f4d6ivzi",
         "3e91mrv7tkh2f",
-        "3ljkwlr3x6tym"
+        "3ljkwlr3x6tym",
+        "3bcbnuefnrz2e"
       ]
     }
   },
@@ -3381,7 +3390,7 @@
     "shots-reshape:3e91mrv7tkh2f": "Warum können Farbe oder Aussehen je nach Shot unterschiedlich ausfallen?",
     "shots-reshape:3ljkwlr3x6tym": "<p>RESHAPE&nbsp;enthält natürliche Inhaltsstoffe. Farbe oder Aussehen können je nach Charge Abweichungen aufweisen. Diese \nsind normal und haben keinen Einfluss auf die Qualität oder \nZusammensetzung der Nährstoffformel.</p>",
     "shots-reshape:jewhkscvzg9b": "Gibt es wichtige Sicherheitshinweise für RESHAPE SHOTS?",
-    "shots-reshape:3bcbnuefnrz2e": "<p>RESHAPE SHOTS enthalten 50 mg Koffein pro Shot (20 ml). Außerhalb der Reichweite<br/>von Kindern aufbewahren.<br/>Nach dem Öffnen bitte umgehend verbrauchen.<br/>Nicht verwenden, wenn die Sicherheitssiegel beschädigt sind oder fehlen.</p>",
+    "shots-reshape:3bcbnuefnrz2e": "<p>RESHAPE SHOTS enthalten 50 mg Koffein pro Einheit (20 ml). Außerhalb der Reichweite<br/>von Kindern aufbewahren.<br/>Nach dem Öffnen bitte umgehend verbrauchen.<br/>Nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt</p>",
     "shots-reshape:638083pttiot": "Wie sollte RESHAPE gelagert werden?",
     "shots-reshape:18fv7ashkrhuc": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. Außerhalb der Reichweite von Kindern aufbewahren und nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
     "shots-reshape:147kwz335xo2f": "Das könnte Ihnen auch gefallen",
