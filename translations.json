@@ -2205,6 +2205,14 @@
         "shots-restart"
       ],
       "ts": "2026-03-19T09:21:16.802Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-reset"
+      ],
+      "ts": "2026-03-19T09:24:35.583Z"
     }
   ],
   "__pending": {
@@ -2325,7 +2333,8 @@
         "3vi4vdtamjep8",
         "b7382ppso45p",
         "gl8dag5pr1wc",
-        "11jtpdk88dikn"
+        "11jtpdk88dikn",
+        "3egaozh3mx2oa"
       ]
     }
   },
@@ -3067,7 +3076,7 @@
     "shots-reset:gl8dag5pr1wc": "<p>Das Herzstück der CellPowerX SHOTS-Formeln ist HydroIRX, unsere \neinzigartige flüssige Matrix, die sich auf eine nie da gewesene Weise \nstrukturieren lässt. ACTYVA sendet präzise kalibrierte Lichtfrequenzen \naus, die direkt mit dieser Matrix interagieren und ihre \nphysikalisch-chemische Struktur neu organisieren.</p>",
     "shots-reset:11jtpdk88dikn": "<p>Entwickelt unter Verwendung hochwertiger Inhaltsstoffe, die auf \nGrundlage klinischer Erfahrungen, wissenschaftlicher Validierung und \nfunktioneller Relevanz entsprechend ausgewählt wurden. Jede Formel \nenthält bioverfügbare Nährstoffe, Aminosäuren und Pflanzenextrakte, die \ndurch ihre ausgewogene Synergie bestimmte physiologische Prozesse \nunterstützen.</p>",
     "shots-reset:2ezcsy3mzvj43": "cGMP-Zertifizierung",
-    "shots-reset:3egaozh3mx2oa": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um einheitliche Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
+    "shots-reset:3egaozh3mx2oa": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um höchste Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
     "shots-reset:2rnfmc0sm7fav": "FDA-REGISTRIERT",
     "shots-reset:17zw9dhmuuygu": "<p>Hergestellt in einer bei der US-amerikanischen Food and Drug Administration registrierten Anlage, die alle geltenden Herstellungsanforderungen erfüllt.</p>",
     "shots-reset:20zg2ti90lfo7": "Natürlicher Geschmack",
