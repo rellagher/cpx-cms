@@ -2261,6 +2261,14 @@
         "shots-reset"
       ],
       "ts": "2026-03-19T10:14:27.069Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-reset"
+      ],
+      "ts": "2026-03-19T10:14:47.348Z"
     }
   ],
   "__pending": {
@@ -2396,7 +2404,8 @@
         "1wwsfn3fiwgwb",
         "1rso76dqfmy82",
         "2qjlet7edscz8",
-        "2s7kxi3n4ltkt"
+        "2s7kxi3n4ltkt",
+        "33b738pzabqxs"
       ]
     }
   },
@@ -3163,7 +3172,7 @@
     "shots-reset:1o6xqzw9hcdwl": "Gibt es wichtige Sicherheitshinweise für RESET SHOTS?",
     "shots-reset:2rxyhm05as65o": "<p>RESET SHOTS sollten nicht von Personen eingenommen werden, die sich in einer Antidepressiva-Therapie befinden oder an Niereninsuffizienz leiden. Außerhalb der Reichweite<br/>von Kindern aufbewahren.<br/>Nach dem Öffnen bitte umgehend verbrauchen.<br/>Nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
     "shots-reset:2nleggoo5g6ll": "Wie sollte RESET gelagert werden?",
-    "shots-reset:33b738pzabqxs": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. Außerhalb der Reichweite von Kindern aufbewahren und nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
+    "shots-reset:33b738pzabqxs": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. Außerhalb der Reichweite von Kindern aufbewahren. Nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
     "shots-reset:2pecadnabmb0a": "Das könnte Ihnen auch gefallen",
     "shots-reshape:azye42uqeau4": "Entdecken Sie das gesamte Potenzial von RESHAPE mit dem kompletten Bundle:",
     "shots-reshape:32ekq4ih8dpna": "Vorteile",
