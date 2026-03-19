@@ -2213,6 +2213,14 @@
         "shots-reset"
       ],
       "ts": "2026-03-19T09:24:35.583Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-recharge"
+      ],
+      "ts": "2026-03-19T09:24:44.521Z"
     }
   ],
   "__pending": {
@@ -2319,7 +2327,8 @@
         "3ap8na1p9sit2",
         "5iujmftq0gkj",
         "3kvmn029th12i",
-        "z67bnjmi5ryu"
+        "z67bnjmi5ryu",
+        "1psux825saeuj"
       ],
       "shots-reset": [
         "1k8jz2xoxd1k0",
@@ -3025,7 +3034,7 @@
     "shots-recharge:7ue4o15ddmyu": "<p>Das Herzstück der CellPowerX SHOTS-Formeln ist HydroIRX, unsere einzigartige flüssige Matrix, die sich auf eine nie da gewesene Weise strukturieren lässt. ACTYVA sendet präzise kalibrierte Lichtfrequenzen aus, die direkt mit dieser Matrix interagieren und ihre physikalisch-chemische Struktur neu organisieren.</p>",
     "shots-recharge:1pw35dv04ihh7": "<p>Entwickelt unter Verwendung hochwertiger Inhaltsstoffe, die auf Grundlage klinischer Erfahrungen, wissenschaftlicher Validierung und funktioneller Relevanz entsprechend ausgewählt wurden. Jede Formel enthält bioverfügbare Nährstoffe, Aminosäuren und Pflanzenextrakte, die durch ihre ausgewogene Synergie bestimmte physiologische Prozesse unterstützen.</p>",
     "shots-recharge:2opgn7h01drhe": "cGMP-Zertifizierung",
-    "shots-recharge:1psux825saeuj": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um einheitliche Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
+    "shots-recharge:1psux825saeuj": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um höchste Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
     "shots-recharge:2ekk19108o2om": "Eingetragen bei der US-amerikanischen Bundesbehörde für Lebens- und Arzneimittel (FDA)",
     "shots-recharge:2n86bxne09k67": "<p>Hergestellt in einer bei der US-amerikanischen&nbsp;Bundesbehörde für Lebens-\n und Arzneimittel (FDA) eingetragenen Anlage, die alle vorgeschriebenen \nHerstellungsanforderungen erfüllt.</p>",
     "shots-recharge:1xdy4g01avnic": "Natürlicher Geschmack",
