@@ -2366,6 +2366,14 @@
         "shots-reshape"
       ],
       "ts": "2026-03-19T10:59:29.222Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "shots-reshape"
+      ],
+      "ts": "2026-03-19T11:00:51.626Z"
     }
   ],
   "__pending": {
@@ -2525,7 +2533,9 @@
         "xqalmc6lh5f2",
         "3pv8p3i1gpkhk",
         "bs8wcz3509ux",
-        "27uql629jtyn4"
+        "27uql629jtyn4",
+        "3jq34h3genxd0",
+        "2lz00f4d6ivzi"
       ]
     }
   },
@@ -3335,9 +3345,9 @@
     "shots-reshape:bs8wcz3509ux": "Darf ich RESHAPE parallel mit anderen Nahrungsergänzungsmitteln einnehmen?",
     "shots-reshape:27uql629jtyn4": "<p>RESHAPE kann im Allgemeinen parallel mit anderen Nahrungsergänzungsmitteln eingenommen werden. Für optimale Ergebnisse kann es mit unseren Fruchtgummis ReShape Balance und ReShape Control kombiniert werden. Wenn Sie Medikamente oder andere Nahrungsergänzungsmittel einnehmen, suchen Sie bitte vor der ersten Einnahme einen Arzt auf.</p>",
     "shots-reshape:2y5dkm5xnenh": "Ist RESHAPE für den täglichen Gebrauch sicher?",
-    "shots-reshape:3jq34h3genxd0": "<p>RESHAPE ist für die tägliche Anwendung gemäß den Anweisungen formuliert. Bitte überschreiten Sie nicht die empfohlene Dosierung. Wenn Sie unter einer Erkrankung leiden oder Bedenken hinsichtlich der Einnahme von Stimulanzien haben, konsultieren Sie bitte einen Arzt.</p>",
+    "shots-reshape:3jq34h3genxd0": "<p>RESHAPE&nbsp;wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder Bedenken im Hinblick auf Stimulanzien haben, suchen Sie bitte vor der ersten Einnahme einen Arzt \nauf.</p>",
     "shots-reshape:an0lcxshv82v": "Dürfen schwangere oder stillende Frauen RESHAPE einnehmen?",
-    "shots-reshape:2lz00f4d6ivzi": "<p>RESHAPE wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine Empfehlung eines qualifizierten medizinischen Fachpersonals vor.</p>",
+    "shots-reshape:2lz00f4d6ivzi": "<p>RESHAPE&nbsp;wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine ärtzliche Empfehlung vor.</p>",
     "shots-reshape:x67yjeoa87tk": "Was unterscheidet RESHAPE von anderen Stoffwechselprodukten?",
     "shots-reshape:2ypm82jhr679t": "<p>RESHAPE konzentriert sich auf die Stoffwechseleffizienz statt auf extreme Stimulation und kombiniert natürliches Koffein, Aminosäuren, Mineralien und zelluläre Cofaktoren, um die Energieverwertung und Leistungsfähigkeit als Teil eines gesunden Lebensstils zu unterstützen.</p>",
     "shots-reshape:3e91mrv7tkh2f": "Warum variieren Farbe oder Konsistenz zwischen den einzelnen Aufnahmen?",
