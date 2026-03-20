@@ -919,14 +919,6 @@
   },
   "__activity_log": [
     {
-      "name": "Admin",
-      "lang": "pt-PT",
-      "pages": [
-        "homepage"
-      ],
-      "ts": "2026-02-25T12:12:04.878Z"
-    },
-    {
       "name": "Joao",
       "lang": "pt-PT",
       "pages": [
@@ -2620,6 +2612,14 @@
         "gummies-reshape-control"
       ],
       "ts": "2026-03-20T11:17:43.008Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "gummies-reshape-control"
+      ],
+      "ts": "2026-03-20T11:21:46.690Z"
     }
   ],
   "__pending": {
@@ -2874,7 +2874,14 @@
         "20mvwk13lqzgt",
         "2nm83ay6fle70",
         "10iwdpp9fd4hy",
-        "107pqebut9ndu"
+        "107pqebut9ndu",
+        "1rfzxmezny76o",
+        "20k3ydm8xyzgt",
+        "53vs07uoebwp",
+        "2om3ctc5voz5s",
+        "j7cmdqnuikmo",
+        "d0n3vveu4b2z",
+        "3phbhl7yy7qsx"
       ]
     }
   },
@@ -3370,21 +3377,21 @@
     "gummies-reshape-control:10iwdpp9fd4hy": "<p>Jeder Inhaltsstoff wird sorgfältig nach Reinheit, wissenschaftlicher \nEvidenz und funktioneller Wirksamkeit ausgewählt und sorgt in \nKombination mit den anderen Inhaltsstoffen für gleichbleibende Vorteile.</p><p></p><ul><li>Glucomannan (Konjakfaser) – dehnt sich im Magen aus und fördert so das Sättigungsgefühl und die Appetitkontrolle.</li><li>Berberin-HCl – unterstützt das Stoffwechselgleichgewicht und einen gesunden Glukosestoffwechsel</li><li>Chrompicolinat – trägt zur Aufrechterhaltung eines normalen Blutzuckerspiegels und eines gesunden Makronährstoffstoffwechsels bei</li><li>Grüntee-Extrakt (EGCG) – unterstützt den Fettstoffwechsel und bietet antioxidativen Schutz</li><li>Moro-Rote-Orange + Morus alba – unterstützen das metabolische Gleichgewicht und den Schutz vor oxidativem Stress</li><li>Piperin (schwarzer Pfefferextrakt) – verbessert die Nährstoffaufnahme und Bioverfügbarkeit</li></ul>",
     "gummies-reshape-control:1txyex9cay9y5": "Berberin (HCl)",
     "gummies-reshape-control:107pqebut9ndu": "Moro-Rote-Orange",
-    "gummies-reshape-control:1rfzxmezny76o": "Zitrone- und Grüntee-Geschmack",
+    "gummies-reshape-control:1rfzxmezny76o": "Zitronen- und Grüntee-Geschmack",
     "gummies-reshape-control:2i1icr594d0pi": "Glucomannan (Konjakfaser)",
     "gummies-reshape-control:3krg3bjknrubo": "cGMP-Zertifizierung",
-    "gummies-reshape-control:20k3ydm8xyzgt": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um einheitliche Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
-    "gummies-reshape-control:53vs07uoebwp": "FDA-REGISTRIERT",
-    "gummies-reshape-control:2om3ctc5voz5s": "<p>Hergestellt in einer bei der US-amerikanischen Food and Drug Administration registrierten Anlage, die alle geltenden Herstellungsanforderungen erfüllt.</p>",
+    "gummies-reshape-control:20k3ydm8xyzgt": "<p>Hergestellt in cGMP-zertifizierten Anlagen, um höchste Qualitäts- und Sicherheitsstandards zu gewährleisten.</p>",
+    "gummies-reshape-control:53vs07uoebwp": "Eingetragen bei der US-amerikanischen Bundesbehörde für Lebens- und Arzneimittel (FDA)",
+    "gummies-reshape-control:2om3ctc5voz5s": "<p>Hergestellt in einer bei der US-amerikanischen&nbsp;Bundesbehörde für Lebens-\n und Arzneimittel (FDA) eingetragenen Anlage, die alle vorgeschriebenen \nHerstellungsanforderungen erfüllt.</p>",
     "gummies-reshape-control:d57epcl33cqh": "Natürlicher Geschmack",
-    "gummies-reshape-control:j7cmdqnuikmo": "<p>Mit sorgfältig ausgewählten natürlichen Aromen formuliert, um ein authentisches Geschmackserlebnis zu bieten.</p>",
+    "gummies-reshape-control:j7cmdqnuikmo": "<p>Mit sorgfältig ausgewählten natürlichen Aromen formuliert, um ein echtes Geschmackserlebnis zu bieten.</p>",
     "gummies-reshape-control:bju39fwvvd0m": "Häufig gestellte Fragen",
     "gummies-reshape-control:15g9sevdnfpsi": "Was ist RESHAPE Control?",
-    "gummies-reshape-control:d0n3vveu4b2z": "<p>RESHAPE Control ist ein tägliches Gummibärchen-Nahrungsergänzungsmittel, das zur Unterstützung der Appetitregulierung, des Stoffwechselgleichgewichts und eines gesunden Blutzuckerspiegels entwickelt wurde. Es fördert das Sättigungsgefühl und sorgt für gleichmäßige Energie, wodurch es ein achtsames und nachhaltiges Gewichtsmanagement unterstützt.</p>",
+    "gummies-reshape-control:d0n3vveu4b2z": "<p>RESHAPE Control ist ein tägliches Fruchtgummi-Nahrungsergänzungsmittel, das zur Unterstützung der Appetitregulierung, des Stoffwechselgleichgewichts und eines gesunden Blutzuckerspiegels entwickelt wurde. Es fördert das Sättigungsgefühl und sorgt für gleichmäßige Energie und unterstützt somit ein achtsames und nachhaltiges Gewichtsmanagement.</p>",
     "gummies-reshape-control:5wml6sljqzgn": "Für wen ist RESHAPE Control geeignet?",
     "gummies-reshape-control:3h8rwn9hw28ni": "<p>RESHAPE Control ist für Erwachsene bestimmt, die im Rahmen eines gesunden, auf Gewichtsmanagement ausgerichteten Lebensstils ihre Appetitkontrolle unterstützen, übermäßiges Essen reduzieren und eine ausgewogene Energie- und Glukosereaktion aufrechterhalten möchten.</p>",
     "gummies-reshape-control:3tfvia9mjk660": "Wie nehme ich RESHAPE Control ein?",
-    "gummies-reshape-control:3phbhl7yy7qsx": "<p>Nehmen Sie bitte 30 Minuten vor dem Mittagessen 1 Gummibonbon und 30 Minuten vor dem Abendessen 1 Gummibonbon ein.<br/>Kauen Sie es gründlich, schlucken Sie es anschließend und trinken Sie 1–2 Gläser Wasser, um die sättigende Wirkung von Glucomannan zu maximieren.</p>",
+    "gummies-reshape-control:3phbhl7yy7qsx": "<p>Nehmen Sie 30 Minuten vor dem Mittagessen 1 Fruchtgummi und 30 Minuten \nvor dem Abendessen 1 weiteres Fruchtgummi ein. Kauen Sie die \nFruchtgummis gründlich ohne Wasser, schlucken Sie diese dann und trinken\n Sie 1–2 Gläser Wasser, um die sättigende Wirkung von Glucomannan zu \nmaximieren.</p>",
     "gummies-reshape-control:a7o0k3rmyk7r": "Wie unterstützt RESHAPE Control bei der Appetitkontrolle?",
     "gummies-reshape-control:1e3ofcg0r8s9q": "<p>RESHAPE Control enthält Glucomannan, einen löslichen Ballaststoff, der sich im Magen mit Wasser ausdehnt und so das Sättigungsgefühl steigert und den Appetit reduziert, wenn er im Rahmen einer kalorienreduzierten Diät eingenommen wird.</p>",
     "gummies-reshape-control:2sbqj2gt8szlr": "Unterstützt RESHAPE Control den Blutzuckerhaushalt?",
