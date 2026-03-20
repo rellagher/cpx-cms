@@ -924,14 +924,6 @@
       "pages": [
         "homepage"
       ],
-      "ts": "2026-02-25T12:12:52.264Z"
-    },
-    {
-      "name": "Joao",
-      "lang": "pt-PT",
-      "pages": [
-        "homepage"
-      ],
       "ts": "2026-02-25T12:13:55.626Z"
     },
     {
@@ -2620,6 +2612,15 @@
         "gummies-reshape-control"
       ],
       "ts": "2026-03-20T11:21:46.690Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "gummies-reshape-balance",
+        "gummies-reshape-control"
+      ],
+      "ts": "2026-03-20T11:23:57.869Z"
     }
   ],
   "__pending": {
@@ -2881,7 +2882,11 @@
         "2om3ctc5voz5s",
         "j7cmdqnuikmo",
         "d0n3vveu4b2z",
-        "3phbhl7yy7qsx"
+        "3phbhl7yy7qsx",
+        "a7o0k3rmyk7r",
+        "3oe9pfd9zshm5",
+        "2xr0u9dqgor1g",
+        "3614c8w0lmtac"
       ]
     }
   },
@@ -3354,7 +3359,7 @@
     "gummies-reshape-balance:twct0wsjr47j": "Darf ich RESHAPE Balance parallel mit RESHAPE Shot oder anderen Nahrungsergänzungsmitteln einnehmen?",
     "gummies-reshape-balance:190zm5m6qt8hy": "<p>Ja. Für optimale Ergebnisse kann RESHAPE Balance zusammen mit unseren RESHAPE Shot und unseren Fruchtgummis RESHAPE Control als Teil eines kompletten RESHAPE-Systems eingenommen werden. Wenn Sie Medikamente oder andere Nahrungsergänzungsmittel einnehmen, suchen Sie bitte vor der ersten Einnahme einen Arzt auf.</p>",
     "gummies-reshape-balance:11cxn78ul4kaw": "Ist RESHAPE Balance für den täglichen Gebrauch geeignet?",
-    "gummies-reshape-balance:14uqr4zercsqp": "<p>RESHAPE&nbsp;wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder Bedenken hinsichtlich&nbsp;stimmungsaufhellender Nahrungsergänzungsmittel&nbsp;haben,&nbsp; suchen Sie bitte vor der \nersten Einnahme einen Arzt \nauf.</p>",
+    "gummies-reshape-balance:14uqr4zercsqp": "<p>RESHAPE Balance wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder Bedenken hinsichtlich&nbsp;stimmungsaufhellender Nahrungsergänzungsmittel&nbsp;haben,&nbsp; suchen Sie bitte vor der \nersten Einnahme einen Arzt \nauf.</p>",
     "gummies-reshape-balance:24unrck0dl782": "Dürfen schwangere oder stillende Frauen RESHAPE Balance einnehmen?",
     "gummies-reshape-balance:m331qe1ckdcr": "<p>RESHAPE&nbsp;wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine ärtzliche Empfehlung vor.</p>",
     "gummies-reshape-balance:akum4s5n5vaj": "Was unterscheidet RESHAPE Balance von anderen Fruchtgummis zur Stimmungsaufhellung oder zur Kontrolle von Heißhungerattacken?",
@@ -3392,7 +3397,7 @@
     "gummies-reshape-control:3h8rwn9hw28ni": "<p>RESHAPE Control ist für Erwachsene bestimmt, die im Rahmen eines gesunden, auf Gewichtsmanagement ausgerichteten Lebensstils ihre Appetitkontrolle unterstützen, übermäßiges Essen reduzieren und eine ausgewogene Energie- und Glukosereaktion aufrechterhalten möchten.</p>",
     "gummies-reshape-control:3tfvia9mjk660": "Wie nehme ich RESHAPE Control ein?",
     "gummies-reshape-control:3phbhl7yy7qsx": "<p>Nehmen Sie 30 Minuten vor dem Mittagessen 1 Fruchtgummi und 30 Minuten \nvor dem Abendessen 1 weiteres Fruchtgummi ein. Kauen Sie die \nFruchtgummis gründlich ohne Wasser, schlucken Sie diese dann und trinken\n Sie 1–2 Gläser Wasser, um die sättigende Wirkung von Glucomannan zu \nmaximieren.</p>",
-    "gummies-reshape-control:a7o0k3rmyk7r": "Wie unterstützt RESHAPE Control bei der Appetitkontrolle?",
+    "gummies-reshape-control:a7o0k3rmyk7r": "Wie unterstützt RESHAPE Control die Appetitkontrolle?",
     "gummies-reshape-control:1e3ofcg0r8s9q": "<p>RESHAPE Control enthält Glucomannan, einen löslichen Ballaststoff, der sich im Magen mit Wasser ausdehnt und so das Sättigungsgefühl steigert und den Appetit reduziert, wenn er im Rahmen einer kalorienreduzierten Diät eingenommen wird.</p>",
     "gummies-reshape-control:2sbqj2gt8szlr": "Unterstützt RESHAPE Control den Blutzuckerhaushalt?",
     "gummies-reshape-control:26eyc6gkfue46": "<p>Ja. RESHAPE Control enthält Inhaltsstoffe wie Chrompicolinat und Berberin, die zu einem normalen Glukosestoffwechsel beitragen und einen ausgeglichenen Blutzuckerspiegel unterstützen.</p>",
@@ -3400,10 +3405,10 @@
     "gummies-reshape-control:3ux97tf1kulsj": "<p>Die individuellen Reaktionen variieren. Einige Personen bemerken innerhalb weniger Tage ein gesteigertes Sättigungsgefühl und einen reduzierten Appetit, während sich die Vorteile für den Stoffwechsel bei konsequenter täglicher Anwendung entfalten können.</p>",
     "gummies-reshape-control:1yjmcfq5hbdh": "Enthält RESHAPE Control Stimulanzien?",
     "gummies-reshape-control:vqo9c8xyaj30": "<p>RESHAPE Control basiert nicht auf starken Stimulanzien. Es enthält zwar Grüntee-Extrakt, dessen Wirkung konzentriert sich jedoch eher auf die Unterstützung des Stoffwechsels und die antioxidative Aktivität als auf die Stimulation.</p>",
-    "gummies-reshape-control:3oe9pfd9zshm5": "Darf ich RESHAPE Control zusammen mit anderen RESHAPE-Produkten einnehmen?",
-    "gummies-reshape-control:2xr0u9dqgor1g": "<p>Ja. Um optimale Ergebnisse zu erzielen, kann RESHAPE Control zusammen mit RESHAPE Shot und RESHAPE Balance Gummies als Teil des kompletten RESHAPE-Systems eingenommen werden.</p>",
+    "gummies-reshape-control:3oe9pfd9zshm5": "Darf ich RESHAPE Control parallel mit anderen RESHAPE-Produkten einnehmen?",
+    "gummies-reshape-control:2xr0u9dqgor1g": "<p>Ja. Um optimale Ergebnisse zu erzielen, kann RESHAPE Control zusammen mit unseren RESHAPE Shot und RESHAPE Balance Fruchtgummis als Teil des kompletten RESHAPE-Systems eingenommen werden.</p>",
     "gummies-reshape-control:3i85nid7x9765": "Ist RESHAPE Control für den täglichen Gebrauch sicher?",
-    "gummies-reshape-control:3614c8w0lmtac": "<p>RESHAPE Control ist für die tägliche Anwendung gemäß den Anweisungen formuliert. Bitte überschreiten Sie nicht die empfohlene Dosierung. Wenn Sie unter einer Erkrankung leiden oder Bedenken hinsichtlich Ihres Blutzuckerspiegels oder Ihrer Verdauung haben, konsultieren Sie bitte einen Arzt.</p>",
+    "gummies-reshape-control:3614c8w0lmtac": "<p>RESHAPE Control&nbsp;</p><p>&nbsp;wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder Bedenken \nhinsichtlich&nbsp;Ihres Blutzuckerspiegels oder Ihrer Verdauung&nbsp;haben,&nbsp; \nsuchen Sie bitte vor der \nersten Einnahme einen Arzt \nauf.</p>",
     "gummies-reshape-control:3jwtu4tkaw9gu": "Dürfen schwangere oder stillende Frauen RESHAPE Control einnehmen?",
     "gummies-reshape-control:3jemf10l8nzfr": "<p>RESHAPE Control wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine Empfehlung durch einen qualifizierten Arzt vor.</p>",
     "gummies-reshape-control:3bsqhz4nmf9r9": "Was unterscheidet RESHAPE Control von anderen Produkten zur Appetitkontrolle?",
