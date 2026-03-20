@@ -924,14 +924,6 @@
       "pages": [
         "homepage"
       ],
-      "ts": "2026-02-25T12:11:18.315Z"
-    },
-    {
-      "name": "Admin",
-      "lang": "pt-PT",
-      "pages": [
-        "homepage"
-      ],
       "ts": "2026-02-25T12:12:04.878Z"
     },
     {
@@ -2620,6 +2612,14 @@
         "gummies-reshape-control"
       ],
       "ts": "2026-03-20T11:14:59.387Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "gummies-reshape-control"
+      ],
+      "ts": "2026-03-20T11:17:43.008Z"
     }
   ],
   "__pending": {
@@ -2871,7 +2871,10 @@
         "t4lolvq4qxif",
         "2vp65j54vbjvq",
         "qu2pig4hqddw",
-        "20mvwk13lqzgt"
+        "20mvwk13lqzgt",
+        "2nm83ay6fle70",
+        "10iwdpp9fd4hy",
+        "107pqebut9ndu"
       ]
     }
   },
@@ -3355,7 +3358,7 @@
     "gummies-reshape-control:1b8fhrs3r6ysr": "Bitte legen Sie drei oder mehr FRUCHTGUMMIS in den Warenkorb, um einen Rabatt von 10 % zu erhalten.",
     "gummies-reshape-control:6qmxnc9jgapk": "Entdecken Sie das gesamte Potenzial von RESHAPE mit dem kompletten Set:",
     "gummies-reshape-control:fts02i2nl4ze": "Vorteile",
-    "gummies-reshape-control:3tiijgesbu3sj": "<p><strong>Glucomannan (Konjakfaser)</strong> ist ein natürlicher löslicher Ballaststoff, der sich im Magen ausdehnt und so das Sättigungsgefühl steigert und den Appetit reduziert, wenn er vor den Mahlzeiten eingenommen wird. Dies unterstützt die Gewichtskontrolle im Rahmen einer kalorienreduzierten Ernährung.</p><p><strong>Berberin-HCl</strong> wird traditionell zur Unterstützung des Stoffwechsels und eines normalen Glukosestoffwechsels eingesetzt und trägt zur Aufrechterhaltung eines gesunden Blutzuckerspiegels bei.<br/><br/><strong>Chrompicolinat</strong> trägt zur Aufrechterhaltung eines normalen Blutzuckerspiegels und eines normalen Makronährstoffstoffwechsels bei.<br/><br/><strong>Grüntee-Extrakt (EGCG)</strong> unterstützt den natürlichen Fettstoffwechsel des Körpers und bietet gleichzeitig einen starken antioxidativen Schutz, um die Zellvitalität zu fördern.</p><p><strong>Extrakte aus Moro-Roten Orangen</strong> und <strong>Morus alba</strong> wirken synergistisch, um das Stoffwechselgleichgewicht zu unterstützen und den Körper vor oxidativem Stress zu schützen.</p><p><strong>Piperin (Extrakt aus schwarzem Pfeffer)</strong> verbessert die Nährstoffaufnahme und Bioverfügbarkeit und maximiert so die Wirksamkeit der gesamten Formel.<br/><br/>Denn Wohlbefinden hat mit positiven Beziehungen zu tun – nicht mit Einschränkungen. Durch die Unterstützung des Sättigungsgefühls, eines ausgeglichenen Stoffwechsels und einer achtsamen Energieversorgung hilft Ihnen <strong>RESHAPE Control</strong>, sich ausgeglichen und gestärkt zu fühlen und Ihre Gesundheitsziele auf natürliche Weise zu erreichen.</p><p>Die positive Wirkung von Glucomannan wird bei einer täglichen Einnahme von 3 g in drei Dosen zu je 1 g zusammen mit 1–2 Gläsern Wasser vor den Mahlzeiten im Rahmen einer kalorienreduzierten Ernährung erzielt.</p><p><br/>Da es sich um ein Naturprodukt handelt, können Farbe und Aussehen je \nnach Charge Unterschiede aufweisen und leicht von den abgebildeten Fotos\n abweichen. Diese Abweichungen haben keinen Einfluss auf die Rezeptur, \nderen Zusammensetzung unverändert bleibt.</p>",
+    "gummies-reshape-control:3tiijgesbu3sj": "<p><strong>Glucomannan (Konjakfaser)</strong> ist ein natürlicher löslicher Ballaststoff, der sich im Magen ausdehnt und so das Sättigungsgefühl steigert und den Appetit reduziert, wenn er vor den Mahlzeiten eingenommen wird. Dies unterstützt die Gewichtskontrolle im Rahmen einer kalorienreduzierten Ernährung.</p><p><strong>Berberin-HCl</strong> wird traditionell zur Unterstützung des Stoffwechsels und eines normalen Glukosestoffwechsels eingesetzt und trägt zur Aufrechterhaltung eines gesunden Blutzuckerspiegels bei.<br/><br/><strong>Chrompicolinat</strong> trägt zur Aufrechterhaltung eines normalen Blutzuckerspiegels und eines normalen Makronährstoffstoffwechsels bei.<br/><br/><strong>Grüntee-Extrakt (EGCG)</strong> unterstützt den natürlichen Fettstoffwechsel des Körpers und bietet gleichzeitig einen starken antioxidativen Schutz, um die Zellvitalität zu fördern.</p><p><strong>Extrakte aus&nbsp;</strong>Moro-Roten-Orange<strong>&nbsp;</strong>und <strong>Morus alba</strong> wirken synergistisch, um das Stoffwechselgleichgewicht zu unterstützen und den Körper vor oxidativem Stress zu schützen.</p><p><strong>Piperin (Extrakt aus schwarzem Pfeffer)</strong> verbessert die Nährstoffaufnahme und Bioverfügbarkeit und maximiert so die Wirksamkeit der gesamten Formel.<br/><br/>Denn Wohlbefinden hat mit positiven Beziehungen zu tun – nicht mit Einschränkungen. Durch die Unterstützung des Sättigungsgefühls, eines ausgeglichenen Stoffwechsels und einer achtsamen Energieversorgung hilft Ihnen <strong>RESHAPE Control</strong>, sich ausgeglichen und gestärkt zu fühlen und Ihre Gesundheitsziele auf natürliche Weise zu erreichen.</p><p>Die positive Wirkung von Glucomannan wird bei einer täglichen Einnahme von 3 g in drei Dosen zu je 1 g zusammen mit 1–2 Gläsern Wasser vor den Mahlzeiten im Rahmen einer kalorienreduzierten Ernährung erzielt.</p><p><br/>Da es sich um ein Naturprodukt handelt, können Farbe und Aussehen je \nnach Charge Unterschiede aufweisen und leicht von den abgebildeten Fotos\n abweichen. Diese Abweichungen haben keinen Einfluss auf die Rezeptur, \nderen Zusammensetzung unverändert bleibt.</p>",
     "gummies-reshape-control:tr73elzonx0u": "Wie wird RESHAPE CONTROL eingenommen?",
     "gummies-reshape-control:t4lolvq4qxif": "<p>Nehmen Sie 30 Minuten vor dem Mittagessen 1 Fruchtgummi und 30 Minuten vor dem Abendessen 1 weiteres Fruchtgummi ein. Kauen Sie die Fruchtgummis gründlich ohne Wasser, schlucken Sie diese dann und trinken Sie 1–2 Gläser Wasser, um die sättigende Wirkung von Glucomannan zu maximieren.<br/><br/>Für optimale Ergebnisse kann das Produkt zusammen mit unseren RESHAPE SHOTS und RESHAPE BALANCE Fruchtgummis eingenommen werden.</p><p><strong>Nettogewicht: </strong>180 g<br/><strong>Portion: </strong>2 Gummibonbons<br/><strong>Portionen pro Packung: </strong>30<br/><strong>Mindesthaltbarkeitsdatum: </strong>Siehe Verpackung</p>",
     "gummies-reshape-control:431w4j1ykjhr": "Vorsichtsmaßnahmen",
@@ -3363,10 +3366,10 @@
     "gummies-reshape-control:qu2pig4hqddw": "Inhaltsstoffe",
     "gummies-reshape-control:20mvwk13lqzgt": "<p><strong>Menge pro Portion:</strong></p><p>• Glucomannan (Konjakfaser) – 5400 mg<br/>• Berberin-HCl – 900 mg</p><p>• Moro-Rote-Orange-Extrakt – 780 mg</p><p>• Grüntee-Extrakt (50 % EGCG) – 600 mg</p><p>• Morus-alba-Extrakt (0,5 % bis 1 % DNJ) – 450 mg</p><p>• Piperin (Schwarzer-Pfeffer-Extrakt) – 10 mg</p><p>•&nbsp;Chrompicolinat – 400 mcg</p><p>Weitere Inhaltsstoffe: Glukosesirup, Rohrohrzucker, Pektin (Geliermittel), Wasser, Zitronensäure (Säuerungsmittel), Natriumcitrat (Säureregulator), natürliche Zitronen- und Grüntee-Aromen, natürliches Chlorophyllin und Curcumin (Farbstoffe), Carnaubawachs, Reispulver.</p>",
     "gummies-reshape-control:1dgba4d534klb": "<p style=\"text-align: center\"></p>",
-    "gummies-reshape-control:2nm83ay6fle70": "Wichtige Inhaltsstoffe",
-    "gummies-reshape-control:10iwdpp9fd4hy": "<p>Jeder Inhaltsstoff wird sorgfältig nach Reinheit, wissenschaftlicher Grundlage und funktioneller Wirksamkeit ausgewählt und sorgt in Kombination mit den anderen Inhaltsstoffen für gleichbleibende Vorteile.</p><p></p><ul><li>Glucomannan (Konjakfaser) – dehnt sich im Magen aus und fördert so das Sättigungsgefühl und die Appetitkontrolle.</li><li>Berberin-HCl – unterstützt das Stoffwechselgleichgewicht und einen gesunden Glukosestoffwechsel</li><li>Chrompicolinat – trägt zur Aufrechterhaltung eines normalen Blutzuckerspiegels und eines gesunden Makronährstoffstoffwechsels bei</li><li>Grüntee-Extrakt (EGCG) – unterstützt den Fettstoffwechsel und bietet antioxidativen Schutz</li><li>Moro-Rote-Orange + Morus alba – unterstützen das metabolische Gleichgewicht und den Schutz vor oxidativem Stress</li><li>Piperin (schwarzer Pfefferextrakt) – verbessert die Nährstoffaufnahme und Bioverfügbarkeit</li></ul>",
+    "gummies-reshape-control:2nm83ay6fle70": "Wesentliche Inhaltsstoffe",
+    "gummies-reshape-control:10iwdpp9fd4hy": "<p>Jeder Inhaltsstoff wird sorgfältig nach Reinheit, wissenschaftlicher \nEvidenz und funktioneller Wirksamkeit ausgewählt und sorgt in \nKombination mit den anderen Inhaltsstoffen für gleichbleibende Vorteile.</p><p></p><ul><li>Glucomannan (Konjakfaser) – dehnt sich im Magen aus und fördert so das Sättigungsgefühl und die Appetitkontrolle.</li><li>Berberin-HCl – unterstützt das Stoffwechselgleichgewicht und einen gesunden Glukosestoffwechsel</li><li>Chrompicolinat – trägt zur Aufrechterhaltung eines normalen Blutzuckerspiegels und eines gesunden Makronährstoffstoffwechsels bei</li><li>Grüntee-Extrakt (EGCG) – unterstützt den Fettstoffwechsel und bietet antioxidativen Schutz</li><li>Moro-Rote-Orange + Morus alba – unterstützen das metabolische Gleichgewicht und den Schutz vor oxidativem Stress</li><li>Piperin (schwarzer Pfefferextrakt) – verbessert die Nährstoffaufnahme und Bioverfügbarkeit</li></ul>",
     "gummies-reshape-control:1txyex9cay9y5": "Berberin (HCl)",
-    "gummies-reshape-control:107pqebut9ndu": "Moro-Rotorange",
+    "gummies-reshape-control:107pqebut9ndu": "Moro-Rote-Orange",
     "gummies-reshape-control:1rfzxmezny76o": "Zitrone- und Grüntee-Geschmack",
     "gummies-reshape-control:2i1icr594d0pi": "Glucomannan (Konjakfaser)",
     "gummies-reshape-control:3krg3bjknrubo": "cGMP-Zertifizierung",
