@@ -2538,6 +2538,14 @@
         "gummies-remethyl"
       ],
       "ts": "2026-03-20T10:29:53.644Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "gummies-remethyl"
+      ],
+      "ts": "2026-03-20T10:31:09.257Z"
     }
   ],
   "__pending": {
@@ -2747,7 +2755,10 @@
         "aqa81x52vnob",
         "1gnx50laey4lu",
         "3dbz73fum07i3",
-        "32amhtj4z9xgy"
+        "32amhtj4z9xgy",
+        "2wngnuq4jswpz",
+        "36052wkscm2mf",
+        "22xal3twl2txs"
       ]
     }
   },
@@ -3173,13 +3184,13 @@
     "gummies-remethyl:aqa81x52vnob": "Darf ich REMETHYL parallel mit anderen Nahrungsergänzungsmitteln einnehmen?",
     "gummies-remethyl:1gnx50laey4lu": "<p>REMETHYL kann im Allgemeinen parallel mit anderen Nahrungsergänzungsmitteln eingenommen werden. Wenn Sie Präparate einnehmen, die die Stimmung, den Hormonhaushalt oder den Stoffwechsel beeinflussen, suchen Sie bitte vor der ersten Einnahme einen Arzt auf.</p><br/>",
     "gummies-remethyl:3dbz73fum07i3": "Ist REMETHYL für den täglichen Gebrauch geeignet?",
-    "gummies-remethyl:32amhtj4z9xgy": "<p>REMETHYL wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie bekannte Vorerkrankungen haben oder Bedenken hinsichtlich der Methylierung oder Nährstoffaufnahme haben,&nbsp; suchen Sie bitte vor der ersten Einnahme einen Arzt \nauf.</p><p><br/></p><p>wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder&nbsp;empfindlich auf Koffein \nreagieren, suchen Sie bitte vor der ersten Einnahme einen Arzt \nauf.</p>",
+    "gummies-remethyl:32amhtj4z9xgy": "<p>REMETHYL wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie bekannte Vorerkrankungen haben oder Bedenken hinsichtlich der Methylierung oder Nährstoffaufnahme haben,&nbsp; suchen Sie bitte vor der ersten Einnahme einen Arzt \nauf.</p>",
     "gummies-remethyl:3315auencn6um": "Dürfen schwangere oder stillende Frauen REMETHYL einnehmen?",
-    "gummies-remethyl:2wngnuq4jswpz": "<p>REMETHYL wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es wird von einer qualifizierten medizinischen Fachkraft empfohlen.</p>",
+    "gummies-remethyl:2wngnuq4jswpz": "<p>REMETHYL&nbsp;wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine ärtzliche Empfehlung vor.</p>",
     "gummies-remethyl:942yesg5rhfy": "Was unterscheidet REMETHYL von herkömmlichen Multivitaminpräparaten?",
-    "gummies-remethyl:36052wkscm2mf": "<p>REMETHYL konzentriert sich speziell auf Methylierung und zelluläre Prozesse und verwendet dabei gezielte, bioaktive Nährstoffe anstelle von breit gefassten, generischen Vitaminmischungen.</p>",
+    "gummies-remethyl:36052wkscm2mf": "<p>REMETHYL konzentriert sich speziell auf die Methylierung und zelluläre Prozesse und verwendet dabei gezielte, bioaktive Nährstoffe statt breit gefasste und generische Vitaminmischungen.</p>",
     "gummies-remethyl:22ua08r4eycih": "Wie sollte REMETHYL gelagert werden?",
-    "gummies-remethyl:22xal3twl2txs": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. Den Deckel stets fest verschlossen halten, außerhalb der Reichweite von Kindern aufbewahren und nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
+    "gummies-remethyl:22xal3twl2txs": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. \nBitte halten Sie den Deckel stets fest verschlossen. Außerhalb der \nReichweite von Kindern aufbewahren. Nicht verwenden, wenn das \nSicherheitssiegel beschädigt ist oder fehlt.</p>",
     "gummies-remethyl:145tog3oon91j": "Das könnte Ihnen auch gefallen",
     "gummies-reshape-balance:3bq2tug0fntzb": "Bitte legen Sie drei oder mehr GUMMIES in den Warenkorb, um einen Rabatt von 10 % zu erhalten.",
     "gummies-reshape-balance:2qh6hjc0psllo": "Entdecken Sie das gesamte Potenzial von RESHAPE mit dem kompletten Bundle:",
