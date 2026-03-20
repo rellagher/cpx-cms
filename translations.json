@@ -2530,6 +2530,14 @@
         "gummies-remethyl"
       ],
       "ts": "2026-03-20T10:25:04.349Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "gummies-remethyl"
+      ],
+      "ts": "2026-03-20T10:29:53.644Z"
     }
   ],
   "__pending": {
@@ -2736,7 +2744,10 @@
         "1197lm9b3nef2",
         "y1xz69hu3skf",
         "3vv0s720wvmui",
-        "aqa81x52vnob"
+        "aqa81x52vnob",
+        "1gnx50laey4lu",
+        "3dbz73fum07i3",
+        "32amhtj4z9xgy"
       ]
     }
   },
@@ -3160,9 +3171,9 @@
     "gummies-remethyl:1fqh4sgavegtf": "Ist REMETHYL für Personen geeignet, die empfindlich auf herkömmliche B-Vitamine reagieren?",
     "gummies-remethyl:3vv0s720wvmui": "<p>REMETHYL verwendet bioaktive Formen von Folsäure (5-MTHF) und Vitamin B12 (Methylcobalamin), die im Allgemeinen gut verträglich sind. Wenn Sie empfindlich auf methylierte Nährstoffe reagieren oder unter einer bekannten Vorerkrankung leiden, suchen Sie bitte vor der ersten Einnahme einen Arzt auf.</p>",
     "gummies-remethyl:aqa81x52vnob": "Darf ich REMETHYL parallel mit anderen Nahrungsergänzungsmitteln einnehmen?",
-    "gummies-remethyl:1gnx50laey4lu": "<p>REMETHYL kann im Allgemeinen zusammen mit anderen Nahrungsergänzungsmitteln eingenommen werden. Wenn Sie Präparate verwenden, die die Stimmung, den Hormonhaushalt oder den Stoffwechsel beeinflussen, konsultieren Sie bitte einen Arzt, um eine individuelle Beratung zu erhalten.</p>",
-    "gummies-remethyl:3dbz73fum07i3": "Ist REMETHYL für den täglichen Gebrauch unbedenklich?",
-    "gummies-remethyl:32amhtj4z9xgy": "<p>REMETHYL ist für die tägliche Einnahme gemäß den Anweisungen formuliert. Bitte überschreiten Sie nicht die empfohlene Dosierung. Wenn Sie unter einer Erkrankung leiden oder Bedenken hinsichtlich der Methylierung oder Nährstoffaufnahme haben, konsultieren Sie bitte einen Arzt.</p>",
+    "gummies-remethyl:1gnx50laey4lu": "<p>REMETHYL kann im Allgemeinen parallel mit anderen Nahrungsergänzungsmitteln eingenommen werden. Wenn Sie Präparate einnehmen, die die Stimmung, den Hormonhaushalt oder den Stoffwechsel beeinflussen, suchen Sie bitte vor der ersten Einnahme einen Arzt auf.</p><br/>",
+    "gummies-remethyl:3dbz73fum07i3": "Ist REMETHYL für den täglichen Gebrauch geeignet?",
+    "gummies-remethyl:32amhtj4z9xgy": "<p>REMETHYL wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie bekannte Vorerkrankungen haben oder Bedenken hinsichtlich der Methylierung oder Nährstoffaufnahme haben,&nbsp; suchen Sie bitte vor der ersten Einnahme einen Arzt \nauf.</p><p><br/></p><p>wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder&nbsp;empfindlich auf Koffein \nreagieren, suchen Sie bitte vor der ersten Einnahme einen Arzt \nauf.</p>",
     "gummies-remethyl:3315auencn6um": "Dürfen schwangere oder stillende Frauen REMETHYL einnehmen?",
     "gummies-remethyl:2wngnuq4jswpz": "<p>REMETHYL wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es wird von einer qualifizierten medizinischen Fachkraft empfohlen.</p>",
     "gummies-remethyl:942yesg5rhfy": "Was unterscheidet REMETHYL von herkömmlichen Multivitaminpräparaten?",
