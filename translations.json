@@ -919,14 +919,6 @@
   },
   "__activity_log": [
     {
-      "name": "Joao",
-      "lang": "pt-PT",
-      "pages": [
-        "homepage"
-      ],
-      "ts": "2026-02-25T12:13:55.626Z"
-    },
-    {
       "name": "Admin",
       "lang": "de",
       "pages": [
@@ -2621,6 +2613,15 @@
         "gummies-reshape-control"
       ],
       "ts": "2026-03-20T11:23:57.869Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "gummies-reshape-balance",
+        "gummies-reshape-control"
+      ],
+      "ts": "2026-03-20T11:26:31.857Z"
     }
   ],
   "__pending": {
@@ -2886,7 +2887,10 @@
         "a7o0k3rmyk7r",
         "3oe9pfd9zshm5",
         "2xr0u9dqgor1g",
-        "3614c8w0lmtac"
+        "3614c8w0lmtac",
+        "3jemf10l8nzfr",
+        "3d178wqwip4vg",
+        "1n8o69l507ito"
       ]
     }
   },
@@ -3361,7 +3365,7 @@
     "gummies-reshape-balance:11cxn78ul4kaw": "Ist RESHAPE Balance für den täglichen Gebrauch geeignet?",
     "gummies-reshape-balance:14uqr4zercsqp": "<p>RESHAPE Balance wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder Bedenken hinsichtlich&nbsp;stimmungsaufhellender Nahrungsergänzungsmittel&nbsp;haben,&nbsp; suchen Sie bitte vor der \nersten Einnahme einen Arzt \nauf.</p>",
     "gummies-reshape-balance:24unrck0dl782": "Dürfen schwangere oder stillende Frauen RESHAPE Balance einnehmen?",
-    "gummies-reshape-balance:m331qe1ckdcr": "<p>RESHAPE&nbsp;wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine ärtzliche Empfehlung vor.</p>",
+    "gummies-reshape-balance:m331qe1ckdcr": "<p>RESHAPE Balance wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine ärtzliche Empfehlung vor.</p>",
     "gummies-reshape-balance:akum4s5n5vaj": "Was unterscheidet RESHAPE Balance von anderen Fruchtgummis zur Stimmungsaufhellung oder zur Kontrolle von Heißhungerattacken?",
     "gummies-reshape-balance:sg5ijmzrnwpu": "<p>RESHAPE Balance konzentriert sich auf die emotionale Seite der Gewichtsregulierung und kombiniert Aminosäuren, Pflanzenextrakte, Vitamine und Mineralien, um die Stimmung stabil zu halten, Konzentration zu fördern und die tägliche Entscheidungfindung zu verbessern – ohne hierbei auf Stimulanzien zurückzugreifen.</p>",
     "gummies-reshape-balance:1tpaawpw80dlk": "Wie sollte RESHAPE Balance gelagert werden?",
@@ -3408,13 +3412,13 @@
     "gummies-reshape-control:3oe9pfd9zshm5": "Darf ich RESHAPE Control parallel mit anderen RESHAPE-Produkten einnehmen?",
     "gummies-reshape-control:2xr0u9dqgor1g": "<p>Ja. Um optimale Ergebnisse zu erzielen, kann RESHAPE Control zusammen mit unseren RESHAPE Shot und RESHAPE Balance Fruchtgummis als Teil des kompletten RESHAPE-Systems eingenommen werden.</p>",
     "gummies-reshape-control:3i85nid7x9765": "Ist RESHAPE Control für den täglichen Gebrauch sicher?",
-    "gummies-reshape-control:3614c8w0lmtac": "<p>RESHAPE Control&nbsp;</p><p>&nbsp;wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder Bedenken \nhinsichtlich&nbsp;Ihres Blutzuckerspiegels oder Ihrer Verdauung&nbsp;haben,&nbsp; \nsuchen Sie bitte vor der \nersten Einnahme einen Arzt \nauf.</p>",
+    "gummies-reshape-control:3614c8w0lmtac": "<p>RESHAPE Control wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder Bedenken \nhinsichtlich&nbsp;Ihres Blutzuckerspiegels oder Ihrer Verdauung&nbsp;haben,&nbsp; \nsuchen Sie bitte vor der \nersten Einnahme einen Arzt \nauf.</p>",
     "gummies-reshape-control:3jwtu4tkaw9gu": "Dürfen schwangere oder stillende Frauen RESHAPE Control einnehmen?",
-    "gummies-reshape-control:3jemf10l8nzfr": "<p>RESHAPE Control wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine Empfehlung durch einen qualifizierten Arzt vor.</p>",
+    "gummies-reshape-control:3jemf10l8nzfr": "<p>RESHAPE Control&nbsp;&nbsp;wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, es liegt eine ärtzliche Empfehlung vor.</p>",
     "gummies-reshape-control:3bsqhz4nmf9r9": "Was unterscheidet RESHAPE Control von anderen Produkten zur Appetitkontrolle?",
-    "gummies-reshape-control:3d178wqwip4vg": "<p>RESHAPE Control konzentriert sich auf Sättigung, Stoffwechselgleichgewicht und achtsame Regulierung und kombiniert lösliche Ballaststoffe, Pflanzenextrakte und Stoffwechsel-Cofaktoren anstelle von aggressiven Einschränkungen oder Formeln mit hohem Stimulanzienanteil.</p>",
+    "gummies-reshape-control:3d178wqwip4vg": "<p>RESHAPE Control konzentriert sich auf die Sättigung, das Stoffwechselgleichgewicht und eine sorgfältige Regulierung. Diese Fruchtgummis kombinieren lösliche Ballaststoffe, Pflanzenextrakte und Stoffwechsel-Cofaktoren aanstatt auf auf strikte Einschränkungen oder Formeln mit hohem Stimulanzienanteil zu setzen.</p>",
     "gummies-reshape-control:2ftp3s9c7o91h": "Wie sollte RESHAPE Control gelagert werden?",
-    "gummies-reshape-control:1n8o69l507ito": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. Den Deckel stets fest verschlossen halten, außerhalb der Reichweite von Kindern aufbewahren und nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt.</p>",
+    "gummies-reshape-control:1n8o69l507ito": "<p>An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern. \nBitte halten Sie den Deckel stets fest verschlossen. Außerhalb der \nReichweite von Kindern aufbewahren. Nicht verwenden, wenn das \nSicherheitssiegel beschädigt ist oder fehlt.</p>",
     "gummies-reshape-control:k03so7h3tncz": "Das könnte Ihnen auch gefallen",
     "bundle-reshape:1fzjhrkim7giw": "<h2><strong>RESHAPE</strong>-Bundle</h2>",
     "bundle-reshape:14jw03tmafepq": "Auch als Bundle mit ACTYVA erhältlich.",
