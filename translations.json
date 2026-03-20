@@ -919,14 +919,6 @@
   },
   "__activity_log": [
     {
-      "name": "Admin",
-      "lang": "pt-PT",
-      "pages": [
-        "rhythm-bundle"
-      ],
-      "ts": "2026-02-25T12:09:07.314Z"
-    },
-    {
       "name": "Joao",
       "lang": "pt-PT",
       "pages": [
@@ -2620,6 +2612,14 @@
         "gummies-reshape-control"
       ],
       "ts": "2026-03-20T11:13:40.597Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "gummies-reshape-control"
+      ],
+      "ts": "2026-03-20T11:14:07.487Z"
     }
   ],
   "__pending": {
@@ -2868,7 +2868,8 @@
         "6qmxnc9jgapk",
         "3tiijgesbu3sj",
         "tr73elzonx0u",
-        "t4lolvq4qxif"
+        "t4lolvq4qxif",
+        "2vp65j54vbjvq"
       ]
     }
   },
@@ -3356,7 +3357,7 @@
     "gummies-reshape-control:tr73elzonx0u": "Wie wird RESHAPE CONTROL eingenommen?",
     "gummies-reshape-control:t4lolvq4qxif": "<p>Nehmen Sie 30 Minuten vor dem Mittagessen 1 Fruchtgummi und 30 Minuten vor dem Abendessen 1 weiteres Fruchtgummi ein. Kauen Sie die Fruchtgummis gründlich ohne Wasser, schlucken Sie diese dann und trinken Sie 1–2 Gläser Wasser, um die sättigende Wirkung von Glucomannan zu maximieren.<br/><br/>Für optimale Ergebnisse kann das Produkt zusammen mit unseren RESHAPE SHOTS und RESHAPE BALANCE Fruchtgummis eingenommen werden.</p><p><strong>Nettogewicht: </strong>180 g<br/><strong>Portion: </strong>2 Gummibonbons<br/><strong>Portionen pro Packung: </strong>30<br/><strong>Mindesthaltbarkeitsdatum: </strong>Siehe Verpackung</p>",
     "gummies-reshape-control:431w4j1ykjhr": "Vorsichtsmaßnahmen",
-    "gummies-reshape-control:2vp65j54vbjvq": "<p>Dieses Produkt ist nicht zur Diagnose, Behandlung, Heilung oder Vorbeugung von Krankheiten bestimmt. Die empfohlene Tagesdosis sollte nicht überschritten werden. Schwangere oder stillende Frauen, Kinder unter 18 Jahren und Personen mit bekannten Erkrankungen sollten vor der Einnahme dieses oder anderer Nahrungsergänzungsmittel einen Arzt konsultieren. Nicht verwenden bei Allergie oder Überempfindlichkeit gegen einen der Inhaltsstoffe. Nahrungsergänzungsmittel sollten nicht als Ersatz für eine abwechslungsreiche und ausgewogene Ernährung oder eine gesunde Lebensweise verwendet werden.</p><p><strong>Warnung:</strong> Außerhalb der Reichweite<br/>von Kindern aufbewahren. Den Deckel stets fest verschlossen halten. Nicht verwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt. An einem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern.</p>",
+    "gummies-reshape-control:2vp65j54vbjvq": "<p>Dieses Produkt ist nicht zur Diagnose, Behandlung, Heilung oder \nVorbeugung von Krankheiten bestimmt. Die empfohlene Tagesdosis sollte \nnicht überschritten werden. Schwangere oder stillende Frauen, Kinder \nunter 18 Jahren und Personen mit bekannten Vorerkrankungen sollten vor \nder Einnahme dieses oder anderer Nahrungsergänzungsmittel einen Arzt \naufsuchen. Nicht verwenden bei bekannter Allergie oder \nÜberempfindlichkeit gegen einen der Inhaltsstoffe. \nNahrungsergänzungsmittel sollten nicht als Ersatz für eine \nabwechslungsreiche und ausgewogene Ernährung oder einen gesunden \nLebensstil verwendet werden.</p><p><strong>Hinweis</strong>:<br/>Außerhalb der Reichweite von Kindern \naufbewahren. Halten Sie den Deckel stets fest verschlossen. Nicht \nverwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt. An \neinem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern.</p>",
     "gummies-reshape-control:qu2pig4hqddw": "Zutaten",
     "gummies-reshape-control:20mvwk13lqzgt": "<p><strong>Menge pro Portion:</strong></p><p>• Glucomannan (Konjakfaser) – 5400 mg<br/>Berberin-HCl – 900 mg•<br/>Moro-Rote-Orange-Extrakt – 780 mg•<br/>Grüntee-Extrakt (50 % EGCG) – 600 mg•<br/>Morus-alba-Extrakt (0,5 % bis 1 % DNJ) – 450 mg•<br/>Piperin (Schwarzer-Pfeffer-Extrakt) – 10 mg•<br/>Chrompicolinat – 400 mcg</p><p>Weitere Inhaltsstoffe: Glukosesirup, Rohrohrzucker, Pektin (Geliermittel), Wasser, Zitronensäure (Säuerungsmittel), Natriumcitrat (Säureregulator), natürliche Zitronen- und Grüntee-Aromen, natürliches Chlorophyllin und Curcumin (Farbstoffe), Carnaubawachs, Reispulver.</p>",
     "gummies-reshape-control:1dgba4d534klb": "<p style=\"text-align: center\"></p>",
