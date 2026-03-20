@@ -919,14 +919,6 @@
   },
   "__activity_log": [
     {
-      "name": "Joao",
-      "lang": "pt-PT",
-      "pages": [
-        "homepage"
-      ],
-      "ts": "2026-02-25T12:11:04.497Z"
-    },
-    {
       "name": "Admin",
       "lang": "pt-PT",
       "pages": [
@@ -2620,6 +2612,14 @@
         "gummies-reshape-control"
       ],
       "ts": "2026-03-20T11:14:07.487Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "gummies-reshape-control"
+      ],
+      "ts": "2026-03-20T11:14:59.387Z"
     }
   ],
   "__pending": {
@@ -2869,7 +2869,9 @@
         "3tiijgesbu3sj",
         "tr73elzonx0u",
         "t4lolvq4qxif",
-        "2vp65j54vbjvq"
+        "2vp65j54vbjvq",
+        "qu2pig4hqddw",
+        "20mvwk13lqzgt"
       ]
     }
   },
@@ -3358,8 +3360,8 @@
     "gummies-reshape-control:t4lolvq4qxif": "<p>Nehmen Sie 30 Minuten vor dem Mittagessen 1 Fruchtgummi und 30 Minuten vor dem Abendessen 1 weiteres Fruchtgummi ein. Kauen Sie die Fruchtgummis gründlich ohne Wasser, schlucken Sie diese dann und trinken Sie 1–2 Gläser Wasser, um die sättigende Wirkung von Glucomannan zu maximieren.<br/><br/>Für optimale Ergebnisse kann das Produkt zusammen mit unseren RESHAPE SHOTS und RESHAPE BALANCE Fruchtgummis eingenommen werden.</p><p><strong>Nettogewicht: </strong>180 g<br/><strong>Portion: </strong>2 Gummibonbons<br/><strong>Portionen pro Packung: </strong>30<br/><strong>Mindesthaltbarkeitsdatum: </strong>Siehe Verpackung</p>",
     "gummies-reshape-control:431w4j1ykjhr": "Vorsichtsmaßnahmen",
     "gummies-reshape-control:2vp65j54vbjvq": "<p>Dieses Produkt ist nicht zur Diagnose, Behandlung, Heilung oder \nVorbeugung von Krankheiten bestimmt. Die empfohlene Tagesdosis sollte \nnicht überschritten werden. Schwangere oder stillende Frauen, Kinder \nunter 18 Jahren und Personen mit bekannten Vorerkrankungen sollten vor \nder Einnahme dieses oder anderer Nahrungsergänzungsmittel einen Arzt \naufsuchen. Nicht verwenden bei bekannter Allergie oder \nÜberempfindlichkeit gegen einen der Inhaltsstoffe. \nNahrungsergänzungsmittel sollten nicht als Ersatz für eine \nabwechslungsreiche und ausgewogene Ernährung oder einen gesunden \nLebensstil verwendet werden.</p><p><strong>Hinweis</strong>:<br/>Außerhalb der Reichweite von Kindern \naufbewahren. Halten Sie den Deckel stets fest verschlossen. Nicht \nverwenden, wenn das Sicherheitssiegel beschädigt ist oder fehlt. An \neinem kühlen, trockenen Ort ohne direkte Sonneneinstrahlung lagern.</p>",
-    "gummies-reshape-control:qu2pig4hqddw": "Zutaten",
-    "gummies-reshape-control:20mvwk13lqzgt": "<p><strong>Menge pro Portion:</strong></p><p>• Glucomannan (Konjakfaser) – 5400 mg<br/>Berberin-HCl – 900 mg•<br/>Moro-Rote-Orange-Extrakt – 780 mg•<br/>Grüntee-Extrakt (50 % EGCG) – 600 mg•<br/>Morus-alba-Extrakt (0,5 % bis 1 % DNJ) – 450 mg•<br/>Piperin (Schwarzer-Pfeffer-Extrakt) – 10 mg•<br/>Chrompicolinat – 400 mcg</p><p>Weitere Inhaltsstoffe: Glukosesirup, Rohrohrzucker, Pektin (Geliermittel), Wasser, Zitronensäure (Säuerungsmittel), Natriumcitrat (Säureregulator), natürliche Zitronen- und Grüntee-Aromen, natürliches Chlorophyllin und Curcumin (Farbstoffe), Carnaubawachs, Reispulver.</p>",
+    "gummies-reshape-control:qu2pig4hqddw": "Inhaltsstoffe",
+    "gummies-reshape-control:20mvwk13lqzgt": "<p><strong>Menge pro Portion:</strong></p><p>• Glucomannan (Konjakfaser) – 5400 mg<br/>• Berberin-HCl – 900 mg</p><p>• Moro-Rote-Orange-Extrakt – 780 mg</p><p>• Grüntee-Extrakt (50 % EGCG) – 600 mg</p><p>• Morus-alba-Extrakt (0,5 % bis 1 % DNJ) – 450 mg</p><p>• Piperin (Schwarzer-Pfeffer-Extrakt) – 10 mg</p><p>•&nbsp;Chrompicolinat – 400 mcg</p><p>Weitere Inhaltsstoffe: Glukosesirup, Rohrohrzucker, Pektin (Geliermittel), Wasser, Zitronensäure (Säuerungsmittel), Natriumcitrat (Säureregulator), natürliche Zitronen- und Grüntee-Aromen, natürliches Chlorophyllin und Curcumin (Farbstoffe), Carnaubawachs, Reispulver.</p>",
     "gummies-reshape-control:1dgba4d534klb": "<p style=\"text-align: center\"></p>",
     "gummies-reshape-control:2nm83ay6fle70": "Wichtige Inhaltsstoffe",
     "gummies-reshape-control:10iwdpp9fd4hy": "<p>Jeder Inhaltsstoff wird sorgfältig nach Reinheit, wissenschaftlicher Grundlage und funktioneller Wirksamkeit ausgewählt und sorgt in Kombination mit den anderen Inhaltsstoffen für gleichbleibende Vorteile.</p><p></p><ul><li>Glucomannan (Konjakfaser) – dehnt sich im Magen aus und fördert so das Sättigungsgefühl und die Appetitkontrolle.</li><li>Berberin-HCl – unterstützt das Stoffwechselgleichgewicht und einen gesunden Glukosestoffwechsel</li><li>Chrompicolinat – trägt zur Aufrechterhaltung eines normalen Blutzuckerspiegels und eines gesunden Makronährstoffstoffwechsels bei</li><li>Grüntee-Extrakt (EGCG) – unterstützt den Fettstoffwechsel und bietet antioxidativen Schutz</li><li>Moro-Rote-Orange + Morus alba – unterstützen das metabolische Gleichgewicht und den Schutz vor oxidativem Stress</li><li>Piperin (schwarzer Pfefferextrakt) – verbessert die Nährstoffaufnahme und Bioverfügbarkeit</li></ul>",
