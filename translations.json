@@ -2571,6 +2571,14 @@
         "gummies-reshape-balance"
       ],
       "ts": "2026-03-20T10:45:10.382Z"
+    },
+    {
+      "name": "Claudia",
+      "lang": "de",
+      "pages": [
+        "gummies-reshape-balance"
+      ],
+      "ts": "2026-03-20T10:46:52.862Z"
     }
   ],
   "__pending": {
@@ -2807,7 +2815,8 @@
         "1j88mk5t2a2mf",
         "k0seot03915a",
         "twct0wsjr47j",
-        "190zm5m6qt8hy"
+        "190zm5m6qt8hy",
+        "14uqr4zercsqp"
       ]
     }
   },
@@ -3280,7 +3289,7 @@
     "gummies-reshape-balance:twct0wsjr47j": "Darf ich RESHAPE Balance parallel mit RESHAPE Shot oder anderen Nahrungsergänzungsmitteln einnehmen?",
     "gummies-reshape-balance:190zm5m6qt8hy": "<p>Ja. Für optimale Ergebnisse kann RESHAPE Balance zusammen mit unseren RESHAPE Shot und unseren Fruchtgummis RESHAPE Control als Teil eines kompletten RESHAPE-Systems eingenommen werden. Wenn Sie Medikamente oder andere Nahrungsergänzungsmittel einnehmen, suchen Sie bitte vor der ersten Einnahme einen Arzt auf.</p>",
     "gummies-reshape-balance:11cxn78ul4kaw": "Ist RESHAPE Balance für den täglichen Gebrauch geeignet?",
-    "gummies-reshape-balance:14uqr4zercsqp": "<p>RESHAPE Balance ist für die tägliche Anwendung gemäß den Anweisungen formuliert. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. Wenn Sie unter einer Erkrankung leiden oder Bedenken hinsichtlich stimmungsaufhellender Nahrungsergänzungsmittel haben, konsultieren Sie bitte einen Arzt.</p>",
+    "gummies-reshape-balance:14uqr4zercsqp": "<p>RESHAPE&nbsp;wurde für die tägliche Anwendung bei anweisungsgemäßer Einnahme \nentwickelt. Bitte überschreiten Sie nicht die empfohlene Tagesdosis. \nWenn Sie bekannte Vorerkrankungen haben oder Bedenken hinsichtlich&nbsp;stimmungsaufhellender Nahrungsergänzungsmittel&nbsp;haben,&nbsp; suchen Sie bitte vor der \nersten Einnahme einen Arzt \nauf.</p>",
     "gummies-reshape-balance:24unrck0dl782": "Dürfen schwangere oder stillende Frauen RESHAPE Balance einnehmen?",
     "gummies-reshape-balance:m331qe1ckdcr": "<p>RESHAPE Balance wird für schwangere oder stillende Frauen nicht empfohlen, es sei denn, dies wird von einer qualifizierten medizinischen Fachkraft empfohlen.</p>",
     "gummies-reshape-balance:akum4s5n5vaj": "Was unterscheidet RESHAPE Balance von anderen Gummibonbons zur Stimmungsaufhellung oder zur Kontrolle von Heißhungerattacken?",
