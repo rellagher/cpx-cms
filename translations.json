@@ -877,9 +877,9 @@
     "shots-restart:23g0htb8vqfaw": "<p>RESTART contém ingredientes naturais. Variações na cor ou consistência entre lotes são normais e não afetam a qualidade ou composição da fórmula.</p>",
     "shots-restart:24amn0h82oseg": "Existem informações de segurança importantes para o RESTART SHOTS?",
     "shots-restart:38w5fj3ytcxoh": "<p>RESTART SHOTS contém 44 mg de cafeína por dose (20 mL).<br/>Mantenha fora do alcance das crianças.<br/>Após aberto, consuma imediatamente.<br/>Não utilize se o selo de segurança estiver danificado ou ausente.</p>",
-    "shots-restart:16vvebfd4gjcg": "Como o RESTART deve ser armazenado?",
+    "shots-restart:16vvebfd4gjcg": "Como deve o RESTART ser armazenado?",
     "shots-restart:wa0cf35chjy1": "<p>Armazene em local fresco e seco, longe da luz solar direta. Mantenha fora do alcance das crianças e não utilize se o selo de segurança estiver danificado ou ausente.</p>",
-    "shots-restart:1ewmvx5kec5co": "Você também pode gostar",
+    "shots-restart:1ewmvx5kec5co": "Também pode gostar",
     "footer:3gq07l0r5w68h": "Explorar",
     "footer:3hca0r9ywms7n": "Suporte e contactos",
     "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Política de reembolso</a></p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Livro de reclamações</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Contactos</a></p>",
@@ -918,14 +918,6 @@
     "product-bundle-reshape:15195466727810_body_html": "<h4>Protocolo de Transformação RESHAPE</h4>\n<p>Bundle com RESHAPE SHOTS + RESHAPE CONTROL + RESHAPE BALANCE</p>\n<p>O PACOTE RESHAPE combina as nossas três ferramentas mais poderosas para a transformação corporal num protocolo completo. Utilize o RESHAPE SHOTS para ativar o seu metabolismo, enquanto as gomas REHAPE CONTROL e RESHAPE BALANCE fornecem um apoio específico durante todo o dia para a regulação do apetite e a harmonia metabólica. É o nosso sistema mais abrangente para alcançar os seus objetivos.</p>"
   },
   "__activity_log": [
-    {
-      "name": "Admin",
-      "lang": "pt-PT",
-      "pages": [
-        "about"
-      ],
-      "ts": "2026-02-25T15:28:04.158Z"
-    },
     {
       "name": "Admin",
       "lang": "pt-PT",
@@ -2551,6 +2543,14 @@
         "navigation"
       ],
       "ts": "2026-03-24T16:07:28.050Z"
+    },
+    {
+      "name": "Rita",
+      "lang": "pt-PT",
+      "pages": [
+        "shots-restart"
+      ],
+      "ts": "2026-03-24T16:12:01.951Z"
     }
   ],
   "__pending": {
@@ -2609,6 +2609,10 @@
       "navigation": [
         "754732728706_title",
         "762850509186_title"
+      ],
+      "shots-restart": [
+        "16vvebfd4gjcg",
+        "1ewmvx5kec5co"
       ]
     },
     "de": {
