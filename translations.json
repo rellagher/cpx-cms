@@ -215,7 +215,7 @@
     "homepage:hzg50hj6cypu": "<p>Colaboramos com um painel multidisciplinar de especialistas que traduzem pesquisas emergentes em avanços significativos para os produtos.</p>",
     "homepage:2whk28stmt2rt": "Saiba mais",
     "homepage:qpfp28m0wpqu": "Professor Pedro Vaz, PhD FRSC",
-    "homepage:20g4x9v6wrbxb": "<p>Investigador Sénior, Fundação Champalimaud (Unidade de Cancro do Pulmão)</p>",
+    "homepage:20g4x9v6wrbxb": "<p>Investigador Sénior, Fundação Champalimaud (Unidade de Cancro do Pulmão).</p>",
     "homepage:1ymzi2k76t4t3": "Prof. Doutora M. Graça Pereira",
     "homepage:3fadru3y0rowu": "<p>Professora Catedrática na Universidade do Minho (Psicologia Clínica e da Saúde).</p>",
     "homepage:32ex1bq2r25ia": "Dr. João Paulo de Almeida, Médico",
@@ -918,15 +918,6 @@
     "product-bundle-reshape:15195466727810_body_html": "<h4>Protocolo de Transformação RESHAPE</h4>\n<p>Bundle com RESHAPE SHOTS + RESHAPE CONTROL + RESHAPE BALANCE</p>\n<p>O PACOTE RESHAPE combina as nossas três ferramentas mais poderosas para a transformação corporal num protocolo completo. Utilize o RESHAPE SHOTS para ativar o seu metabolismo, enquanto as gomas REHAPE CONTROL e RESHAPE BALANCE fornecem um apoio específico durante todo o dia para a regulação do apetite e a harmonia metabólica. É o nosso sistema mais abrangente para alcançar os seus objetivos.</p>"
   },
   "__activity_log": [
-    {
-      "name": "Admin",
-      "lang": "pt-PT",
-      "pages": [
-        "product-recharge-shot",
-        "product-restart-shot"
-      ],
-      "ts": "2026-02-25T13:57:41.564Z"
-    },
     {
       "name": "Admin",
       "lang": "pt-PT",
@@ -2564,6 +2555,14 @@
         "homepage"
       ],
       "ts": "2026-03-24T13:19:12.514Z"
+    },
+    {
+      "name": "Rita",
+      "lang": "pt-PT",
+      "pages": [
+        "homepage"
+      ],
+      "ts": "2026-03-24T13:27:17.889Z"
     }
   ],
   "__pending": {
@@ -2600,7 +2599,8 @@
         "ct5eqogekkhz",
         "3f6kdwiokrlsb",
         "mcrjtanot0si",
-        "2q8hspsj3nykp"
+        "2q8hspsj3nykp",
+        "20g4x9v6wrbxb"
       ],
       "product-reshape-control": [
         "15106126152066_body_html"
