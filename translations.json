@@ -5,7 +5,7 @@
     "collections:676199072130_title": "SHOTS",
     "collections:676199596418_title": "ACTYVA",
     "collections:676394795394_title": "RESHAPE",
-    "collections:676726079874_title": "Agrupe e poupe",
+    "collections:676726079874_title": "Poupe com os nossos Bundles",
     "collections:680660566402_title": "Todos os produtos",
     "collections:1eofj6j2ulp0f": "Produto em destaque",
     "navigation:743518732674_title": "Para empresas",
@@ -918,14 +918,6 @@
     "product-bundle-reshape:15195466727810_body_html": "<h4>Protocolo de Transformação RESHAPE</h4>\n<p>Bundle com RESHAPE SHOTS + RESHAPE CONTROL + RESHAPE BALANCE</p>\n<p>O PACOTE RESHAPE combina as nossas três ferramentas mais poderosas para a transformação corporal num protocolo completo. Utilize o RESHAPE SHOTS para ativar o seu metabolismo, enquanto as gomas REHAPE CONTROL e RESHAPE BALANCE fornecem um apoio específico durante todo o dia para a regulação do apetite e a harmonia metabólica. É o nosso sistema mais abrangente para alcançar os seus objetivos.</p>"
   },
   "__activity_log": [
-    {
-      "name": "Admin",
-      "lang": "pt-PT",
-      "pages": [
-        "bundle-reshape-actyva"
-      ],
-      "ts": "2026-02-25T15:26:07.371Z"
-    },
     {
       "name": "Admin",
       "lang": "pt-PT",
@@ -2551,6 +2543,14 @@
         "popups"
       ],
       "ts": "2026-03-24T15:40:56.108Z"
+    },
+    {
+      "name": "Rita",
+      "lang": "pt-PT",
+      "pages": [
+        "collections"
+      ],
+      "ts": "2026-03-24T16:04:24.704Z"
     }
   ],
   "__pending": {
@@ -2602,6 +2602,9 @@
       "popups": [
         "2d8bsokshoeu1",
         "331955xorr1pp"
+      ],
+      "collections": [
+        "676726079874_title"
       ]
     },
     "de": {
