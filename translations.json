@@ -17,7 +17,7 @@
     "navigation:743673889154_title": "A nossa ciência",
     "navigation:743673921922_title": "Sobre",
     "navigation:747894440322_title": "A nossa ciência",
-    "navigation:754732728706_title": "Compre tudo",
+    "navigation:754732728706_title": "Ver tudo",
     "navigation:754732761474_title": "ACTYVA",
     "navigation:754732794242_title": "Bundle RHYTHM + ACTYVA",
     "navigation:754732827010_title": "Bundle RHYTHM",
@@ -29,7 +29,7 @@
     "navigation:756474642818_title": "Shots",
     "navigation:756474708354_title": "Gummies",
     "navigation:756475920770_title": "Todos os produtos",
-    "navigation:762850509186_title": "Programa de parceria",
+    "navigation:762850509186_title": "Programa de parcerias",
     "navigation:769250591106_title": "Perfil",
     "navigation:773292949890_title": "Descubra o seu protocolo",
     "navigation:299033264514_title": "Menu principal",
@@ -918,14 +918,6 @@
     "product-bundle-reshape:15195466727810_body_html": "<h4>Protocolo de Transformação RESHAPE</h4>\n<p>Bundle com RESHAPE SHOTS + RESHAPE CONTROL + RESHAPE BALANCE</p>\n<p>O PACOTE RESHAPE combina as nossas três ferramentas mais poderosas para a transformação corporal num protocolo completo. Utilize o RESHAPE SHOTS para ativar o seu metabolismo, enquanto as gomas REHAPE CONTROL e RESHAPE BALANCE fornecem um apoio específico durante todo o dia para a regulação do apetite e a harmonia metabólica. É o nosso sistema mais abrangente para alcançar os seus objetivos.</p>"
   },
   "__activity_log": [
-    {
-      "name": "Admin",
-      "lang": "pt-PT",
-      "pages": [
-        "bundle-reshape"
-      ],
-      "ts": "2026-02-25T15:26:49.589Z"
-    },
     {
       "name": "Admin",
       "lang": "pt-PT",
@@ -2551,6 +2543,14 @@
         "collections"
       ],
       "ts": "2026-03-24T16:04:24.704Z"
+    },
+    {
+      "name": "Rita",
+      "lang": "pt-PT",
+      "pages": [
+        "navigation"
+      ],
+      "ts": "2026-03-24T16:07:28.050Z"
     }
   ],
   "__pending": {
@@ -2605,6 +2605,10 @@
       ],
       "collections": [
         "676726079874_title"
+      ],
+      "navigation": [
+        "754732728706_title",
+        "762850509186_title"
       ]
     },
     "de": {
