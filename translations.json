@@ -233,7 +233,7 @@
     "actyva:1yjkpmselloia": "Conteúdo da embalagem",
     "actyva:k3zjqam9u2aj": "<p>1 dispositivo ACTYVA</p><p>1x Cabo de carregamento USB-C*</p><p>1x Guia rápido</p><p>*Carregador de parede não incluído (utilize qualquer adaptador USB-C)</p>",
     "actyva:1ycgwcsv07q5k": "ENGENHARIA BIOFOTÓNICA",
-    "actyva:s8gnyizb1kw4": "Veja o interior do actyva",
+    "actyva:s8gnyizb1kw4": "Descubra o interior do ACTYVA",
     "actyva:1j7slmvykv5jh": "<p>Oito emissores biofotónicos de precisão rodeiam o SHOT, libertando frequências de luz durante os 90 segundos de ativação. Esta energia fotónica otimiza a fórmula líquida a nível molecular, preparando-a para a máxima biodisponibilidade e reconhecimento celular.</p>",
     "actyva:ag3e9xds5ivl": "90 segundos de ativação",
     "actyva:22ax2uqsx5xmt": "Compatível com as injeções Cellpowerx",
@@ -882,7 +882,7 @@
     "shots-restart:1ewmvx5kec5co": "Você também pode gostar",
     "footer:3gq07l0r5w68h": "Explorar",
     "footer:3hca0r9ywms7n": "Suporte e contactos",
-    "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Política de reembolso</a></p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Livro de reclamações</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Entre em contato conosco</a></p>",
+    "footer:3mqyzudq5jy56": "<p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Política de reembolso</a></p><p><a href=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\" target=\"_blank\" title=\"https://www.livroreclamacoes.pt/Pedido/Reclamacao\">Livro de reclamações</a></p><p><a href=\"https://cellpowerx.myshopify.com/#rp-customer-widget-home\" title=\"Support\">Contactos</a></p>",
     "header:6o4qs55m2bp6": "Envio gratuito para encomendas superiores a 500€",
     "popups:2d8bsokshoeu1": "Inscreva-se na nossa newsletter",
     "popups:331955xorr1pp": "Inscreva-se",
@@ -918,27 +918,6 @@
     "product-bundle-reshape:15195466727810_body_html": "<h4>Protocolo de Transformação RESHAPE</h4>\n<p>Bundle com RESHAPE SHOTS + RESHAPE CONTROL + RESHAPE BALANCE</p>\n<p>O PACOTE RESHAPE combina as nossas três ferramentas mais poderosas para a transformação corporal num protocolo completo. Utilize o RESHAPE SHOTS para ativar o seu metabolismo, enquanto as gomas REHAPE CONTROL e RESHAPE BALANCE fornecem um apoio específico durante todo o dia para a regulação do apetite e a harmonia metabólica. É o nosso sistema mais abrangente para alcançar os seus objetivos.</p>"
   },
   "__activity_log": [
-    {
-      "name": "Admin",
-      "lang": "pt-PT",
-      "pages": [
-        "header",
-        "product-reshape-balance",
-        "product-reshape-control",
-        "product-refocus",
-        "product-remethyl",
-        "product-reshape-shot",
-        "product-recharge-shot",
-        "product-restart-shot",
-        "product-reset-shot",
-        "product-actyva",
-        "product-rhythm-actyva",
-        "product-rhythm",
-        "product-bundle-reshape-actyva",
-        "product-bundle-reshape"
-      ],
-      "ts": "2026-02-25T14:05:42.752Z"
-    },
     {
       "name": "Admin",
       "lang": "pt-PT",
@@ -2563,6 +2542,15 @@
         "homepage"
       ],
       "ts": "2026-03-24T13:27:17.889Z"
+    },
+    {
+      "name": "Rita",
+      "lang": "pt-PT",
+      "pages": [
+        "actyva",
+        "footer"
+      ],
+      "ts": "2026-03-24T14:04:44.966Z"
     }
   ],
   "__pending": {
@@ -2604,6 +2592,12 @@
       ],
       "product-reshape-control": [
         "15106126152066_body_html"
+      ],
+      "actyva": [
+        "s8gnyizb1kw4"
+      ],
+      "footer": [
+        "3mqyzudq5jy56"
       ]
     },
     "de": {
