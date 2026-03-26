@@ -873,9 +873,9 @@
     "shots-restart:ii61d3y006bm": "<p>O RESTART não é recomendado para mulheres grávidas ou a amamentar, a menos que seja aconselhado por um profissional de saúde qualificado.</p>",
     "shots-restart:cdffcjllvau1": "O que diferencia o RESTART de outros produtos energéticos?",
     "shots-restart:ju8e2n736h8w": "<p>RESTART concentra-se na vitalidade equilibrada e sustentada, em vez da estimulação excessiva. A sua fórmula combina vitaminas, minerais, aminoácidos, adaptógenos e antioxidantes que apoiam o metabolismo energético e a função celular, ajudando a fornecer energia clara e constante.</p>",
-    "shots-restart:1cl5inugsnlf5": "Por que a cor ou a consistência variam entre as doses?",
+    "shots-restart:1cl5inugsnlf5": "O que explica a variação de cor ou consistência entre shots?",
     "shots-restart:23g0htb8vqfaw": "<p>RESTART contém ingredientes naturais. Variações na cor ou consistência entre lotes são normais e não afetam a qualidade ou composição da fórmula.</p>",
-    "shots-restart:24amn0h82oseg": "Existem informações de segurança importantes para o RESTART SHOTS?",
+    "shots-restart:24amn0h82oseg": "Existem informações de segurança importantes para o RESTART?",
     "shots-restart:38w5fj3ytcxoh": "<p>RESTART SHOTS contém 44 mg de cafeína por dose (20 mL).<br/>Mantenha fora do alcance das crianças.<br/>Após aberto, consuma imediatamente.<br/>Não utilize se o selo de segurança estiver danificado ou ausente.</p>",
     "shots-restart:16vvebfd4gjcg": "Como deve o RESTART ser armazenado?",
     "shots-restart:wa0cf35chjy1": "<p>Armazene em local fresco e seco, longe da luz solar direta. Mantenha fora do alcance das crianças e não utilize se o selo de segurança estiver danificado ou ausente.</p>",
@@ -918,14 +918,6 @@
     "product-bundle-reshape:15195466727810_body_html": "<h4>Protocolo de Transformação RESHAPE</h4>\n<p>Bundle com RESHAPE SHOTS + RESHAPE CONTROL + RESHAPE BALANCE</p>\n<p>O PACOTE RESHAPE combina as nossas três ferramentas mais poderosas para a transformação corporal num protocolo completo. Utilize o RESHAPE SHOTS para ativar o seu metabolismo, enquanto as gomas REHAPE CONTROL e RESHAPE BALANCE fornecem um apoio específico durante todo o dia para a regulação do apetite e a harmonia metabólica. É o nosso sistema mais abrangente para alcançar os seus objetivos.</p>"
   },
   "__activity_log": [
-    {
-      "name": "Admin",
-      "lang": "pt-PT",
-      "pages": [
-        "our-science"
-      ],
-      "ts": "2026-02-25T15:28:55.400Z"
-    },
     {
       "name": "Admin",
       "lang": "pt-PT",
@@ -2551,6 +2543,14 @@
         "shots-restart"
       ],
       "ts": "2026-03-24T16:12:01.951Z"
+    },
+    {
+      "name": "Rita",
+      "lang": "pt-PT",
+      "pages": [
+        "shots-restart"
+      ],
+      "ts": "2026-03-26T15:52:07.618Z"
     }
   ],
   "__pending": {
@@ -2612,7 +2612,9 @@
       ],
       "shots-restart": [
         "16vvebfd4gjcg",
-        "1ewmvx5kec5co"
+        "1ewmvx5kec5co",
+        "1cl5inugsnlf5",
+        "24amn0h82oseg"
       ]
     },
     "de": {
