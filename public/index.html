@@ -187,6 +187,9 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
         <option value="es">🇪🇸 Spanish (Español)</option>
         <option value="it">🇮🇹 Italian (Italiano)</option>
         <option value="nl">🇳🇱 Dutch (Nederlands)</option>
+        <option value="zh-TW">🇹🇼 Traditional Chinese (繁體中文)</option>
+        <option value="zh-CN">🇨🇳 Simplified Chinese (简体中文)</option>
+        <option value="ja">🇯🇵 Japanese (日本語)</option>
       </select>
       <input class="login-input" type="text" id="translatorName" placeholder="Your name" onkeydown="if(event.key==='Enter')doLogin()">
     </div>
@@ -1419,9 +1422,12 @@ const LANG_OPTIONS = [
   {value:'es', label:'🇪🇸 Spanish (ES)'},
   {value:'it', label:'🇮🇹 Italian (IT)'},
   {value:'nl', label:'🇳🇱 Dutch (NL)'},
+  {value:'zh-TW', label:'🇹🇼 Traditional Chinese (ZH-TW)'},
+  {value:'zh-CN', label:'🇨🇳 Simplified Chinese (ZH-CN)'},
+  {value:'ja', label:'🇯🇵 Japanese (JA)'},
 ];
 
-const LANG_BADGE_LABELS = {de:'🇩🇪 DE','pt-PT':'🇵🇹 PT',pl:'🇵🇱 PL',fr:'🇫🇷 FR',es:'🇪🇸 ES',it:'🇮🇹 IT',nl:'🇳🇱 NL'};
+const LANG_BADGE_LABELS = {de:'🇩🇪 DE','pt-PT':'🇵🇹 PT',pl:'🇵🇱 PL',fr:'🇫🇷 FR',es:'🇪🇸 ES',it:'🇮🇹 IT',nl:'🇳🇱 NL','zh-TW':'🇹🇼 ZH-TW','zh-CN':'🇨🇳 ZH-CN',ja:'🇯🇵 JA'};
 
 function initLangSelector() {
   const dropdown = document.getElementById('langDropdown');
