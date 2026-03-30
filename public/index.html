@@ -781,7 +781,7 @@ function loadPageView(pageId) {
             style="padding:3px 8px;background:${isHidden?'var(--amber)':'var(--bg-3)'};border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;cursor:pointer;color:${isHidden?'white':'var(--text-muted)'};white-space:nowrap;">
             ${isHidden?'👁 Hidden':'👁 Hide'}
           </button>
-          ${!isLinked?`<button onclick="translateField('${pageId}',${i})" id="btn-${i}"
+          ${!isLinked && state.lang !== 'zh-TW' ?`<button onclick="translateField('${pageId}',${i})" id="btn-${i}"
             style="padding:3px 10px;background:var(--bg-3);border:1px solid var(--border);border-radius:5px;font-family:'Mulish',sans-serif;font-size:10px;font-weight:700;letter-spacing:0.5px;cursor:pointer;color:var(--text-muted);white-space:nowrap;">
             ✦ DeepL
           </button>`:''}
@@ -806,7 +806,7 @@ function loadPageView(pageId) {
               <a href="${escAttr(page.url)}" target="_blank" class="page-link">View live page ↗</a>
             </div>
           </div>
-          ${state.mode==='admin'?`<button onclick="translateAllFields('${pageId}')" id="btnTranslateAll"
+          ${state.mode==='admin' && state.lang !== 'zh-TW' ?`<button onclick="translateAllFields('${pageId}')" id="btnTranslateAll"
             style="padding:8px 16px;background:#0F2B46;color:white;border:none;border-radius:8px;font-family:'Mulish',sans-serif;font-weight:700;font-size:11px;letter-spacing:1px;cursor:pointer;white-space:nowrap;flex-shrink:0;">
             ✦ Translate all with DeepL
           </button>`:''}
@@ -894,7 +894,7 @@ function removeTranslateNoSpans(text) {
 }
 
 async function callDeepL(texts, isHtml) {
-  const langMap = {de:'DE','pt-PT':'PT-PT',pl:'PL',fr:'FR',es:'ES',it:'IT',nl:'NL'};
+  const langMap = {de:'DE','pt-PT':'PT-PT',pl:'PL',fr:'FR',es:'ES',it:'IT',nl:'NL','zh-CN':'ZH','ja':'JA'};
   const target = langMap[state.lang] || state.lang.toUpperCase();
 
   let protectedTexts, tagHandling, ignoreTags;
@@ -1727,6 +1727,7 @@ function checkDeeplQuota(estimatedChars) {
 let _tapRunning = false;
 
 function openTranslateAllPagesModal() {
+  if (state.lang === 'zh-TW') { showToast('DeepL does not support Traditional Chinese — please translate manually'); return; }
   // Count untranslated fields and estimate chars
   let totalUntranslated = 0;
   let estChars = 0;
