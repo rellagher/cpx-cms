@@ -231,6 +231,8 @@ body{background:var(--bg);color:var(--text);font-family:'Mulish',sans-serif;font
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="undoLastAction()" id="btnUndo" title="Undo last translation" disabled>↩ Undo</button>
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="confirmRevert()" id="btnRevert">↺ Revert</button>
       <button class="export-btn" onclick="exportCsv()" data-admin-only="true">↓ Export CSV</button>
+      <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="document.getElementById('csvImportInput').click()" data-admin-only="true">↑ Import CSV</button>
+      <input type="file" id="csvImportInput" accept=".csv" style="display:none;" onchange="handleCsvImport(this)">
       <button class="export-btn" style="background:var(--bg-4);color:var(--text-muted);border:1px solid var(--border);" onclick="printPage()">🖨 Print</button>
       <button class="logout-btn" onclick="logout()">Sign out</button>
     </div>
@@ -2529,6 +2531,192 @@ function closeLinkModal() {
   _linkModalTarget = null;
 }
 
+let _importData = [];
+
+function handleCsvImport(input) {
+  const file = input.files[0];
+  if (!file) return;
+  input.value = ''; // reset so same file can be re-selected
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const text = e.target.result;
+      const rows = parseCsv(text);
+      if (!rows.length) { showToast('⚠️ No rows found in CSV'); return; }
+
+      // Detect headers
+      const headers = rows[0].map(h => h.trim().toLowerCase());
+      const idxType = headers.indexOf('type');
+      const idxId = headers.findIndex(h => h.includes('identification') || h === 'id');
+      const idxField = headers.indexOf('field');
+      const idxLocale = headers.indexOf('locale');
+      const idxTranslated = headers.findIndex(h => h.includes('translated'));
+      const idxDefault = headers.findIndex(h => h.includes('default'));
+
+      if (idxTranslated === -1) { showToast('⚠️ Could not find "Translated content" column'); return; }
+
+      // Parse data rows
+      const matched = [];
+      const unmatched = [];
+
+      for (let i = 1; i < rows.length; i++) {
+        const row = rows[i];
+        const translated = row[idxTranslated]?.trim() || '';
+        if (!translated) continue;
+
+        const shopifyId = row[idxId]?.trim() || '';
+        const fieldName = row[idxField]?.trim() || '';
+        const locale = row[idxLocale]?.trim() || '';
+        const defaultVal = idxDefault >= 0 ? (row[idxDefault]?.trim() || '') : '';
+
+        // Detect language from locale column
+        const lang = locale || state.lang;
+
+        // Find matching field in state
+        let found = false;
+        for (const [pageId, page] of Object.entries(state.pages)) {
+          for (const field of page.fields) {
+            if (field.shopify_id === shopifyId && field.field === fieldName) {
+              matched.push({ pageId, field, translated, lang, defaultVal });
+              found = true;
+              break;
+            }
+          }
+          if (found) break;
+        }
+        if (!found && (shopifyId || fieldName)) {
+          unmatched.push({ shopifyId, fieldName, translated, lang });
+        }
+      }
+
+      _importData = matched;
+      showImportPreview(matched, unmatched);
+    } catch(err) {
+      showToast('⚠️ Error reading CSV: ' + err.message);
+    }
+  };
+  reader.readAsText(file, 'UTF-8');
+}
+
+function parseCsv(text) {
+  // Remove BOM if present
+  if (text.charCodeAt(0) === 0xFEFF) text = text.slice(1);
+  const rows = [];
+  let row = [], cell = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const ch = text[i];
+    if (inQuotes) {
+      if (ch === '"' && text[i+1] === '"') { cell += '"'; i++; }
+      else if (ch === '"') inQuotes = false;
+      else cell += ch;
+    } else {
+      if (ch === '"') inQuotes = true;
+      else if (ch === ',') { row.push(cell); cell = ''; }
+      else if (ch === '\r') {}
+      else if (ch === '\n') { row.push(cell); rows.push(row); row = []; cell = ''; }
+      else cell += ch;
+    }
+  }
+  if (cell || row.length) { row.push(cell); rows.push(row); }
+  return rows.filter(r => r.some(c => c.trim()));
+}
+
+function showImportPreview(matched, unmatched) {
+  const desc = document.getElementById('importModalDesc');
+  const list = document.getElementById('importModalList');
+  const confirmBtn = document.getElementById('importConfirmBtn');
+
+  if (!matched.length) {
+    desc.innerHTML = '⚠️ No matching fields found. Make sure the CSV uses the same format as the exported CSVs.';
+    list.innerHTML = '';
+    confirmBtn.style.display = 'none';
+    document.getElementById('importModal').classList.add('show');
+    return;
+  }
+
+  // Group by language
+  const byLang = {};
+  for (const m of matched) {
+    if (!byLang[m.lang]) byLang[m.lang] = [];
+    byLang[m.lang].push(m);
+  }
+
+  const langSummary = Object.entries(byLang).map(([l, items]) =>
+    `<strong>${l.toUpperCase()}</strong>: ${items.length} field${items.length>1?'s':''}`
+  ).join(' · ');
+
+  desc.innerHTML = `Ready to import <strong>${matched.length} translation${matched.length>1?'s':''}</strong> — ${langSummary}` +
+    (unmatched.length ? `<br><span style="color:var(--text-muted);font-size:11px;">⚠ ${unmatched.length} rows could not be matched to fields in the CMS</span>` : '');
+
+  list.innerHTML = matched.slice(0, 50).map(m => {
+    const original = m.defaultVal ? `<div style="font-size:11px;color:var(--text-muted);margin-bottom:2px;">${escHtml((m.defaultVal).substring(0,80))}${m.defaultVal.length>80?'…':''}</div>` : '';
+    return `<div style="padding:10px 12px;border:1px solid var(--border);border-radius:8px;margin-bottom:4px;">
+      <div style="display:flex;justify-content:space-between;margin-bottom:4px;">
+        <span style="font-size:10px;font-weight:700;color:var(--text-muted);">${escHtml(m.pageId)} · ${escHtml(m.field.field)}</span>
+        <span style="font-size:10px;font-weight:700;padding:1px 6px;background:var(--bg-4);border-radius:4px;">${escHtml(m.lang)}</span>
+      </div>
+      ${original}
+      <div style="font-size:13px;">${escHtml(m.translated.substring(0,100))}${m.translated.length>100?'…':''}</div>
+    </div>`;
+  }).join('') + (matched.length > 50 ? `<div style="padding:10px;text-align:center;color:var(--text-muted);font-size:12px;">… and ${matched.length - 50} more</div>` : '');
+
+  confirmBtn.style.display = '';
+  document.getElementById('importModal').classList.add('show');
+}
+
+async function confirmCsvImport() {
+  if (!_importData.length) return;
+
+  const btn = document.getElementById('importConfirmBtn');
+  btn.disabled = true;
+  btn.textContent = '⟳ Importing…';
+
+  try {
+    // Fetch latest translations from GitHub
+    const resp = await fetch('https://cpx-api.joao-relego.workers.dev/translations', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'get' }),
+    });
+    const data = await resp.json();
+    const allTrans = data.translations || {};
+    const sha = data.sha;
+
+    // Apply imported translations
+    for (const m of _importData) {
+      const lang = m.lang;
+      if (!allTrans[lang]) allTrans[lang] = {};
+      const stableKey = getStableKey(m.field);
+      allTrans[lang][m.pageId + ':' + stableKey] = m.translated;
+      // Also update in state if current lang matches
+      if (lang === state.lang) m.field.translated = m.translated;
+    }
+
+    // Save to GitHub
+    const saveResp = await fetch('https://cpx-api.joao-relego.workers.dev/translations', {
+      method: 'POST', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify({ action: 'save', translations: allTrans, sha }),
+    });
+    if (!saveResp.ok) throw new Error('Save failed');
+    const saved = await saveResp.json();
+    state.translationsSha = saved.sha;
+
+    closeImportModal();
+    buildSidebar();
+    if (state.currentPageId) loadPageView(state.currentPageId);
+    showToast('✓ ' + _importData.length + ' translations imported successfully');
+  } catch(err) {
+    btn.disabled = false;
+    btn.textContent = '↑ Import translations';
+    showToast('⚠️ Import failed: ' + err.message);
+  }
+}
+
+function closeImportModal() {
+  document.getElementById('importModal').classList.remove('show');
+  _importData = [];
+}
+
 </script>
 
 <div id="printArea" style="display:none;"></div>
@@ -2543,6 +2731,21 @@ function closeLinkModal() {
     <div style="display:flex;gap:8px;margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
       <button class="modal-btn secondary" onclick="closeLinkModal()">Cancel</button>
       ${Object.keys(state?.links||{}).length ? '<button class="modal-btn secondary" onclick="removeLinkField()" style="color:var(--red);border-color:var(--red);">Remove link</button>' : ''}
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="importModal">
+  <div class="modal-box" style="width:520px;max-height:80vh;display:flex;flex-direction:column;">
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:8px;">
+      <div class="modal-title" style="margin-bottom:0;flex:1;">↑ Import CSV</div>
+      <button onclick="closeImportModal()" style="background:none;border:none;font-size:18px;cursor:pointer;color:var(--text-muted);">✕</button>
+    </div>
+    <div class="modal-desc" id="importModalDesc"></div>
+    <div id="importModalList" style="overflow-y:auto;flex:1;margin-top:12px;"></div>
+    <div style="display:flex;gap:8px;margin-top:16px;padding-top:16px;border-top:1px solid var(--border);">
+      <button class="modal-btn secondary" onclick="closeImportModal()">Cancel</button>
+      <button class="modal-btn primary" id="importConfirmBtn" onclick="confirmCsvImport()">↑ Import translations</button>
     </div>
   </div>
 </div>
